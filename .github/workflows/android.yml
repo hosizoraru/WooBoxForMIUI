@@ -39,4 +39,17 @@ jobs:
         git submodule init
         git submodule update
     - name: Build with Gradle
-      run: bash ./gradlew :app:packageDebug
+      run: bash ./gradlew assemble
+      
+    - name: Upload release
+      uses: actions/upload-artifact@v2
+      with:
+        name: WooBoxForMIUI_Release
+        path: "app/build/outputs/apk/release/*.apk"
+        
+    - name: Upload debug
+      uses: actions/upload-artifact@v2
+      with:
+        name: WooBoxForMIUI_Debug
+        path: "app/build/outputs/apk/debug/*.apk"
+
