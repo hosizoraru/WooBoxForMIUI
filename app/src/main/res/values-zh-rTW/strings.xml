@@ -226,4 +226,12 @@
   <string name="off">關閉</string>
   <string name="center">置中</string>
   <string name="left_or_right">左右</string>
+  <string name="do_not_clear_app">阻止殺後台應用</string>
+  <string name="do_not_clear_app_summary">可能造成耗電增加，建議配合「使 Millet 更加激進」食用，不建議配合墓碑、A1記憶體管理等會強制應用進入緩衝的模組使用。</string>
+  <string name="geek">極客</string>
+  <string name="make_millet_ignore_active">允許 Millet 凍結活躍的應用</string>
+  <string name="make_millet_ignore_active_summary">非常激進，可能會影響應用執行</string>
+  <string name="make_millet_more_aggressive">使 Millet 更加激進</string>
+  <string name="make_millet_more_aggressive_summary">"允許 Millet 在後台應用有通知、有服務執行、有處理程序執行的情況下凍結應用。\n不希望被凍結的應用可將省電策略設置為無限制，\n啟用前請先卸載墓碑和 NoANR 相關模組。"</string>
+  <string name="preset">預設</string>
 </resources>
