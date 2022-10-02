@@ -76,7 +76,7 @@
   <string name="developer">开发者</string>
   <string name="thank_list">感谢名单</string>
   <string name="third_party_open_source_statement">第三方开源声明</string>
-  <string name="corepacth">解除安装限制(支持A12L和A13)</string>
+  <string name="corepacth">解除安装限制(已支持A12L和A13)</string>
   <string name="corepacth_summary">支持降级/不同签名/无签名安装</string>
   <string name="prevent_recovery_of_battery_optimization_white_list">防止恢复电池优化白名单</string>
   <string name="failed_after_restart">系统重启后仍会还原</string>

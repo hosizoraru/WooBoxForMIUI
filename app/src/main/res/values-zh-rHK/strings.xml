@@ -72,7 +72,7 @@
   <string name="developer">開發者</string>
   <string name="thank_list">感謝名單</string>
   <string name="third_party_open_source_statement">第三方開源聲明</string>
-  <string name="corepacth">解除安裝限制(支持A12L和A13)</string>
+  <string name="corepacth">解除安裝限制(已支持A12L和A13)</string>
   <string name="corepacth_summary">支持降級/不同簽名/無簽名安裝</string>
   <string name="prevent_recovery_of_battery_optimization_white_list">防止恢復電池優化白名單</string>
   <string name="failed_after_restart">系統重啟後仍會還原</string>
