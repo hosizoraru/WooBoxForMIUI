@@ -80,7 +80,7 @@
   <string name="developer">Developer</string>
   <string name="thank_list">Thanks list</string>
   <string name="third_party_open_source_statement">Third Party Open Source Statement</string>
-  <string name="corepacth">Remove restrictions</string>
+  <string name="corepacth">Remove restrictions(support A12L&A13)</string>
   <string name="corepacth_summary">Support downgrade/different signature/unsigned installation</string>
   <string name="prevent_recovery_of_battery_optimization_white_list">Prevent recovery of battery optimization whitelist</string>
   <string name="failed_after_restart">It will be restored after system restart</string>
@@ -126,7 +126,7 @@
   <string name="show_city">Show the city</string>
   <string name="lock_max_fps_summary">Support adding drop-down control center quick setting for real-time switching</string>
   <string name="control_center">Control Center</string>
-  <string name="control_center_weather_summary">The Mi Smart Hub version is not currently supported</string>
+  <string name="control_center_weather_summary">The Mi Smart Hub version is already supported(not perfect)</string>
   <string name="not_support">You seem to be using an outdated version of LSPosed or LSPosed is not active, please update LSPosed or activate it and try again.</string>
   <string name="matters_needing_attention_context">It is recommended to restart the phone after the first activation or update\nMost of changes require restart in the top right corner to take effect</string>
   <string name="are_you_sure_reboot">Are you sure to reboot?</string>

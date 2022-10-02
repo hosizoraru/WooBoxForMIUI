@@ -72,7 +72,7 @@
   <string name="developer">開發者</string>
   <string name="thank_list">感謝名單</string>
   <string name="third_party_open_source_statement">第三方開源聲明</string>
-  <string name="corepacth">解除安裝限制</string>
+  <string name="corepacth">解除安裝限制(支持A12L&A13)</string>
   <string name="corepacth_summary">支持降級/不同簽名/無簽名安裝</string>
   <string name="prevent_recovery_of_battery_optimization_white_list">防止恢復電池優化白名單</string>
   <string name="failed_after_restart">系統重啟後仍會還原</string>
@@ -118,7 +118,7 @@
   <string name="show_city">顯示城市</string>
   <string name="lock_max_fps_summary">支持添加下拉控制中心快速開關，實時切換</string>
   <string name="control_center">控制中心</string>
-  <string name="control_center_weather_summary">暫不支持妙享版控制中心</string>
+  <string name="control_center_weather_summary">已支持妙享版控制中心(不完美)</string>
   <string name="not_support">您似乎正在使用過時的 LSPosed 版本或 LSPosed 未啟動，請更新 LSPosed 或者啟動後再試。</string>
   <string name="matters_needing_attention_context">首次啟動或更新後建議重啟手機\n絕大部分功能更改後需要在右上角重啟作用域後生效</string>
   <string name="are_you_sure_reboot">確定重啟系統？</string>
