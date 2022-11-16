@@ -55,9 +55,9 @@ dependencies {
     implementation("com.github.kyuubiran:EzXHelper:1.0.3")
     //UI
     implementation(project(":blockmiui"))
-    implementation("androidx.constraintlayout:constraintlayout:2.1.4")
+    implementation("androidx.constraintlayout:constraintlayout:2.2.0-alpha04")
     //APP Center
-    val appCenterSdkVersion = "4.4.5"
+    val appCenterSdkVersion = "5.0.0"
     implementation("com.microsoft.appcenter:appcenter-analytics:${appCenterSdkVersion}")
     implementation("com.microsoft.appcenter:appcenter-crashes:${appCenterSdkVersion}")
     implementation("androidx.core:core-splashscreen:1.0.0")
