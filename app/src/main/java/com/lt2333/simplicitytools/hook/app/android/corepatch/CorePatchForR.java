@@ -40,7 +40,7 @@ public class CorePatchForR extends XposedHelper implements IXposedHookLoadPackag
         Log.d(MainHook.TAG, "authcreak=" + prefs.getBoolean("authcreak", true));
         Log.d(MainHook.TAG, "digestCreak=" + prefs.getBoolean("digestCreak", true));
         Log.d(MainHook.TAG, "UsePreSig=" + prefs.getBoolean("UsePreSig", false));
-
+        
         // 允许降级
         findAndHookMethod("com.android.server.pm.PackageManagerService", loadPackageParam.classLoader,
                 "checkDowngrade",
@@ -195,17 +195,17 @@ public class CorePatchForR extends XposedHelper implements IXposedHookLoadPackag
                                     methodHookParam.setResult(newInstance);
                                 }
                             }
-                        }
                             if (cause != null && cause.getClass() == packageParserException) {
                                 if (error.getInt(cause) == -103) {
                                     methodHookParam.setResult(newInstance);
                                 }
                             }
-                    }
-                    if (parseErr != null && parseErr == -103) {
+                        }
+                        if (parseErr != null && parseErr == -103) {
                             Object input = methodHookParam.args[0];
                             XposedHelpers.callMethod(input, "reset");
                             methodHookParam.setResult(XposedHelpers.callMethod(input, "success", newInstance));
+                        }
                     }
                 }
             }
