@@ -25,7 +25,6 @@ class XposedEntry : EasyXposedInit() {
         ScreenShot, // 截屏
         Cast, // 投屏
         RearDisplay, // 背屏
-        ScreenRecorder, // 屏幕录制
     )
 
     override fun handleLoadPackage(lpparam: XC_LoadPackage.LoadPackageParam?) {

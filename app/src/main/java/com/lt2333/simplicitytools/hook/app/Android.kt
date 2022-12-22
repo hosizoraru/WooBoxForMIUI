@@ -13,13 +13,12 @@ object Android : AppRegister() {
         CorePatchMainHook().handleLoadPackage(lpparam)
         autoInitHooks(
             lpparam,
-            DisableFlagSecure, //允许截图
-            DeleteOnPostNotification, //上层显示
-            RemoveSmallWindowRestrictions, //解除小窗限制
-            MaxWallpaperScale, //壁纸缩放比例
-            SystemPropertiesHook, //SystemPropertiesHook
-            AllowUntrustedTouches, //允许不受信任的触摸
-            AllowSoundSourceBoth, //允许屏幕录制同时录制系统和麦克风声音
+            DisableFlagSecure, // 允许截图
+            DeleteOnPostNotification, // 上层显示
+            RemoveSmallWindowRestrictions, // 解除小窗限制
+            MaxWallpaperScale, // 壁纸缩放比例
+            SystemPropertiesHook, // SystemPropertiesHook
+            AllowUntrustedTouches, // 允许不受信任的触摸            
         )
     }
 
