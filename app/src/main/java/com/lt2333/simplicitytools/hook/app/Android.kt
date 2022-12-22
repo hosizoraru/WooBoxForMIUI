@@ -19,6 +19,7 @@ object Android : AppRegister() {
             MaxWallpaperScale, //壁纸缩放比例
             SystemPropertiesHook, //SystemPropertiesHook
             AllowUntrustedTouches, //允许不受信任的触摸
+            AllowSoundSourceBoth, //允许屏幕录制同时录制系统和麦克风声音
         )
     }
 

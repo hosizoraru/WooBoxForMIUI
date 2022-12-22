@@ -950,6 +950,12 @@ class SettingsActivity : MIUIActivity() {
                         tipsId = R.string.take_effect_after_reboot
                     ), SwitchV("allow_untrusted_touches")
                 )
+                TextSummaryWithSwitch(
+                  TextSummaryV(
+                    textId = R.string.allow_sound_source_both, 
+                    tipsId = R.string.allow_sound_source_both
+                    ), SwitchV("allow_sound_source_both")
+                )
                 Line()
                 TitleText(textId = R.string.sound)
                 val mediaVolumeStepsSwitchBinding = GetDataBinding({
