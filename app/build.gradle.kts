@@ -55,7 +55,7 @@ dependencies {
     implementation("com.github.kyuubiran:EzXHelper:1.0.3")
     //UI
     implementation(project(":blockmiui"))
-    implementation("androidx.constraintlayout:constraintlayout:2.2.0-alpha04")
+    implementation("androidx.constraintlayout:constraintlayout:2.2.0-alpha05")
     //APP Center
     val appCenterSdkVersion = "5.0.0"
     implementation("com.microsoft.appcenter:appcenter-analytics:${appCenterSdkVersion}")
