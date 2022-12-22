@@ -4,7 +4,7 @@ import com.lt2333.simplicitytools.hook.app.screenrecorder.AllowSoundSourceBoth
 import com.lt2333.simplicitytools.util.xposed.base.AppRegister
 import de.robv.android.xposed.callbacks.XC_LoadPackage
 
-object Cast: AppRegister() {
+object ScreenRecorder: AppRegister() {
     override val packageName: String = "com.miui.screenrecorder"
 
     override fun handleLoadPackage(lpparam: XC_LoadPackage.LoadPackageParam) {
