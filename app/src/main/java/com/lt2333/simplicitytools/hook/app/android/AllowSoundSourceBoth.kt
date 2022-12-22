@@ -11,7 +11,7 @@ object AllowSoundSourceBoth : HookRegister() {
             name == "getInt" && returnType == Int::class.java
         }.hookBefore {
             when (it.args[0] as String) {
-                "ro.vendor.audio.playbackcapture.screen" -> if (it.args[0] == "ro.vendor.audio.playbackcapture.screen) it.result = true
+                "ro.vendor.audio.playbackcapture.screen" -> if (it.args[0] == "ro.vendor.audio.playbackcapture.screen") it.result = true
             }
         }
     }
