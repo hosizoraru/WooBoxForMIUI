@@ -2,11 +2,11 @@ package com.lt2333.simplicitytools.hook.app.android
 
 import com.github.kyuubiran.ezxhelper.utils.findMethod
 import com.github.kyuubiran.ezxhelper.utils.hookMethod
-import com.lt2333.simplicitytools.util.xposed.base.HookRegister
+import com.lt2333.simplicitytools.hook.app.android.ByPassCheckBaseHook
 import de.robv.android.xposed.XposedBridge
 
 
-object GetMinimumSignatureSchemeVersionForTargetSdk : HookRegister() {
+object GetMinimumSignatureSchemeVersionForTargetSdk : ByPassCheckBaseHook() {
     override fun init() {
         try {
             findMethod("android.util.apk.ApkSignatureVerifier") {

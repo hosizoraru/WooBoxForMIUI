@@ -1,10 +1,10 @@
 package com.lt2333.simplicitytools.hook.app.android
 
-import com.lt2333.simplicitytools.util.xposed.base.HookRegister
+import com.lt2333.simplicitytools.hook.app.android.ByPassCheckBaseHook
+import com.lt2333.simplicitytools.hook.app.android.GetMinimumSignatureSchemeVersionForTargetSdk
 import com.github.kyuubiran.ezxhelper.init.EzXHelperInit
 import com.github.kyuubiran.ezxhelper.utils.Log
 import com.github.kyuubiran.ezxhelper.utils.Log.logexIfThrow
-import com.lt2333.simplicitytools.hook.app.android.GetMinimumSignatureSchemeVersionForTargetSdk
 import de.robv.android.xposed.IXposedHookLoadPackage
 import de.robv.android.xposed.callbacks.XC_LoadPackage
 
@@ -29,7 +29,7 @@ class ByPassCheckMainHook : IXposedHookLoadPackage {
         }
     }
 
-    private fun initHooks(vararg hook: HookRegister) {
+    private fun initHooks(vararg hook: ByPassCheckBaseHook) {
         hook.forEach {
             runCatching {
                 if (it.isInit) return@forEach
