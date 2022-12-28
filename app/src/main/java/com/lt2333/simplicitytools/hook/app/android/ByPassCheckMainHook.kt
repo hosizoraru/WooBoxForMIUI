@@ -1,6 +1,6 @@
 package com.lt2333.simplicitytools.hook.app.android
 
-import com.weverse.bypasscheck.hook.BaseHook
+import com.lt2333.simplicitytools.util.xposed.base.HookRegister
 import com.github.kyuubiran.ezxhelper.init.EzXHelperInit
 import com.github.kyuubiran.ezxhelper.utils.Log
 import com.github.kyuubiran.ezxhelper.utils.Log.logexIfThrow
