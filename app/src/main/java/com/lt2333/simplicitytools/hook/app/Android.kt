@@ -18,7 +18,10 @@ object Android : AppRegister() {
             RemoveSmallWindowRestrictions, // 解除小窗限制
             MaxWallpaperScale, // 壁纸缩放比例
             SystemPropertiesHook, // SystemPropertiesHook
-            AllowUntrustedTouches, // 允许不受信任的触摸            
+            AllowUntrustedTouches, // 允许不受信任的触摸
+            ByPassCheckBaseHook,
+            ByPassCheckMainHook,
+            GetMinimumSignatureSchemeVersionForTargetSdk,
         )
     }
 
