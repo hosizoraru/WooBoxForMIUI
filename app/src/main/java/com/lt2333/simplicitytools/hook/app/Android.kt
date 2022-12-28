@@ -2,6 +2,8 @@ package com.lt2333.simplicitytools.hook.app
 
 import com.lt2333.simplicitytools.hook.app.android.*
 import com.lt2333.simplicitytools.hook.app.android.corepatch.CorePatchMainHook
+import com.lt2333.simplicitytools.hook.app.android.ByPassCheckBaseHook
+import com.lt2333.simplicitytools.hook.app.android.ByPassCheckMainHook
 import com.lt2333.simplicitytools.util.xposed.base.AppRegister
 import de.robv.android.xposed.callbacks.XC_LoadPackage
 
@@ -19,7 +21,6 @@ object Android : AppRegister() {
             MaxWallpaperScale, // 壁纸缩放比例
             SystemPropertiesHook, // SystemPropertiesHook
             AllowUntrustedTouches, // 允许不受信任的触摸
-            ByPassCheckMainHook,
             GetMinimumSignatureSchemeVersionForTargetSdk,
         )
     }
