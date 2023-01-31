@@ -60,7 +60,7 @@ object ShowBatteryTemperature : HookRegister() {
                 "com.miui.securitycenter"
             )
 
-            val view = it.thisObject.getObjectField("a") as View
+            val view = it.thisObject.getObjectAs<View>("a")
 
             val textView = view.findViewById<TextView>(currentTemperatureState)
             textView.apply {
@@ -72,6 +72,23 @@ object ShowBatteryTemperature : HookRegister() {
                 typeface = Typeface.create(null, 700, false)
                 height = dp2px(context, 49f)
                 textAlignment = View.TEXT_ALIGNMENT_VIEW_START
+            }
+
+            val temperatureContainer = context.resources.getIdentifier(
+                "temperature_container",
+                "id",
+                "com.miui.securitycenter"
+            )
+
+            val linearL = (view.findViewById<LinearLayout>(temperatureContainer) as LinearLayout).getChildAt(1) as LinearLayout
+            linearL.apply {
+                orientation = LinearLayout.VERTICAL
+            }
+            val l1 = linearL.getChildAt(0)
+            val l2 = linearL.getChildAt(1)
+            val linearLayout = LinearLayout(context)
+            val linearLayout1 = LinearLayout(context).apply { 
+                orientation = LinearLayout.HORIZONTAL 
             }
 
             val tempView = TextView(context)
@@ -91,11 +108,14 @@ object ShowBatteryTemperature : HookRegister() {
                 textAlignment = View.TEXT_ALIGNMENT_VIEW_START
             }
 
-            val tempeValueContainer = context.resources.getIdentifier(
-                "temperature_container",
-                "id",
-                "com.miui.securitycenter"
-            )
+            linearL.removeAllViews()
+
+            linearLayout.addView(l1)
+            linearLayout1.addView(l2)
+            linearLayout1.addView(tempView)
+
+            linearL.addView(linearLayout)
+            linearL.addView(linearLayout1)
 
             val linearLayout = view.findViewById<LinearLayout>(tempeValueContainer)
             linearLayout.addView(tempView)
