@@ -66,27 +66,28 @@ object ShowBatteryTemperature : HookRegister() {
             textView.apply {
                 (layoutParams as LinearLayout.LayoutParams).marginStart = dp2px(context, 25f)
                 (layoutParams as LinearLayout.LayoutParams).topMargin = 0
-                setTextSize(TypedValue.COMPLEX_UNIT_DIP, 36.399998f)
-                setPadding(0, 0, 0, 0)
+                setTextSize(TypedValue.COMPLEX_UNIT_DIP, 36.4f)
+                setPadding(0, dp2px(context, 4f), 0, 0)
                 gravity = Gravity.NO_GRAVITY
-                typeface = Typeface.defaultFromStyle(Typeface.NORMAL)
-                height = dp2px(context, 49.099983f)
+                typeface = Typeface.create(null, 700, false)
+                height = dp2px(context, 49f)
                 textAlignment = View.TEXT_ALIGNMENT_VIEW_START
             }
 
             val tempView = TextView(context)
             tempView.apply {
                 layoutParams = LinearLayout.LayoutParams(
-                    LinearLayout.LayoutParams.MATCH_PARENT,
-                    dp2px(context, 49.099983f)
+                    LinearLayout.LayoutParams.WRAP_CONTENT,
+                    LinearLayout.LayoutParams.WRAP_CONTENT)
                 )
                 (layoutParams as LinearLayout.LayoutParams).marginStart =
                     dp2px(context, 3.599976f)
-                setTextSize(TypedValue.COMPLEX_UNIT_DIP, 13.099977f)
+                setTextSize(TypedValue.COMPLEX_UNIT_DIP, 13.1f)
                 setTextColor(Color.parseColor(if (isDarkMode) "#e6e6e6" else "#333333"))
-                setPadding(0, dp2px(context, 25f), 0, 0)
+                setPadding(0, dp2px(context, 26f), 0, 0)
                 text = "℃"
-                typeface = Typeface.create(null, 500, false)
+                gravity = Gravity.NO_GRAVITY
+                typeface = Typeface.create(null, 700, false)
                 textAlignment = View.TEXT_ALIGNMENT_VIEW_START
             }
 
