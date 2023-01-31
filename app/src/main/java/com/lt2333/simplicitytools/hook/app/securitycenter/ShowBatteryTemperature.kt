@@ -50,10 +50,15 @@ object ShowBatteryTemperature : HookRegister() {
             findMethod("com.miui.powercenter.BatteryFragment\$a") {
                 name == "run"
             }
-        }.hookAfter { 
+        }.hookAfter {
             val context = AndroidAppHelper.currentApplication().applicationContext
-            val isDarkMode = context.resources.configuration.uiMode and Configuration.UI_MODE_NIGHT_MASK == Configuration.UI_MODE_NIGHT_YES
-            val currentTemperatureState = context.resources.getIdentifier("current_temperature_state", "id", "com.miui.securitycenter")
+            val isDarkMode = 
+                context.resources.configuration.uiMode and Configuration.UI_MODE_NIGHT_MASK == Configuration.UI_MODE_NIGHT_YES
+            val currentTemperatureState = context.resources.getIdentifier(
+                "current_temperature_state", 
+                "id", 
+                "com.miui.securitycenter"
+            )
             val view = it.thisObject.getObjectField("a") as View
 
             val textView = view.findViewById<TextView>(currentTemperatureState)
@@ -66,9 +71,13 @@ object ShowBatteryTemperature : HookRegister() {
                 height = dp2px(context, 49f)
                 textAlignment = View.TEXT_ALIGNMENT_VIEW_START
             }
-
-            val temperatureContainer = context.resources.getIdentifier("temperature_container", "id", "com.miui.securitycenter")
-
+            
+            val temperatureContainer = context.resources.getIdentifier(
+                "temperature_container", 
+                "id", 
+                "com.miui.securitycenter"
+            )
+            
             val linearL = (view.findViewById<LinearLayout>(temperatureContainer) as LinearLayout).getChildAt(1) as LinearLayout
             linearL.apply {
                 orientation = LinearLayout.VERTICAL
@@ -77,6 +86,7 @@ object ShowBatteryTemperature : HookRegister() {
             val l2 = linearL.getChildAt(1)
             val linearLayout = LinearLayout(context)
             val linearLayout1 = LinearLayout(context).apply { orientation = LinearLayout.HORIZONTAL }
+
             val tempView = TextView(context)
             tempView.apply {
                 layoutParams = LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT)
@@ -97,20 +107,10 @@ object ShowBatteryTemperature : HookRegister() {
 
             linearL.addView(linearLayout)
             linearL.addView(linearLayout1)
-        }
-            
-
-            val tempeValueContainer = context.resources.getIdentifier(
-                "tempe_value_container",
-                "id",
-                "com.miui.securitycenter"
-            )
 
             val linearLayout = view.findViewById<LinearLayout>(tempeValueContainer)
             linearLayout.addView(tempView)
         }
-        
-        
     }
 
 }
