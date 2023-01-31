@@ -53,14 +53,14 @@ object ShowBatteryTemperature : HookRegister() {
         }.hookAfter {
             val context = AndroidAppHelper.currentApplication().applicationContext
             val isDarkMode =
-            context.resources.configuration.uiMode and Configuration.UI_MODE_NIGHT_MASK == Configuration.UI_MODE_NIGHT_YES
+                context.resources.configuration.uiMode and Configuration.UI_MODE_NIGHT_MASK == Configuration.UI_MODE_NIGHT_YES
             val currentTemperatureState = context.resources.getIdentifier(
                 "current_temperature_state",
                 "id",
                 "com.miui.securitycenter"
             )
 
-            val view = it.thisObject.getObjectAs<View>("a")
+            val view = it.thisObject.getObjectField("a") as View
 
             val textView = view.findViewById<TextView>(currentTemperatureState)
             textView.apply {
