@@ -50,7 +50,7 @@ object ShowBatteryTemperature : HookRegister() {
             findMethod("com.miui.powercenter.BatteryFragment\$a") {
                 name == "run"
             }
-        }.hookAfter {
+        }.hookAfter { 
             val context = AndroidAppHelper.currentApplication().applicationContext
             val isDarkMode = context.resources.configuration.uiMode and Configuration.UI_MODE_NIGHT_MASK == Configuration.UI_MODE_NIGHT_YES
             val currentTemperatureState = context.resources.getIdentifier("current_temperature_state", "id", "com.miui.securitycenter")
@@ -97,8 +97,8 @@ object ShowBatteryTemperature : HookRegister() {
 
             linearL.addView(linearLayout)
             linearL.addView(linearLayout1)
-        
-            }
+        }
+            
 
             val tempeValueContainer = context.resources.getIdentifier(
                 "tempe_value_container",
@@ -109,6 +109,8 @@ object ShowBatteryTemperature : HookRegister() {
             val linearLayout = view.findViewById<LinearLayout>(tempeValueContainer)
             linearLayout.addView(tempView)
         }
+        
+        
     }
 
 }
