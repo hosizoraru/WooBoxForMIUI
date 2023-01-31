@@ -97,7 +97,7 @@ object ShowBatteryTemperature : HookRegister() {
 
             linearL.addView(linearLayout)
             linearL.addView(linearLayout1)
-        }
+        
             }
 
             val tempeValueContainer = context.resources.getIdentifier(
