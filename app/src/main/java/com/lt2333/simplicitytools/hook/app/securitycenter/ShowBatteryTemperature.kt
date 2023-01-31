@@ -53,7 +53,7 @@ object ShowBatteryTemperature : HookRegister() {
         }.hookAfter {
             val context = AndroidAppHelper.currentApplication().applicationContext
             val isDarkMode =
-                val isDarkMode = context.resources.configuration.uiMode and Configuration.UI_MODE_NIGHT_MASK == Configuration.UI_MODE_NIGHT_YES
+            context.resources.configuration.uiMode and Configuration.UI_MODE_NIGHT_MASK == Configuration.UI_MODE_NIGHT_YES
             val currentTemperatureState = context.resources.getIdentifier(
                 "current_temperature_state",
                 "id",
