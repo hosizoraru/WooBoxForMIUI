@@ -78,7 +78,7 @@ object ShowBatteryTemperature : HookRegister() {
             tempView.apply {
                 layoutParams = LinearLayout.LayoutParams(
                     LinearLayout.LayoutParams.WRAP_CONTENT,
-                    LinearLayout.LayoutParams.WRAP_CONTENT)
+                    LinearLayout.LayoutParams.WRAP_CONTENT
                 )
                 (layoutParams as LinearLayout.LayoutParams).marginStart =
                     dp2px(context, 3.599976f)
