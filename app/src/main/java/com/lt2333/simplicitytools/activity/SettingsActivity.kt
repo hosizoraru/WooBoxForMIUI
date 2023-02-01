@@ -1295,7 +1295,7 @@ class SettingsActivity : MIUIActivity() {
                         onClickListener = {
                             try {
                                 val uri =
-                                    Uri.parse("https://github.com/LittleTurtle2333/SimplicityTools#第三方开源引用")
+                                    Uri.parse("https://github.com/LittleTurtle2333/SimplicityTools#%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BC%80%E6%BA%90%E5%BC%95%E7%94%A8")
                                 val intent = Intent(Intent.ACTION_VIEW, uri)
                                 startActivity(intent)
                             } catch (e: Exception) {
@@ -1308,7 +1308,7 @@ class SettingsActivity : MIUIActivity() {
                 TextSummaryArrow(TextSummaryV(textId = R.string.qq_channel, onClickListener = {
                     try {
                         val uri =
-                            Uri.parse("https://qun.qq.com/qqweb/qunpro/share?inviteCode=29Mu64
+                            Uri.parse("https://qun.qq.com/qqweb/qunpro/share?_wv=3&_wwv=128&inviteCode=29Mu64&from=246610&biz=ka")
                         val intent = Intent(Intent.ACTION_VIEW, uri)
                         startActivity(intent)
                     } catch (e: Exception) {
