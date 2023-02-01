@@ -796,7 +796,6 @@ class SettingsActivity : MIUIActivity() {
                         tipsId = R.string.home_double_tap_to_sleep_summary
                     ), SwitchV("lock_screen_double_tap_to_sleep")
                 )
-                TextSummaryWithSwitch(TextSummaryV(textId = R.string.no_need_to_enter_password_when_power_on, tipsId = R.string.no_need_to_enter_password_when_power_on_summary), SwitchV("no_need_to_enter_password_when_power_on"))
                 Line()
                 TitleText(textId = R.string.old_quick_settings_panel)
                 val oldQSCustomSwitchBinding = GetDataBinding({
@@ -925,8 +924,8 @@ class SettingsActivity : MIUIActivity() {
                                 setTitle(R.string.max_wallpaper_scale)
                                 setEditText(
                                     "",
-                                    "${activity.getString(R.string.def)}1.1, ${activity.getString(R.string.current)}${
-                                        safeSP.getFloat("max_wallpaper_scale", 1.1f)
+                                    "${activity.getString(R.string.def)}1.2, ${activity.getString(R.string.current)}${
+                                        safeSP.getFloat("max_wallpaper_scale", 1.2f)
                                     }"
                                 )
                                 setLButton(textId = R.string.cancel) {
@@ -1296,7 +1295,7 @@ class SettingsActivity : MIUIActivity() {
                         onClickListener = {
                             try {
                                 val uri =
-                                    Uri.parse("https://github.com/LittleTurtle2333/SimplicityTools#%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BC%80%E6%BA%90%E5%BC%95%E7%94%A8")
+                                    Uri.parse("https://github.com/LittleTurtle2333/SimplicityTools#第三方开源引用")
                                 val intent = Intent(Intent.ACTION_VIEW, uri)
                                 startActivity(intent)
                             } catch (e: Exception) {
@@ -1309,7 +1308,7 @@ class SettingsActivity : MIUIActivity() {
                 TextSummaryArrow(TextSummaryV(textId = R.string.qq_channel, onClickListener = {
                     try {
                         val uri =
-                            Uri.parse("https://qun.qq.com/qqweb/qunpro/share?_wv=3&_wwv=128&inviteCode=29Mu64&from=246610&biz=ka")
+                            Uri.parse("https://qun.qq.com/qqweb/qunpro/share?inviteCode=29Mu64
                         val intent = Intent(Intent.ACTION_VIEW, uri)
                         startActivity(intent)
                     } catch (e: Exception) {
