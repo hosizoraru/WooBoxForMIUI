@@ -28,12 +28,13 @@ public class CorePatchForT extends CorePatchForSv2 {
             protected void beforeHookedMethod(MethodHookParam param) {
                 // Don't handle PERMISSION (grant SIGNATURE permissions to pkgs with this cert)
                 // Or applications will have all privileged permissions
-                // https://cs.android.com/android/platform/superproject/+/master:frameworks/base/core/java/android/content/pm/PackageParser.java;l=5947?q=CertCapabilities
+                // https://cs.android.com/android/platform/superproject/ /master:frameworks/base/core/java/android/content/pm/PackageParser.java;l=5947?q=CertCapabilities
                 if (((Integer) param.args[1] != 4) && prefs.getBoolean("digestCreak", true)) {
                     param.setResult(true);
                 }
             }
         });
+
         // Package " + packageName + " signatures do not match previously installed version; ignoring!"
         // public boolean checkCapability(String sha256String, @CertCapabilities int flags) {
         // public boolean checkCapability(SigningDetails oldDetails, @CertCapabilities int flags)
@@ -43,7 +44,7 @@ public class CorePatchForT extends CorePatchForSv2 {
                 Log.e("CorePatch", "checkCapability");
                 // Don't handle PERMISSION (grant SIGNATURE permissions to pkgs with this cert)
                 // Or applications will have all privileged permissions
-                // https://cs.android.com/android/platform/superproject/+/master:frameworks/base/core/java/android/content/pm/PackageParser.java;l=5947?q=CertCapabilities
+                // https://cs.android.com/android/platform/superproject/ /master:frameworks/base/core/java/android/content/pm/PackageParser.java;l=5947?q=CertCapabilities
                 if (prefs.getBoolean("authcreak", true)) {
                     if ((Integer) param.args[1] != 4) {
                         param.setResult(true);

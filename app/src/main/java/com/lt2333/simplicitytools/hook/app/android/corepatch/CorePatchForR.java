@@ -36,11 +36,11 @@ public class CorePatchForR extends XposedHelper implements IXposedHookLoadPackag
     @Override
     public void handleLoadPackage(XC_LoadPackage.LoadPackageParam loadPackageParam) throws IllegalAccessException, InvocationTargetException, InstantiationException {
 
-        Log.d(CorePatchMainHook.TAG, "downgrade=" + prefs.getBoolean("downgrade", true));
-        Log.d(CorePatchMainHook.TAG, "authcreak=" + prefs.getBoolean("authcreak", true));
-        Log.d(CorePatchMainHook.TAG, "digestCreak=" + prefs.getBoolean("digestCreak", true));
-        Log.d(CorePatchMainHook.TAG, "UsePreSig=" + prefs.getBoolean("UsePreSig", false));
-        
+        Log.d(CorePatchMainHook.TAG, "downgrade" + prefs.getBoolean("downgrade->", true));
+        Log.d(CorePatchMainHook.TAG, "authcreak" + prefs.getBoolean("authcreak->", true));
+        Log.d(CorePatchMainHook.TAG, "digestCreak" + prefs.getBoolean("digestCreak->", true));
+        Log.d(CorePatchMainHook.TAG, "UsePreSig" + prefs.getBoolean("UsePreSig->", false));
+
         // 允许降级
         findAndHookMethod("com.android.server.pm.PackageManagerService", loadPackageParam.classLoader,
                 "checkDowngrade",
@@ -86,7 +86,7 @@ public class CorePatchForR extends XposedHelper implements IXposedHookLoadPackag
             protected void beforeHookedMethod(MethodHookParam param) {
                 // Don't handle PERMISSION (grant SIGNATURE permissions to pkgs with this cert)
                 // Or applications will have all privileged permissions
-                // https://cs.android.com/android/platform/superproject/+/master:frameworks/base/core/java/android/content/pm/PackageParser.java;l=5947?q=CertCapabilities
+                // https://cs.android.com/android/platform/superproject/ /master:frameworks/base/core/java/android/content/pm/PackageParser.java;l=5947?q=CertCapabilities
                 if (prefs.getBoolean("authcreak", true)) {
                     if ((Integer) param.args[1] != 4) {
                         param.setResult(true);
@@ -219,7 +219,7 @@ public class CorePatchForR extends XposedHelper implements IXposedHookLoadPackag
             protected void beforeHookedMethod(MethodHookParam param) {
                 // Don't handle PERMISSION (grant SIGNATURE permissions to pkgs with this cert)
                 // Or applications will have all privileged permissions
-                // https://cs.android.com/android/platform/superproject/+/master:frameworks/base/core/java/android/content/pm/PackageParser.java;l=5947?q=CertCapabilities
+                // https://cs.android.com/android/platform/superproject/ /master:frameworks/base/core/java/android/content/pm/PackageParser.java;l=5947?q=CertCapabilities
                 if (((Integer) param.args[1] != 4) && prefs.getBoolean("digestCreak", true)) {
                     param.setResult(true);
                 }
