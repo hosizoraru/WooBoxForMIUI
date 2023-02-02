@@ -76,7 +76,7 @@
   <string name="developer">開発者</string>
   <string name="thank_list">感謝リスト</string>
   <string name="third_party_open_source_statement">サードパーティーのオープンソースに関する声明</string>
-  <string name="corepacth">インストール制限を削除</string>
+  <string name="corepacth">インストール制限を削除\nすでにサポートされていますA13MIUI13/14</string>
   <string name="corepacth_summary">ダウングレード、異なる署名、署名なしでのインストールを許可</string>
   <string name="prevent_recovery_of_battery_optimization_white_list">バッテリー最適化ホワイトリストのリカバリを防止する</string>
   <string name="failed_after_restart">システム再起動後に復元されます</string>
@@ -122,7 +122,7 @@
   <string name="show_city">市区町村を表示</string>
   <string name="lock_max_fps_summary">リアルタイム切り替えのためのドロップダウンコントロールセンタークイック設定の追加をサポート</string>
   <string name="control_center">コントロールセンター</string>
-  <string name="control_center_weather_summary">Mi Smart Hub バージョンは現在サポートされていません</string>
+  <string name="control_center_weather_summary">Mi Smart Hub バージョンがサポートされるようになりました (完全ではありません)</string>
   <string name="not_support">古いバージョンの LSPosed を使用しているか、または、LSPosed がアクティブではないようです。LSPosed を更新するか、それを有効にしてもう一度やり直してください。</string>
   <string name="matters_needing_attention_context">最初のインストールまたは更新後は端末を再起動することをお勧めします\n多くの変更は右上隅から再起動することで適用されます</string>
   <string name="are_you_sure_reboot">再起動しますか？</string>
@@ -141,7 +141,7 @@
   <string name="hide_network_speed_splitter">ネットワーク速度分割器を非表示</string>
   <string name="updater">更新</string>
   <string name="remove_ota_validate">*OTA 検証を無効化 [実験的]</string>
-  <string name="remove_ota_validate_summary">- 仮想AB対応端末のみ対応しています。\ n -内部テストの資格を必要とせず、内部テストパッケージをインストールできるようにします。\ n -内部テスト許可を持っている方は、内部のテストの更新を受け取れなくなるため、システムアップデートをブロックするために使用できます。\ n -OSバージョンが変わる場合は工場出荷状態に戻すことをお勧めします。\ n -非公式のROMでの使用には非対応です。</string>
+  <string name="remove_ota_validate_summary">- 仮想AB対応端末のみ対応しています。\ n -内部テストの資格を必要とせず、内部テストパッケージをインストールできるようにします。\ n -内部テスト許可を持っている方は、内部のテストの更新を受け取れなくなるため、システムアップデートをブロックするために使用できます。\ n -OSバージョンが変わる場合は工場出荷状態に戻すことをお勧めします。\ n -非公式のROMでの使用には非対応です。 \n -すでにサポートされていますA13MIUI13/14</string>
   <string name="settings">設定</string>
   <string name="show_notification_importance">通知の重要性を表示</string>
   <string name="show_notification_importance_summary">MIUI 12 以降のバージョンで非表示になっている通知の重要性設定を表示します</string>
@@ -233,4 +233,6 @@
   <string name="make_millet_more_aggressive_summary">バックグラウンドアプリに通知、実行中のサービスやプロセスがあっても停止させることを許可します。\n停止させたくないアプリはバッテリーセーバーを制限なしに設定してください。\n有効にする前に Tombstone と NoANR 関連モジュールをアンインストールしてください。</string>
   <string name="make_millet_ignore_active">アクティブなアプリの停止を許可</string>
   <string name="make_millet_ignore_active_summary">非常にアグレッシブで、アプリの実行に影響する可能性があります</string>
+  <string name="no_need_to_enter_password_when_power_on">起動後にパスワードを入力する必要はありません</string>
+  <string name="no_need_to_enter_password_when_power_on_summary">携帯電話は有効にするために暗号化されていません</string>
 </resources>
