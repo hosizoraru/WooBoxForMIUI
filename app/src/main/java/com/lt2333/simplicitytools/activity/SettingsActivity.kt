@@ -561,9 +561,11 @@ class SettingsActivity : MIUIActivity() {
                     }.show()
                 }, dataBindingRecv = bigMobileTypeIconBinding.binding.getRecv(2))
                 Text(textId = R.string.maximum_number_of_notification_icons)
-                SeekBarWithText("maximum_number_of_notification_icons", 1, 30, 3)
+                SeekBarWithText("maximum_number_of_notification_icons", 1, 100, 3)
                 Text(textId = R.string.maximum_number_of_notification_dots)
                 SeekBarWithText("maximum_number_of_notification_dots", 0, 4, 3)
+                Text(textId = R.string.maximum_number_of_lockscreen_notification_dots)
+                SeekBarWithText("maximum_number_of_lockscreen_notification_dots",1,100,3)
                 TextSummaryArrow(
                     TextSummaryV(
                         textId = R.string.battery_percentage_font_size,

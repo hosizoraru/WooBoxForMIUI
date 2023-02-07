@@ -99,6 +99,9 @@
   <string name="hide_battery_percentage_icon_summary">需自行開啟電池百分比外顯功能</string>
   <string name="hide_status_bar_network_speed_second_summary">隱藏狀態欄網速組件的（/s）單位</string>
   <string name="remove_the_maximum_number_of_notification_icons_summary">解除狀態欄最多只能顯示3個通知的限制</string>
+  <string name="maximum_number_of_notification_icons">通知圖示最大數量</string>
+  <string name="maximum_number_of_notification_dots">通知點點數量</string>
+  <string name="maximum_number_of_lockscreen_notification_dots">鎖屏界面通知圖標最大數量</string>
   <string name="scope_systemui_summary">自定義系統界面、狀態欄、鎖定螢幕等</string>
   <string name="scope_android_summary">首次啟動模塊 或 模塊更新後，\n此處的功能需重啟系統後才能生效</string>
   <string name="scope_other_summary">手機管家、相冊編輯、電量與性能等</string>
@@ -119,7 +122,6 @@
   <string name="lock_max_fps_summary">支持添加下拉控制中心快速開關，實時切換</string>
   <string name="control_center">控制中心</string>
   <string name="control_center_weather_summary">已支持妙享版控制中心(不完美)</string>
-  
   <string name="not_support">您似乎正在使用過時的 LSPosed 版本或 LSPosed 未啟動，請更新 LSPosed 或者啟動後再試。</string>
   <string name="matters_needing_attention_context">首次啟動或更新後建議重啟手機\n絕大部分功能更改後需要在右上角重啟作用域後生效</string>
   <string name="are_you_sure_reboot">確定重啟系統？</string>

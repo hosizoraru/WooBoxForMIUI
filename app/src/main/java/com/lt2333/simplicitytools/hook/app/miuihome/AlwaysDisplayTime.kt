@@ -9,7 +9,7 @@ object AlwaysDisplayTime : HookRegister() {
 
     override fun init() {
         findMethod("com.miui.home.launcher.Workspace") {
-            name == "isScreenHasClockGadget" && parameterCount == 1
+            name == "isClockWidget" && parameterCount == 1
         }.hookBefore {
             hasEnable("home_time") {
                 it.result = false

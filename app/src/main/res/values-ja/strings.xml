@@ -199,6 +199,7 @@
   <string name="clock_center_and_icon_left">時計を中央、アイコンを左</string>
   <string name="maximum_number_of_notification_icons">通知アイコンの最大数</string>
   <string name="maximum_number_of_notification_dots">通知ドットの最大数</string>
+  <string name="maximum_number_of_lockscreen_notification_dots">ロック画面の通知アイコンの最大数</string>
   <string name="custom_mobile_type_text">モバイルタイプのカスタムテキスト</string>
   <string name="custom_mobile_type_text_switch">モバイルタイプのカスタムテキストスイッチ</string>
   <string name="downgr">ダウングレードを許可</string>
