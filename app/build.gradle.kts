@@ -17,6 +17,8 @@ android {
         versionName = "1.6.9-Voyager"
     }
 
+    namespace 'com.lt2333.simplicitytools'
+
     buildTypes {
         release {
             isMinifyEnabled = true
