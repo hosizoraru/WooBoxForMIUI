@@ -8,20 +8,22 @@ import com.lt2333.simplicitytools.utils.xposed.base.HookRegister
 object AlwaysDisplayTimeForS : HookRegister() {
 
     override fun init() {
-        findMethod("com.miui.home.launcher.Workspace") {
-            name == "isScreenHasClockGadget" && parameterCount == 1
-        }.hookBefore {
-            hasEnable("home_time") {
-                it.result = false
+        try {
+            findMethod("com.miui.home.launcher.Workspace") {
+                name == "isScreenHasClockGadget"
             }
-        }
-        findMethod("com.miui.home.launcher.Workspace") {
-            name == "isClockWidget" && parameterCount == 1
+        } catch (e: Exception) {
+            findMethod("com.miui.home.launcher.Workspace") {
+                name == "isScreenHasClockWidget"
+            }
+        } catch (e: Exception) {
+            findMethod("com.miui.home.launcher.Workspace") {
+                name == "isClockWidget"
+            }
         }.hookBefore {
             hasEnable("home_time") {
                 it.result = false
             }
         }
     }
-
 }
