@@ -44,7 +44,7 @@ object SystemUI: AppRegister() {
                     CanNotificationSlideForS, //允许下滑通知打开小窗
                     LockScreenClockDisplaySecondsForS, // 锁屏时钟显示秒
                     ShowWifiStandardForS, // 显示 WIFI 角标
-                    NoPasswordHookForS, // 开机免密码
+                    NoPasswordHookForS, // 显示 WIFI 角标
                 )
             }
             Build.VERSION_CODES.S -> {
@@ -81,7 +81,7 @@ object SystemUI: AppRegister() {
                     CanNotificationSlideForS, //允许下滑通知打开小窗
                     LockScreenClockDisplaySecondsForS, // 锁屏时钟显示秒
                     ShowWifiStandardForS, // 显示 WIFI 角标
-                    NoPasswordHookForS, // 开机免密码
+                    NoPasswordHookForS, // 显示 WIFI 角标
                 )
             }
         }

@@ -452,7 +452,7 @@ class SystemUIPageForS : BasePage() {
             }.show()
         }, dataBindingRecv = bigMobileTypeIconBinding.binding.getRecv(2))
         Text(textId = R.string.maximum_number_of_notification_icons)
-        SeekBarWithText("maximum_number_of_notification_icons", 1, 50, 3)
+        SeekBarWithText("maximum_number_of_notification_icons", 1, 30, 3)
         Text(textId = R.string.maximum_number_of_notification_dots)
         SeekBarWithText("maximum_number_of_notification_dots", 0, 4, 3)
         TextSummaryArrow(
@@ -687,11 +687,6 @@ class SystemUIPageForS : BasePage() {
                 tipsId = R.string.home_double_tap_to_sleep_summary
             ), SwitchV("lock_screen_double_tap_to_sleep")
         )
-        TextSummaryWithSwitch(
-            TextSummaryV(
-                textId = R.string.no_need_to_enter_password_when_power_on, 
-                tipsId = R.string.no_need_to_enter_password_when_power_on_summary
-            ), SwitchV("no_need_to_enter_password_when_power_on"))
         Line()
         TitleText(textId = R.string.old_quick_settings_panel)
         val oldQSCustomSwitchBinding = GetDataBinding({
