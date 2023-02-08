@@ -7,6 +7,7 @@ plugins {
 }
 
 android {
+    namespace "com.lt2333.simplicitytools"
     compileSdk = 33
     buildToolsVersion = "33.0.1"
     defaultConfig {
@@ -16,8 +17,6 @@ android {
         versionCode = 69
         versionName = "1.6.9-Voyager"
     }
-
-    namespace 'com.lt2333.simplicitytools'
 
     buildTypes {
         release {
