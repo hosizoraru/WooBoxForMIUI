@@ -49,7 +49,7 @@ jobs:
         run: chmod +x gradlew
 
       - name: Build with Gradle
-        run: bash ./gradlew
+        run: bash ./gradlew assemble
 
       - name: Upload release
         uses: actions/upload-artifact@v3
