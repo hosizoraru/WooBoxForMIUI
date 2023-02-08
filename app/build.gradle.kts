@@ -5,11 +5,14 @@ plugins {
     id("kotlin-android")
 }
 
+setupAppModule  {
+    namespace = "com.lt2333.simplicitytools"
+}
+
 android {
     buildFeatures {
         buildConfig = true
     }
-    namespace = "com.lt2333.simplicitytools"
     compileSdk = 33
     buildToolsVersion = "33.0.1"
     defaultConfig {
