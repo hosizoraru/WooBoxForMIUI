@@ -1,5 +1,4 @@
 import com.android.build.gradle.internal.api.BaseVariantOutputImpl
-import com.android.build.api.variant.BuildConfigField
 
 plugins {
     id("com.android.application")
@@ -7,7 +6,9 @@ plugins {
 }
 
 android {
-    namespace "com.lt2333.simplicitytools"
+    buildFeatures {
+        buildConfig = true
+    }
     compileSdk = 33
     buildToolsVersion = "33.0.1"
     defaultConfig {
@@ -16,6 +17,7 @@ android {
         targetSdk = 33
         versionCode = 69
         versionName = "1.6.9-Voyager"
+        buildConfigField("String", "BUILD_TIME", "\"${System.currentTimeMillis()}\"")
     }
 
     buildTypes {
@@ -47,16 +49,6 @@ android {
         outputs.all {
             (this as BaseVariantOutputImpl).outputFileName = "WooBoxForMIUI-$versionName-$name.apk"
         }
-    }
-}
-
-androidComponents {
-    onVariants {
-       it.buildConfigFields.put(
-            "BUILD_TIME", BuildConfigField(
-                "String", "\"" + System.currentTimeMillis().toString() + "\"", "build timestamp"
-            )
-        )
     }
 }
 
