@@ -76,7 +76,7 @@
     <string name="developer">开发者</string>
     <string name="thank_list">感谢名单</string>
     <string name="third_party_open_source_statement">第三方开源声明</string>
-    <string name="corepacth">解除安装限制</string>
+    <string name="corepacth">解除安装限制\n已支持A13MIUI13/14</string>
     <string name="corepacth_summary">支持降级/不同签名/无签名安装</string>
     <string name="prevent_recovery_of_battery_optimization_white_list">防止恢复电池优化白名单</string>
     <string name="failed_after_restart">系统重启后仍会还原</string>
@@ -122,7 +122,7 @@
     <string name="show_city">显示城市</string>
     <string name="lock_max_fps_summary">支持添加下拉控制中心快速开关，实时切换</string>
     <string name="control_center">控制中心</string>
-    <string name="control_center_weather_summary">暂不支持妙享版控制中心</string>
+    <string name="control_center_weather_summary">已支持妙享版控制中心(不完美)</string>
     <string name="not_support">您似乎正在使用过时的 LSPosed 版本或 LSPosed 未激活，请更新 LSPosed 或者激活后再试。</string>
     <string name="matters_needing_attention_context">首次激活或更新后建议重启手机\n绝大部分功能更改后需要在右上角重启作用域后生效</string>
     <string name="are_you_sure_reboot">确定重启系统？</string>
@@ -141,7 +141,7 @@
     <string name="hide_network_speed_splitter">隐藏网速分隔符</string>
     <string name="updater">系统更新</string>
     <string name="remove_ota_validate">*移除OTA验证 [实验性]</string>
-    <string name="remove_ota_validate_summary">- 仅支持VAB系列使用，其余系列请不要开启。\n- 无需内测试资格即可刷入完整内测包。\n- 拥有内测权限的用户将无法接收内测更新\n可用于屏蔽系统更新。\n- 跨版本类型升级后，建议清空数据。\n- 不支持非官方ROM使用。</string>
+    <string name="remove_ota_validate_summary">- 仅支持VAB系列使用，其余系列请不要开启。\n- 无需内测试资格即可刷入完整内测包。\n- 拥有内测权限的用户将无法接收内测更新\n可用于屏蔽系统更新。\n- 跨版本类型升级后，建议清空数据。\n- 不支持非官方ROM使用。\n- 已经更换了Hook方案,支持A13MIUI14</string>
     <string name="settings">设置</string>
     <string name="show_notification_importance">显示通知重要程度</string>
     <string name="show_notification_importance_summary">显示 MIUI 12 及之后版本被隐藏的通知重要程度设置</string>
@@ -162,6 +162,8 @@
     <string name="hide_zen_icon">隐藏 勿扰 图标</string>
     <string name="hide_icon">隐藏图标</string>
     <string name="double_tap_to_sleep">双击锁定屏幕</string>
+    <string name="no_need_to_enter_password_when_power_on">开机免输密码</string>
+    <string name="no_need_to_enter_password_when_power_on_summary">手机没启用加密才会生效</string>
     <string name="home_double_tap_to_sleep_summary">双击空白位置锁屏</string>
     <string name="old_quick_settings_panel">旧版快速设置面板</string>
     <string name="old_qs_custom_switch">自定义行列数</string>
@@ -199,6 +201,7 @@
     <string name="clock_center_and_icon_left">时间居中+左侧图标</string>
     <string name="maximum_number_of_notification_icons">通知图标最大数量</string>
     <string name="maximum_number_of_notification_dots">通知点数最大数量</string>
+    <string name="maximum_number_of_lockscreen_notification_icons">锁屏界面通知图标最大数量</string>
     <string name="custom_mobile_type_text">自定义移动类型文本</string>
     <string name="custom_mobile_type_text_switch">自定义移动类型文本开关</string>
     <string name="downgr">允许降级安装应用</string>

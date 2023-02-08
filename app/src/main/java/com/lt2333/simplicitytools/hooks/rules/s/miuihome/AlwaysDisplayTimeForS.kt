@@ -15,6 +15,13 @@ object AlwaysDisplayTimeForS : HookRegister() {
                 it.result = false
             }
         }
+        findMethod("com.miui.home.launcher.Workspace") {
+            name == "isClockWidget" && parameterCount == 1
+        }.hookBefore {
+            hasEnable("home_time") {
+                it.result = false
+            }
+        }
     }
 
 }

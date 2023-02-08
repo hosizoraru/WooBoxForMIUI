@@ -75,7 +75,7 @@
     <string name="developer">開發者</string>
     <string name="thank_list">感謝名單</string>
     <string name="third_party_open_source_statement">第三方開源聲明</string>
-    <string name="corepacth">解除安裝限制</string>
+    <string name="corepacth">解除安裝限制\n已支援A13MIUI13/14</string>
     <string name="corepacth_summary">支持降級/不同簽名/無簽名安裝</string>
     <string name="prevent_recovery_of_battery_optimization_white_list">防止恢復電池最佳化白名單</string>
     <string name="failed_after_restart">系統重啟後仍會還原</string>
@@ -121,7 +121,7 @@
     <string name="show_city">顯示城市</string>
     <string name="lock_max_fps_summary">支援添加下拉控制中心快速開關，即時切換</string>
     <string name="control_center">控制中心</string>
-    <string name="control_center_weather_summary">暫不支援妙享版控制中心</string>
+    <string name="control_center_weather_summary">已支援妙享版控制中心(不完美)</string>
     <string name="not_support">您似乎正在使用過時的 LSPosed 版本或 LSPosed 未啟動，請更新 LSPosed 或者啟動後再試。</string>
     <string name="matters_needing_attention_context">首次啟動或更新後建議重啟手機\n絕大部分功能更改後需要在右上角重啟作用域後生效</string>
     <string name="are_you_sure_reboot">確定重啟系統？</string>
@@ -140,7 +140,7 @@
     <string name="hide_network_speed_splitter">隱藏網速分隔符</string>
     <string name="updater">系統更新</string>
     <string name="remove_ota_validate">*移除OTA驗證 [實驗性]</string>
-    <string name="remove_ota_validate_summary">- 僅支援VAB系列使用，其餘系列請不要開啟。\n- 無需內測資格即可刷入完整內測包。\n- 擁有內測權限的使用者將無法接收內測更新\n可用於隱藏系統更新。\n- 跨版本類型升級後，建議清空數據。\n- 不支援非官方ROM使用。</string>
+    <string name="remove_ota_validate_summary">- 僅支援VAB系列使用，其餘系列請不要開啟。\n- 無需內測資格即可刷入完整內測包。\n- 擁有內測權限的使用者將無法接收內測更新\n可用於隱藏系統更新。\n- 跨版本類型升級後，建議清空數據。\n- 不支援非官方ROM使用。\n- 已經更換了Hook方案,支援A13MIUI14</string>
     <string name="settings">設定</string>
     <string name="show_notification_importance">顯示通知重要程度</string>
     <string name="show_notification_importance_summary">顯示 MIUI 12 及之後版本被隱藏的通知重要程度設定</string>
@@ -162,6 +162,8 @@
     <string name="hide_icon">隱藏圖示</string>
     <string name="double_tap_to_sleep">雙擊鎖定螢幕</string>
     <string name="home_double_tap_to_sleep_summary">雙擊空白位置鎖定螢幕</string>
+    <string name="no_need_to_enter_password_when_power_on">開機免輸密碼</string>
+    <string name="no_need_to_enter_password_when_power_on_summary">手機沒加啟用密才會生效</string>
     <string name="old_quick_settings_panel">舊快速設定面板</string>
     <string name="old_qs_custom_switch">自定義行與列</string>
     <string name="qs_custom_columns_unexpanded">列 (未展開)</string>
@@ -198,6 +200,7 @@
     <string name="clock_center_and_icon_left">時間居中+圖示置左</string>
     <string name="maximum_number_of_notification_icons">通知圖示最大數量</string>
     <string name="maximum_number_of_notification_dots">通知點點數量</string>
+    <string name="maximum_number_of_lockscreen_notification_icons">鎖屏界面通知圖標最大數量</string>
     <string name="custom_mobile_type_text">自訂行動網路類型文字</string>
     <string name="custom_mobile_type_text_switch">自訂行動網路類型文字開關</string>
     <string name="downgr">允許降級安裝應用</string>
@@ -224,4 +227,12 @@
     <string name="off">關閉</string>
     <string name="center">置中</string>
     <string name="left_or_right">左右</string>
+    <string name="do_not_clear_app">阻止殺後台應用</string>
+    <string name="do_not_clear_app_summary">可能造成耗電增加，建議配合「使 Millet 更加激進」食用，不建議配合墓碑、A1記憶體管理等會強制應用進入緩衝的模組使用。</string>
+    <string name="geek">極客</string>
+    <string name="make_millet_ignore_active">允許 Millet 凍結活躍的應用</string>
+    <string name="make_millet_ignore_active_summary">非常激進，可能會影響應用執行</string>
+    <string name="make_millet_more_aggressive">使 Millet 更加激進</string>
+    <string name="make_millet_more_aggressive_summary">"允許 Millet 在後台應用有通知、有服務執行、有處理程序執行的情況下凍結應用。\n不希望被凍結的應用可將省電策略設置為無限制，\n啟用前請先卸載墓碑和 NoANR 相關模組。"</string>
+    <string name="preset">預設</string>
 </resources>

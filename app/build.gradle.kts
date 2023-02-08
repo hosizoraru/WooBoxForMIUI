@@ -7,12 +7,13 @@ plugins {
 
 android {
     compileSdk = 33
+    buildToolsVersion = "33.0.1"
     defaultConfig {
         applicationId = "com.lt2333.simplicitytools"
         minSdk = 31
         targetSdk = 33
-        versionCode = 69
-        versionName = "1.6.9"
+        versionCode = 70
+        versionName = "1.6.9-Voyager"
         buildConfigField("String", "BUILD_TIME", "\"${System.currentTimeMillis()}\"")
     }
 
@@ -54,10 +55,10 @@ dependencies {
     implementation("com.github.kyuubiran:EzXHelper:1.0.3")
     //UI
     implementation(project(":blockmiui"))
-    implementation("androidx.constraintlayout:constraintlayout:2.1.3")
+    implementation("androidx.constraintlayout:constraintlayout:2.2.0-alpha06")
     //APP Center
-    val appCenterSdkVersion = "4.4.3"
+    val appCenterSdkVersion = "5.0.0"
     implementation("com.microsoft.appcenter:appcenter-analytics:${appCenterSdkVersion}")
     implementation("com.microsoft.appcenter:appcenter-crashes:${appCenterSdkVersion}")
-    implementation("androidx.core:core-splashscreen:1.0.0-rc01")
+    implementation("androidx.core:core-splashscreen:1.0.0")
 }
