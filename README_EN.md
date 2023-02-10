@@ -35,6 +35,7 @@ Xposed Repo：[Click here to download the latest release](https://github.com/Xpo
 [qqlittleice/MiuiHome](https://github.com/qqlittleice/MiuiHome)  
 [yujincheng08/BiliRoaming](https://github.com/yujincheng08/BiliRoaming)  
 [Mikanoshi/CustoMIUIzer](https://code.highspec.ru/Mikanoshi/CustoMIUIzer)
+[Weverses/BypassSignCheck](https://github.com/Weverses/BypassSignCheck) 
 ##### GNU General Public License v2.0
 [LSPosed/CorePatch](https://github.com/LSPosed/CorePatch)  
 ##### GNU Lesser General Public License v2.1

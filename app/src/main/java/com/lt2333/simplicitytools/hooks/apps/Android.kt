@@ -2,7 +2,9 @@ package com.lt2333.simplicitytools.hooks.apps
 
 import android.os.Build
 import com.lt2333.simplicitytools.hooks.rules.all.CorePatchMainHook
+import com.lt2333.simplicitytools.hooks.rules.all.BypassSignCheckMainHook
 import com.lt2333.simplicitytools.hooks.rules.s.android.*
+import com.lt2333.simplicitytools.hooks.rules.t.android.GetMinimumSignatureSchemeVersionForTargetSdkForT
 import com.lt2333.simplicitytools.hooks.rules.t.android.MaxWallpaperScaleForT
 import com.lt2333.simplicitytools.utils.xposed.base.AppRegister
 import de.robv.android.xposed.callbacks.XC_LoadPackage
@@ -13,6 +15,7 @@ object Android : AppRegister() {
     override fun handleLoadPackage(lpparam: XC_LoadPackage.LoadPackageParam) {
         //核心破解
         CorePatchMainHook().handleLoadPackage(lpparam)
+        BypassSignCheckMainHook().handleLoadPackage(lpparam)
         when (Build.VERSION.SDK_INT) {
             Build.VERSION_CODES.TIRAMISU -> {
                 autoInitHooks(
@@ -23,6 +26,7 @@ object Android : AppRegister() {
                     MaxWallpaperScaleForT, //壁纸缩放比例
                     SystemPropertiesHookForS, //SystemPropertiesHook
                     AllowUntrustedTouchesForS, //允许不受信任的触摸
+                    GetMinimumSignatureSchemeVersionForTargetSdkForT, //BypassSignCheck
                 )
             }
             Build.VERSION_CODES.S -> {
@@ -34,6 +38,7 @@ object Android : AppRegister() {
                     MaxWallpaperScaleForS, //壁纸缩放比例
                     SystemPropertiesHookForS, //SystemPropertiesHook
                     AllowUntrustedTouchesForS, //允许不受信任的触摸
+                    GetMinimumSignatureSchemeVersionForTargetSdkForT, //BypassSignCheck
                 )
             }
         }

@@ -3,6 +3,7 @@ package com.lt2333.simplicitytools.hooks
 import com.lt2333.simplicitytools.BuildConfig
 import com.lt2333.simplicitytools.hooks.apps.*
 import com.lt2333.simplicitytools.hooks.rules.all.CorePatchMainHook
+import com.lt2333.simplicitytools.hooks.rules.all.BypassSignCheckMainHook
 import com.lt2333.simplicitytools.utils.xposed.EasyXposedInit
 import com.lt2333.simplicitytools.utils.xposed.base.AppRegister
 import de.robv.android.xposed.IXposedHookZygoteInit
@@ -18,6 +19,7 @@ class MainHook : EasyXposedInit() {
         PowerKeeper, // 电量与性能
         MiuiHome, // 桌面
         SecurityCenter, // 手机管家
+        Gallery, // 相册
         MediaEditor, // 相册编辑
         Updater, // 系统更新
         Settings, // 设置

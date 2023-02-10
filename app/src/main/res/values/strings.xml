@@ -238,4 +238,8 @@
     <string name="make_millet_more_aggressive_summary">Allows Millet to freeze apps while background apps have notifications, services running, and processes running.\nApps that don\'t want to be frozen can set Battery saver to No restriction\nPlease uninstall tombstone and NoANR related modules before enabling.</string>
     <string name="make_millet_ignore_active">Allow Millet to freeze active apps</string>
     <string name="make_millet_ignore_active_summary">Very aggressive and may affect application running</string>
+    <string name="bypass_sign_check">Bypass sign check on A13</string>
+    <string name="scope_gallery">Gallery</string>
+    <string name="Unlock_HDR_Enhance">Display high dynamic range</string>
+    <string name="Unlock_HDR_Enhance_summary">Use HDR to show more detail in highlights and shadows</string>
 </resources>

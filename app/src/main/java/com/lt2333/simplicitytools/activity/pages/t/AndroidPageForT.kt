@@ -99,6 +99,12 @@ class AndroidPageForT : BasePage() {
                 tipsId = R.string.take_effect_after_reboot
             ), SwitchV("allow_untrusted_touches")
         )
+        TextSummaryWithSwitch(
+            TextSummaryV(
+                textId = R.string.bypass_sign_check,
+                tipsId = R.string.take_effect_after_reboot
+            ), SwitchV("getMinimumSignatureSchemeVersionForTargetSdk")
+        )
         Line()
         TitleText(textId = R.string.sound)
         val mediaVolumeStepsSwitchBinding = GetDataBinding({

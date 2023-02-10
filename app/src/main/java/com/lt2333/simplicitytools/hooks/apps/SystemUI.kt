@@ -2,6 +2,7 @@ package com.lt2333.simplicitytools.hooks.apps
 
 import android.os.Build
 import com.lt2333.simplicitytools.hooks.rules.s.systemui.*
+import com.lt2333.simplicitytools.hooks.rules.t.systemui.*
 import com.lt2333.simplicitytools.utils.xposed.base.AppRegister
 import de.robv.android.xposed.callbacks.XC_LoadPackage
 
@@ -20,7 +21,7 @@ object SystemUI: AppRegister() {
                     HideMobileTypeIconForS, //隐藏移动类型图标
                     HideStatusBarNetworkSpeedSecondForS, //隐藏状态栏网速/s
                     HideWifiActivityIconForS, //隐藏WIFI活动箭头图标
-                    MaximumNumberOfNotificationIconsForS, //通知图标上限
+                    MaximumNumberOfNotificationIconsForT, //通知图标上限
                     StatusBarNetworkSpeedRefreshSpeedForS, //状态栏网速秒刷新
                     StatusBarTimeCustomizationForS, //状态栏时钟自定义
                     RemoveTheLeftSideOfTheLockScreenForS, //移除锁屏负一屏功能

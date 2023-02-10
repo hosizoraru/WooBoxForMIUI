@@ -129,6 +129,14 @@ class OtherPageForT : BasePage() {
             SwitchV("battery_life_function")
         )
         Line()
+        TitleText(textId = R.string.scope_gallery)
+        TextSummaryWithSwitch(
+            TextSummaryV(
+                textId = R.string.Unlock_HDR_Enhance,
+                tipsId = R.string.Unlock_HDR_Enhance_summary
+            ), SwitchV("Unlock_HDR_Enhance")
+        )
+        Line()
         TitleText(textId = R.string.scope_mediaeditor)
         TextSummaryWithSwitch(
             TextSummaryV(

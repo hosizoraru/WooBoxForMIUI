@@ -235,4 +235,8 @@
     <string name="make_millet_more_aggressive">使 Millet 更加激進</string>
     <string name="make_millet_more_aggressive_summary">"允許 Millet 在後台應用有通知、有服務執行、有處理程序執行的情況下凍結應用。\n不希望被凍結的應用可將省電策略設置為無限制，\n啟用前請先卸載墓碑和 NoANR 相關模組。"</string>
     <string name="preset">預設</string>
+    <string name="bypass_sign_check">繞過簽名校驗(僅支持A13)</string>
+    <string name="scope_gallery">相冊</string>
+    <string name="Unlock_HDR_Enhance">超動態顯示</string>
+    <string name="Unlock_HDR_Enhance_summary">以 HDR 高動態範圍，呈現更多明暗細節，使畫面更加真實</string>
 </resources>
