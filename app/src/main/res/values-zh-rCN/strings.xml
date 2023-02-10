@@ -240,4 +240,10 @@
     <string name="scope_gallery">相册</string>
     <string name="Unlock_HDR_Enhance">超动态显示</string>
     <string name="Unlock_HDR_Enhance_summary">以 HDR 高动态范围，呈现更多明暗细节，使画面更加真实</string>
+    <string name="scope_mishare">小米互传</string>
+    <string name="No_Auto_Trun_Off">禁止小米互传自动关闭</string>
+    <string name="No_Auto_Trun_Off_summary">小米互传将不会自动关闭 (仅限 2.15.0 版本)</string>
+    <string name="scope_deskclock">时钟</string>
+    <string name="Hour_Glass_Enable">强制开启计时沙漏动画</string>
+    <string name="Hour_Glass_Enable_summary">当你发现你的时钟没有这个动画的时候才需要开启</string>
 </resources>

@@ -240,4 +240,10 @@
     <string name="scope_gallery">フォトアルバム</string>
     <string name="Unlock_HDR_Enhance">ハイダイナミックレンジを表示</string>
     <string name="Unlock_HDR_Enhance_summary">HDR を使用して、ハイライトとシャドウの詳細を表示します</string>
+    <string name="scope_mishare">Mi シェア</string>
+    <string name="No_Auto_Trun_Off">Mi シェア は禁止され、自動的に閉じられます</string>
+    <string name="No_Auto_Trun_Off_summary">Mi シェア は自動的に閉じられません (バージョン 2.15.0 のみ)</string>
+    <string name="scope_deskclock">時計</string>
+    <string name="Hour_Glass_Enable">砂時計のアニメーションを有効にする</string>
+    <string name="Hour_Glass_Enable_summary">時計にこのアニメーションがないことがわかった場合にのみ、オンにする必要があります</string>
 </resources>

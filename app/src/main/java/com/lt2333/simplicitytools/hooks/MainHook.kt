@@ -25,8 +25,10 @@ class MainHook : EasyXposedInit() {
         Settings, // 设置
         ThemeManager, // 主题壁纸
         ScreenShot, // 截屏
-        Cast, //投屏
-        RearDisplay, //背屏
+        Cast, // 投屏
+        RearDisplay, // 背屏
+        MiShare, // 小米互传
+        DeskClock, // 时钟
     )
 
     override fun handleLoadPackage(lpparam: XC_LoadPackage.LoadPackageParam?) {

@@ -145,6 +145,22 @@ class OtherPageForT : BasePage() {
             ), SwitchV("unlock_unlimited_cropping")
         )
         Line()
+        TitleText(textId = R.string.scope_mishare)
+        TextSummaryWithSwitch(
+            TextSummaryV(
+                textId = R.string.No_Auto_Trun_Off,
+                tipsId = R.string.No_Auto_Trun_Off_summary
+            ), SwitchV("No_Auto_Trun_Off")
+        )
+        Line()
+        TitleText(textId = R.string.scope_deskclock)
+        TextSummaryWithSwitch(
+            TextSummaryV(
+                textId = R.string.Hour_Glass_Enable,
+                tipsId = R.string.Hour_Glass_Enable_summary
+            ), SwitchV("Hour_Glass_Enable")
+        )
+        Line()
         TitleText(textId = R.string.updater)
         TextSummaryWithSwitch(
             TextSummaryV(

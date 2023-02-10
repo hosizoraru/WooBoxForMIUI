@@ -14,5 +14,7 @@
         <item>com.miui.screenshot</item>
         <item>com.milink.service</item>
         <item>com.xiaomi.misubscreenui</item>
+        <item>com.miui.mishare.connectivity</item>
+        <item>com.android.deskclock</item>
     </string-array>
 </resources>
