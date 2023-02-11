@@ -651,6 +651,13 @@ class SystemUIPageForS : BasePage() {
             SwitchV("control_center_weather_city"),
             dataBindingRecv = controlCenterWeatherBinding.binding.getRecv(2)
         )
+        TextSummaryWithSwitch(
+            TextSummaryV(
+                textId = R.string.Disable_Bluetooth,
+                tipsId = R.string.Disable_Bluetooth_summary,
+            ),
+            SwitchV("Disable_Bluetooth"),
+        )
         Line()
         TitleText(textId = R.string.lock_screen)
         TextSummaryWithSwitch(

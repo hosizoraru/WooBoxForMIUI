@@ -171,4 +171,6 @@
     <string name="scope_deskclock">時鐘</string>
     <string name="Hour_Glass_Enable">強制開啟計時沙漏動畫</string>
     <string name="Hour_Glass_Enable_summary">當你發現你的時鐘沒有這個動畫的時候才需要開啟</string>
+    <string name="Disable_Bluetooth">禁用藍牙臨時關閉</string>
+    <string name="Disable_Bluetooth_summary">在控制中心關閉藍牙會直接徹底關閉</string>
 </resources>

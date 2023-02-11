@@ -246,4 +246,6 @@
     <string name="scope_deskclock">时钟</string>
     <string name="Hour_Glass_Enable">强制开启计时沙漏动画</string>
     <string name="Hour_Glass_Enable_summary">当你发现你的时钟没有这个动画的时候才需要开启</string>
+    <string name="Disable_Bluetooth">禁用蓝牙临时关闭</string>
+    <string name="Disable_Bluetooth_summary">在控制中心关闭蓝牙会直接彻底关闭</string>
 </resources>

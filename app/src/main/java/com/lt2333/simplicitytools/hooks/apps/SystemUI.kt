@@ -46,6 +46,7 @@ object SystemUI: AppRegister() {
                     LockScreenClockDisplaySecondsForS, // 锁屏时钟显示秒
                     ShowWifiStandardForS, // 显示 WIFI 角标
                     NoPasswordHookForS, // 开机免密码
+                    DisableBluetoothForT, // 控制中心直接关闭蓝牙
                 )
             }
             Build.VERSION_CODES.S -> {
@@ -83,6 +84,7 @@ object SystemUI: AppRegister() {
                     LockScreenClockDisplaySecondsForS, // 锁屏时钟显示秒
                     ShowWifiStandardForS, // 显示 WIFI 角标
                     NoPasswordHookForS, // 开机免密码
+                    DisableBluetoothForT, // 控制中心直接关闭蓝牙
                 )
             }
         }

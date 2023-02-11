@@ -246,4 +246,6 @@
     <string name="scope_deskclock">時計</string>
     <string name="Hour_Glass_Enable">砂時計のアニメーションを有効にする</string>
     <string name="Hour_Glass_Enable_summary">時計にこのアニメーションがないことがわかった場合にのみ、オンにする必要があります</string>
+    <string name="Disable_Bluetooth">Bluetooth を無効にすると一時的にオフになります</string>
+    <string name="Disable_Bluetooth_summary">コントロールセンターでBluetoothを完全にオフにする</string>
 </resources>
