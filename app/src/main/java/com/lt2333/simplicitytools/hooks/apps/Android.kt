@@ -4,8 +4,7 @@ import android.os.Build
 import com.lt2333.simplicitytools.hooks.rules.all.CorePatchMainHook
 import com.lt2333.simplicitytools.hooks.rules.all.BypassSignCheckMainHook
 import com.lt2333.simplicitytools.hooks.rules.s.android.*
-import com.lt2333.simplicitytools.hooks.rules.t.android.GetMinimumSignatureSchemeVersionForTargetSdkForT
-import com.lt2333.simplicitytools.hooks.rules.t.android.MaxWallpaperScaleForT
+import com.lt2333.simplicitytools.hooks.rules.t.android.*
 import com.lt2333.simplicitytools.utils.xposed.base.AppRegister
 import de.robv.android.xposed.callbacks.XC_LoadPackage
 
@@ -20,7 +19,7 @@ object Android : AppRegister() {
             Build.VERSION_CODES.TIRAMISU -> {
                 autoInitHooks(
                     lpparam,
-                    DisableFlagSecureForS, //允许截图
+                    DisableFlagSecureForT, //允许截图
                     DeleteOnPostNotificationForS, //上层显示
                     RemoveSmallWindowRestrictionsForS, //解除小窗限制
                     MaxWallpaperScaleForT, //壁纸缩放比例
