@@ -29,6 +29,7 @@ class MainHook : EasyXposedInit() {
         RearDisplay, // 背屏
         MiShare, // 小米互传
         DeskClock, // 时钟
+        PackageInstaller, // 应用包管理组件
     )
 
     override fun handleLoadPackage(lpparam: XC_LoadPackage.LoadPackageParam?) {

@@ -248,4 +248,6 @@
     <string name="Hour_Glass_Enable_summary">当你发现你的时钟没有这个动画的时候才需要开启</string>
     <string name="Disable_Bluetooth">禁用蓝牙临时关闭</string>
     <string name="Disable_Bluetooth_summary">在控制中心关闭蓝牙会直接彻底关闭</string>
+    <string name="pkg_installer">应用包管理组件</string>
+    <string name="pkg_installer_summary">禁用频繁安装应用检查</string>
 </resources>
