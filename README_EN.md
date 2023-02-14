@@ -36,15 +36,12 @@ Xposed Repo：[Click here to download the latest release](https://github.com/Xpo
 [yujincheng08/BiliRoaming](https://github.com/yujincheng08/BiliRoaming)  
 [Mikanoshi/CustoMIUIzer](https://code.highspec.ru/Mikanoshi/CustoMIUIzer)  
 [Weverses/BypassSignCheck](https://github.com/Weverses/BypassSignCheck)  
-[YifePlayte/MaxFreeForm](https://github.com/YifePlayte/MaxFreeForm)  
 ##### GNU General Public License v2.0
 [LSPosed/CorePatch](https://github.com/LSPosed/CorePatch)  
 ##### GNU Lesser General Public License v2.1
 [577fkj/blockmiui](https://github.com/577fkj/blockmiui)
 ##### Apache License 2.0
 [KyuubiRan/EzXHelper](https://github.com/KyuubiRan/EzXHelper)
-##### MIT License
-[Henry-ZHR/KillDomainVerification](https://github.com/Henry-ZHR/KillDomainVerification)  
 
 ---
 
