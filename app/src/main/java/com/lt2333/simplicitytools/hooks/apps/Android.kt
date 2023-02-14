@@ -21,7 +21,7 @@ object Android : AppRegister() {
                     lpparam,
                     DisableFlagSecureForT, //允许截图
                     DeleteOnPostNotificationForS, //上层显示
-                    RemoveSmallWindowRestrictionsForS, //解除小窗限制
+                    RemoveSmallWindowRestrictionsForT, //解除小窗限制
                     MaxWallpaperScaleForT, //壁纸缩放比例
                     SystemPropertiesHookForS, //SystemPropertiesHook
                     AllowUntrustedTouchesForS, //允许不受信任的触摸
