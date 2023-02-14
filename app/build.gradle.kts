@@ -3,6 +3,7 @@ import com.android.build.gradle.internal.api.BaseVariantOutputImpl
 plugins {
     id("com.android.application")
     id("kotlin-android")
+    id("org.jetbrains.kotlin.android")
 }
 
 android {
@@ -12,8 +13,8 @@ android {
         applicationId = "com.lt2333.simplicitytools"
         minSdk = 31
         targetSdk = 33
-        versionCode = 70
-        versionName = "1.6.9-Voyager"
+        versionCode = 71
+        versionName = "1.7.0-Voyager"
         buildConfigField("String", "BUILD_TIME", "\"${System.currentTimeMillis()}\"")
     }
 
@@ -50,12 +51,13 @@ android {
 }
 
 dependencies {
+    implementation("androidx.core:core-ktx:+")
     //API
     compileOnly("de.robv.android.xposed:api:82")
     implementation("com.github.kyuubiran:EzXHelper:1.0.3")
     //UI
     implementation(project(":blockmiui"))
-    implementation("androidx.constraintlayout:constraintlayout:2.2.0-alpha06")
+    implementation("androidx.constraintlayout:constraintlayout:2.2.0-alpha07")
     //APP Center
     val appCenterSdkVersion = "5.0.0"
     implementation("com.microsoft.appcenter:appcenter-analytics:${appCenterSdkVersion}")

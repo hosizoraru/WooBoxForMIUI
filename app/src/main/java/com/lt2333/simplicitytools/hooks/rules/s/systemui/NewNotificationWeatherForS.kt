@@ -27,7 +27,6 @@ object NewNotificationWeatherForS : HookRegister() {
             val time = it.args[0]?.toString()
             val view = it.thisObject as TextView
             if (view.id == clockId && time != null && this::weather.isInitialized) {
-                // TODO("调高天气位置")
 //                val layout = view.layoutParams as ViewGroup.MarginLayoutParams
 //                val y = view.height / 2
 //                layout.topMargin = -y

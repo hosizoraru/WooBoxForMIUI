@@ -44,6 +44,7 @@ Xposed仓库下载：[点击此处下载最新发行版](https://github.com/Xpos
 [Mikanoshi/CustoMIUIzer](https://code.highspec.ru/Mikanoshi/CustoMIUIzer)  
 [Weverses/BypassSignCheck](https://github.com/Weverses/BypassSignCheck)  
 [YifePlayte/MaxFreeForm](https://github.com/YifePlayte/MaxFreeForm)  
+[MonwF/customiuizer](https://github.com/MonwF/customiuizer)  
 ##### GNU General Public License v2.0
 [LSPosed/CorePatch](https://github.com/LSPosed/CorePatch)  
 ##### GNU Lesser General Public License v2.1

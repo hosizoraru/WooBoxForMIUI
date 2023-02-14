@@ -248,7 +248,7 @@ class SystemUIPageForS : BasePage() {
         TextSummaryArrow(TextSummaryV(textId = R.string.custom_clock_format_geek) {
             MIUIDialog(activity) {
                 setTitle(R.string.custom_clock_format_geek)
-                setEditText(MIUIActivity.safeSP.getString("custom_clock_format_geek", "HH:mm:ss"), "")
+                setEditText(MIUIActivity.safeSP.getString("custom_clock_format_geek", "HH:mm:ss"), "", isSingleLine = false)
                 setLButton(textId = R.string.cancel) {
                     dismiss()
                 }
@@ -599,7 +599,7 @@ class SystemUIPageForS : BasePage() {
         TextSummaryWithSwitch(
             TextSummaryV(
                 textId = R.string.show_weather_main_switch,
-                colorId = R.color.purple_700
+                colorId = R.color.blue
             ),
             SwitchV(
                 "notification_weather",
@@ -636,7 +636,7 @@ class SystemUIPageForS : BasePage() {
         TextSummaryWithSwitch(
             TextSummaryV(
                 textId = R.string.show_weather_main_switch,
-                colorId = R.color.purple_700,
+                colorId = R.color.blue,
                 tipsId = R.string.control_center_weather_summary
             ),
             SwitchV(
@@ -715,7 +715,7 @@ class SystemUIPageForS : BasePage() {
         TextSummaryWithSwitch(
             TextSummaryV(
                 textId = R.string.old_qs_custom_switch,
-                colorId = R.color.purple_700
+                colorId = R.color.blue
             ),
             SwitchV(
                 "old_qs_custom_switch",
