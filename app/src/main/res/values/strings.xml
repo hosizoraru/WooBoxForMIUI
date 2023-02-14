@@ -252,4 +252,6 @@
     <string name="Disable_Bluetooth_summary">Turn off bluetooth completely in control center</string>
     <string name="pkg_installer">Package Installer</string>
     <string name="pkg_installer_summary">Disable the app installation\'s count checking</string>
+    <string name="kill_domain_verification">Kill domain verification</string>
+    <string name="kill_domain_verification_summary">Prevents the system (and also yourself) from allowing apps to always open supported links.\nIt also enables you to open supported links in apps which are not "verified" on Android 12 and above.</string>
 </resources>

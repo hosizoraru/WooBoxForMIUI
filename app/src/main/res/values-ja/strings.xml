@@ -250,4 +250,6 @@
     <string name="Disable_Bluetooth_summary">コントロールセンターでBluetoothを完全にオフにする</string>
     <string name="pkg_installer">Package Installer</string>
     <string name="pkg_installer_summary">アプリのインストール数チェックを無効にする</string>
+    <string name="kill_domain_verification">ドメイン検証を停止する</string>
+    <string name="kill_domain_verification_summary">システム (およびユーザー自身) が、アプリが常にサポートされているリンクを開くことを許可しないようにします。\nまた、Android 12 以降で「検証」されていないアプリで、サポートされているリンクを開くこともできます。</string>
 </resources>
