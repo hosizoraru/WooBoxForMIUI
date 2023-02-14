@@ -10,6 +10,9 @@ object DisableFlagSecureForT : HookRegister() {
         findMethod("com.android.server.wm.WindowState") {
             name == "isSecureLocked"
         }.hookReturnConstant(false)
+        findMethod("com.android.server.wm.WindowManagerService") {
+            name == "isSecureLocked"
+        }.hookReturnConstant(false)
     }
     
 }
