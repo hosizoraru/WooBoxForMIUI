@@ -2,6 +2,7 @@ package com.lt2333.simplicitytools.hooks.rules.t.android
 
 import android.os.Build
 import android.content.ContentResolver
+import android.content.Intent
 import android.content.Context
 import com.github.kyuubiran.ezxhelper.utils.*
 import com.lt2333.simplicitytools.utils.hasEnable
