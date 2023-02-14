@@ -250,4 +250,6 @@
     <string name="Disable_Bluetooth_summary">コントロールセンターでBluetoothを完全にオフにする</string>
     <string name="pkg_installer">Package Installer</string>
     <string name="pkg_installer_summary">アプリのインストール数チェックを無効にする</string>
+    <string name="kill_domain_verification">禁用域验证</string>
+    <string name="kill_domain_verification_summary">打开 http / https 链接时总是询问，而不是直接在 app 中打开\n副作用：手动设也没法直接用应用打开链接；Android 12+ 选择时会同时显示未“验证”的 app</string>
 </resources>
