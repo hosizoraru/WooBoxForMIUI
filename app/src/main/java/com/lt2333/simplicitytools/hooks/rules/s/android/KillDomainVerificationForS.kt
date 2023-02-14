@@ -3,6 +3,7 @@ package com.lt2333.simplicitytools.hooks.rules.s.android
 import android.os.Build
 import android.content.ContentResolver
 import android.content.Context
+import android.content.Intent
 import com.github.kyuubiran.ezxhelper.utils.*
 import com.lt2333.simplicitytools.utils.hasEnable
 import com.lt2333.simplicitytools.utils.xposed.base.HookRegister
