@@ -99,12 +99,6 @@ class AndroidPageForS : BasePage() {
                 tipsId = R.string.take_effect_after_reboot
             ), SwitchV("allow_untrusted_touches")
         )
-        TextSummaryWithSwitch(
-            TextSummaryV(
-                textId = R.string.kill_domain_verification,
-                tipsId = R.string.kill_domain_verification_summary
-            ), SwitchV("kill_domain_verification")
-        )
         Line()
         TitleText(textId = R.string.sound)
         val mediaVolumeStepsSwitchBinding = GetDataBinding({

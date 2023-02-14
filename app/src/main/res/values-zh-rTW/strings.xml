@@ -249,6 +249,4 @@
     <string name="Disable_Bluetooth_summary">在控制中心關閉藍牙會直接徹底關閉</string>
     <string name="pkg_installer">應用包管理組件</string>
     <string name="pkg_installer_summary">禁用頻繁安裝應用檢查</string>
-    <string name="kill_domain_verification">禁用域驗證</string>
-    <string name="kill_domain_verification_summary">打開 http / https 鏈接時總是詢問，而不是直接在 app 中打開\n副作用：手動設也沒法直接用應用打開鏈接；Android 12+ 選擇時會同時顯示未“驗證”的 app</string>
 </resources>

@@ -26,7 +26,6 @@ object Android : AppRegister() {
                     SystemPropertiesHookForS, //SystemPropertiesHook
                     AllowUntrustedTouchesForS, //允许不受信任的触摸
                     GetMinimumSignatureSchemeVersionForTargetSdkForT, //BypassSignCheck
-                    KillDomainVerificationForT, //KillDomainVerification
                 )
             }
             Build.VERSION_CODES.S -> {
@@ -39,7 +38,6 @@ object Android : AppRegister() {
                     SystemPropertiesHookForS, //SystemPropertiesHook
                     AllowUntrustedTouchesForS, //允许不受信任的触摸
                     GetMinimumSignatureSchemeVersionForTargetSdkForT, //BypassSignCheck
-                    KillDomainVerificationForS, //KillDomainVerification
                 )
             }
         }
