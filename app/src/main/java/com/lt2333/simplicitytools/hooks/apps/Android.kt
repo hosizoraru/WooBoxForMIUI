@@ -30,6 +30,7 @@ object Android : AppRegister() {
                     AllowUntrustedTouchesForAll, //允许不受信任的触摸
                     GetMinimumSignatureSchemeVersionForTargetSdkForT, //BypassSignCheck
                     KillDomainVerificationForT, //KillDomainVerification
+                    SideHideFreeformForS,//解锁贴边小窗
                 )
             }
             Build.VERSION_CODES.S -> {

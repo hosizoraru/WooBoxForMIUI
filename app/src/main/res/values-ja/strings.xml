@@ -256,6 +256,6 @@
     <string name="try_to_fix_conversation_bubbles">会話の吹き出しを修正する</string>
     <string name="try_to_fix_conversation_bubbles_summary">会話の吹き出しサービスを再度有効にしてみてください</string>
     <string name="side_hide_freeform">サイドハイド フローティング ウィンドウのロックを解除する</string>
-    <string name="side_hide_freeform_summary">サポートされているが制限されているデバイスの側面非表示フローティング ウィンドウのロックを解除します。\nこれは、[最近] ページに入るときのローティング ウィンドウの動作にも影響します。</string>
+    <string name="side_hide_freeform_summary">サポートされているが制限されているデバイスの側面非表示フローティング ウィンドウのロックを解除します。\nこれは、[最近] ページに入るときのローティング ウィンドウの動作にも影響します。\nAndroid 13 Miui 14 では、このオプションを開く必要はありません</string>
     <string name="finished">終了した</string>
 </resources>

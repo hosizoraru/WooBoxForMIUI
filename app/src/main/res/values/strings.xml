@@ -261,6 +261,6 @@
     <string name="try_to_fix_conversation_bubbles">Try to fix conversation bubbles</string>
     <string name="try_to_fix_conversation_bubbles_summary">Try to re-enable conversation bubbles service</string>
     <string name="side_hide_freeform">Unlock side-hide floating windows</string>
-    <string name="side_hide_freeform_summary">Unlock side-hide floating windows for supported but restricted devices.\nThis will also affect the behavior of the floating windows while entering the Recents page</string>
+    <string name="side_hide_freeform_summary">Unlock side-hide floating windows for supported but restricted devices.\nThis will also affect the behavior of the floating windows while entering the Recents page\nA13Miui14 does not need to open this option</string>
     <string name="finished">Finished</string>
 </resources>
