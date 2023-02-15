@@ -251,4 +251,6 @@
     <string name="pkg_installer_summary">禁用頻繁安裝應用檢查</string>
     <string name="kill_domain_verification">禁用域驗證</string>
     <string name="kill_domain_verification_summary">打開 http / https 鏈接時總是詢問，而不是直接在 app 中打開\n副作用：手動設也沒法直接用應用打開鏈接；Android 12+ 選擇時會同時顯示未“驗證”的 app</string>
+    <string name="big_mobile_type_only_show_network_card">大移動類型圖標僅顯示上網卡</string>
+    <string name="big_mobile_type_location">大移動類型圖標位置</string>
 </resources>

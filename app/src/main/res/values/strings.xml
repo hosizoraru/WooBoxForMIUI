@@ -254,4 +254,6 @@
     <string name="pkg_installer_summary">Disable the app installation\'s count checking</string>
     <string name="kill_domain_verification">Kill domain verification</string>
     <string name="kill_domain_verification_summary">Prevents the system (and also yourself) from allowing apps to always open supported links.\nIt also enables you to open supported links in apps which are not "verified" on Android 12 and above.</string>
+    <string name="big_mobile_type_only_show_network_card">Big mobile type only show network card</string>
+    <string name="big_mobile_type_location">Big mobile type location</string>
 </resources>
