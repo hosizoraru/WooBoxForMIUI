@@ -1,11 +1,9 @@
 package com.lt2333.simplicitytools.hooks.apps
 
 import android.os.Build
-import com.lt2333.simplicitytools.hooks.rules.all.android.AllowUntrustedTouchesForAll
-import com.lt2333.simplicitytools.hooks.rules.all.android.DeleteOnPostNotificationForAll
-import com.lt2333.simplicitytools.hooks.rules.all.android.DisableFlagSecureForAll
 import com.lt2333.simplicitytools.hooks.rules.all.corepatch.CorePatchMainHook
 import com.lt2333.simplicitytools.hooks.rules.all.BypassSignCheckMainHook
+import com.lt2333.simplicitytools.hooks.rules.all.android.*
 import com.lt2333.simplicitytools.hooks.rules.s.android.*
 import com.lt2333.simplicitytools.hooks.rules.t.android.*
 import com.lt2333.simplicitytools.utils.xposed.base.AppRegister
@@ -30,7 +28,8 @@ object Android : AppRegister() {
                     AllowUntrustedTouchesForAll, //允许不受信任的触摸
                     GetMinimumSignatureSchemeVersionForTargetSdkForT, //BypassSignCheck
                     KillDomainVerificationForT, //KillDomainVerification
-                    SideHideFreeformForS,//解锁贴边小窗
+                    SideHideFreeformForAll,//解锁贴边小窗
+                    MaxFreeFormaForAll, //多小窗
                 )
             }
             Build.VERSION_CODES.S -> {
@@ -44,7 +43,8 @@ object Android : AppRegister() {
                     AllowUntrustedTouchesForAll, //允许不受信任的触摸
                     GetMinimumSignatureSchemeVersionForTargetSdkForT, //BypassSignCheck
                     KillDomainVerificationForS, //KillDomainVerification
-                    SideHideFreeformForS,//解锁贴边小窗
+                    SideHideFreeformForAll,//解锁贴边小窗
+                    MaxFreeFormaForAll, //多小窗
                 )
             }
         }

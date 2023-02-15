@@ -111,6 +111,11 @@ class AndroidPageForS : BasePage() {
                 tipsId = R.string.side_hide_freeform_summary
             ), SwitchV("side_hide_freeform")
         )
+        TextSummaryWithSwitch(
+            TextSummaryV(
+                textId = R.string.max_free_form
+            ), SwitchV("max_free_form")
+        )
         Line()
         TitleText(textId = R.string.sound)
         val mediaVolumeStepsSwitchBinding = GetDataBinding({

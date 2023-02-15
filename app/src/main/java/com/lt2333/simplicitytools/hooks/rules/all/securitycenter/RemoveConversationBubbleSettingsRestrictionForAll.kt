@@ -1,4 +1,4 @@
-package com.lt2333.simplicitytools.hooks.rules.t.securitycenter
+package com.lt2333.simplicitytools.hooks.rules.all.securitycenter
 
 import android.annotation.SuppressLint
 import android.content.Context
@@ -8,7 +8,7 @@ import com.lt2333.simplicitytools.utils.hasEnable
 import com.lt2333.simplicitytools.utils.xposed.base.HookRegister
 import org.lsposed.hiddenapibypass.HiddenApiBypass
 
-object RemoveConversationBubbleSettingsRestrictionForT : HookRegister() {
+object RemoveConversationBubbleSettingsRestrictionForAll : HookRegister() {
     @SuppressLint("PrivateApi")
     override fun init() = hasEnable("remove_conversation_bubble_settings_restriction") {
         findMethod("com.miui.bubbles.settings.BubblesSettings") {

@@ -7,7 +7,7 @@ import com.lt2333.simplicitytools.hooks.rules.all.securitycenter.SkipWaitingTime
 import com.lt2333.simplicitytools.hooks.rules.all.securitycenter.RemoveMacroBlacklistForAll
 import com.lt2333.simplicitytools.hooks.rules.s.securitycenter.ShowBatteryTemperatureForS
 import com.lt2333.simplicitytools.hooks.rules.t.securitycenter.ShowBatteryTemperatureForT
-import com.lt2333.simplicitytools.hooks.rules.t.securitycenter.RemoveConversationBubbleSettingsRestrictionForT
+import com.lt2333.simplicitytools.hooks.rules.all.securitycenter.RemoveConversationBubbleSettingsRestrictionForAll
 import com.lt2333.simplicitytools.utils.xposed.base.AppRegister
 import de.robv.android.xposed.callbacks.XC_LoadPackage
 
@@ -23,7 +23,7 @@ object SecurityCenter: AppRegister() {
                     RemoveMacroBlacklistForAll, //去除自动连招黑名单
                     ShowBatteryTemperatureForT, //显示电池温度
                     RemoveOpenAppConfirmationPopupForAll, //去除打开应用弹窗
-                    RemoveConversationBubbleSettingsRestrictionForT, //去除气泡通知应用限制
+                    RemoveConversationBubbleSettingsRestrictionForAll, //去除气泡通知应用限制
                 )
             }
             Build.VERSION_CODES.S -> {
@@ -33,7 +33,7 @@ object SecurityCenter: AppRegister() {
                     RemoveMacroBlacklistForAll, //去除自动连招黑名单
                     ShowBatteryTemperatureForS, //显示电池温度
                     RemoveOpenAppConfirmationPopupForAll, //去除打开应用弹窗
-                    RemoveConversationBubbleSettingsRestrictionForT, //去除气泡通知应用限制
+                    RemoveConversationBubbleSettingsRestrictionForAll, //去除气泡通知应用限制
                 )
             }
         }

@@ -3,6 +3,8 @@ package com.lt2333.simplicitytools.hooks.apps
 import android.os.Build
 import com.lt2333.simplicitytools.hooks.rules.all.miuihome.AlwaysDisplayTimeForAll
 import com.lt2333.simplicitytools.hooks.rules.all.miuihome.DoubleTapToSleepForAll
+import com.lt2333.simplicitytools.hooks.rules.all.android.MaxFreeFormaForAll
+import com.lt2333.simplicitytools.hooks.rules.all.miuihome.MaxFreeFormmForAll
 import com.lt2333.simplicitytools.utils.xposed.base.AppRegister
 import de.robv.android.xposed.callbacks.XC_LoadPackage
 
@@ -16,6 +18,7 @@ object MiuiHome : AppRegister() {
                     lpparam,
                     AlwaysDisplayTimeForAll, //时钟显示时钟
                     DoubleTapToSleepForAll, //双击锁屏
+                    MaxFreeFormmForAll,//多小窗
                 )
             }
             Build.VERSION_CODES.S -> {
@@ -23,6 +26,7 @@ object MiuiHome : AppRegister() {
                     lpparam,
                     AlwaysDisplayTimeForAll, //时钟显示时钟
                     DoubleTapToSleepForAll, //双击锁屏
+                    MaxFreeFormmForAll,//多小窗
                 )
             }
         }

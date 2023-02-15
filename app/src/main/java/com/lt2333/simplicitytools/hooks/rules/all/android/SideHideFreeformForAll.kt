@@ -1,11 +1,11 @@
-package com.lt2333.simplicitytools.hooks.rules.s.android
+package com.lt2333.simplicitytools.hooks.rules.all.android
 
 import com.lt2333.simplicitytools.utils.xposed.base.HookRegister
 import com.github.kyuubiran.ezxhelper.utils.findMethod
 import com.github.kyuubiran.ezxhelper.utils.hookBefore
 import com.lt2333.simplicitytools.utils.hasEnable
 
-object SideHideFreeformForS : HookRegister() {
+object SideHideFreeformForAll : HookRegister() {
     override fun init() = hasEnable("side_hide_freeform") {
         findMethod("android.util.MiuiMultiWindowUtils") {
             name == "multiFreeFormSupported"
