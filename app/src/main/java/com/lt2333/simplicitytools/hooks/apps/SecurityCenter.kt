@@ -33,6 +33,7 @@ object SecurityCenter: AppRegister() {
                     RemoveMacroBlacklistForAll, //去除自动连招黑名单
                     ShowBatteryTemperatureForS, //显示电池温度
                     RemoveOpenAppConfirmationPopupForAll, //去除打开应用弹窗
+                    RemoveConversationBubbleSettingsRestrictionForT, //去除气泡通知应用限制
                 )
             }
         }

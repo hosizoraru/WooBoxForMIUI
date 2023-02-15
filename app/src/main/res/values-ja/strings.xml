@@ -253,4 +253,9 @@
     <string name="big_mobile_type_location">ビッグモバイルタイプのロケーション</string>
     <string name="remove_conversation_bubble_settings_restriction">会話の吹き出し設定の制限を削除</string>
     <string name="remove_conversation_bubble_settings_restriction_summary">\"システム設定 - 追加設定 - フローティング ウィンドウ - バブル通知 - 会話の吹き出しの管理\" で、会話の吹き出しを表示できるアプリを管理できます。</string>
+    <string name="try_to_fix_conversation_bubbles">会話の吹き出しを修正する</string>
+    <string name="try_to_fix_conversation_bubbles_summary">会話の吹き出しサービスを再度有効にしてみてください</string>
+    <string name="side_hide_freeform">サイドハイド フローティング ウィンドウのロックを解除する</string>
+    <string name="side_hide_freeform_summary">サポートされているが制限されているデバイスの側面非表示フローティング ウィンドウのロックを解除します。\nこれは、[最近] ページに入るときのローティング ウィンドウの動作にも影響します。</string>
+    <string name="finished">終了した</string>
 </resources>

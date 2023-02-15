@@ -8,12 +8,14 @@ import android.widget.Switch
 import android.widget.Toast
 import cn.fkj233.ui.activity.MIUIActivity
 import cn.fkj233.ui.activity.annotation.BMPage
+import cn.fkj233.ui.activity.annotation.BMMainPage
 import cn.fkj233.ui.activity.data.BasePage
 import cn.fkj233.ui.activity.view.SwitchV
 import cn.fkj233.ui.activity.view.TextSummaryV
 import cn.fkj233.ui.dialog.MIUIDialog
 import com.lt2333.simplicitytools.BuildConfig
 import com.lt2333.simplicitytools.R
+import com.lt2333.simplicitytools.utils.Terminal
 
 
 @BMPage("scope_other","Other", hideMenu = false)
@@ -133,6 +135,19 @@ class OtherPageForT : BasePage() {
                 textId = R.string.remove_conversation_bubble_settings_restriction,
                 tipsId = R.string.remove_conversation_bubble_settings_restriction_summary
             ), SwitchV("remove_conversation_bubble_settings_restriction")
+        )
+        TextSummaryArrow(
+            TextSummaryV(
+                textId = R.string.try_to_fix_conversation_bubbles,
+                tipsId = R.string.try_to_fix_conversation_bubbles_summary
+            ) {
+                Terminal.exec("pm enable com.miui.securitycenter/com.miui.bubbles.services.BubblesNotificationListenerService")
+                Toast.makeText(
+                    activity,
+                    getString(R.string.finished),
+                    Toast.LENGTH_SHORT
+                ).show()
+            }
         )
         Line()
         TitleText(textId = R.string.scope_gallery)

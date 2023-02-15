@@ -105,6 +105,12 @@ class AndroidPageForS : BasePage() {
                 tipsId = R.string.kill_domain_verification_summary
             ), SwitchV("kill_domain_verification")
         )
+        TextSummaryWithSwitch(
+            TextSummaryV(
+                textId = R.string.side_hide_freeform,
+                tipsId = R.string.side_hide_freeform_summary
+            ), SwitchV("side_hide_freeform")
+        )
         Line()
         TitleText(textId = R.string.sound)
         val mediaVolumeStepsSwitchBinding = GetDataBinding({
