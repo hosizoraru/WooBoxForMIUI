@@ -4,7 +4,6 @@ import android.os.Build
 import com.github.kyuubiran.ezxhelper.utils.findMethod
 import com.github.kyuubiran.ezxhelper.utils.hookAllConstructorBefore
 import com.github.kyuubiran.ezxhelper.utils.hookBefore
-import com.github.kyuubiran.ezxhelper.utils.hookReturnConstant
 import com.lt2333.simplicitytools.utils.hasEnable
 import com.lt2333.simplicitytools.utils.xposed.base.HookRegister
 
@@ -17,9 +16,7 @@ object DisableFlagSecureForAll : HookRegister() {
                 it.result = false
             }
         }
-        findMethod("com.android.server.wm.WindowManagerService") {
-            name == "isSecureLocked"
-        }.hookReturnConstant(false)
+
         if (Build.VERSION.SDK_INT == Build.VERSION_CODES.TIRAMISU) {
             findMethod("com.android.server.wm.WindowSurfaceController") {
                 name == "setSecure"
@@ -34,5 +31,4 @@ object DisableFlagSecureForAll : HookRegister() {
             }
         }
     }
-
 }
