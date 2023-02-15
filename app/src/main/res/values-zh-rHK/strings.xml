@@ -197,4 +197,6 @@
     <string name="kill_domain_verification_summary">打開 http / https 鏈接時總是詢問，而不是直接在 app 中打開\n副作用：手動設也沒法直接用應用打開鏈接；Android 12+ 選擇時會同時顯示未“驗證”的 app</string>
     <string name="big_mobile_type_only_show_network_card">大移動類型圖標僅顯示上網卡</string>
     <string name="big_mobile_type_location">大移動類型圖標位置</string>
+    <string name="remove_conversation_bubble_settings_restriction">去除氣泡通知應用限制</string>
+    <string name="remove_conversation_bubble_settings_restriction_summary">可以通過“系統設置 - 更多設置 - 自由窗口 - 氣泡通知 - 氣泡通知應用管理”管理貼邊應用的通知</string>
 </resources>

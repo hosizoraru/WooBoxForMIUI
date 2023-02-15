@@ -251,4 +251,6 @@
     <string name="kill_domain_verification_summary">システム (およびユーザー自身) が、アプリが常にサポートされているリンクを開くことを許可しないようにします。\nまた、Android 12 以降で「検証」されていないアプリで、サポートされているリンクを開くこともできます。</string>
     <string name="big_mobile_type_only_show_network_card">ビッグモバイルタイプはネットワークカードのみ表示</string>
     <string name="big_mobile_type_location">ビッグモバイルタイプのロケーション</string>
+    <string name="remove_conversation_bubble_settings_restriction">会話の吹き出し設定の制限を削除</string>
+    <string name="remove_conversation_bubble_settings_restriction_summary">\"システム設定 - 追加設定 - フローティング ウィンドウ - バブル通知 - 会話の吹き出しの管理\" で、会話の吹き出しを表示できるアプリを管理できます。</string>
 </resources>

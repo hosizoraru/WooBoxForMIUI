@@ -128,6 +128,12 @@ class OtherPageForT : BasePage() {
             TextSummaryV(textId = R.string.battery_life_function),
             SwitchV("battery_life_function")
         )
+        TextSummaryWithSwitch(
+            TextSummaryV(
+                textId = R.string.remove_conversation_bubble_settings_restriction,
+                tipsId = R.string.remove_conversation_bubble_settings_restriction_summary
+            ), SwitchV("remove_conversation_bubble_settings_restriction")
+        )
         Line()
         TitleText(textId = R.string.scope_gallery)
         TextSummaryWithSwitch(

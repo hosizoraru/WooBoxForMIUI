@@ -51,10 +51,11 @@ android {
 }
 
 dependencies {
-    implementation("androidx.core:core-ktx:+")
+    implementation("androidx.core:core-ktx:1.10.0-alpha02")
     //API
     compileOnly("de.robv.android.xposed:api:82")
     implementation("com.github.kyuubiran:EzXHelper:1.0.3")
+    implementation("org.lsposed.hiddenapibypass:hiddenapibypass:4.3")
     //UI
     implementation(project(":blockmiui"))
     implementation("androidx.constraintlayout:constraintlayout:2.2.0-alpha07")
