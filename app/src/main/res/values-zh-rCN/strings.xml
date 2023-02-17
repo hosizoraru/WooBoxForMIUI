@@ -262,4 +262,5 @@
     <string name="side_hide_freeform_summary">为底层支持但受限制的设备解锁贴边小窗。\n这将同时影响手机切后台时小窗的行为\nA13Miui14没必要开启这个选项</string>
     <string name="finished">运行完成</string>
     <string name="max_free_form">解锁小窗数量限制</string>
+    <string name="click_to_view_use_cases">点击查看用例</string>
 </resources>

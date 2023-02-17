@@ -264,4 +264,5 @@
     <string name="side_hide_freeform_summary">Unlock side-hide floating windows for supported but restricted devices.\nThis will also affect the behavior of the floating windows while entering the Recents page\nA13Miui14 does not need to open this option</string>
     <string name="finished">Finished</string>
     <string name="max_free_form">Unlocked multi freeform number limit</string>
+    <string name="click_to_view_use_cases">Click to view use cases</string>
 </resources>

@@ -259,4 +259,5 @@
     <string name="side_hide_freeform_summary">サポートされているが制限されているデバイスの側面非表示フローティング ウィンドウのロックを解除します。\nこれは、[最近] ページに入るときのローティング ウィンドウの動作にも影響します。\nAndroid 13 Miui 14 では、このオプションを開く必要はありません</string>
     <string name="finished">終了した</string>
     <string name="max_free_form">ロック解除されたマルチ フリーフォーム数の制限</string>
+    <string name="click_to_view_use_cases">クリックしてユースケースを表示</string>
 </resources>
