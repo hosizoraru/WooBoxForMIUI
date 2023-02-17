@@ -14,6 +14,7 @@ import java.lang.reflect.Method
 import java.text.SimpleDateFormat
 import java.util.*
 
+
 object StatusBarTimeCustomizationForT : HookRegister() {
 
     private val getMode = XSPUtils.getInt("custom_clock_mode", 0)
@@ -106,9 +107,15 @@ object StatusBarTimeCustomizationForT : HookRegister() {
                     findConstructor("com.android.systemui.statusbar.views.MiuiClock") {
                         paramCount == 3
                     }.hookAfter {
-                        c = it.args[0] as Context
-                        val textV = it.thisObject as TextView
-                        textV.gravity = Gravity.CENTER
+                        try {
+                            val textV = it.thisObject as TextView
+                            if (textV.resources.getResourceEntryName(textV.id) == "clock") {
+                                c = it.args[0] as Context
+                                val textV = it.thisObject as TextView
+                                textV.gravity = Gravity.CENTER
+                            }
+                        } catch (_: Exception) {
+                        }
                     }
                 }
             }
@@ -173,9 +180,15 @@ object StatusBarTimeCustomizationForT : HookRegister() {
                     findConstructor("com.android.systemui.statusbar.views.MiuiClock") {
                         paramCount == 3
                     }.hookAfter {
-                        c = it.args[0] as Context
-                        val textV = it.thisObject as TextView
-                        textV.gravity = Gravity.CENTER
+                        try {
+                            val textV = it.thisObject as TextView
+                            if (textV.resources.getResourceEntryName(textV.id) == "clock") {
+                                c = it.args[0] as Context
+                                val textV = it.thisObject as TextView
+                                textV.gravity = Gravity.CENTER
+                            }
+                        } catch (_: Exception) {
+                        }
                     }
                 }
             }
@@ -190,7 +203,6 @@ object StatusBarTimeCustomizationForT : HookRegister() {
         if (isYear) {
             if (isZh) {
                 datePattern += "YY年"
-//                if (!isHideSpace) datePattern = "$datePattern "
             } else {
                 datePattern += "YY"
                 if (isMonth || isDay) datePattern += "/"
@@ -199,7 +211,6 @@ object StatusBarTimeCustomizationForT : HookRegister() {
         if (isMonth) {
             if (isZh) {
                 datePattern += "M月"
-//                if (!isHideSpace) datePattern = "$datePattern "
             } else {
                 datePattern += "M"
                 if (isDay) datePattern += "/"
