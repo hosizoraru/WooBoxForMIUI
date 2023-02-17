@@ -6,13 +6,14 @@ import com.lt2333.simplicitytools.hooks.rules.t.systemui.*
 import com.lt2333.simplicitytools.utils.xposed.base.AppRegister
 import de.robv.android.xposed.callbacks.XC_LoadPackage
 
-object SystemUI: AppRegister() {
+object SystemUI : AppRegister() {
     override val packageName: String = "com.android.systemui"
 
     override fun handleLoadPackage(lpparam: XC_LoadPackage.LoadPackageParam) {
         when (Build.VERSION.SDK_INT) {
             Build.VERSION_CODES.TIRAMISU -> {
-                autoInitHooks(lpparam,
+                autoInitHooks(
+                    lpparam,
                     HideStatusBarIconForT, //隐藏状态栏图标
                     HideBatteryIconForT, //隐藏电池
                     HideHDIconForT, //隐藏HD图标
@@ -48,8 +49,10 @@ object SystemUI: AppRegister() {
                     DisableBluetoothForT, // 控制中心直接关闭蓝牙
                 )
             }
+
             Build.VERSION_CODES.S -> {
-                autoInitHooks(lpparam,
+                autoInitHooks(
+                    lpparam,
                     HideStatusBarIconForS, //隐藏状态栏图标
                     HideBatteryIconForS, //隐藏电池
                     HideHDIconForS, //隐藏HD图标

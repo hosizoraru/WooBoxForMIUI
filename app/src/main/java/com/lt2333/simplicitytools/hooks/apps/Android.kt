@@ -32,6 +32,7 @@ object Android : AppRegister() {
                     MaxFreeFormaForAll, //多小窗
                 )
             }
+
             Build.VERSION_CODES.S -> {
                 autoInitHooks(
                     lpparam,

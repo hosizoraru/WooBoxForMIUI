@@ -16,6 +16,7 @@ object MiShare : AppRegister() {
                     NoAutoTurnOffForT, // 禁止自动关闭小米互传
                 )
             }
+
             Build.VERSION_CODES.S -> {
                 autoInitHooks(
                     lpparam,

@@ -16,6 +16,7 @@ object Gallery : AppRegister() {
                     UnlockHDREnhanceForT, // 超动态显示
                 )
             }
+
             Build.VERSION_CODES.S -> {
                 autoInitHooks(
                     lpparam,
