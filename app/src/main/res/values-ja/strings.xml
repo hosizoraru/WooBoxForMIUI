@@ -70,6 +70,7 @@
     <string name="status_bar_clock_size">時計のサイズ (0: 変更しない)</string>
     <string name="status_bar_clock_double_line_size">デュアル行サイズ (0: 変更しない)</string>
     <string name="matters_needing_attention">機能が動作していませんか？ </string>
+    <string name="Done">OK</string>
     <string name="about_module_summary">モジュール関連情報を表示</string>
     <string name="contributor_list">オープンソースリポジトリの貢献者一覧</string>
     <string name="developer">開発者</string>
@@ -249,8 +250,8 @@
     <string name="pkg_installer_summary">アプリインストール時のカウントチェックを無効にします</string>
     <string name="kill_domain_verification">ドメイン検証を停止する</string>
     <string name="kill_domain_verification_summary">システム (およびユーザー自身) が、アプリが常にサポートされているリンクを開くことを許可しないようにします。\nまた、Android 12 以降で「検証」されていないアプリで、サポートされているリンクを開くこともできます。</string>
-    <string name="big_mobile_type_only_show_network_card">ビッグモバイルタイプはネットワークカードのみ表示</string>
-    <string name="big_mobile_type_location">ビッグモバイルタイプのロケーション</string>
+    <string name="big_mobile_type_only_show_network_card">ネットワークカードのみを表示する大きなモバイルタイプ</string>
+    <string name="big_mobile_type_location">大きなモバイルタイプの位置</string>
     <string name="remove_conversation_bubble_settings_restriction">会話の吹き出し設定の制限を削除</string>
     <string name="remove_conversation_bubble_settings_restriction_summary">\"システム設定 - 追加設定 - フローティング ウィンドウ - バブル通知 - 会話の吹き出しの管理\" で、会話の吹き出しを表示できるアプリを管理できます。</string>
     <string name="try_to_fix_conversation_bubbles">会話の吹き出しを修正する</string>
@@ -259,5 +260,14 @@
     <string name="side_hide_freeform_summary">サポートされているが制限されているデバイスの側面非表示フローティング ウィンドウのロックを解除します。\nこれは、[最近] ページに入るときのローティング ウィンドウの動作にも影響します。\nAndroid 13 Miui 14 では、このオプションを開く必要はありません</string>
     <string name="finished">終了した</string>
     <string name="max_free_form">ロック解除されたマルチ フリーフォーム数の制限</string>
-    <string name="click_to_view_use_cases">クリックしてユースケースを表示</string>
+    <string name="miuihome_recentview_remove_card_animation">カードマーキングアニメーションを変更する</string>
+    <string name="miuihome_recentview_remove_card_animation_summary">アプリ履歴でカードを削除するときのアニメーション効果を変更します</string>
+    <string name="miuihome_recentwiew_wallpaper_darkening">壁紙の調整を無効にする</string>
+    <string name="miuihome_recentwiew_wallpaper_darkening_summary">アプリ履歴へ出入りするときに壁紙の明るさが徐々に変化する効果を無効します</string>
+    <string name="miuihome_scroll_icon_name">アプリ名をスクロール</string>
+    <string name="miuihome_scroll_icon_name_summary">アプリ名が長すぎるとき、改行させずスクロール表示させます</string>
+    <string name="miuihome_shortcut_add_small_window">ショートカットメニューの追加ウィンドウ</string>
+    <string name="miuihome_shortcut_add_small_window_summary">ホーム画面のアイコンを長押しすると、素早く開けるウィンドウを追加できます</string>
+    <string name="miuihome_shortcut_add_small_window_title">小さいウィンドウ</string>
+    <string name="click_to_view_use_cases">クリックして使用例を表示</string>
 </resources>

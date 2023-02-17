@@ -36,11 +36,13 @@ class OtherPageForT : BasePage() {
                 textId = R.string.miuihome_recentwiew_wallpaper_darkening, tipsId = R.string.miuihome_recentwiew_wallpaper_darkening_summary
             ), SwitchV("miuihome_recentwiew_wallpaper_darkening", false)
         )
+        //TODO：未开发完成
         TextSummaryWithSwitch(
             TextSummaryV(
                 textId = R.string.miuihome_recentview_remove_card_animation, tipsId = R.string.miuihome_recentview_remove_card_animation_summary
             ), SwitchV("miuihome_recentview_remove_card_animation", false)
         )
+        //TODO：未开发完成
         TextSummaryWithSwitch(
             TextSummaryV(textId = R.string.miuihome_shortcut_add_small_window, tipsId = R.string.miuihome_shortcut_add_small_window_summary),
             SwitchV("miuihome_shortcut_add_small_window", false)
