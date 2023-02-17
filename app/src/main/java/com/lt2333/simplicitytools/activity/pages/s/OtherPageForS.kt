@@ -83,7 +83,7 @@ class OtherPageForS : BasePage() {
             SwitchV("make_millet_ignore_active"),
             dataBindingRecv = makeMilletMoreAggressiveSwitchBinding.binding.getRecv(2)
         )
-        TextSummaryArrow(
+        TextSummaryWithArrow(
             TextSummaryV(
                 textId = R.string.battery_optimization,
                 tipsId = R.string.battery_optimization_summary,
@@ -135,7 +135,7 @@ class OtherPageForS : BasePage() {
                 tipsId = R.string.remove_conversation_bubble_settings_restriction_summary
             ), SwitchV("remove_conversation_bubble_settings_restriction")
         )
-        TextSummaryArrow(
+        TextSummaryWithArrow(
             TextSummaryV(
                 textId = R.string.try_to_fix_conversation_bubbles,
                 tipsId = R.string.try_to_fix_conversation_bubbles_summary
