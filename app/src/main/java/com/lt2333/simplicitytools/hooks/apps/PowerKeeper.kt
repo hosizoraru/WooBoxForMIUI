@@ -1,10 +1,9 @@
 package com.lt2333.simplicitytools.hooks.apps
 
 import android.os.Build
-import com.lt2333.simplicitytools.hooks.rules.s.powerkeeper.DoNotClearAppForS
 import com.lt2333.simplicitytools.hooks.rules.all.powerkeeper.LockMaxFpsForAll
-import com.lt2333.simplicitytools.hooks.rules.s.powerkeeper.MakeMilletMoreAggressiveForS
-import com.lt2333.simplicitytools.hooks.rules.s.powerkeeper.PreventRecoveryOfBatteryOptimizationWhitelistForS
+import com.lt2333.simplicitytools.hooks.rules.s.powerkeeper.*
+import com.lt2333.simplicitytools.hooks.rules.t.powerkeeper.*
 import com.lt2333.simplicitytools.utils.xposed.base.AppRegister
 import de.robv.android.xposed.callbacks.XC_LoadPackage
 
@@ -20,6 +19,7 @@ object PowerKeeper : AppRegister() {
                     PreventRecoveryOfBatteryOptimizationWhitelistForS, //防止恢复电池优化白名单
                     DoNotClearAppForS,//阻止杀后台
                     MakeMilletMoreAggressiveForS,//使 Millet 更激进
+                    CustomRefreshRatepForT,//自定义高刷
                 )
             }
 

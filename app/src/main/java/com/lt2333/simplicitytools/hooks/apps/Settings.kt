@@ -2,6 +2,7 @@ package com.lt2333.simplicitytools.hooks.apps
 
 import android.os.Build
 import com.lt2333.simplicitytools.hooks.rules.all.settings.ShowNotificationImportanceForAll
+import com.lt2333.simplicitytools.hooks.rules.t.settings.CustomRefreshRatesForT
 import com.lt2333.simplicitytools.utils.xposed.base.AppRegister
 import de.robv.android.xposed.callbacks.XC_LoadPackage
 
@@ -14,6 +15,7 @@ object Settings : AppRegister() {
                 autoInitHooks(
                     lpparam,
                     ShowNotificationImportanceForAll, //显示通知重要程度
+                    CustomRefreshRatesForT,//自定义高刷
                 )
             }
 

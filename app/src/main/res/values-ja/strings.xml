@@ -136,12 +136,12 @@
     <string name="layout_compatibility_mode">互換モード</string>
     <string name="left_margin">左マージン（0：自動）</string>
     <string name="right_margin">右マージン（0：自動）</string>
-    <string name="layout_compatibility_mode_summary">全画面レイアウトを強制 (すべての特殊な形状の画面をサポート)</string>
+    <string name="layout_compatibility_mode_summary">全画面レイアウトを強制（すべての特殊な形状の画面に対応）</string>
     <string name="remove_macro_blacklist">ゲームのマクロブラックリストを削除</string>
     <string name="hide_network_speed_splitter">ネットワーク速度分割器を非表示</string>
     <string name="updater">更新</string>
     <string name="remove_ota_validate">*OTA 検証を無効化 [実験的]</string>
-    <string name="remove_ota_validate_summary">- 仮想AB対応端末のみ対応しています。\ n -内部テストの資格を必要とせず、内部テストパッケージをインストールできるようにします。\ n -内部テスト許可を持っている方は、内部のテストの更新を受け取れなくなるため、システムアップデートをブロックするために使用できます。\ n -OSバージョンが変わる場合は工場出荷状態に戻すことをお勧めします。\ n -非公式のROMでの使用には非対応です。 \n -すでにサポートされていますA13MIUI13/14</string>
+    <string name="remove_ota_validate_summary">- 仮想AB対応端末のみ対応しています。\ n -内部テストの資格を必要とせず、内部テストパッケージをインストールできるようにします。\ n -内部テスト許可を持っている方は、内部のテストの更新を受け取れなくなるため、システムアップデートをブロックするために使用できます。\ n -OSバージョンが変わる場合は工場出荷状態に戻すことをお勧めします。\ n -非公式のROMでの使用には非対応です。 \n -すでにサポートA13MIUI13/14</string>
     <string name="settings">設定</string>
     <string name="show_notification_importance">通知の重要性を表示</string>
     <string name="show_notification_importance_summary">MIUI 12 以降のバージョンで非表示になっている通知の重要性設定を表示します</string>
