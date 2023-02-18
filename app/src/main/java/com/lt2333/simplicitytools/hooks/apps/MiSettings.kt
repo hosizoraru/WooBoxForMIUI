@@ -20,7 +20,6 @@ object MiSettings : AppRegister() {
             Build.VERSION_CODES.S -> {
                 autoInitHooks(
                     lpparam,
-                    CustomRefreshRatesForT,//自定义高刷
                 )
             }
         }

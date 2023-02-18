@@ -1,8 +1,6 @@
 package com.lt2333.simplicitytools.hooks.rules.t.misettings
 
 import android.os.Bundle
-import com.github.kyuubiran.ezxhelper.utils.*
-import com.github.kyuubiran.ezxhelper.*
 import com.lt2333.simplicitytools.utils.*
 import com.lt2333.simplicitytools.utils.xposed.base.HookRegister
 import de.robv.android.xposed.XposedBridge
