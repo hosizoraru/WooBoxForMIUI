@@ -51,6 +51,8 @@ class MenuPage : BasePage() {
                         "killall com.android.deskclock",
                         "killall com.miui.mishare.connectivity",
                         "killall com.miui.gallery",
+                        "killall com.android.thememanager",
+                        "killall com.xiaomi.misettings",
                     )
                     ShellUtils.execCommand(command, true)
                     dismiss()

@@ -2,7 +2,7 @@ package com.lt2333.simplicitytools.hooks.apps
 
 import android.os.Build
 import com.lt2333.simplicitytools.hooks.rules.all.corepatch.CorePatchMainHook
-import com.lt2333.simplicitytools.hooks.rules.all.BypassSignCheckMainHook
+import com.lt2333.simplicitytools.hooks.rules.all.bypasssigncheck.BypassSignCheckMainHook
 import com.lt2333.simplicitytools.hooks.rules.all.android.*
 import com.lt2333.simplicitytools.hooks.rules.s.android.*
 import com.lt2333.simplicitytools.hooks.rules.t.android.*

@@ -118,12 +118,12 @@ class OtherPageForT : BasePage() {
                     }
                 })
         )
-          //自定义高刷新率应用
-//        TextSummaryWithSwitch(
-//            TextSummaryV(
-//                textId = R.string.custom_refresh_rate,
-//            ), SwitchV("custom_refresh_rate")
-//        )
+        //自定义高刷新率应用
+        TextSummaryWithSwitch(
+            TextSummaryV(
+                textId = R.string.custom_refresh_rate,
+            ), SwitchV("custom_refresh_rate")
+        )
         Line()
         TitleText(textId = R.string.scope_securitycenter)
         TextSummaryWithSwitch(

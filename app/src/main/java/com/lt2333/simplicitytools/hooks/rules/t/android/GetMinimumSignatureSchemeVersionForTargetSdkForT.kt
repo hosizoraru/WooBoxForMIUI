@@ -4,6 +4,7 @@ import com.github.kyuubiran.ezxhelper.utils.findMethod
 import com.github.kyuubiran.ezxhelper.utils.hookMethod
 import com.lt2333.simplicitytools.utils.xposed.base.HookRegister
 import com.lt2333.simplicitytools.utils.hasEnable
+import com.lt2333.simplicitytools.hooks.rules.all.bypasssigncheck.BypassSignCheckMainHook
 import de.robv.android.xposed.XposedBridge
 
 

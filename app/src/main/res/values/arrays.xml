@@ -17,5 +17,6 @@
         <item>com.miui.mishare.connectivity</item>
         <item>com.android.deskclock</item>
         <item>com.miui.packageinstaller</item>
+        <item>com.xiaomi.misettings</item>
     </string-array>
 </resources>

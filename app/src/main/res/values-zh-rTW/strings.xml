@@ -270,4 +270,5 @@
     <string name="miuihome_shortcut_add_small_window_summary">長按桌面圖示以快速開啟小窗應用程式</string>
     <string name="miuihome_shortcut_add_small_window_title">小窗應用程式</string>
     <string name="click_to_view_use_cases">按一下以檢視用例</string>
+    <string name="custom_refresh_rate">自定義高刷新率應用</string>
 </resources>

@@ -205,4 +205,5 @@
     <string name="finished">運行完成</string>
     <string name="max_free_form">解鎖小窗數量限制</string>
     <string name="click_to_view_use_cases">點擊查看用例</string>
+    <string name="custom_refresh_rate">自定義高刷新率應用</string>
 </resources>

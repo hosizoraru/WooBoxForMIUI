@@ -1,14 +1,14 @@
-package com.lt2333.simplicitytools.hooks.rules.all
+package com.lt2333.simplicitytools.hooks.rules.all.bypasssigncheck
 
-import com.lt2333.simplicitytools.utils.xposed.base.HookRegister
-import com.lt2333.simplicitytools.hooks.rules.t.android.GetMinimumSignatureSchemeVersionForTargetSdkForT
 import com.github.kyuubiran.ezxhelper.init.EzXHelperInit
 import com.github.kyuubiran.ezxhelper.utils.Log
 import com.github.kyuubiran.ezxhelper.utils.Log.logexIfThrow
+import com.lt2333.simplicitytools.hooks.rules.t.android.GetMinimumSignatureSchemeVersionForTargetSdkForT
+import com.lt2333.simplicitytools.utils.xposed.base.HookRegister
 import de.robv.android.xposed.IXposedHookLoadPackage
 import de.robv.android.xposed.callbacks.XC_LoadPackage
 
-private const val TAG = "BypassCheck"
+private const val TAG = "WooBox: BypassCheck"
 private val PACKAGE_NAME_HOOKED = setOf(
     "android",
 )
