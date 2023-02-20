@@ -1,5 +1,7 @@
 package com.lt2333.simplicitytools.activity.pages.s
 
+import android.content.Intent
+import android.net.Uri
 import android.view.View
 import android.widget.Switch
 import android.widget.Toast
@@ -11,11 +13,11 @@ import cn.fkj233.ui.activity.view.SwitchV
 import cn.fkj233.ui.activity.view.TextSummaryV
 import cn.fkj233.ui.activity.view.TextV
 import cn.fkj233.ui.dialog.MIUIDialog
+import cn.fkj233.ui.dialog.NewDialog
 import com.lt2333.simplicitytools.R
-import java.util.HashMap
 
 
-@BMPage("scope_systemui","System UI", hideMenu = false)
+@BMPage("scope_systemui", "System UI", hideMenu = false)
 class SystemUIPageForS : BasePage() {
 
     override fun onCreate() {
@@ -54,11 +56,10 @@ class SystemUIPageForS : BasePage() {
                 }
             })
 
-        val layoutCompatibilityModeBinding = GetDataBinding({
-            MIUIActivity.safeSP.getInt(
-                "screen_hole_location",
-                0
-            ) == 2
+        val layoutCompatibilityBinding = GetDataBinding({
+            MIUIActivity.safeSP.getBoolean(
+                "layout_compatibility_mode", false
+            )
         }) { view, flags, data ->
             when (flags) {
                 1 -> (view as Switch).isEnabled = data as Boolean
@@ -66,57 +67,23 @@ class SystemUIPageForS : BasePage() {
             }
         }
 
-        val screenHoleLocation: HashMap<Int, String> = hashMapOf<Int, String>().also {
-            it[0] = getString(R.string.off)
-            it[1] = getString(R.string.center)
-            it[2] = getString(R.string.left_or_right)
-        }
-        TextSummaryWithSpinner(
+        TextSummaryWithSwitch(
             TextSummaryV(
-                textId = R.string.layout_compatibility_mode,
-                tipsId = R.string.screen_hole_location
-            ),
-            SpinnerV(
-                screenHoleLocation[MIUIActivity.safeSP.getInt(
-                    "screen_hole_location",
-                    0
-                )].toString()
-            ) {
-                add(screenHoleLocation[0].toString()) {
-                    MIUIActivity.safeSP.putAny("screen_hole_location", 0)
-                    layoutCompatibilityModeBinding.binding.Send().send(false)
-                }
-                add(screenHoleLocation[1].toString()) {
-                    MIUIActivity.safeSP.putAny("screen_hole_location", 1)
-                    layoutCompatibilityModeBinding.binding.Send().send(false)
-                }
-                add(screenHoleLocation[2].toString()) {
-                    MIUIActivity.safeSP.putAny("screen_hole_location", 2)
-                    layoutCompatibilityModeBinding.binding.Send().send(true)
-                }
-            })
+                textId = R.string.layout_compatibility_mode, tipsId = R.string.layout_compatibility_mode_summary
+            ), SwitchV("layout_compatibility_mode", dataBindingSend = layoutCompatibilityBinding.bindingSend)
+        )
 
         Text(
-            textId = R.string.left_margin,
-            dataBindingRecv = layoutCompatibilityModeBinding.binding.getRecv(2)
+            textId = R.string.left_margin, dataBindingRecv = layoutCompatibilityBinding.binding.getRecv(2)
         )
         SeekBarWithText(
-            "status_bar_left_margin",
-            0,
-            300,
-            0,
-            dataBindingRecv = layoutCompatibilityModeBinding.binding.getRecv(2)
+            "status_bar_left_margin", 0, 300, 0, dataBindingRecv = layoutCompatibilityBinding.binding.getRecv(2)
         )
         Text(
-            textId = R.string.right_margin,
-            dataBindingRecv = layoutCompatibilityModeBinding.binding.getRecv(2)
+            textId = R.string.right_margin, dataBindingRecv = layoutCompatibilityBinding.binding.getRecv(2)
         )
         SeekBarWithText(
-            "status_bar_right_margin",
-            0,
-            300,
-            0,
-            dataBindingRecv = layoutCompatibilityModeBinding.binding.getRecv(2)
+            "status_bar_right_margin", 0, 300, 0, dataBindingRecv = layoutCompatibilityBinding.binding.getRecv(2)
         )
         Line()
         TitleText(textId = R.string.status_bar_clock_format)
@@ -246,23 +213,37 @@ class SystemUIPageForS : BasePage() {
 
         //极客模式起始
         TextSummaryWithArrow(TextSummaryV(textId = R.string.custom_clock_format_geek) {
-            MIUIDialog(activity) {
+            NewDialog(activity) {
                 setTitle(R.string.custom_clock_format_geek)
-                setEditText(MIUIActivity.safeSP.getString("custom_clock_format_geek", "HH:mm:ss"), "", isSingleLine = false)
-                setLButton(textId = R.string.cancel) {
-                    dismiss()
+                setEditText(
+                    MIUIActivity.safeSP.getString("custom_clock_format_geek", "HH:mm:ss"), "", isSingleLine = false
+                )
+                Button(getString(R.string.click_to_view_use_cases)) {
+                    val locale = context.resources.configuration.locale
+                    val language = locale.language
+                    if (language.endsWith("zh")) {
+                        val uri = Uri.parse("https://zhuti.designer.xiaomi.com/docs/grammar/#%E6%97%B6%E9%97%B4%E6%97%A5%E6%9C%9F")
+                        val intent = Intent(Intent.ACTION_VIEW, uri)
+                        activity.startActivity(intent)
+                    } else {
+                        val uri = Uri.parse("https://docs.google.com/spreadsheets/d/1ghkT2iFbxB3bT4TKCiKAfmEdGt6kTVKFU3dm4Nz1or8/edit?usp=sharing")
+                        val intent = Intent(Intent.ACTION_VIEW, uri)
+                        activity.startActivity(intent)
+                    }
                 }
-                setRButton(textId = R.string.Done) {
+                Button(getString(R.string.Done)) {
                     if (getEditText().isNotEmpty()) {
                         try {
                             MIUIActivity.safeSP.putAny("custom_clock_format_geek", getEditText())
                             dismiss()
-                            return@setRButton
+                            return@Button
                         } catch (_: Throwable) {
                         }
                     }
-                    Toast.makeText(activity, R.string.input_error, Toast.LENGTH_SHORT)
-                        .show()
+                    Toast.makeText(activity, R.string.input_error, Toast.LENGTH_SHORT).show()
+                }
+                Button(getString(R.string.cancel), cancelStyle = true) {
+                    dismiss()
                 }
             }.show()
         }, dataBindingRecv = customClockGeekBinding.binding.getRecv(2))

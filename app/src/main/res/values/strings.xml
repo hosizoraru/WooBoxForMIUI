@@ -248,7 +248,7 @@
     <string name="scope_deskclock">DeskClock</string>
     <string name="Hour_Glass_Enable">Enable Hour Glass Animation</string>
     <string name="Hour_Glass_Enable_summary">You only need to turn it on when you find that your clock does not have this animation</string>
-    <string name="Disable_Bluetooth">Disabling bluetooth turns off temporarily</string>
+    <string name="Disable_Bluetooth">Disable bluetooth temporarily off</string>
     <string name="Disable_Bluetooth_summary">Turn off bluetooth completely in control center</string>
     <string name="pkg_installer">Package Installer</string>
     <string name="pkg_installer_summary">Disable the app installation\'s count checking</string>
