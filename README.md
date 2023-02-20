@@ -43,6 +43,8 @@ Xposed
 
 ### 第三方开源引用
 
+[chsbuffer/MIUIQOL](https://github.com/chsbuffer/MIUIQOL)  
+
 ##### GNU General Public License v3.0
 
 [qqlittleice/MiuiHome](https://github.com/qqlittleice/MiuiHome)  
@@ -51,6 +53,8 @@ Xposed
 [Weverses/BypassSignCheck](https://github.com/Weverses/BypassSignCheck)  
 [YifePlayte/MaxFreeForm](https://github.com/YifePlayte/MaxFreeForm)  
 [MonwF/customiuizer](https://github.com/MonwF/customiuizer)  
+[GSWXXN/UnlockMiLink](https://github.com/GSWXXN/UnlockMiLink)  
+[zerorooot/HorizontalContentextension](https://github.com/zerorooot/HorizontalContentextension)  
 
 ##### GNU General Public License v2.0
 

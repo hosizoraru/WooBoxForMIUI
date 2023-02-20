@@ -632,6 +632,10 @@ class SystemUIPageForT : BasePage() {
             ),
             SwitchV("can_notification_slide"),
         )
+        TextSummaryWithSwitch(
+            TextSummaryV(textId = R.string.notification_settings_no_whitelist),
+            SwitchV("notification_settings_no_whitelist")
+        )
         Line()
         TitleText(textId = R.string.control_center)
         val controlCenterWeatherBinding = GetDataBinding({

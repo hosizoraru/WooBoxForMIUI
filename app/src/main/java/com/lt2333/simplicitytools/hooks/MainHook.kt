@@ -3,7 +3,6 @@ package com.lt2333.simplicitytools.hooks
 import com.lt2333.simplicitytools.BuildConfig
 import com.lt2333.simplicitytools.hooks.apps.*
 import com.lt2333.simplicitytools.hooks.rules.all.corepatch.CorePatchMainHook
-import com.lt2333.simplicitytools.hooks.rules.all.bypasssigncheck.BypassSignCheckMainHook
 import com.lt2333.simplicitytools.utils.xposed.EasyXposedInit
 import com.lt2333.simplicitytools.utils.xposed.base.AppRegister
 import de.robv.android.xposed.IXposedHookZygoteInit
@@ -31,6 +30,7 @@ class MainHook : EasyXposedInit() {
         DeskClock, // 时钟
         PackageInstaller, // 应用包管理组件
         MiSettings,// 小米设置
+        Taplus,// 传送门
     )
 
     override fun handleLoadPackage(lpparam: XC_LoadPackage.LoadPackageParam?) {

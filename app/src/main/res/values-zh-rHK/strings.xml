@@ -206,4 +206,7 @@
     <string name="max_free_form">解鎖小窗數量限制</string>
     <string name="click_to_view_use_cases">點擊查看用例</string>
     <string name="custom_refresh_rate">自定義高刷新率應用</string>
+    <string name="notification_settings_no_whitelist">去除通知設置白名單</string>
+    <string name="taplus">傳送門</string>
+    <string name="horizontal_contentextension">允許在橫屏方向下使用傳送門</string>
 </resources>

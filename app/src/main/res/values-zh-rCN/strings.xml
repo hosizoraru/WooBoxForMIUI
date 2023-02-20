@@ -273,4 +273,7 @@
     <string name="miuihome_shortcut_add_small_window_summary">桌面图标长按快捷菜单位置添加快速打开小窗</string>
     <string name="miuihome_shortcut_add_small_window_title">小窗</string>
     <string name="custom_refresh_rate">自定义高刷新率应用</string>
+    <string name="notification_settings_no_whitelist">去除通知设置白名单</string>
+    <string name="taplus">传送门</string>
+    <string name="horizontal_contentextension">允许在横屏方向下使用传送门</string>
 </resources>

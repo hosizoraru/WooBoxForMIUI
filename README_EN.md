@@ -39,6 +39,8 @@ Xposed Repo：[Click here to download the latest release](https://github.com/Xpo
 
 ## Third party open source references
 
+[chsbuffer/MIUIQOL](https://github.com/chsbuffer/MIUIQOL)  
+
 ##### GNU General Public License v3.0
 
 [qqlittleice/MiuiHome](https://github.com/qqlittleice/MiuiHome)  
@@ -46,6 +48,8 @@ Xposed Repo：[Click here to download the latest release](https://github.com/Xpo
 [Mikanoshi/CustoMIUIzer](https://code.highspec.ru/Mikanoshi/CustoMIUIzer)  
 [Weverses/BypassSignCheck](https://github.com/Weverses/BypassSignCheck)  
 [MonwF/customiuizer](https://github.com/MonwF/customiuizer) 
+[GSWXXN/UnlockMiLink](https://github.com/GSWXXN/UnlockMiLink)  
+[zerorooot/HorizontalContentextension](https://github.com/zerorooot/HorizontalContentextension)  
 
 ##### GNU General Public License v2.0
 

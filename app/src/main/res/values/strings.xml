@@ -275,4 +275,7 @@
     <string name="miuihome_shortcut_add_small_window_summary">Press and hold the desktop icon to add a quick open window</string>
     <string name="miuihome_shortcut_add_small_window_title">Small window</string>
     <string name="custom_refresh_rate">Custom refresh rate</string>
+    <string name="notification_settings_no_whitelist">Notification settings no whitelist</string>
+    <string name="taplus">Taplus</string>
+    <string name="horizontal_contentextension">Horizontal contentextension</string>
 </resources>

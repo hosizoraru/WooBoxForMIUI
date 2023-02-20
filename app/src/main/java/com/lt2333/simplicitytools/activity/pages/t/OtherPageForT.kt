@@ -245,6 +245,12 @@ class OtherPageForT : BasePage() {
             TextSummaryV(textId = R.string.pkg_installer_summary),
             SwitchV("pkg_installer_count_checking")
         )
+        Line()
+        TitleText(textId = R.string.taplus)
+        TextSummaryWithSwitch(
+            TextSummaryV(textId = R.string.horizontal_contentextension),
+            SwitchV("horizontal_contentextension")
+        )
     }
 
 }

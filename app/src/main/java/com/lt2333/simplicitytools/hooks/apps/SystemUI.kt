@@ -1,6 +1,7 @@
 package com.lt2333.simplicitytools.hooks.apps
 
 import android.os.Build
+import com.lt2333.simplicitytools.hooks.rules.all.systemui.*
 import com.lt2333.simplicitytools.hooks.rules.s.systemui.*
 import com.lt2333.simplicitytools.hooks.rules.t.systemui.*
 import com.lt2333.simplicitytools.utils.xposed.base.AppRegister
@@ -47,6 +48,7 @@ object SystemUI : AppRegister() {
                     ShowWifiStandardForT, // 显示 WIFI 角标
                     NoPasswordHookForS, // 开机免密码
                     DisableBluetoothForT, // 控制中心直接关闭蓝牙
+                    NotificationSettingsNoWhiteListForAll,// 去除通知设置白名单
                 )
             }
 
@@ -86,6 +88,7 @@ object SystemUI : AppRegister() {
                     ShowWifiStandardForS, // 显示 WIFI 角标
                     NoPasswordHookForS, // 开机免密码
                     DisableBluetoothForT, // 控制中心直接关闭蓝牙
+                    NotificationSettingsNoWhiteListForAll,// 去除通知设置白名单
                 )
             }
         }

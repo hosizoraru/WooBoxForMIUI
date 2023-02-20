@@ -15,6 +15,7 @@ object Android : AppRegister() {
     override fun handleLoadPackage(lpparam: XC_LoadPackage.LoadPackageParam) {
         //核心破解
         CorePatchMainHook().handleLoadPackage(lpparam)
+        //BypassSignCheck
         BypassSignCheckMainHook().handleLoadPackage(lpparam)
         when (Build.VERSION.SDK_INT) {
             Build.VERSION_CODES.TIRAMISU -> {

@@ -18,5 +18,6 @@
         <item>com.android.deskclock</item>
         <item>com.miui.packageinstaller</item>
         <item>com.xiaomi.misettings</item>
+        <item>com.miui.contentextension</item>
     </string-array>
 </resources>

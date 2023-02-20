@@ -13,5 +13,20 @@ object ForceSupportSendAppForAll : HookRegister() {
         }.hookAfter {
             it.result = true
         }
+        findMethod("com.miui.circulate.api.protocol.miuiplus.MiuiPlusServiceController") {
+            name == "isSupportSendApp"
+        }.hookAfter {
+            it.result = true
+        }
+        findMethod("com.miui.circulate.world.permission.method.PermissionCheck\\\$BaseCheck") {
+            name == "check"
+        }.hookAfter {
+            it.result = true
+        }
+        findMethod("com.xiaomi.mirror.RemoteDeviceInfo") {
+            name == "isSupportSendApp"
+        }.hookAfter {
+            it.result = true
+        }
     }
 }
