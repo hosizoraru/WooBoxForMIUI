@@ -40,6 +40,7 @@ Xposed Repo：[Click here to download the latest release](https://github.com/Xpo
 ## Third party open source references
 
 [chsbuffer/MIUIQOL](https://github.com/chsbuffer/MIUIQOL)  
+[YuKongA/Miui_XXL](https://github.com/YuKongA/Miui_XXL)  
 
 ##### GNU General Public License v3.0
 

@@ -209,4 +209,11 @@
     <string name="notification_settings_no_whitelist">去除通知設置白名單</string>
     <string name="taplus">傳送門</string>
     <string name="horizontal_contentextension">允許在橫屏方向下使用傳送門</string>
+    <string name="packageinstaller_allow_update_system_app">允許更新系統應用</string>
+    <string name="packageinstaller_remove_ads">去廣告/移除安全守護提示</string>
+    <string name="packageinstaller_show_more_apk_info">顯示更多應用信息</string>
+    <string name="packageinstaller_app_versionname_title">版本名</string>
+    <string name="packageinstaller_app_versioncode_title">版本號</string>
+    <string name="packageinstaller_app_sdk_title">SDK</string>
+    <string name="packageinstaller_app_size_title">大小</string>
 </resources>

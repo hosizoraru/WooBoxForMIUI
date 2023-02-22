@@ -11,7 +11,7 @@ import com.github.kyuubiran.ezxhelper.utils.hookBefore
 import com.github.kyuubiran.ezxhelper.utils.loadClass
 import com.lt2333.simplicitytools.utils.hasEnable
 import com.lt2333.simplicitytools.utils.xposed.base.HookRegister
-import com.lt2333.simplicitytools.utils.DrmManager
+import com.lt2333.simplicitytools.utils.YuKongA.DrmManager
 
 object RemoveAdsForAll : HookRegister() {
 

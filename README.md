@@ -44,6 +44,7 @@ Xposed
 ### 第三方开源引用
 
 [chsbuffer/MIUIQOL](https://github.com/chsbuffer/MIUIQOL)  
+[YuKongA/Miui_XXL](https://github.com/YuKongA/Miui_XXL)  
 
 ##### GNU General Public License v3.0
 

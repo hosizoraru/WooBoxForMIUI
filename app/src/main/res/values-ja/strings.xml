@@ -246,8 +246,6 @@
     <string name="Hour_Glass_Enable_summary">時計にこのアニメーションがないことがわかった場合にのみ、オンにする必要があります</string>
     <string name="Disable_Bluetooth">Bluetooth を無効にすると一時的にオフになります</string>
     <string name="Disable_Bluetooth_summary">コントロールセンターでBluetoothを完全にオフにする</string>
-    <string name="pkg_installer">パッケージインストーラー</string>
-    <string name="pkg_installer_summary">アプリインストール時のカウントチェックを無効にします</string>
     <string name="kill_domain_verification">ドメイン検証を停止する</string>
     <string name="kill_domain_verification_summary">システム (およびユーザー自身) が、アプリが常にサポートされているリンクを開くことを許可しないようにします。\nまた、Android 12 以降で「検証」されていないアプリで、サポートされているリンクを開くこともできます。</string>
     <string name="big_mobile_type_only_show_network_card">ネットワークカードのみを表示する大きなモバイルタイプ</string>
@@ -274,4 +272,13 @@
     <string name="notification_settings_no_whitelist">通知設定 ホワイトリストなし</string>
     <string name="taplus">Taplus</string>
     <string name="horizontal_contentextension">Taplus を横向きで使用できるようにします</string>
+    <string name="pkg_installer">パッケージインストーラー</string>
+    <string name="pkg_installer_summary">アプリインストール時のカウントチェックを無効にします</string>
+    <string name="packageinstaller_allow_update_system_app">システムアプリの更新を許可</string>
+    <string name="packageinstaller_remove_ads">広告を削/警備員リマインダーを削除する</string>
+    <string name="packageinstaller_show_more_apk_info">もっとAPK情報を表示</string>
+    <string name="packageinstaller_app_versionname_title">Version Name</string>
+    <string name="packageinstaller_app_versioncode_title">Version Code</string>
+    <string name="packageinstaller_app_sdk_title">Supported SDK</string>
+    <string name="packageinstaller_app_size_title">App Size</string>
 </resources>
