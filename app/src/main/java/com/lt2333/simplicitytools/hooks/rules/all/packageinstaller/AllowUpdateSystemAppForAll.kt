@@ -4,30 +4,23 @@ import com.lt2333.simplicitytools.utils.hasEnable
 import com.lt2333.simplicitytools.utils.xposed.base.HookRegister
 import com.lt2333.simplicitytools.utils.*
 import com.github.kyuubiran.ezxhelper.utils.Log
-import com.github.kyuubiran.ezxhelper.utils.findAllMethods
-import com.github.kyuubiran.ezxhelper.utils.hookReturnConstant
-import android.app.Application
+import android.content.pm.ApplicationInfo
+import com.github.kyuubiran.ezxhelper.utils.findMethod
+import com.github.kyuubiran.ezxhelper.utils.hookBefore
 
 object AllowUpdateSystemAppForAll : HookRegister() {
     override fun init() = hasEnable("packageinstaller_allow_update_system_app") {
-        val miuiSettingsCompatClass = "com.android.packageinstaller.compat.MiuiSettingsCompat".findClass()
-
-        try {
-            findAllMethods(miuiSettingsCompatClass) {
-                name == "isPersonalizedAdEnabled"
-            }.hookReturnConstant(false)
-        } catch (t: Throwable) {
-            Log.ex(t)
-        }
 
         var letter = 'a'
         for (i in 0..25) {
-            val classIfExists = ("j2.${letter}").findClassOrNull()
             try {
+                val classIfExists = "j2.${letter}".findClassOrNull()
                 classIfExists?.let {
-                    findAllMethods(it) {
-                        parameterCount == 1 && returnType == Boolean::class.java && parameterTypes[0] == Application::class.java
-                    }.hookReturnConstant(false)
+                    findMethod(it) {
+                        parameterCount == 1 && parameterTypes[0] == ApplicationInfo::class.java && returnType == Boolean::class.java
+                    }.hookBefore { hookParam ->
+                        hookParam.result = false
+                    }
                 }
             } catch (t: Throwable) {
                 letter++
