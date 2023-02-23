@@ -283,4 +283,5 @@
     <string name="packageinstaller_app_versioncode_title">版本号</string>
     <string name="packageinstaller_app_sdk_title">SDK</string>
     <string name="packageinstaller_app_size_title">大小</string>
+    <string name="Use_Transition_Animation">强制所有小组件使用Miui小组件的动画</string>
 </resources>

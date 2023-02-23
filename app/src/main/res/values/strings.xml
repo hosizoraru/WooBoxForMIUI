@@ -285,4 +285,5 @@
     <string name="packageinstaller_app_versioncode_title">Version Code</string>
     <string name="packageinstaller_app_sdk_title">Supported SDK</string>
     <string name="packageinstaller_app_size_title">App Size</string>
+    <string name="Use_Transition_Animation">Mandatory all widget use miui widget animation</string>
 </resources>

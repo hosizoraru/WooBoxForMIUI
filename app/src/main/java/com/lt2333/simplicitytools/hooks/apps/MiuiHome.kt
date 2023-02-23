@@ -1,14 +1,7 @@
 package com.lt2333.simplicitytools.hooks.apps
 
 import android.os.Build
-import com.lt2333.simplicitytools.hooks.rules.all.miuihome.AlwaysShowStatusBarClockForAll
-import com.lt2333.simplicitytools.hooks.rules.all.miuihome.DisableRecentViewWallpaperDarkeningForAll
-import com.lt2333.simplicitytools.hooks.rules.all.miuihome.ModifyRecentViewRemoveCardAnimForAll
-import com.lt2333.simplicitytools.hooks.rules.all.miuihome.RemoveSmallWindowRestrictionForMiuiHomeForAll
-import com.lt2333.simplicitytools.hooks.rules.all.miuihome.ScrollIconNameForAll
-import com.lt2333.simplicitytools.hooks.rules.all.miuihome.ShortcutAddSmallWindowForAll
-import com.lt2333.simplicitytools.hooks.rules.all.miuihome.DoubleTapToSleepForAll
-import com.lt2333.simplicitytools.hooks.rules.all.miuihome.MaxFreeFormmForAll
+import com.lt2333.simplicitytools.hooks.rules.all.miuihome.*
 import com.lt2333.simplicitytools.utils.xposed.base.AppRegister
 import de.robv.android.xposed.callbacks.XC_LoadPackage
 
@@ -28,6 +21,7 @@ object MiuiHome : AppRegister() {
                     ScrollIconNameForAll, //滚动显示应用标题
                     RemoveSmallWindowRestrictionForMiuiHomeForAll, //取消小窗限制
                     ShortcutAddSmallWindowForAll, //快捷菜单添加小窗
+                    UseTransitionAnimationForAll, // 强制使用miui小部件动画
                 )
             }
 
@@ -42,6 +36,7 @@ object MiuiHome : AppRegister() {
                     ScrollIconNameForAll, //滚动显示应用标题
                     RemoveSmallWindowRestrictionForMiuiHomeForAll, //取消小窗限制
                     ShortcutAddSmallWindowForAll, //快捷菜单添加小窗
+                    UseTransitionAnimationForAll, // 强制使用miui小部件动画
                 )
             }
         }
