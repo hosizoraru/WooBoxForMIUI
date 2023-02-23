@@ -55,6 +55,18 @@ class OtherPageForT : BasePage() {
             TextSummaryV(textId = R.string.Use_Transition_Animation),
             SwitchV("Use_Transition_Animation")
         )
+        TextSummaryWithSwitch(
+            TextSummaryV(textId = R.string.Overlap_Mode),
+            SwitchV("Overlap_Mode")
+        )
+        TextSummaryWithSwitch(
+            TextSummaryV(textId = R.string.home_widget_to_minus),
+            SwitchV("home_widget_to_minus")
+        )
+        TextSummaryWithSwitch(
+            TextSummaryV(textId = R.string.Show_MIUI_Widget),
+            SwitchV("Show_MIUI_Widget")
+        )
         Line()
         TitleText(textId = R.string.scope_powerkeeper)
         TextSummaryWithSwitch(

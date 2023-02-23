@@ -22,6 +22,9 @@ object MiuiHome : AppRegister() {
                     RemoveSmallWindowRestrictionForMiuiHomeForAll, //取消小窗限制
                     ShortcutAddSmallWindowForAll, //快捷菜单添加小窗
                     UseTransitionAnimationForAll, // 强制使用miui小部件动画
+                    OverlapModeForAll, // Fold2 样式 负一屏
+                    AllowMoveAllWidgetToMinusForAll, // 允许移动所有小部件到负一屏
+                    AlwaysShowMiuiWidget, // 在安卓小部件页面显示 MIUI 小部件
                 )
             }
 
@@ -37,6 +40,9 @@ object MiuiHome : AppRegister() {
                     RemoveSmallWindowRestrictionForMiuiHomeForAll, //取消小窗限制
                     ShortcutAddSmallWindowForAll, //快捷菜单添加小窗
                     UseTransitionAnimationForAll, // 强制使用miui小部件动画
+                    OverlapModeForAll, // Fold2 样式 负一屏
+                    AllowMoveAllWidgetToMinusForAll, // 允许移动所有小部件到负一屏
+                    AlwaysShowMiuiWidget, // 在安卓小部件页面显示 MIUI 小部件
                 )
             }
         }

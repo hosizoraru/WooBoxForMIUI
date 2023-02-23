@@ -1,11 +1,11 @@
-package com.lt2333.simplicitytools.hooks.rules.t.mishare
+package com.lt2333.simplicitytools.hooks.rules.all.mishare
 
 import com.github.kyuubiran.ezxhelper.utils.findMethod
 import com.github.kyuubiran.ezxhelper.utils.hookBefore
 import com.lt2333.simplicitytools.utils.hasEnable
 import com.lt2333.simplicitytools.utils.xposed.base.HookRegister
 
-object NoAutoTurnOffForT : HookRegister() {
+object NoAutoTurnOffForAll : HookRegister() {
     override fun init() {
         findMethod("com.miui.mishare.connectivity.MiShareService\$d\$g") {
             name == "b"

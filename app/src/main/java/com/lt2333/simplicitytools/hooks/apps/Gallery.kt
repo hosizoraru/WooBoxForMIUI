@@ -1,7 +1,7 @@
 package com.lt2333.simplicitytools.hooks.apps
 
 import android.os.Build
-import com.lt2333.simplicitytools.hooks.rules.t.gallery.UnlockHDREnhanceForT
+import com.lt2333.simplicitytools.hooks.rules.all.gallery.UnlockHDREnhanceForAll
 import com.lt2333.simplicitytools.utils.xposed.base.AppRegister
 import de.robv.android.xposed.callbacks.XC_LoadPackage
 
@@ -13,14 +13,14 @@ object Gallery : AppRegister() {
             Build.VERSION_CODES.TIRAMISU -> {
                 autoInitHooks(
                     lpparam,
-                    UnlockHDREnhanceForT, // 超动态显示
+                    UnlockHDREnhanceForAll, // 超动态显示
                 )
             }
 
             Build.VERSION_CODES.S -> {
                 autoInitHooks(
                     lpparam,
-                    UnlockHDREnhanceForT, // 超动态显示
+                    UnlockHDREnhanceForAll, // 超动态显示
                 )
             }
         }

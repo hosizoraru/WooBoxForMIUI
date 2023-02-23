@@ -1,7 +1,7 @@
 package com.lt2333.simplicitytools.hooks.apps
 
 import android.os.Build
-import com.lt2333.simplicitytools.hooks.rules.t.deskclock.HourGlassEnableForT
+import com.lt2333.simplicitytools.hooks.rules.all.deskclock.HourGlassEnableForAll
 import com.lt2333.simplicitytools.utils.xposed.base.AppRegister
 import de.robv.android.xposed.callbacks.XC_LoadPackage
 
@@ -13,14 +13,14 @@ object DeskClock : AppRegister() {
             Build.VERSION_CODES.TIRAMISU -> {
                 autoInitHooks(
                     lpparam,
-                    HourGlassEnableForT, // 禁止自动关闭小米互传
+                    HourGlassEnableForAll, // 计时沙漏动画
                 )
             }
 
             Build.VERSION_CODES.S -> {
                 autoInitHooks(
                     lpparam,
-                    HourGlassEnableForT, // 禁止自动关闭小米互传
+                    HourGlassEnableForAll, // 计时沙漏动画
                 )
             }
         }
