@@ -25,6 +25,8 @@ object MiuiHome : AppRegister() {
                     OverlapModeForAll, // Fold2 样式 负一屏
                     AllowMoveAllWidgetToMinusForAll, // 允许移动所有小部件到负一屏
                     AlwaysShowMiuiWidget, // 在安卓小部件页面显示 MIUI 小部件
+                    OptimizeUnlockAnimForAll, // 优化解锁动画
+                    IconCornerForAll, //  中等图标圆角跟随
                 )
             }
 
@@ -43,6 +45,8 @@ object MiuiHome : AppRegister() {
                     OverlapModeForAll, // Fold2 样式 负一屏
                     AllowMoveAllWidgetToMinusForAll, // 允许移动所有小部件到负一屏
                     AlwaysShowMiuiWidget, // 在安卓小部件页面显示 MIUI 小部件
+                    OptimizeUnlockAnimForAll, // 优化解锁动画
+                    IconCornerForAll, //  中等图标圆角跟随
                 )
             }
         }

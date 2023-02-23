@@ -285,4 +285,7 @@
     <string name="Overlap_Mode">Fold2 スタイルの App Vault</string>
     <string name="home_widget_to_minus">クラシック ウィジェットをマイナス ワン画面に移動できるようにする</string>
     <string name="Show_MIUI_Widget">クラシック ウィジェット ページに MIUI ウィジェットを表示する</string>
+    <string name="unlock_hotseat">ドックからアイコン数の制限を取り除く</string>
+    <string name="optimize_unlock_anim">ロック解除アニメーションを最適化</string>
+    <string name="icon_corner">中型アイコン 角丸 フォロー</string>
 </resources>

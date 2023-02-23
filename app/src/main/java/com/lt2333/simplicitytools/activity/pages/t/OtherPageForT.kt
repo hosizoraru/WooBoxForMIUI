@@ -67,6 +67,18 @@ class OtherPageForT : BasePage() {
             TextSummaryV(textId = R.string.Show_MIUI_Widget),
             SwitchV("Show_MIUI_Widget")
         )
+        TextSummaryWithSwitch(
+            TextSummaryV(textId = R.string.unlock_hotseat),
+            SwitchV("unlock_hotseat")
+        )
+        TextSummaryWithSwitch(
+            TextSummaryV(textId = R.string.optimize_unlock_anim),
+            SwitchV("optimize_unlock_anim")
+        )
+        TextSummaryWithSwitch(
+            TextSummaryV(textId = R.string.icon_corner),
+            SwitchV("icon_corner")
+        )
         Line()
         TitleText(textId = R.string.scope_powerkeeper)
         TextSummaryWithSwitch(
