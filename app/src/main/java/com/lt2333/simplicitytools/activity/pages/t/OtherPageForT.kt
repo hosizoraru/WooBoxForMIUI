@@ -51,6 +51,10 @@ class OtherPageForT : BasePage() {
             TextSummaryV(textId = R.string.miuihome_scroll_icon_name, tipsId = R.string.miuihome_scroll_icon_name_summary),
             SwitchV("miuihome_scroll_icon_name", false)
         )
+        TextSummaryWithSwitch(
+            TextSummaryV(textId = R.string.Use_Transition_Animation),
+            SwitchV("Use_Transition_Animation")
+        )
         Line()
         TitleText(textId = R.string.scope_powerkeeper)
         TextSummaryWithSwitch(
