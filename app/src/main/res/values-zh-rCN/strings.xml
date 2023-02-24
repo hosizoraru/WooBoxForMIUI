@@ -290,4 +290,5 @@
     <string name="unlock_hotseat">解锁底栏图标数量限制</string>
     <string name="optimize_unlock_anim">优化解锁动画</string>
     <string name="icon_corner">中等图标圆角跟随</string>
+    <string name="shortcut_remove_restrictions">解除Shortcuts数量限制</string>
 </resources>

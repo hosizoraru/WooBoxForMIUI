@@ -65,6 +65,11 @@ class MainPageForS : BasePage() {
         )
         TextSummaryWithArrow(
             TextSummaryV(
+                textId = R.string.scope_miuihome,
+                onClickListener = { showFragment("scope_miuihome") })
+        )
+        TextSummaryWithArrow(
+            TextSummaryV(
                 textId = R.string.scope_other,
                 tipsId = R.string.scope_other_summary,
                 onClickListener = { showFragment("scope_other") })

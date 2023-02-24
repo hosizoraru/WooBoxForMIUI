@@ -27,6 +27,8 @@ object MiuiHome : AppRegister() {
                     AlwaysShowMiuiWidget, // 在安卓小部件页面显示 MIUI 小部件
                     OptimizeUnlockAnimForAll, // 优化解锁动画
                     IconCornerForAll, //  中等图标圆角跟随
+                    UnlockHotseatIconForAll, // 解锁底栏图标数量限制
+                    ShortcutItemCountForAll, // 解除Shortcuts数量限制
                 )
             }
 
@@ -47,6 +49,8 @@ object MiuiHome : AppRegister() {
                     AlwaysShowMiuiWidget, // 在安卓小部件页面显示 MIUI 小部件
                     OptimizeUnlockAnimForAll, // 优化解锁动画
                     IconCornerForAll, //  中等图标圆角跟随
+                    UnlockHotseatIconForAll, // 解锁底栏图标数量限制
+                    ShortcutItemCountForAll, // 解除Shortcuts数量限制
                 )
             }
         }

@@ -292,4 +292,5 @@
     <string name="unlock_hotseat">Remove icon number restriction from dock</string>
     <string name="optimize_unlock_anim">Optimize unlock anim</string>
     <string name="icon_corner">Medium icon round corner follow</string>
+    <string name="shortcut_remove_restrictions">Remove restrictions on shortcuts</string>
 </resources>

@@ -8,6 +8,7 @@ import cn.fkj233.ui.dialog.MIUIDialog
 import com.lt2333.simplicitytools.BuildConfig
 import com.lt2333.simplicitytools.R
 import com.lt2333.simplicitytools.activity.pages.all.AboutPage
+import com.lt2333.simplicitytools.activity.pages.all.MiuiHomePage
 import com.lt2333.simplicitytools.activity.pages.all.MenuPage
 import com.lt2333.simplicitytools.activity.pages.s.*
 import com.lt2333.simplicitytools.activity.pages.t.*
@@ -59,6 +60,7 @@ class MainActivity : MIUIActivity() {
                 registerPage(MainPageForT::class.java)
                 registerPage(SystemUIPageForT::class.java)
                 registerPage(AndroidPageForT::class.java)
+                registerPage(MiuiHomePage::class.java)
                 registerPage(OtherPageForT::class.java)
                 registerPage(HideIconPageForT::class.java)
                 registerPage(AboutPage::class.java)
@@ -68,6 +70,7 @@ class MainActivity : MIUIActivity() {
                 registerPage(MainPageForS::class.java)
                 registerPage(SystemUIPageForS::class.java)
                 registerPage(AndroidPageForS::class.java)
+                registerPage(MiuiHomePage::class.java)
                 registerPage(OtherPageForS::class.java)
                 registerPage(HideIconPageForS::class.java)
                 registerPage(AboutPage::class.java)
