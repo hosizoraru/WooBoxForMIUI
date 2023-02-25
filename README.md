@@ -44,7 +44,6 @@ Xposed
 ### 第三方开源引用
 
 [chsbuffer/MIUIQOL](https://github.com/chsbuffer/MIUIQOL)  
-[YuKongA/Miui_XXL](https://github.com/YuKongA/Miui_XXL)  
 
 ##### GNU General Public License v3.0
 
@@ -53,6 +52,7 @@ Xposed
 [Mikanoshi/CustoMIUIzer](https://code.highspec.ru/Mikanoshi/CustoMIUIzer)  
 [Weverses/BypassSignCheck](https://github.com/Weverses/BypassSignCheck)  
 [YifePlayte/MaxFreeForm](https://github.com/YifePlayte/MaxFreeForm)  
+[YuKongA/Miui_XXL](https://github.com/YuKongA/Miui_XXL)  
 [MonwF/customiuizer](https://github.com/MonwF/customiuizer)  
 [GSWXXN/UnlockMiLink](https://github.com/GSWXXN/UnlockMiLink)  
 [zerorooot/HorizontalContentextension](https://github.com/zerorooot/HorizontalContentextension)  
