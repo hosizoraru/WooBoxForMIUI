@@ -40,7 +40,6 @@ Xposed Repo：[Click here to download the latest release](https://github.com/Xpo
 ## Third party open source references
 
 [chsbuffer/MIUIQOL](https://github.com/chsbuffer/MIUIQOL)  
-[YuKongA/Miui_XXL](https://github.com/YuKongA/Miui_XXL)  
 
 ##### GNU General Public License v3.0
 
@@ -48,7 +47,9 @@ Xposed Repo：[Click here to download the latest release](https://github.com/Xpo
 [yujincheng08/BiliRoaming](https://github.com/yujincheng08/BiliRoaming)  
 [Mikanoshi/CustoMIUIzer](https://code.highspec.ru/Mikanoshi/CustoMIUIzer)  
 [Weverses/BypassSignCheck](https://github.com/Weverses/BypassSignCheck)  
-[MonwF/customiuizer](https://github.com/MonwF/customiuizer) 
+[YifePlayte/MaxFreeForm](https://github.com/YifePlayte/MaxFreeForm)  
+[YuKongA/Miui_XXL](https://github.com/YuKongA/Miui_XXL)  
+[MonwF/customiuizer](https://github.com/MonwF/customiuizer)  
 [GSWXXN/UnlockMiLink](https://github.com/GSWXXN/UnlockMiLink)  
 [zerorooot/HorizontalContentextension](https://github.com/zerorooot/HorizontalContentextension)  
 
