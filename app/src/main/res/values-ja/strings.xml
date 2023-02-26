@@ -295,4 +295,15 @@
     <string name="miuihome_anim_ratio_summary">アプリケーションの開閉時に適用されるトランジション アニメーションの速度</string>
     <string name="miuihome_anim_ratio_recent">「バックグラウンド内外」の遷移アニメーション速度</string>
     <string name="miuihome_anim_ratio_recent_summary">最近のタスクに出入りするときに有効になるトランジション アニメーションの速度</string>
+    <string name="miuihome_task_view_card_size_binding">タスク ビュー カードのサイズをカスタマイズ</string>
+    <string name="miuihome_task_view_card_size_binding_summary">さまざまなスタイルでタスク ビュー カードのサイズを設定します</string>
+    <string name="miuihome_task_view_card_size_vertical">垂直方向のサムネイル サイズ</string>
+    <string name="miuihome_task_view_card_size_horizontal1">水平-垂直のサムネイル サイズ</string>
+    <string name="miuihome_task_view_card_size_horizontal2">水平-水平のサムネイル サイズ</string>
+    <string name="miuihome_highend_device">デバイスの制限を解除</string>
+    <string name="miuihome_highend_device_summary">デフォルトでハイエンドとして認識されます。 このオプションをオンにしても、GPU パフォーマンスのオーバーヘッドは増加しません。 同時にいくつかのログを削除します。</string>
+    <string name="miuihome_use_complete_blur">完全なぼかし</string>
+    <string name="miuihome_use_complete_blur_summary">公式の半完成完全ぼかし機能を使う</string>
+    <string name="miuihome_complete_blur_fix">完全なぼかし補正</string>
+    <string name="miuihome_complete_blur_fix_summary">アプリから上にスワイプすると、視覚的なちらつきが発生する可能性があるため、ぼかしが補完されます</string>
 </resources>
