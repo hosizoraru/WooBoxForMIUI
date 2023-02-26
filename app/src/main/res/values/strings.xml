@@ -299,4 +299,9 @@
     <string name="miuihome_anim_ratio_summary">The speed of the transition animation that takes effect when the application is opened and closed</string>
     <string name="miuihome_anim_ratio_recent">Transition animation speed「In and out of the background」</string>
     <string name="miuihome_anim_ratio_recent_summary">The speed of the transition animation that takes effect when entering and exiting the most recent task</string>
+    <string name="miuihome_task_view_card_size_binding">Customize task view card size</string>
+    <string name="miuihome_task_view_card_size_binding_summary">Set the size of task view cards in different styles</string>
+    <string name="miuihome_task_view_card_size_vertical">Thumbnail size for Vertically</string>
+    <string name="miuihome_task_view_card_size_horizontal1">Thumbnail size for Horizontally-Vertical</string>
+    <string name="miuihome_task_view_card_size_horizontal2">Thumbnail size for Horizontally-Horizontal</string>
 </resources>

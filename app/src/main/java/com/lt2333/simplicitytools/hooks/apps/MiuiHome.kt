@@ -29,7 +29,8 @@ object MiuiHome : AppRegister() {
                     IconCornerForAll, //  中等图标圆角跟随
                     UnlockHotseatIconForAll, // 解锁底栏图标数量限制
                     ShortcutItemCountForAll, // 解除Shortcuts数量限制
-                    AnimDurationRatioForAll, // 打开应用和最近任务的动画速度
+                    AnimDurationRatioForAll, // 自定义动画速度
+                    TaskViewCardSizeForAll, // 自定义最近任务卡片大小
                 )
             }
 
@@ -52,7 +53,8 @@ object MiuiHome : AppRegister() {
                     IconCornerForAll, //  中等图标圆角跟随
                     UnlockHotseatIconForAll, // 解锁底栏图标数量限制
                     ShortcutItemCountForAll, // 解除Shortcuts数量限制
-                    AnimDurationRatioForAll, // 打开应用和最近任务的动画速度
+                    AnimDurationRatioForAll, // 自定义动画速度
+                    TaskViewCardSizeForAll, // 自定义最近任务卡片大小
                 )
             }
         }
