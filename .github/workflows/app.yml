@@ -28,7 +28,7 @@ jobs:
       - name: Build with Gradle
         run: 
           chmod +x gradlew
-          bash ./gradlew :app:packageRelease
+          ./gradlew :app:packageRelease
 
       - name: Upload release
         uses: actions/upload-artifact@v3
