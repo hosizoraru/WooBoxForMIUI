@@ -27,7 +27,6 @@ jobs:
 
       - name: Build with Gradle
         run: 
-          chmod +x gradlew
           ./gradlew :app:packageRelease
 
       - name: Upload release
