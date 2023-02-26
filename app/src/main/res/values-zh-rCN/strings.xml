@@ -302,4 +302,10 @@
     <string name="miuihome_task_view_card_size_vertical">瀑布卡片大小</string>
     <string name="miuihome_task_view_card_size_horizontal1">平铺卡片大小「竖屏时」</string>
     <string name="miuihome_task_view_card_size_horizontal2">平铺卡片大小「横屏时」</string>
+    <string name="miuihome_highend_device">解除设备限制</string>
+    <string name="miuihome_highend_device_summary">将被默认识别为高端，开启该选项并不会增加 GPU 性能开销同时去除部分日志</string>
+    <string name="miuihome_use_complete_blur">完整模糊</string>
+    <string name="miuihome_use_complete_blur_summary">使用米米官方搞的半成品完整模糊功能</string>
+    <string name="miuihome_complete_blur_fix">完整模糊补全</string>
+    <string name="miuihome_complete_blur_fix_summary">补全从应用向上滑动时的模糊效果，这可能导致视觉闪烁和瞬时丢帧</string>
 </resources>

@@ -31,6 +31,9 @@ object MiuiHome : AppRegister() {
                     ShortcutItemCountForAll, // 解除Shortcuts数量限制
                     AnimDurationRatioForAll, // 自定义动画速度
                     TaskViewCardSizeForAll, // 自定义最近任务卡片大小
+                    SetDeviceLevelForAll, // 解除设备限制
+                    UseComPleteBlurForAll, // 完整模糊
+                    UseComPleteBlurFixForAll, // 完整模糊补全
                 )
             }
 
@@ -55,6 +58,9 @@ object MiuiHome : AppRegister() {
                     ShortcutItemCountForAll, // 解除Shortcuts数量限制
                     AnimDurationRatioForAll, // 自定义动画速度
                     TaskViewCardSizeForAll, // 自定义最近任务卡片大小
+                    SetDeviceLevelForAll, // 解除设备限制
+                    UseComPleteBlurForAll, // 完整模糊
+                    UseComPleteBlurFixForAll, // 完整模糊补全
                 )
             }
         }

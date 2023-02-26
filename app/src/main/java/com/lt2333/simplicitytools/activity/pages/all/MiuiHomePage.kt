@@ -7,6 +7,7 @@ import cn.fkj233.ui.activity.data.BasePage
 import cn.fkj233.ui.activity.view.SeekBarWithTextV
 import cn.fkj233.ui.activity.view.SwitchV
 import cn.fkj233.ui.activity.view.TextSummaryV
+import cn.fkj233.ui.activity.view.TextV
 import com.lt2333.simplicitytools.R
 
 @BMPage("scope_miuihome", "Home", hideMenu = false)
@@ -80,6 +81,22 @@ class MiuiHomePage : BasePage() {
             TextSummaryV(textId = R.string.icon_corner),
             SwitchV("icon_corner")
         )
+        val blurBinding = GetDataBinding({ safeSP.getBoolean("miuihome_use_complete_blur", false) }) { view, flags, data ->
+            if (flags == 1) view.visibility = if (data as Boolean) View.VISIBLE else View.GONE
+        }
+        TextSummaryWithSwitch(
+            TextSummaryV(textId = R.string.miuihome_use_complete_blur, tipsId = R.string.miuihome_use_complete_blur_summary),
+            SwitchV("miuihome_use_complete_blur", false, dataBindingSend = blurBinding.bindingSend)
+        )
+        TextSummaryWithSwitch(
+            TextSummaryV(textId = R.string.miuihome_complete_blur_fix, tipsId = R.string.miuihome_complete_blur_fix_summary),
+            SwitchV("miuihome_complete_blur_fix", false),
+            dataBindingRecv = blurBinding.binding.getRecv(1)
+        )
+        TextSummaryWithSwitch(
+            TextSummaryV(textId = R.string.miuihome_highend_device, tipsId = R.string.miuihome_highend_device_summary),
+            SwitchV("miuihome_highend_device", false)
+        )
         val animRatioBinding = GetDataBinding({ safeSP.getBoolean("miuihome_anim_ratio_binding", false) }) { view, flags, data ->
             if (flags == 1) view.visibility = if (data as Boolean) View.VISIBLE else View.GONE
         }
@@ -95,7 +112,30 @@ class MiuiHomePage : BasePage() {
         TextSummaryWithSeekBar(
             TextSummaryV(textId = R.string.miuihome_anim_ratio_recent, tipsId = R.string.miuihome_anim_ratio_recent_summary),
             SeekBarWithTextV("miuihome_anim_ratio_recent", 0, 300, 100),
-            dataBindingRecv = animRatioBinding.getRecv(1)
+            dataBindingRecv = an
+            imRatioBinding.getRecv(1)
+        )
+        val cardSizeBinding = GetDataBinding({ safeSP.getBoolean("miuihome_task_view_card_size_binding", false) }) { view, flags, data ->
+            if (flags == 1) view.visibility = if (data as Boolean) View.VISIBLE else View.GONE
+        }
+        TextSummaryWithSwitch(
+            TextSummaryV(textId = R.string.miuihome_task_view_card_size_binding, tipsId = R.string.miuihome_task_view_card_size_binding_summary),
+            SwitchV("miuihome_task_view_card_size_binding", dataBindingSend = cardSizeBinding.bindingSend)
+        )
+        TextWithSeekBar(
+            TextV(textId = R.string.miuihome_task_view_card_size_vertical),
+            SeekBarWithTextV("miuihome_task_view_card_size_vertical", 80, 120, 100),
+            dataBindingRecv = cardSizeBinding.getRecv(1)
+        )
+        TextWithSeekBar(
+            TextV(textId = R.string.miuihome_task_view_card_size_horizontal1),
+            SeekBarWithTextV("miuihome_task_view_card_size_horizontal1", 80, 120, 100),
+            dataBindingRecv = cardSizeBinding.getRecv(1)
+        )
+        TextWithSeekBar(
+            TextV(textId = R.string.miuihome_task_view_card_size_horizontal2),
+            SeekBarWithTextV("miuihome_task_view_card_size_horizontal2", 80, 120, 100),
+            dataBindingRecv = cardSizeBinding.getRecv(1)
         )
     }
 }
