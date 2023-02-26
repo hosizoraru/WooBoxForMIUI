@@ -25,11 +25,10 @@ jobs:
           distribution: "temurin"
           cache: gradle
 
-      - name: Grant execute permission for gradlew
-        run: chmod +x gradlew
-
       - name: Build with Gradle
-        run: bash ./gradlew :app:packageRelease
+        run: 
+          chmod +x gradlew
+          bash ./gradlew :app:packageRelease
 
       - name: Upload release
         uses: actions/upload-artifact@v3
