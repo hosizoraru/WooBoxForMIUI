@@ -291,4 +291,10 @@
     <string name="optimize_unlock_anim">优化解锁动画</string>
     <string name="icon_corner">中等图标圆角跟随</string>
     <string name="shortcut_remove_restrictions">解除Shortcuts数量限制</string>
+    <string name="miuihome_anim_ratio_binding">自定义动画速度</string>
+    <string name="miuihome_anim_ratio_binding_summary">设置不同场景下过渡动画的速度</string>
+    <string name="miuihome_anim_ratio">过渡动画速度「开关应用」</string>
+    <string name="miuihome_anim_ratio_summary">生效于打开关闭应用程序时的过渡动画速度</string>
+    <string name="miuihome_anim_ratio_recent">过渡动画速度「进出后台」</string>
+    <string name="miuihome_anim_ratio_recent_summary">生效于进出最近任务时的过渡动画速度</string>
 </resources>

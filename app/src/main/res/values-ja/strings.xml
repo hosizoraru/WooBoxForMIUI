@@ -289,4 +289,10 @@
     <string name="optimize_unlock_anim">ロック解除アニメーションを最適化</string>
     <string name="icon_corner">中型アイコン 角丸 フォロー</string>
     <string name="shortcut_remove_restrictions">ショートカットの制限を解除</string>
+    <string name="miuihome_anim_ratio_binding">カスタムアニメーション速度</string>
+    <string name="miuihome_anim_ratio_binding_summary">さまざまなシーンで遷移アニメーションの速度を設定します</string>
+    <string name="miuihome_anim_ratio">遷移アニメーション速度「切り替えアプリ」</string>
+    <string name="miuihome_anim_ratio_summary">アプリケーションの開閉時に適用されるトランジション アニメーションの速度</string>
+    <string name="miuihome_anim_ratio_recent">「バックグラウンド内外」の遷移アニメーション速度</string>
+    <string name="miuihome_anim_ratio_recent_summary">最近のタスクに出入りするときに有効になるトランジション アニメーションの速度</string>
 </resources>

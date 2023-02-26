@@ -293,4 +293,10 @@
     <string name="optimize_unlock_anim">Optimize unlock anim</string>
     <string name="icon_corner">Medium icon round corner follow</string>
     <string name="shortcut_remove_restrictions">Remove restrictions on shortcuts</string>
+    <string name="miuihome_anim_ratio_binding">Custom animation speed</string>
+    <string name="miuihome_anim_ratio_binding_summary">Set the animation speed in different scenarios separately</string>
+    <string name="miuihome_anim_ratio">Transition animation speed「When the app is turned on or off」</string>
+    <string name="miuihome_anim_ratio_summary">The speed of the transition animation that takes effect when the application is opened and closed</string>
+    <string name="miuihome_anim_ratio_recent">Transition animation speed「In and out of the background」</string>
+    <string name="miuihome_anim_ratio_recent_summary">The speed of the transition animation that takes effect when entering and exiting the most recent task</string>
 </resources>

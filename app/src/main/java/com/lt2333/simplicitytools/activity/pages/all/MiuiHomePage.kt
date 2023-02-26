@@ -1,7 +1,10 @@
 package com.lt2333.simplicitytools.activity.pages.all
 
+import android.view.View
+import cn.fkj233.ui.activity.MIUIActivity.Companion.safeSP
 import cn.fkj233.ui.activity.annotation.BMPage
 import cn.fkj233.ui.activity.data.BasePage
+import cn.fkj233.ui.activity.view.SeekBarWithTextV
 import cn.fkj233.ui.activity.view.SwitchV
 import cn.fkj233.ui.activity.view.TextSummaryV
 import com.lt2333.simplicitytools.R
@@ -76,6 +79,23 @@ class MiuiHomePage : BasePage() {
         TextSummaryWithSwitch(
             TextSummaryV(textId = R.string.icon_corner),
             SwitchV("icon_corner")
+        )
+        val animRatioBinding = GetDataBinding({ safeSP.getBoolean("miuihome_anim_ratio_binding", false) }) { view, flags, data ->
+            if (flags == 1) view.visibility = if (data as Boolean) View.VISIBLE else View.GONE
+        }
+        TextSummaryWithSwitch(
+            TextSummaryV(textId = R.string.miuihome_anim_ratio_binding, tipsId = R.string.miuihome_anim_ratio_binding_summary),
+            SwitchV("miuihome_anim_ratio_binding", dataBindingSend = animRatioBinding.bindingSend)
+        )
+        TextSummaryWithSeekBar(
+            TextSummaryV(textId = R.string.miuihome_anim_ratio, tipsId = R.string.miuihome_anim_ratio_summary),
+            SeekBarWithTextV("miuihome_anim_ratio", 0, 300, 100),
+            dataBindingRecv = animRatioBinding.getRecv(1)
+        )
+        TextSummaryWithSeekBar(
+            TextSummaryV(textId = R.string.miuihome_anim_ratio_recent, tipsId = R.string.miuihome_anim_ratio_recent_summary),
+            SeekBarWithTextV("miuihome_anim_ratio_recent", 0, 300, 100),
+            dataBindingRecv = animRatioBinding.getRecv(1)
         )
     }
 }

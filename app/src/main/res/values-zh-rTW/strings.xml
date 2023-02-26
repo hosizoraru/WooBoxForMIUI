@@ -289,4 +289,10 @@
     <string name="optimize_unlock_anim">最佳化解鎖動畫</string>
     <string name="icon_corner">中型圖示圓角跟隨</string>
     <string name="shortcut_remove_restrictions">解除快捷方式數量限制</string>
+    <string name="miuihome_anim_ratio_binding">自定義動畫速度</string>
+    <string name="miuihome_anim_ratio_binding_summary">設置不同場景下過渡動畫的速度</string>
+    <string name="miuihome_anim_ratio">過渡動畫速度「開關應用」</string>
+    <string name="miuihome_anim_ratio_summary">生效於打開關閉應用程序時的過渡動畫速度</string>
+    <string name="miuihome_anim_ratio_recent">過渡動畫速度「進出後台」</string>
+    <string name="miuihome_anim_ratio_recent_summary">生效於進出最近任務時的過渡動畫速度</string>
 </resources>
