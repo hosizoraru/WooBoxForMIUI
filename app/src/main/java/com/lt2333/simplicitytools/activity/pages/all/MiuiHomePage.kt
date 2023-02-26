@@ -112,8 +112,7 @@ class MiuiHomePage : BasePage() {
         TextSummaryWithSeekBar(
             TextSummaryV(textId = R.string.miuihome_anim_ratio_recent, tipsId = R.string.miuihome_anim_ratio_recent_summary),
             SeekBarWithTextV("miuihome_anim_ratio_recent", 0, 300, 100),
-            dataBindingRecv = an
-            imRatioBinding.getRecv(1)
+            dataBindingRecv = animRatioBinding.getRecv(1)
         )
         val cardSizeBinding = GetDataBinding({ safeSP.getBoolean("miuihome_task_view_card_size_binding", false) }) { view, flags, data ->
             if (flags == 1) view.visibility = if (data as Boolean) View.VISIBLE else View.GONE

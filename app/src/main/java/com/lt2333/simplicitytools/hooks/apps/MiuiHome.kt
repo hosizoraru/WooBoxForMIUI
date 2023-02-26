@@ -32,8 +32,7 @@ object MiuiHome : AppRegister() {
                     AnimDurationRatioForAll, // 自定义动画速度
                     TaskViewCardSizeForAll, // 自定义最近任务卡片大小
                     SetDeviceLevelForAll, // 解除设备限制
-                    UseComPleteBlurForAll, // 完整模糊
-                    UseComPleteBlurFixForAll, // 完整模糊补全
+                    UseCompleteBlurForAll, // 完整模糊
                 )
             }
 
@@ -59,8 +58,7 @@ object MiuiHome : AppRegister() {
                     AnimDurationRatioForAll, // 自定义动画速度
                     TaskViewCardSizeForAll, // 自定义最近任务卡片大小
                     SetDeviceLevelForAll, // 解除设备限制
-                    UseComPleteBlurForAll, // 完整模糊
-                    UseComPleteBlurFixForAll, // 完整模糊补全
+                    UseCompleteBlurForAll, // 完整模糊
                 )
             }
         }
