@@ -95,6 +95,11 @@ class MainPageForT : BasePage() {
             pageNameId = R.string.scope_powerkeeper, round = 8f,
             onClickListener = { showFragment("scope_powerkeeper") }
         )
+        Page(
+            activity.getDrawable(R.drawable.ic_maxmipad)!!,
+            pageNameId = R.string.scope_mipad, round = 8f,
+            onClickListener = { showFragment("scope_mipad") }
+        )
         TextSummaryWithArrow(
             TextSummaryV(
                 textId = R.string.scope_other,

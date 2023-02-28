@@ -4,6 +4,7 @@ import android.os.Build
 import com.lt2333.simplicitytools.hooks.rules.all.corepatch.CorePatchMainHook
 import com.lt2333.simplicitytools.hooks.rules.all.bypasssigncheck.BypassSignCheckMainHook
 import com.lt2333.simplicitytools.hooks.rules.all.android.*
+import com.lt2333.simplicitytools.hooks.rules.all.maxmipad.*
 import com.lt2333.simplicitytools.hooks.rules.s.android.*
 import com.lt2333.simplicitytools.hooks.rules.t.android.*
 import com.lt2333.simplicitytools.utils.xposed.base.AppRegister
@@ -31,6 +32,15 @@ object Android : AppRegister() {
                     KillDomainVerificationForT, //KillDomainVerification
                     SideHideFreeformForAll,//解锁贴边小窗
                     MaxFreeFormaForAll, //多小窗
+                    // MaxMiPad
+                    MiuiFixedOrientationController,
+                    MiuiMagicPointerUtils,
+                    MiuiStylusDeviceListener,
+                    MiuiStylusPageKeyListener,
+                    SetPadMode,
+                    SwitchPadMode,
+                    SystemServerImpl,
+                    //
                 )
             }
 
@@ -47,6 +57,15 @@ object Android : AppRegister() {
                     KillDomainVerificationForS, //KillDomainVerification
                     SideHideFreeformForAll,//解锁贴边小窗
                     MaxFreeFormaForAll, //多小窗
+                    // MaxMiPad
+                    MiuiFixedOrientationController,
+                    MiuiMagicPointerUtils,
+                    MiuiStylusDeviceListener,
+                    MiuiStylusPageKeyListener,
+                    SetPadMode,
+                    SwitchPadMode,
+                    SystemServerImpl,
+                    //
                 )
             }
         }

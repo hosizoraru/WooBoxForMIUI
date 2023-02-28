@@ -7,9 +7,7 @@ import cn.fkj233.ui.activity.MIUIActivity
 import cn.fkj233.ui.dialog.MIUIDialog
 import com.lt2333.simplicitytools.BuildConfig
 import com.lt2333.simplicitytools.R
-import com.lt2333.simplicitytools.activity.pages.all.AboutPage
-import com.lt2333.simplicitytools.activity.pages.all.MiuiHomePage
-import com.lt2333.simplicitytools.activity.pages.all.MenuPage
+import com.lt2333.simplicitytools.activity.pages.all.*
 import com.lt2333.simplicitytools.activity.pages.s.*
 import com.lt2333.simplicitytools.activity.pages.t.*
 import com.lt2333.simplicitytools.hooks.rules.s.android.*
@@ -68,6 +66,8 @@ class MainActivity : MIUIActivity() {
                 registerPage(IconPositionPageForT::class.java)
                 registerPage(SecurityPageForT::class.java)
                 registerPage(PowerKeeperPageForT::class.java)
+                registerPage(MaxMiPadPage::class.java)
+                registerPage(DisableFixedOrientationPage::class.java)
             }
             Build.VERSION_CODES.S -> {
                 registerPage(MainPageForS::class.java)
@@ -78,6 +78,10 @@ class MainActivity : MIUIActivity() {
                 registerPage(HideIconPageForS::class.java)
                 registerPage(AboutPage::class.java)
                 registerPage(MenuPage::class.java)
+                registerPage(SecurityPageForS::class.java)
+                registerPage(PowerKeeperPageForS::class.java)
+                registerPage(MaxMiPadPage::class.java)
+                registerPage(DisableFixedOrientationPage::class.java)
             }
         }
     }
