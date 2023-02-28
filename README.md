@@ -52,6 +52,7 @@ Xposed
 [Mikanoshi/CustoMIUIzer](https://code.highspec.ru/Mikanoshi/CustoMIUIzer)  
 [Weverses/BypassSignCheck](https://github.com/Weverses/BypassSignCheck)  
 [YifePlayte/MaxFreeForm](https://github.com/YifePlayte/MaxFreeForm)  
+[YifePlayte/MaxMiPad](https://github.com/YifePlayte/MaxMiPad)  
 [YuKongA/Miui_XXL](https://github.com/YuKongA/Miui_XXL)  
 [MonwF/customiuizer](https://github.com/MonwF/customiuizer)  
 [GSWXXN/UnlockMiLink](https://github.com/GSWXXN/UnlockMiLink)  
