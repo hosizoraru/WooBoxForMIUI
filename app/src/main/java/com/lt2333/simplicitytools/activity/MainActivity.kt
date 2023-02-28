@@ -66,6 +66,8 @@ class MainActivity : MIUIActivity() {
                 registerPage(AboutPage::class.java)
                 registerPage(MenuPage::class.java)
                 registerPage(IconPositionPageForT::class.java)
+                registerPage(SecurityPageForT::class.java)
+                registerPage(PowerKeeperPageForT::class.java)
             }
             Build.VERSION_CODES.S -> {
                 registerPage(MainPageForS::class.java)

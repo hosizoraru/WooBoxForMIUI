@@ -15,8 +15,8 @@ import com.lt2333.simplicitytools.R
 class AndroidPageForT : BasePage() {
 
     override fun onCreate() {
+        TitleText(textId = R.string.scope_android_summary)
         TitleText(textId = R.string.corepacth)
-
         TextSummaryWithSwitch(
             TextSummaryV(
                 textId = R.string.downgr,

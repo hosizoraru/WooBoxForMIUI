@@ -21,6 +21,7 @@ import com.lt2333.simplicitytools.R
 class SystemUIPageForS : BasePage() {
 
     override fun onCreate() {
+        TitleText(textId = R.string.scope_systemui_summary)
         TitleText(textId = R.string.statusbar)
         TextSummaryWithSwitch(
             TextSummaryV(textId = R.string.double_tap_to_sleep),

@@ -9,6 +9,7 @@ import cn.fkj233.ui.activity.view.TextSummaryV
 import cn.fkj233.ui.dialog.MIUIDialog
 import com.lt2333.simplicitytools.BuildConfig
 import com.lt2333.simplicitytools.R
+import com.lt2333.simplicitytools.utils.YuKongA.atLeastAndroidT
 
 
 @BMMainPage("WooBox[MIUI14]")
@@ -51,27 +52,52 @@ class MainPageForT : BasePage() {
         )
         Line()
         TitleText(textId = R.string.scope)
-        TextSummaryWithArrow(
-            TextSummaryV(
-                textId = R.string.scope_systemui,
-                tipsId = R.string.scope_systemui_summary,
-                onClickListener = { showFragment("scope_systemui") })
+//        TextSummaryWithArrow(
+//            TextSummaryV(
+//                textId = R.string.scope_systemui,
+//                tipsId = R.string.scope_systemui_summary,
+//                onClickListener = { showFragment("scope_systemui") })
+//        )
+        Page(
+            activity.getDrawable(if (atLeastAndroidT()) R.drawable.ic_systemui_13 else R.drawable.ic_systemui_12)!!,
+            pageNameId = R.string.scope_systemui, round = 8f,
+            onClickListener = { showFragment("scope_systemui") }
         )
-        TextSummaryWithArrow(
-            TextSummaryV(
-                textId = R.string.scope_android,
-                tipsId = R.string.scope_android_summary,
-                onClickListener = { showFragment("scope_android") })
+//        TextSummaryWithArrow(
+//            TextSummaryV(
+//                textId = R.string.scope_android,
+//                tipsId = R.string.scope_android_summary,
+//                onClickListener = { showFragment("scope_android") })
+//        )
+        Page(
+            activity.getDrawable(R.drawable.ic_android)!!,
+            pageNameId = R.string.scope_android, round = 8f,
+            onClickListener = { showFragment("scope_android") }
         )
-        TextSummaryWithArrow(
-            TextSummaryV(
-                textId = R.string.scope_miuihome,
-                onClickListener = { showFragment("scope_miuihome") })
+        Page(
+            activity.getDrawable(R.drawable.ic_miuihome)!!,
+            pageNameId = R.string.scope_miuihome, round = 8f,
+            onClickListener = { showFragment("scope_miuihome") }
+        )
+//        TextSummaryWithArrow(
+//            TextSummaryV(
+//                textId = R.string.scope_miuihome,
+//                onClickListener = { showFragment("scope_miuihome") })
+//        )
+        Page(
+            activity.getDrawable(R.drawable.ic_securitycenter)!!,
+            pageNameId = R.string.scope_securitycenter,
+            round = 8f,
+            onClickListener = { showFragment("scope_securitycenter") }
+        )
+        Page(
+            activity.getDrawable(R.drawable.ic_powerkeeper)!!,
+            pageNameId = R.string.scope_powerkeeper, round = 8f,
+            onClickListener = { showFragment("scope_powerkeeper") }
         )
         TextSummaryWithArrow(
             TextSummaryV(
                 textId = R.string.scope_other,
-                tipsId = R.string.scope_other_summary,
                 onClickListener = { showFragment("scope_other") })
         )
         Line()
