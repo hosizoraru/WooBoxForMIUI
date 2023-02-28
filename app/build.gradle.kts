@@ -57,6 +57,7 @@ dependencies {
     compileOnly("de.robv.android.xposed:api:82")
     implementation("com.github.kyuubiran:EzXHelper:1.0.3")
     implementation("org.lsposed.hiddenapibypass:hiddenapibypass:4.3")
+    implementation("org.luckypray:DexKit:1.1.2")
     //UI
     implementation(project(":blockmiui"))
     implementation("androidx.constraintlayout:constraintlayout:2.2.0-alpha07")
