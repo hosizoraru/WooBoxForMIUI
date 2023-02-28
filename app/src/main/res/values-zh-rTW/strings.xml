@@ -31,6 +31,11 @@
     <string name="hide_small_hd_icon">隱藏「小型 HD」圖示</string>
     <string name="hide_new_hd_icon">隱藏「新 HD」圖示</string>
     <string name="hide_hd_no_service_icon">隱藏「HD 無服務」圖示</string>
+    <string name="atright_status_bar_icon">在右側顯示圖示（訊號圖示旁）</string>
+    <string name="atright_alarm_icon">「鬧鐘」圖示</string>
+    <string name="atright_nfc_icon">「NFC」圖示</string>
+    <string name="atright_volume_icon">「音量」圖示</string>
+    <string name="atright_zen_icon">「勿擾」圖示</string>
     <string name="about">關於</string>
     <string name="about_module">關於模組</string>
     <string name="verison">版本</string>
@@ -161,6 +166,7 @@
     <string name="hide_volume_icon">隱藏「音量」圖示</string>
     <string name="hide_zen_icon">隱藏「勿擾」圖示</string>
     <string name="hide_icon">隱藏圖示</string>
+    <string name="icon_position">圖示位置</string>
     <string name="double_tap_to_sleep">輕觸兩下鎖定螢幕</string>
     <string name="home_double_tap_to_sleep_summary">輕觸兩下空白位置鎖定螢幕</string>
     <string name="old_quick_settings_panel">舊版快速設定面板</string>

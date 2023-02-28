@@ -49,6 +49,7 @@ object SystemUI : AppRegister() {
                     NoPasswordHookForS, // 开机免密码
                     DisableBluetoothForT, // 控制中心直接关闭蓝牙
                     NotificationSettingsNoWhiteListForAll,// 去除通知设置白名单
+                    IconPositionForT, // 修改图标位置
                 )
             }
 

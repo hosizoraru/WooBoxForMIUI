@@ -21,8 +21,8 @@ object HideSimIconForT : HookRegister() {
             hasEnable("hide_sim_two_icon", extraCondition = { subId == 2 }) {
                 hasEnable("hide_sim_two_icon", extraCondition = { subId == 2 }) {
                     mobileIconState.putObject("visible", false)
+                }
             }
         }
     }
-
 }

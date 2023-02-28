@@ -32,6 +32,11 @@
     <string name="hide_small_hd_icon">Hide small HD icon</string>
     <string name="hide_new_hd_icon">Hide new HD icon</string>
     <string name="hide_hd_no_service_icon">Hide HD No Service icon</string>
+    <string name="atright_status_bar_icon">Show icons on the right (next to the signal icon)</string>
+    <string name="atright_alarm_icon">Alarm icon</string>
+    <string name="atright_nfc_icon">NFC icon</string>
+    <string name="atright_volume_icon">Volume icon</string>
+    <string name="atright_zen_icon">ZEN icon</string>
     <string name="about">About</string>
     <string name="about_module">About Module</string>
     <string name="verison">Version</string>
@@ -163,6 +168,7 @@
     <string name="hide_volume_icon">Hide Volume icon</string>
     <string name="hide_zen_icon">Hide ZEN icon</string>
     <string name="hide_icon">Hide Icon</string>
+    <string name="icon_position">Icon Position</string>
     <string name="double_tap_to_sleep">Double tap to sleep</string>
     <string name="home_double_tap_to_sleep_summary">Double-tap the blank space to sleep</string>
     <string name="no_need_to_enter_password_when_power_on">No need to enter password when power on</string>

@@ -276,6 +276,9 @@ class SystemUIPageForT : BasePage() {
                 textId = R.string.hide_icon,
                 onClickListener = { showFragment("hide_icon") })
         )
+        TextSummaryWithArrow(
+            TextSummaryV(textId = R.string.icon_position, onClickListener = { showFragment("icon_position") })
+        )
         TextWithSwitch(
             TextV(textId = R.string.show_wifi_standard),
             SwitchV("show_wifi_standard")
