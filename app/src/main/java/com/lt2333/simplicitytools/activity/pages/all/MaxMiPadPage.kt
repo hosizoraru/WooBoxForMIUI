@@ -7,8 +7,6 @@ import android.view.View
 import cn.fkj233.ui.activity.MIUIActivity
 import cn.fkj233.ui.activity.view.SwitchV
 import cn.fkj233.ui.activity.view.TextSummaryV
-import cn.fkj233.ui.dialog.MIUIDialog
-import com.lt2333.simplicitytools.utils.Yife.Terminal
 
 @BMPage("scope_mipad", "MiPad", hideMenu = false)
 class MaxMiPadPage: BasePage() {
