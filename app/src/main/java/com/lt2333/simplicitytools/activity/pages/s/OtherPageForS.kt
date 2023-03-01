@@ -86,24 +86,6 @@ class OtherPageForS : BasePage() {
             SwitchV("remove_thememanager_ads")
         )
         Line()
-        TitleText(textId = R.string.pkg_installer)
-        TextSummaryWithSwitch(
-            TextSummaryV(textId = R.string.pkg_installer_summary),
-            SwitchV("pkg_installer_count_checking")
-        )
-        TextSummaryWithSwitch(
-            TextSummaryV(textId = R.string.packageinstaller_remove_ads),
-            SwitchV("packageinstaller_remove_ads")
-        )
-        TextSummaryWithSwitch(
-            TextSummaryV(textId = R.string.packageinstaller_allow_update_system_app),
-            SwitchV("packageinstaller_allow_update_system_app")
-        )
-        TextSummaryWithSwitch(
-            TextSummaryV(textId = R.string.packageinstaller_show_more_apk_info),
-            SwitchV("packageinstaller_show_more_apk_info")
-        )
-        Line()
         TitleText(textId = R.string.taplus)
         TextSummaryWithSwitch(
             TextSummaryV(textId = R.string.horizontal_contentextension),

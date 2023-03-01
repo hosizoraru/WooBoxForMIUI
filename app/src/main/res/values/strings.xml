@@ -286,6 +286,7 @@
     <string name="pkg_installer_summary">Disable the app installation\'s count checking</string>
     <string name="packageinstaller_allow_update_system_app">Allow update system apps</string>
     <string name="packageinstaller_remove_ads">Remove ads</string>
+    <string name="Disable_Safe_Model_Tip">Disable Safe Model Tip</string>
     <string name="packageinstaller_show_more_apk_info">Show more apk info</string>
     <string name="packageinstaller_app_versionname_title">Version Name</string>
     <string name="packageinstaller_app_versioncode_title">Version Code</string>

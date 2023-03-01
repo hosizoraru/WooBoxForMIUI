@@ -96,15 +96,25 @@ class MainPageForT : BasePage() {
             onClickListener = { showFragment("scope_powerkeeper") }
         )
         Page(
+            activity.getDrawable(R.drawable.ic_packageinstaller)!!,
+            pageNameId = R.string.pkg_installer, round = 8f,
+            onClickListener = { showFragment("pkg_installer") }
+        )
+        Page(
             activity.getDrawable(R.drawable.ic_maxmipad)!!,
             pageNameId = R.string.scope_mipad, round = 8f,
             onClickListener = { showFragment("scope_mipad") }
         )
-        TextSummaryWithArrow(
-            TextSummaryV(
-                textId = R.string.scope_other,
-                onClickListener = { showFragment("scope_other") })
+        Page(
+            activity.getDrawable(R.drawable.ic_various_new)!!,
+            pageNameId = R.string.scope_other, round = 8f,
+            onClickListener = { showFragment("scope_other") }
         )
+//        TextSummaryWithArrow(
+//            TextSummaryV(
+//                textId = R.string.scope_other,
+//                onClickListener = { showFragment("scope_other") })
+//        )
         Line()
         TitleText(textId = R.string.about)
         TextSummaryWithArrow(

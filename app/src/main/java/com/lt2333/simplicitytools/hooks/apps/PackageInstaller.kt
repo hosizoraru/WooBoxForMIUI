@@ -18,6 +18,7 @@ object PackageInstaller : AppRegister() {
                     RemovePackageInstallerAdsForAll,// 去广告
                     AllowUpdateSystemAppForAll,// 允许更新系统应用
                     ShowMoreApkInfoForAll,// 显示更多应用信息
+                    DisableSafeModelTipForAll,// 禁用安全模式提示
                 )
             }
 
@@ -28,6 +29,7 @@ object PackageInstaller : AppRegister() {
                     RemovePackageInstallerAdsForAll,// 去广告
                     AllowUpdateSystemAppForAll,// 允许更新系统应用
                     ShowMoreApkInfoForAll,// 显示更多应用信息
+                    DisableSafeModelTipForAll,// 禁用安全模式提示
                 )
             }
         }
