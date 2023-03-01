@@ -1,6 +1,7 @@
 package com.lt2333.simplicitytools.hooks.apps
 
 import android.os.Build
+import com.lt2333.simplicitytools.hooks.rules.all.maxmipad.GestureOperationHelper
 import com.lt2333.simplicitytools.hooks.rules.all.miuihome.*
 import com.lt2333.simplicitytools.utils.xposed.base.AppRegister
 import de.robv.android.xposed.callbacks.XC_LoadPackage
@@ -33,6 +34,9 @@ object MiuiHome : AppRegister() {
                     TaskViewCardSizeForAll, // 自定义最近任务卡片大小
                     SetDeviceLevelForAll, // 解除设备限制
                     UseCompleteBlurForAll, // 完整模糊
+                    //maxmipad
+                    GestureOperationHelper,
+                    //
                 )
             }
 
@@ -59,6 +63,9 @@ object MiuiHome : AppRegister() {
                     TaskViewCardSizeForAll, // 自定义最近任务卡片大小
                     SetDeviceLevelForAll, // 解除设备限制
                     UseCompleteBlurForAll, // 完整模糊
+                    //maxmipad
+                    GestureOperationHelper,
+                    //
                 )
             }
         }

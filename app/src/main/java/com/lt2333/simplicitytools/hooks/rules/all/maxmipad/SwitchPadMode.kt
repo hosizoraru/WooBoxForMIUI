@@ -2,11 +2,12 @@ package com.lt2333.simplicitytools.hooks.rules.all.maxmipad
 
 import com.github.kyuubiran.ezxhelper.utils.findMethod
 import com.github.kyuubiran.ezxhelper.utils.hookBefore
+import com.lt2333.simplicitytools.utils.hasEnable
 import com.lt2333.simplicitytools.utils.xposed.base.HookRegister
 import de.robv.android.xposed.XposedBridge
 
 object SwitchPadMode : HookRegister() {
-    override fun init() {
+    override fun init() = hasEnable("restore_esc"){
         try {
             findMethod("com.android.server.input.InputManagerServiceStubImpl") {
                 name == "switchPadMode"

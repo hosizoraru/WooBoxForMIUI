@@ -40,6 +40,7 @@ object Android : AppRegister() {
                     SetPadMode,
                     SwitchPadMode,
                     SystemServerImpl,
+                    BaseMiuiMultiFingerGesture,
                     //
                 )
             }
@@ -65,6 +66,7 @@ object Android : AppRegister() {
                     SetPadMode,
                     SwitchPadMode,
                     SystemServerImpl,
+                    BaseMiuiMultiFingerGesture,
                     //
                 )
             }
