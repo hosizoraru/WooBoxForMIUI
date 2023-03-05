@@ -2,6 +2,8 @@ package com.lt2333.simplicitytools.hooks.rules.all.cast
 
 import com.github.kyuubiran.ezxhelper.utils.findMethod
 import com.github.kyuubiran.ezxhelper.utils.hookAfter
+import com.github.kyuubiran.ezxhelper.utils.hookBefore
+import com.github.kyuubiran.ezxhelper.utils.paramCount
 import com.lt2333.simplicitytools.utils.hasEnable
 import com.lt2333.simplicitytools.utils.xposed.base.HookRegister
 
@@ -27,6 +29,13 @@ object ForceSupportSendAppForAll : HookRegister() {
             name == "isSupportSendApp"
         }.hookAfter {
             it.result = true
+        }
+        findMethod("com.xiaomi.mirror.synergy.MiuiSynergySdk") {
+            name == "queryRemoteDevices" && parameterCount == 3
+        }.hookBefore {
+            it.result = null
+            it.args[0] = null
+            it.args[1] = null
         }
     }
 }

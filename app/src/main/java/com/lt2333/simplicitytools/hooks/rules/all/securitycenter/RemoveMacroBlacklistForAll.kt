@@ -29,7 +29,7 @@ object RemoveMacroBlacklistForAll : HookRegister() {
                 }
                 letter++
             }
-            
+
             findMethod("q7.m0") {
                 name == "n" && parameterTypes[0] == ArrayList::class.java
             }.hookBefore { param ->
