@@ -334,4 +334,18 @@
     <string name="disable_fixed_orientation_scope_tips">Take effect after reboot</string>
     <string name="set_gesture_need_finger_num_to_4">Swap the number of fingers required for gestures</string>
     <string name="set_gesture_need_finger_num_to_4_tips">Change screenshot gesture, partial screenshot gesture, and horizontal split screen gesture to be triggered by four fingers, and switch apps gesture to be triggered by three fingers</string>
+    <!--miuiqol-->
+    <string name="behavior_record_enhance_title">App behavior record enhance</string>
+    <string name="behavior_record_enhance_summary">View all app behavior does not filter whitelisted applications and system applications.</string>
+    <string name="system_app_wlan_control_title">System apps\' WLAN setting</string>
+    <string name="system_app_wlan_control_summary">- Prevent Security app from recovering system apps\' WLAN connection setting\n- Show System apps\' WLAN setting\n\nTo check the system apps\' network setting, please go to Security app\'s Toolbox - Apps\' network settings - (Mobile Data) - System apps, and click the app in the list.</string>
+    <string name="enable_all_text_view_title">Enable all TextView</string>
+    <string name="enable_all_text_view_summary">- Enable System apps\' WLAN setting\n- Skip warning time (Ignore the countdown numbers by yourself)\n- ……\n\n*Prepare for unforeseen consequences.</string>
+    <string name="behavior_record_system_app_whitelist_title">App Behavior Record system applications whitelist</string>
+    <string name="behavior_record_system_app_whitelist_summary">Whitelisted some system applications to prevent Privacy Protection Notifications from scaring users who don\'t know how to turn them off.</string>
+    <string name="original_default_open_setting_title">Change App Info \"Clear defaults\" to \"Open by default\"</string>
+    <string name="open_by_default">Open by default</string>
+    <string name="app_link_open_always">Allow app to open supported links</string>
+    <string name="app_link_open_never">Don\'t allow app to open links</string>
+    <!--miuiqol-->
 </resources>

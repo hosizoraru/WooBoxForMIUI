@@ -8,6 +8,8 @@ import com.lt2333.simplicitytools.hooks.rules.all.securitycenter.SkipWaitingTime
 import com.lt2333.simplicitytools.hooks.rules.s.securitycenter.ShowBatteryTemperatureForS
 import com.lt2333.simplicitytools.hooks.rules.t.securitycenter.ShowBatteryTemperatureForT
 import com.lt2333.simplicitytools.hooks.rules.all.securitycenter.RemoveConversationBubbleSettingsRestrictionForAll
+import com.lt2333.simplicitytools.hooks.rules.t.securitycenter.*
+import com.lt2333.simplicitytools.utils.chsbuffer.hooks
 import com.lt2333.simplicitytools.utils.xposed.base.AppRegister
 import de.robv.android.xposed.callbacks.XC_LoadPackage
 
@@ -15,6 +17,12 @@ object SecurityCenter : AppRegister() {
     override val packageName: String = "com.miui.securitycenter"
 
     override fun handleLoadPackage(lpparam: XC_LoadPackage.LoadPackageParam) {
+        when (lpparam.packageName) {
+            "com.miui.securitycenter" -> hooks(
+                lpparam,
+                SecurityHost //miuiqol
+            )
+        }
         when (Build.VERSION.SDK_INT) {
             Build.VERSION_CODES.TIRAMISU -> {
                 autoInitHooks(
