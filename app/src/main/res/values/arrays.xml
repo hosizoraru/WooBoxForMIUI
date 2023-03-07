@@ -20,5 +20,6 @@
         <item>com.xiaomi.misettings</item>
         <item>com.miui.contentextension</item>
         <item>com.miui.personalassistant</item>
+        <item>com.lbe.security.miui</item>
     </string-array>
 </resources>

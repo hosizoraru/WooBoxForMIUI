@@ -53,6 +53,7 @@ Xposed Repo：[Click here to download the latest release](https://github.com/Xpo
 [MonwF/customiuizer](https://github.com/MonwF/customiuizer)  
 [GSWXXN/UnlockMiLink](https://github.com/GSWXXN/UnlockMiLink)  
 [zerorooot/HorizontalContentextension](https://github.com/zerorooot/HorizontalContentextension)  
+[zerorooot/HideMiuiClipboardDialog](https://github.com/zerorooot/HideMiuiClipboardDialog)  
 
 ##### GNU General Public License v2.0
 
