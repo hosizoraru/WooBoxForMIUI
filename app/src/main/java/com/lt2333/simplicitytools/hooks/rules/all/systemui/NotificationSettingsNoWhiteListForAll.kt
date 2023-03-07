@@ -13,51 +13,40 @@ object NotificationSettingsNoWhiteListForAll : HookRegister() {
     override fun init() = hasEnable("notification_settings_no_whitelist") {
         findMethod("com.android.systemui.statusbar.notification.NotificationSettingsManager") {
             name == "canShowBadge" &&
-                    paramCount == 2 &&
                     parameterTypes[0] == Context::class.java &&
                     parameterTypes[1] == String::class.java
             name == "canFloat" &&
-                    paramCount == 2 &&
                     parameterTypes[0] == Context::class.java &&
                     parameterTypes[1] == String::class.java
             name == "canFloat" &&
-                    paramCount == 3 &&
                     parameterTypes[0] == Context::class.java &&
                     parameterTypes[1] == String::class.java &&
                     parameterTypes[2] == String::class.java
             name == "canShowOnKeyguard" &&
-                    paramCount == 2 &&
                     parameterTypes[0] == Context::class.java &&
                     parameterTypes[1] == String::class.java
             name == "canShowOnKeyguard" &&
-                    paramCount == 3 &&
                     parameterTypes[0] == Context::class.java &&
                     parameterTypes[1] == String::class.java &&
                     parameterTypes[2] == String::class.java
             name == "canSound" &&
-                    paramCount == 2 &&
                     parameterTypes[0] == Context::class.java &&
                     parameterTypes[1] == String::class.java
             name == "canSound" &&
-                    paramCount == 3 &&
                     parameterTypes[0] == Context::class.java &&
                     parameterTypes[1] == String::class.java &&
                     parameterTypes[2] == String::class.java
             name == "canVibrate" &&
-                    paramCount == 2 &&
                     parameterTypes[0] == Context::class.java &&
                     parameterTypes[1] == String::class.java
             name == "canVibrate" &&
-                    paramCount == 3 &&
                     parameterTypes[0] == Context::class.java &&
                     parameterTypes[1] == String::class.java &&
                     parameterTypes[2] == String::class.java
             name == "canLights" &&
-                    paramCount == 2 &&
                     parameterTypes[0] == Context::class.java &&
                     parameterTypes[1] == String::class.java
             name == "canLights" &&
-                    paramCount == 3 &&
                     parameterTypes[0] == Context::class.java &&
                     parameterTypes[1] == String::class.java &&
                     parameterTypes[2] == String::class.java

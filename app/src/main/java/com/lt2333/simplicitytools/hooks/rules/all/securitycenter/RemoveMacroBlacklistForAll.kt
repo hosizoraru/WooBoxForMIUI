@@ -1,10 +1,9 @@
 package com.lt2333.simplicitytools.hooks.rules.all.securitycenter
 
+import android.content.Context
 import com.github.kyuubiran.ezxhelper.utils.*
 import com.lt2333.simplicitytools.utils.XSPUtils
-import com.lt2333.simplicitytools.utils.hookMethod
 import com.lt2333.simplicitytools.utils.xposed.base.HookRegister
-import de.robv.android.xposed.XC_MethodHook
 import de.robv.android.xposed.XposedBridge
 import de.robv.android.xposed.XposedHelpers
 
@@ -39,6 +38,10 @@ object RemoveMacroBlacklistForAll : HookRegister() {
             findMethod("q7.m0"){
                 name == "g" && parameterTypes[0] == String::class.java
             }.hookReturnConstant(false)
+
+            findMethod("w6.b"){
+                name == "e" && parameterTypes[0] == Context::class.java && parameterTypes[1] == String::class.java
+            }.hookReturnConstant(true)
         }
     }
 
