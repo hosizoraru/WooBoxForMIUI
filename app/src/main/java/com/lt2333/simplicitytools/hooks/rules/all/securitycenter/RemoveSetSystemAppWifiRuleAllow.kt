@@ -1,4 +1,4 @@
-package com.lt2333.simplicitytools.hooks.rules.t.securitycenter
+package com.lt2333.simplicitytools.hooks.rules.all.securitycenter
 
 import com.lt2333.simplicitytools.utils.chsbuffer.*
 import android.util.ArrayMap

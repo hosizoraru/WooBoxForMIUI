@@ -1,14 +1,9 @@
 package com.lt2333.simplicitytools.hooks.apps
 
 import android.os.Build
-import com.lt2333.simplicitytools.hooks.rules.all.securitycenter.LockOneHundredForAll
-import com.lt2333.simplicitytools.hooks.rules.all.securitycenter.RemoveMacroBlacklistForAll
-import com.lt2333.simplicitytools.hooks.rules.all.securitycenter.RemoveOpenAppConfirmationPopupForAll
-import com.lt2333.simplicitytools.hooks.rules.all.securitycenter.SkipWaitingTimeForAll
+import com.lt2333.simplicitytools.hooks.rules.all.securitycenter.*
 import com.lt2333.simplicitytools.hooks.rules.s.securitycenter.ShowBatteryTemperatureForS
 import com.lt2333.simplicitytools.hooks.rules.t.securitycenter.ShowBatteryTemperatureForT
-import com.lt2333.simplicitytools.hooks.rules.all.securitycenter.RemoveConversationBubbleSettingsRestrictionForAll
-import com.lt2333.simplicitytools.hooks.rules.t.securitycenter.*
 import com.lt2333.simplicitytools.utils.chsbuffer.hooks
 import com.lt2333.simplicitytools.utils.xposed.base.AppRegister
 import de.robv.android.xposed.callbacks.XC_LoadPackage

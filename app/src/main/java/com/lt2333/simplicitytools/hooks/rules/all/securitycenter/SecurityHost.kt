@@ -1,8 +1,7 @@
-package com.lt2333.simplicitytools.hooks.rules.t.securitycenter
+package com.lt2333.simplicitytools.hooks.rules.all.securitycenter
 
 import de.robv.android.xposed.callbacks.XC_LoadPackage
 import com.lt2333.simplicitytools.utils.chsbuffer.*
-import com.lt2333.simplicitytools.hooks.rules.t.securitycenter.*
 
 
 object SecurityHost : Hook() {

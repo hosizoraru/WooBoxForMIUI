@@ -38,6 +38,37 @@ class SecurityPageForS : BasePage() {
             TextSummaryV(textId = R.string.battery_life_function),
             SwitchV("battery_life_function")
         )
+        //miuiqol
+        TextSummaryWithSwitch(
+            TextSummaryV(
+                textId = R.string.behavior_record_enhance_title,
+                tipsId = R.string.behavior_record_enhance_summary
+            ), SwitchV("behavior_record_enhance")
+        )
+        TextSummaryWithSwitch(
+            TextSummaryV(
+                textId = R.string.behavior_record_system_app_whitelist_title,
+                tipsId = R.string.behavior_record_system_app_whitelist_summary
+            ), SwitchV("behavior_record_system_app_whitelist")
+        )
+        TextSummaryWithSwitch(
+            TextSummaryV(
+                textId = R.string.system_app_wlan_control_title,
+                tipsId = R.string.system_app_wlan_control_summary
+            ), SwitchV("system_app_wlan_control",true)
+        )
+        TextSummaryWithSwitch(
+            TextSummaryV(
+                textId = R.string.enable_all_text_view_title,
+                tipsId = R.string.enable_all_text_view_summary
+            ), SwitchV("enable_all_text_view",true)
+        )
+        TextSummaryWithSwitch(
+            TextSummaryV(
+                textId = R.string.original_default_open_setting_title,
+            ), SwitchV("original_default_open_setting")
+        )
+        //miuiqol
         TextSummaryWithSwitch(
             TextSummaryV(
                 textId = R.string.remove_conversation_bubble_settings_restriction,

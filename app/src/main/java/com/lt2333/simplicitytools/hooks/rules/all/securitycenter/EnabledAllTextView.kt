@@ -1,4 +1,4 @@
-package com.lt2333.simplicitytools.hooks.rules.t.securitycenter
+package com.lt2333.simplicitytools.hooks.rules.all.securitycenter
 
 import de.robv.android.xposed.XC_MethodHook
 import de.robv.android.xposed.XposedHelpers
