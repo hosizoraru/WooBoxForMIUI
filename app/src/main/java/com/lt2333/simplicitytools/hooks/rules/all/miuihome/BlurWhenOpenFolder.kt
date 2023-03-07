@@ -5,7 +5,6 @@ import com.lt2333.simplicitytools.utils.xposed.base.HookRegister
 import android.app.Activity
 import android.view.MotionEvent
 import android.view.View
-import com.lt2333.simplicitytools.utils.Yife.XSharedPreferences.getBoolean
 
 object BlurWhenOpenFolder : HookRegister() {
     override fun init() = hasEnable("miuihome_blur_when_open_folder") {
@@ -110,19 +109,25 @@ object BlurWhenOpenFolder : HookRegister() {
                 if (isShouldBlur && blurRatio == 0.0f) it.result = null
             }
 
-            if ((getBoolean(
-                    "miuihome_use_complete_blur",
-                    false
-                ) && !getBoolean("miuihome_complete_blur_fix", false))
-                || !(getBoolean("miuihome_use_complete_blur", false))
-            ) {
-                navStubViewClass.hookBeforeMethod("appTouchResolution", MotionEvent::class.java) {
-                    val mLauncher = it.thisObject.getObjectField("mLauncher") as Activity?
-                    if (isShouldBlur) {
-                        blurUtilsClass.callStaticMethod("fastBlurDirectly", 1.0f, mLauncher?.window)
+            hasEnable("miuihome_use_complete_blur") {
+                hasEnable("miuihome_complete_blur_fix") {
+                    navStubViewClass.hookBeforeMethod("appTouchResolution", MotionEvent::class.java) {
+                        val mLauncher = it.thisObject.getObjectField("mLauncher") as Activity?
+                        if (isShouldBlur) {
+                            blurUtilsClass.callStaticMethod("fastBlurDirectly", 1.0f, mLauncher?.window)
+                        }
                     }
                 }
             }
+
+//            if ((getBoolean(
+//                    "miuihome_use_complete_blur",
+//                    false
+//                ) && !getBoolean("miuihome_complete_blur_fix", false))
+//                || !(getBoolean("miuihome_use_complete_blur", false))
+//            ) {
+//
+//            }
         }
     }
 }

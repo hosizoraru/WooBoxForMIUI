@@ -9,7 +9,7 @@ import com.github.kyuubiran.ezxhelper.utils.hookBefore
 import com.lt2333.simplicitytools.utils.*
 
 object UseCompleteBlurForAll : HookRegister() {
-    override fun init() = hasEnable("miuihome_task_view_card_size_binding") {
+    override fun init() = hasEnable("miuihome_use_complete_blur") {
         val blurUtilsClass = "com.miui.home.launcher.common.BlurUtils".findClass()
         val navStubViewClass = "com.miui.home.recents.NavStubView".findClass()
 
