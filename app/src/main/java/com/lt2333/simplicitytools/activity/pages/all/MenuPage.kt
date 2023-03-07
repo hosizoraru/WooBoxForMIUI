@@ -54,6 +54,7 @@ class MenuPage : BasePage() {
                         "killall com.android.thememanager",
                         "killall com.xiaomi.misettings",
                         "killall com.miui.contentextension",
+                        "killall com.miui.personalassistant",
                     )
                     ShellUtils.execCommand(command, true)
                     dismiss()

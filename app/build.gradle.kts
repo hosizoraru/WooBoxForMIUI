@@ -53,6 +53,9 @@ android {
 
 dependencies {
     implementation("androidx.core:core-ktx:1.10.0-beta01")
+    implementation("androidx.core:core-ktx:+")
+    implementation("androidx.core:core-ktx:+")
+    implementation("androidx.core:core-ktx:+")
     //API
     compileOnly("de.robv.android.xposed:api:82")
     implementation("com.github.kyuubiran:EzXHelper:1.0.3")

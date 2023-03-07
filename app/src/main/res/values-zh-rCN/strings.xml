@@ -114,6 +114,7 @@
     <string name="scope_powerkeeper">电量与性能</string>
     <string name="scope_securitycenter">手机管家</string>
     <string name="scope_mediaeditor">相册编辑</string>
+    <string name="scope_personalassistant">智能助理</string>
     <string name="home_time_summary">开启后即使存在时钟小组件，\n也不会对状态栏隐藏时钟</string>
     <string name="skip_waiting_time_summary">开启后可忽略MIUI在开启USB调试、\n未知来源、无障碍时的冻结时间</string>
     <string name="lock_one_hundred_summary">锁定手机管家100分并屏蔽修复按钮</string>
@@ -277,7 +278,6 @@
     <string name="miuihome_shortcut_add_small_window_summary">桌面图标长按快捷菜单位置添加快速打开小窗</string>
     <string name="miuihome_shortcut_add_small_window_title">小窗</string>
     <string name="custom_refresh_rate">自定义高刷新率应用</string>
-    <string name="notification_settings_no_whitelist">去除通知设置白名单</string>
     <string name="taplus">传送门</string>
     <string name="horizontal_contentextension">允许在横屏方向下使用传送门</string>
     <string name="pkg_installer">应用包管理组件</string>
@@ -345,5 +345,12 @@
     <string name="open_by_default">默认打开</string>
     <string name="app_link_open_always">允许应用打开支持的链接</string>
     <string name="app_link_open_never">不允许应用打开链接</string>
+    <string name="notification_settings_no_whitelist">去除通知设置白名单</string>
     <!--miuiqol-->
+    <string name="personalassistant_minus_one_blur">背景模糊</string>
+    <string name="personalassistant_minus_one_blur_summary">联发科设备仅建议在 Android 13 上启用，非 Android 13 的联发科设备动态调整模糊半径时经常黑屏</string>
+    <string name="miuihome_unlock_cell_count">解锁图标网格布局</string>
+    <string name="miuihome_unlock_cell_count_summary">无字模式解锁仍有问题</string>
+    <string name="miuihome_blur_when_open_folder">文件夹视图模糊</string>
+    <string name="miuihome_blur_when_open_folder_summary">打开文件夹时启用模糊</string>
 </resources>

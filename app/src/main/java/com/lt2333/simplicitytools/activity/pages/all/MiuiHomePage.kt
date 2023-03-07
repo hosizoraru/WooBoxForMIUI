@@ -81,6 +81,18 @@ class MiuiHomePage : BasePage() {
             TextSummaryV(textId = R.string.icon_corner),
             SwitchV("icon_corner")
         )
+        TextSummaryWithSwitch(
+            TextSummaryV(
+                textId = R.string.miuihome_unlock_cell_count,
+                tipsId = R.string.miuihome_unlock_cell_count_summary
+            ), SwitchV("miuihome_unlock_cell_count")
+        )
+        TextSummaryWithSwitch(
+            TextSummaryV(
+                textId = R.string.miuihome_blur_when_open_folder,
+                tipsId = R.string.miuihome_blur_when_open_folder_summary
+            ), SwitchV("miuihome_unlock_cell_count")
+        )
         val blurBinding = GetDataBinding({ safeSP.getBoolean("miuihome_use_complete_blur", false) }) { view, flags, data ->
             if (flags == 1) view.visibility = if (data as Boolean) View.VISIBLE else View.GONE
         }
@@ -135,6 +147,14 @@ class MiuiHomePage : BasePage() {
             TextV(textId = R.string.miuihome_task_view_card_size_horizontal2),
             SeekBarWithTextV("miuihome_task_view_card_size_horizontal2", 80, 120, 100),
             dataBindingRecv = cardSizeBinding.getRecv(1)
+        )
+        Line()
+        TitleText(textId = R.string.scope_personalassistant)
+        TextSummaryWithSwitch(
+            TextSummaryV(
+                textId = R.string.personalassistant_minus_one_blur,
+                tipsId = R.string.personalassistant_minus_one_blur_summary
+            ), SwitchV("personalassistant_minus_one_blur")
         )
     }
 }

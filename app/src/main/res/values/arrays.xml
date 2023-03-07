@@ -19,5 +19,6 @@
         <item>com.miui.packageinstaller</item>
         <item>com.xiaomi.misettings</item>
         <item>com.miui.contentextension</item>
+        <item>com.miui.personalassistant</item>
     </string-array>
 </resources>

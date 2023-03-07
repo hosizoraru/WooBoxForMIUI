@@ -31,6 +31,7 @@ class MainHook : EasyXposedInit() {
         PackageInstaller, // 应用包管理组件
         MiSettings,// 小米设置
         Taplus,// 传送门
+        PersonalAssistant,// 智能助理
     )
 
     override fun handleLoadPackage(lpparam: XC_LoadPackage.LoadPackageParam?) {

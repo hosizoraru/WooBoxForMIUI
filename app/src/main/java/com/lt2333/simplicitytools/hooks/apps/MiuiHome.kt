@@ -37,6 +37,8 @@ object MiuiHome : AppRegister() {
                     //maxmipad
                     GestureOperationHelper,
                     //
+                    IconCellCount, // 解锁图标网格布局
+                    BlurWhenOpenFolder, // 文件夹视图模糊
                 )
             }
 
@@ -66,6 +68,8 @@ object MiuiHome : AppRegister() {
                     //maxmipad
                     GestureOperationHelper,
                     //
+                    IconCellCount, // 解锁图标网格布局
+                    BlurWhenOpenFolder, // 文件夹视图模糊
                 )
             }
         }
