@@ -84,6 +84,12 @@ class OtherPageForT : BasePage() {
             TextSummaryV(textId = R.string.horizontal_contentextension),
             SwitchV("horizontal_contentextension")
         )
+        Line()
+        TitleText(textId = R.string.scope_lbe)
+        TextSummaryWithSwitch(
+            TextSummaryV(textId = R.string.hide_miui_clipboard_dialog),
+            SwitchV("hide_miui_clipboard_dialog")
+        )
     }
 
 }

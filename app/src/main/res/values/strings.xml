@@ -117,6 +117,7 @@
     <string name="scope_securitycenter">Security app</string>
     <string name="scope_mediaeditor">Gallery Editor</string>
     <string name="scope_personalassistant">App Vault</string>
+    <string name="scope_lbe">Lbe</string>
     <string name="home_time_summary">When turned on, the clock will not be hidden on the status bar even if there is a clock widget</string>
     <string name="skip_waiting_time_summary">Ignore the waiting time by MIUI when eanbling USB debugging, unknown sources and accessibility</string>
     <string name="lock_one_hundred_summary">Set the score on Security app to 100 points and block the Optimize button</string>
@@ -355,4 +356,5 @@
     <string name="miuihome_unlock_cell_count_summary">Unlock in no word mode still has issues</string>
     <string name="miuihome_blur_when_open_folder">Folder View Blur</string>
     <string name="miuihome_blur_when_open_folder_summary">Enable Blur When Open Folder</string>
+    <string name="hide_miui_clipboard_dialog">Hide Miui Clipboard Dialog</string>
 </resources>

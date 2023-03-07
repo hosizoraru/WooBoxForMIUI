@@ -15,7 +15,7 @@ object SecurityHost : Hook() {
                     RemoveSetSystemAppWifiRuleAllow,
                     EnabledAllTextView,
                     AppDetails(dexKit, app),
-                    IntlEnableBehaviorRecord(dexKit)
+                    IntlEnableBehaviorRecord(dexKit),
                 )
             }
         }
