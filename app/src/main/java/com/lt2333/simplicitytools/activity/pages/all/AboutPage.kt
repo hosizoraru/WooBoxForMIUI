@@ -16,8 +16,8 @@ import java.util.*
 class AboutPage : BasePage() {
 
     override fun onCreate() {
-        Author(
-            authorHead = getDrawable(R.drawable.app_icon)!!,
+        ImageWithText(
+            authorHead = getDrawable(R.drawable.app_icon),
             authorName = getString(R.string.app_name),
             authorTips = "${
                 SimpleDateFormat(
@@ -44,8 +44,8 @@ class AboutPage : BasePage() {
             })
         Line()
         TitleText(text = getString(R.string.developer))
-        Author(
-            authorHead = getDrawable(R.drawable.lt)!!,
+        ImageWithText(
+            authorHead = getDrawable(R.drawable.lt),
             authorName = "乌堆小透明",
             authorTips = "LittleTurtle2333",
             onClickListener = {

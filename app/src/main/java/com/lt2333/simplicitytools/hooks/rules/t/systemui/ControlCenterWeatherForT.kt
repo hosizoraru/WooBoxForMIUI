@@ -29,8 +29,8 @@ object ControlCenterWeatherForT : HookRegister() {
             val context = viewGroup.context
 
             // MIUI编译时间大于 2022-03-12 00:00:00 且为内测版
-            if (SystemProperties[context, "ro.build.date.utc"]!!.toInt() >= 1647014400 &&
-                !SystemProperties[context, "ro.build.version.incremental"]!!.endsWith("XM")
+            if (SystemProperties[context, "ro.build.date.utc"].toInt() >= 1647014400 &&
+                !SystemProperties[context, "ro.build.version.incremental"].endsWith("XM")
             ) {
                 //获取原组件
                 val bigTimeId =
@@ -178,9 +178,9 @@ object ControlCenterWeatherForT : HookRegister() {
             val context = viewGroup.context
             val mOrientation = viewGroup.getObject("mOrientation") as Int
             // MIUI编译时间大于 2022-03-12 00:00:00 且为内测版
-            if (SystemProperties[context, "ro.build.date.utc"]!!.toInt() >= 1647014400 && !SystemProperties[context, "ro.build.version.incremental"]!!.endsWith(
+            if (SystemProperties[context, "ro.build.date.utc"].toInt() >= 1647014400 && !SystemProperties[context, "ro.build.version.incremental"].endsWith(
                     "DEV"
-                ) && !SystemProperties[context, "ro.build.version.incremental"]!!.endsWith("XM")
+                ) && !SystemProperties[context, "ro.build.version.incremental"].endsWith("XM")
             ) {
                 if (mOrientation == 1) {
                     mConstraintLayout!!.visibility = View.VISIBLE
