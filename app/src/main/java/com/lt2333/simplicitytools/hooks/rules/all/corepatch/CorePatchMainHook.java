@@ -3,6 +3,7 @@ package com.lt2333.simplicitytools.hooks.rules.all.corepatch;
 import android.os.Build;
 import android.util.Log;
 
+import com.lt2333.simplicitytools.hooks.rules.all.DisableFlagSecure.DisableFlagSecure;
 import com.lt2333.simplicitytools.hooks.rules.all.corepatch.CorePatchForQ;
 
 import de.robv.android.xposed.IXposedHookLoadPackage;
@@ -20,6 +21,7 @@ public class CorePatchMainHook implements IXposedHookLoadPackage, IXposedHookZyg
             switch (Build.VERSION.SDK_INT) {
                 case Build.VERSION_CODES.TIRAMISU: // 33
                     new CorePatchForT().handleLoadPackage(lpparam);
+                    new DisableFlagSecure().handleLoadPackage(lpparam);
                     break;
                 case Build.VERSION_CODES.S_V2: // 32
                     new CorePatchForSv2().handleLoadPackage(lpparam);

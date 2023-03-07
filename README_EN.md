@@ -54,6 +54,7 @@ Xposed Repo：[Click here to download the latest release](https://github.com/Xpo
 [GSWXXN/UnlockMiLink](https://github.com/GSWXXN/UnlockMiLink)  
 [zerorooot/HorizontalContentextension](https://github.com/zerorooot/HorizontalContentextension)  
 [zerorooot/HideMiuiClipboardDialog](https://github.com/zerorooot/HideMiuiClipboardDialog)  
+[LSPosed/DisableFlagSecure](https://github.com/LSPosed/DisableFlagSecure)  
 
 ##### GNU General Public License v2.0
 
