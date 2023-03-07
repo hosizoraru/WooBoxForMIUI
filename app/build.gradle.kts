@@ -16,6 +16,7 @@ android {
         targetSdk = 33
         versionCode = 76
         versionName = "1.7.5-Voyager"
+        ndk.abiFilters += "arm64-v8a"
         buildConfigField("String", "BUILD_TIME", "\"${System.currentTimeMillis()}\"")
     }
 
