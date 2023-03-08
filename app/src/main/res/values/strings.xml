@@ -357,4 +357,6 @@
     <string name="miuihome_blur_when_open_folder">Folder View Blur</string>
     <string name="miuihome_blur_when_open_folder_summary">Enable Blur When Open Folder</string>
     <string name="hide_miui_clipboard_dialog">Hide Miui Clipboard Dialog</string>
+    <string name="speed_mode">Show speed mode</string>
+    <string name="speed_mode_summary">Can find speed mode in Developer options</string>
 </resources>

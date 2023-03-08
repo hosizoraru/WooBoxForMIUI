@@ -58,6 +58,12 @@ class OtherPageForT : BasePage() {
                 tipsId = R.string.show_notification_importance_summary
             ), SwitchV("show_notification_importance")
         )
+        TextSummaryWithSwitch(
+            TextSummaryV(
+                textId = R.string.speed_mode,
+                tipsId = R.string.speed_mode_summary
+            ), SwitchV("speed_mode")
+        )
         Line()
         TitleText(textId = R.string.cast)
         TextSummaryWithSwitch(
