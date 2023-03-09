@@ -57,6 +57,7 @@ android {
             useLegacyPackaging = true
         }
     }
+    namespace = "com.lt2333.simplicitytools"
     applicationVariants.all {
         outputs.all {
             (this as BaseVariantOutputImpl).outputFileName = "WooBoxForMIUI-$versionName-$name.apk"
