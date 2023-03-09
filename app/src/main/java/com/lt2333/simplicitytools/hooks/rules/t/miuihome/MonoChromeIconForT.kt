@@ -12,7 +12,6 @@ object MonoChromeIconForT : HookRegister() {
         }.hookAfter {
             it.result = true
         }
-
     }
 
 }

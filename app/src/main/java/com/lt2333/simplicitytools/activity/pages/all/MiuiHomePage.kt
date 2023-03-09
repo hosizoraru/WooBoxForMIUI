@@ -9,6 +9,7 @@ import cn.fkj233.ui.activity.view.SeekBarWithTextV
 import cn.fkj233.ui.activity.view.SwitchV
 import cn.fkj233.ui.activity.view.TextSummaryV
 import cn.fkj233.ui.activity.view.TextV
+import cn.fkj233.ui.dialog.MIUIDialog
 import com.lt2333.simplicitytools.R
 
 @BMPage("scope_miuihome", "Home", hideMenu = false)
@@ -151,16 +152,51 @@ class MiuiHomePage : BasePage() {
         )
         when (Build.VERSION.SDK_INT) {
             Build.VERSION_CODES.TIRAMISU -> {
+                val blurBinding = GetDataBinding({ safeSP.getBoolean("mono_chrome_icon", false) }) { view, flags, data ->
+                    if (flags == 1) view.visibility = if (data as Boolean) View.VISIBLE else View.GONE
+                }
                 TextSummaryWithSwitch(
                     TextSummaryV(
                         textId = R.string.mono_chrome_icon,
-                    ), SwitchV("mono_chrome_icon")
+                    ), SwitchV("mono_chrome_icon", false, dataBindingSend = blurBinding.bindingSend)
                 )
                 TextSummaryWithSwitch(
                     TextSummaryV(
                         textId = R.string.monoet_color,
-                    ), SwitchV("monoet_color")
+                    ), SwitchV("monoet_color", false), dataBindingRecv = blurBinding.binding.getRecv(1)
                 )
+//                TextSummaryWithSwitch(
+//                    TextSummaryV(
+//                        textId = R.string.use_edit_color,
+//                    ), SwitchV("use_edit_color")
+//                )
+//                TextSummaryWithArrow(
+//                    TextSummaryV(
+//                        textId = R.string.your_color,
+//                        onClickListener = {
+//                            MIUIDialog(activity) {
+//                                setTitle(R.string.your_color)
+//                                setEditText(
+//                                    "",
+//                                    "${activity.getString(R.string.def)}#0d84ff, ${activity.getString(R.string.current)}${
+//                                        safeSP.getString("your_color", "#0d84ff")
+//                                    }"
+//                                )
+//                                setLButton(textId = R.string.cancel) {
+//                                    dismiss()
+//                                }
+//                                setRButton(textId = R.string.Done) {
+//                                    if (getEditText() != "") {
+//                                        safeSP.putAny(
+//                                            "your_color",
+//                                            getEditText()
+//                                        )
+//                                    }
+//                                    dismiss()
+//                                }
+//                            }.show()
+//                        })
+//                )
             }
         }
         Line()

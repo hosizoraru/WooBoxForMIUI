@@ -355,8 +355,10 @@
     <string name="miuihome_blur_when_open_folder">文件夹视图模糊</string>
     <string name="miuihome_blur_when_open_folder_summary">打开文件夹时启用模糊</string>
     <string name="hide_miui_clipboard_dialog">隐藏miui剪贴板对话框</string>
-    <string name="speed_mode">开启极致模式选项</string>
+    <string name="speed_mode">显示极致模式选项</string>
     <string name="speed_mode_summary">在开发者选项里面</string>
-    <string name="mono_chrome_icon">背景取色图标</string>
-    <string name="monoet_color">默认莫奈颜色</string>
+    <string name="mono_chrome_icon">图标背景色</string>
+    <string name="monoet_color">默认颜色 -> 莫奈取色</string>
+    <string name="use_edit_color">编辑颜色</string>
+    <string name="your_color">你的颜色</string>
 </resources>
