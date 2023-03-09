@@ -359,4 +359,6 @@
     <string name="hide_miui_clipboard_dialog">Hide Miui Clipboard Dialog</string>
     <string name="speed_mode">Show speed mode</string>
     <string name="speed_mode_summary">Can find speed mode in Developer options</string>
+    <string name="mono_chrome_icon">Show mono chrome icon</string>
+    <string name="monoet_color">Default monet color</string>
 </resources>

@@ -1,5 +1,6 @@
 package com.lt2333.simplicitytools.activity.pages.all
 
+import android.os.Build
 import android.view.View
 import cn.fkj233.ui.activity.MIUIActivity.Companion.safeSP
 import cn.fkj233.ui.activity.annotation.BMPage
@@ -148,6 +149,20 @@ class MiuiHomePage : BasePage() {
             SeekBarWithTextV("miuihome_task_view_card_size_horizontal2", 80, 120, 100),
             dataBindingRecv = cardSizeBinding.getRecv(1)
         )
+        when (Build.VERSION.SDK_INT) {
+            Build.VERSION_CODES.TIRAMISU -> {
+                TextSummaryWithSwitch(
+                    TextSummaryV(
+                        textId = R.string.mono_chrome_icon,
+                    ), SwitchV("mono_chrome_icon")
+                )
+                TextSummaryWithSwitch(
+                    TextSummaryV(
+                        textId = R.string.monoet_color,
+                    ), SwitchV("monoet_color")
+                )
+            }
+        }
         Line()
         TitleText(textId = R.string.scope_personalassistant)
         TextSummaryWithSwitch(

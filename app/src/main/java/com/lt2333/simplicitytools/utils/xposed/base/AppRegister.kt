@@ -1,11 +1,13 @@
 package com.lt2333.simplicitytools.utils.xposed.base
 
 import com.github.kyuubiran.ezxhelper.utils.Log.logexIfThrow
+import de.robv.android.xposed.IXposedHookInitPackageResources
 import de.robv.android.xposed.IXposedHookLoadPackage
 import de.robv.android.xposed.XposedBridge
+import de.robv.android.xposed.callbacks.XC_InitPackageResources
 import de.robv.android.xposed.callbacks.XC_LoadPackage
 
-abstract class AppRegister: IXposedHookLoadPackage {
+abstract class AppRegister: IXposedHookLoadPackage, IXposedHookInitPackageResources {
 
     abstract val packageName: String
 
@@ -24,4 +26,18 @@ abstract class AppRegister: IXposedHookLoadPackage {
         }
     }
 
+    override fun handleInitPackageResources(resparam: XC_InitPackageResources.InitPackageResourcesParam) {}
+
+    protected fun autoInitResourcesHooks(resparam: XC_InitPackageResources.InitPackageResourcesParam, vararg hook: ResourcesHookRegister) {
+        hook.also {
+            XposedBridge.log("WooBox: Try to Hook [$packageName]")
+        }.forEach {
+            runCatching {
+                if (it.isInit) return@forEach
+                it.setInitPackageResourcesParam(resparam)
+                it.init()
+                it.isInit = true
+            }.logexIfThrow("Failed to Hook [$packageName]")
+        }
+    }
 }

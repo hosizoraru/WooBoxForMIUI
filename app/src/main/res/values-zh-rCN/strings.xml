@@ -357,4 +357,6 @@
     <string name="hide_miui_clipboard_dialog">隐藏miui剪贴板对话框</string>
     <string name="speed_mode">开启极致模式选项</string>
     <string name="speed_mode_summary">在开发者选项里面</string>
+    <string name="mono_chrome_icon">背景取色图标</string>
+    <string name="monoet_color">默认莫奈颜色</string>
 </resources>

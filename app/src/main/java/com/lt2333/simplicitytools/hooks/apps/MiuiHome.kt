@@ -3,12 +3,13 @@ package com.lt2333.simplicitytools.hooks.apps
 import android.os.Build
 import com.lt2333.simplicitytools.hooks.rules.all.maxmipad.GestureOperationHelper
 import com.lt2333.simplicitytools.hooks.rules.all.miuihome.*
+import com.lt2333.simplicitytools.hooks.rules.t.miuihome.*
 import com.lt2333.simplicitytools.utils.xposed.base.AppRegister
+import de.robv.android.xposed.callbacks.XC_InitPackageResources.InitPackageResourcesParam
 import de.robv.android.xposed.callbacks.XC_LoadPackage
 
 object MiuiHome : AppRegister() {
     override val packageName: String = "com.miui.home"
-
     override fun handleLoadPackage(lpparam: XC_LoadPackage.LoadPackageParam) {
         when (Build.VERSION.SDK_INT) {
             Build.VERSION_CODES.TIRAMISU -> {
@@ -39,6 +40,7 @@ object MiuiHome : AppRegister() {
                     //
                     IconCellCount, // 解锁图标网格布局
                     BlurWhenOpenFolder, // 文件夹视图模糊
+                    MonoChromeIconForT, // 莫奈取色图标
                 )
             }
 
@@ -74,4 +76,16 @@ object MiuiHome : AppRegister() {
             }
         }
     }
+
+@Throws(Throwable::class)
+override fun handleInitPackageResources(resparam: InitPackageResourcesParam) {
+    when (Build.VERSION.SDK_INT) {
+        Build.VERSION_CODES.TIRAMISU -> {
+            autoInitResourcesHooks(
+                resparam,
+                MonetColorForT
+            )
+        }
+    }
+}
 }
