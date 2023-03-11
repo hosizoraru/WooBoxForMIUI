@@ -7,6 +7,7 @@ import cn.fkj233.ui.activity.view.SwitchV
 import cn.fkj233.ui.activity.view.TextSummaryV
 import com.lt2333.simplicitytools.R
 import com.lt2333.simplicitytools.utils.Yife.Terminal
+import cn.fkj233.ui.activity.view.TextV
 
 
 @BMPage("scope_securitycenter", "Security", hideMenu = false)
@@ -31,9 +32,10 @@ class SecurityPageForT : BasePage() {
                 tipsId = R.string.lock_one_hundred_summary
             ), SwitchV("lock_one_hundred")
         )
-        TextSummaryWithSwitch(
-            TextSummaryV(textId = R.string.remove_macro_blacklist),
-            SwitchV("remove_macro_blacklist")
+        TextWithSwitch(
+            TextV(
+                textId = R.string.remove_macro_blacklist,
+            ), SwitchV("remove_macro_blacklist", false)
         )
         TextSummaryWithSwitch(
             TextSummaryV(textId = R.string.battery_life_function),

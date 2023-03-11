@@ -48,6 +48,11 @@ public class CorePatchForR extends XposedHelper implements IXposedHookLoadPackag
                 "android.content.pm.PackageInfoLite",
                 new ReturnConstant(prefs, "downgrade", null));
 
+        hookAllMethods(
+                "com.android.server.pm.PackageManagerServiceUtils", loadPackageParam.classLoader, "isDowngradePermitted",
+                new ReturnConstant(prefs, "downgrade", true)
+        );
+
         // exists on flyme 9(Android 11) only
         findAndHookMethod("com.android.server.pm.PackageManagerService", loadPackageParam.classLoader,
                 "checkDowngrade",
