@@ -11,7 +11,7 @@ plugins {
 android {
 //     compileSdkPreview = "UpsideDownCake"
     compileSdk = 33
-    buildToolsVersion = "30.0.3"
+    buildToolsVersion = "33.0.2"
     defaultConfig {
         applicationId = "com.lt2333.simplicitytools"
         minSdk = 31
