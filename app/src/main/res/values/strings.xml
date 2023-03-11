@@ -365,4 +365,6 @@
     <string name="use_edit_color">Edit it into your favorite color</string>
     <string name="your_color">Your favorite color</string>
     <string name="No_Storage_Restrict">Removes the restriction when selecting folders</string>
+    <string name="systemui_use_new_hd">Force to use new HD icon</string>
+    <string name="systemui_use_new_summary">A recent system version is required, some models may not have been updated</string>
 </resources>

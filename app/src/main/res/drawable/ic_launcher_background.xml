@@ -2,6 +2,7 @@
     xmlns:aapt="http://schemas.android.com/aapt"
     android:width="108dp"
     android:height="108dp"
+    android:autoMirrored="true"
     android:viewportWidth="108"
     android:viewportHeight="108">
   <group android:scaleX="0.5625"

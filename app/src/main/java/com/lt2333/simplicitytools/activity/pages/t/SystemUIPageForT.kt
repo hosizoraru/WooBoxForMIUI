@@ -504,6 +504,10 @@ class SystemUIPageForT : BasePage() {
                 tipsId = R.string.hide_battery_percentage_icon_summary
             ), SwitchV("hide_battery_percentage_icon")
         )
+        TextSummaryWithSwitch(
+            TextSummaryV(textId = R.string.systemui_use_new_hd, tipsId = R.string.systemui_use_new_summary),
+            SwitchV("systemui_use_new_hd", false)
+        )
         Line()
         TitleText(textId = R.string.status_bar_network_speed)
         TextSummaryWithSwitch(

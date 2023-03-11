@@ -39,6 +39,7 @@ Xposed Repo：[Click here to download the latest release](https://github.com/Xpo
 ## Third party open source references
 
 [chsbuffer/MIUIQOL](https://github.com/chsbuffer/MIUIQOL)  
+[DanGLES3/NoStorageRestrict](https://github.com/DanGLES3/NoStorageRestrict)  
 
 ##### GNU General Public License v3.0
 

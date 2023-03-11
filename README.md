@@ -43,6 +43,7 @@ Xposed
 ### 第三方开源引用
 
 [chsbuffer/MIUIQOL](https://github.com/chsbuffer/MIUIQOL)  
+[DanGLES3/NoStorageRestrict](https://github.com/DanGLES3/NoStorageRestrict)  
 
 ##### GNU General Public License v3.0
 

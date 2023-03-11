@@ -50,6 +50,7 @@ object SystemUI : AppRegister() {
                     DisableBluetoothForT, // 控制中心直接关闭蓝牙
                     NotificationSettingsNoWhiteListForAll,// 去除通知设置白名单
                     IconPositionForT, // 修改图标位置
+                    UseNewHDForT, // 强制使用新 HD 图标
                 )
             }
 
