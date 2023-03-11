@@ -9,9 +9,9 @@ plugins {
 }
 
 android {
-    // compileSdkPreview = "UpsideDownCake"
-    compileSdk = 33
-    buildToolsVersion = "30.0.3"
+     compileSdkPreview = "UpsideDownCake"
+//    compileSdk = 33
+//    buildToolsVersion = "30.0.3"
     defaultConfig {
         applicationId = "com.lt2333.simplicitytools"
         minSdk = 31
@@ -68,7 +68,7 @@ android {
 }
 
 dependencies {
-    implementation("androidx.core:core-ktx:1.10.0-beta01")
+    implementation("androidx.core:core-ktx:1.12.0-alpha01")
     //API
     compileOnly("de.robv.android.xposed:api:82")
     implementation("com.github.kyuubiran:EzXHelper:1.0.3")
