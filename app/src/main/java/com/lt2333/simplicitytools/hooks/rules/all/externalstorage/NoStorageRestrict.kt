@@ -10,6 +10,6 @@ object NoStorageRestrict : HookRegister() {
         findMethod("com.android.externalstorage.ExternalStorageProvider") {
             name == "shouldBlockFromTree" &&
                     parameterTypes[0] == String::class.java
-        }.hookReturnConstant(true)
+        }.hookReturnConstant(false)
     }
 }
