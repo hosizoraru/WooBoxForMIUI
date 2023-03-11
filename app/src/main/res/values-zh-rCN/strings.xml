@@ -359,6 +359,6 @@
     <string name="speed_mode_summary">在开发者选项里面</string>
     <string name="mono_chrome_icon">图标背景色</string>
     <string name="monoet_color">默认颜色 -> 莫奈取色</string>
-    <string name="use_edit_color">编辑颜色</string>
-    <string name="your_color">你的颜色</string>
+    <string name="use_edit_color">编辑成你喜欢的颜色</string>
+    <string name="your_color">你喜欢的颜色</string>
 </resources>
