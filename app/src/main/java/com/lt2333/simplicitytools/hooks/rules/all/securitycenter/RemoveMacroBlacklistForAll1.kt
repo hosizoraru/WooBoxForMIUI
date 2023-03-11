@@ -7,7 +7,7 @@ import com.lt2333.simplicitytools.utils.xposed.base.HookRegister
 import de.robv.android.xposed.XposedBridge
 import de.robv.android.xposed.XposedHelpers
 
-object RemoveMacroBlacklistForAll : HookRegister() {
+object RemoveMacroBlacklistForAll1 : HookRegister() {
 
     override fun init() {
         if (XSPUtils.getBoolean("remove_macro_blacklist", false)) {
