@@ -361,6 +361,6 @@
     <string name="speed_mode_summary">Can find speed mode in Developer options</string>
     <string name="mono_chrome_icon">Show mono chrome icon</string>
     <string name="monoet_color">Default color -> monet color</string>
-    <string name="use_edit_color">Edit you like color</string>
-    <string name="your_color">Your color</string>
+    <string name="use_edit_color">Edit it into your favorite color</string>
+    <string name="your_color">Your favorite color</string>
 </resources>
