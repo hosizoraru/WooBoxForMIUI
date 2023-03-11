@@ -118,6 +118,7 @@
     <string name="scope_mediaeditor">Gallery Editor</string>
     <string name="scope_personalassistant">App Vault</string>
     <string name="scope_lbe">Lbe</string>
+    <string name="scope_externalstorage">Externalstorage</string>
     <string name="home_time_summary">When turned on, the clock will not be hidden on the status bar even if there is a clock widget</string>
     <string name="skip_waiting_time_summary">Ignore the waiting time by MIUI when eanbling USB debugging, unknown sources and accessibility</string>
     <string name="lock_one_hundred_summary">Set the score on Security app to 100 points and block the Optimize button</string>
@@ -363,4 +364,5 @@
     <string name="monoet_color">Default color -> monet color</string>
     <string name="use_edit_color">Edit it into your favorite color</string>
     <string name="your_color">Your favorite color</string>
+    <string name="No_Storage_Restrict">Removes the restriction when selecting folders</string>
 </resources>

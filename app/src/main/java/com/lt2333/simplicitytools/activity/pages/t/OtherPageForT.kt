@@ -96,6 +96,12 @@ class OtherPageForT : BasePage() {
             TextSummaryV(textId = R.string.hide_miui_clipboard_dialog),
             SwitchV("hide_miui_clipboard_dialog")
         )
+        Line()
+        TitleText(textId = R.string.scope_externalstorage)
+        TextSummaryWithSwitch(
+            TextSummaryV(textId = R.string.No_Storage_Restrict),
+            SwitchV("No_Storage_Restrict")
+        )
     }
 
 }

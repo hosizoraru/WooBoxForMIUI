@@ -21,5 +21,6 @@
         <item>com.miui.contentextension</item>
         <item>com.miui.personalassistant</item>
         <item>com.lbe.security.miui</item>
+        <item>com.android.externalstorage</item>
     </string-array>
 </resources>

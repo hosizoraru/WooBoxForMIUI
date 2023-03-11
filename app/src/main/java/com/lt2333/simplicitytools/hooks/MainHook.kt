@@ -36,6 +36,7 @@ class MainHook : EasyXposedInit() {
         Taplus,// 传送门
         PersonalAssistant,// 智能助理
         Lbe, // 权限管理服务
+        Externalstorage, // 外部存储服务
     )
 
     override fun handleLoadPackage(lpparam: XC_LoadPackage.LoadPackageParam?) {

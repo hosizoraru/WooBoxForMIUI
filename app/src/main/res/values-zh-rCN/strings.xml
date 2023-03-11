@@ -116,6 +116,7 @@
     <string name="scope_mediaeditor">相册编辑</string>
     <string name="scope_personalassistant">智能助理</string>
     <string name="scope_lbe">权限管理服务</string>
+    <string name="scope_externalstorage">外部存储设备</string>
     <string name="home_time_summary">开启后即使存在时钟小组件，\n也不会对状态栏隐藏时钟</string>
     <string name="skip_waiting_time_summary">开启后可忽略MIUI在开启USB调试、\n未知来源、无障碍时的冻结时间</string>
     <string name="lock_one_hundred_summary">锁定手机管家100分并屏蔽修复按钮</string>
@@ -361,4 +362,5 @@
     <string name="monoet_color">默认颜色 -> 莫奈取色</string>
     <string name="use_edit_color">修改成你喜欢的颜色</string>
     <string name="your_color">你喜欢的颜色</string>
+    <string name="No_Storage_Restrict">取消选择文件夹时的限制</string>
 </resources>
