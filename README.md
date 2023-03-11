@@ -2,7 +2,6 @@
    <img width="160" src="https://raw.githubusercontent.com/LittleTurtle2333/SimplicityTools/main/doc/ic_launcher.png" alt="logo">
    <h1>WooBox For MIUI</h1>
    <p><b><a href="https://github.com/LittleTurtle2333/SimplicityTools/blob/main/README_EN.md">English</a>  丨 简体中文</b></p>
-   </p>
    <a href="https://github.com/Xposed-Modules-Repo/com.lt2333.simplicitytools/releases"><img alt="GitHub all releases" src="https://img.shields.io/github/downloads/Xposed-Modules-Repo/com.lt2333.simplicitytools/total?label=Downloads"></a>
    <a href="https://github.com/LittleTurtle2333/SimplicityTools/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/LittleTurtle2333/SimplicityTools"></a>
    <a href="https://github.com/LittleTurtle2333/SimplicityTools/issues"><img alt="GitHub issues" src="https://img.shields.io/github/issues/LittleTurtle2333/SimplicityTools"></a>

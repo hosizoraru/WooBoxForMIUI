@@ -2,17 +2,21 @@ package com.lt2333.simplicitytools.hooks.rules.t.miuihome
 
 import android.content.res.Resources
 import android.graphics.Color
+import com.lt2333.simplicitytools.utils.XSPUtils
 import com.lt2333.simplicitytools.utils.hasEnable
+import com.lt2333.simplicitytools.utils.hookBeforeMethod
+import com.lt2333.simplicitytools.utils.setObjectField
 import com.lt2333.simplicitytools.utils.xposed.base.ResourcesHookRegister
+import de.robv.android.xposed.XposedBridge
 
 object MonetColorForT : ResourcesHookRegister() {
     override fun init() = hasEnable("monoet_color") {
         val monet = "system_accent1_100"
         val monoColorId = Resources.getSystem().getIdentifier(monet, "color", "android")
         var monoColor = Resources.getSystem().getColor(monoColorId)
-//        hasEnable("use_edit_color") {
-//            monoColor = Color.parseColor("your_color")
-//        }
+        hasEnable("use_edit_color") {
+            monoColor = Color.parseColor(XSPUtils.getString("your_color","#0d84ff"))
+        }
         getInitPackageResourcesParam().res.setReplacement(
             "com.miui.home",
             "color",

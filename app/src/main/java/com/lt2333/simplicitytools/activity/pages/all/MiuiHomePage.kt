@@ -165,38 +165,38 @@ class MiuiHomePage : BasePage() {
                         textId = R.string.monoet_color,
                     ), SwitchV("monoet_color", false), dataBindingRecv = blurBinding.binding.getRecv(1)
                 )
-//                TextSummaryWithSwitch(
-//                    TextSummaryV(
-//                        textId = R.string.use_edit_color,
-//                    ), SwitchV("use_edit_color")
-//                )
-//                TextSummaryWithArrow(
-//                    TextSummaryV(
-//                        textId = R.string.your_color,
-//                        onClickListener = {
-//                            MIUIDialog(activity) {
-//                                setTitle(R.string.your_color)
-//                                setEditText(
-//                                    "",
-//                                    "${activity.getString(R.string.def)}#0d84ff, ${activity.getString(R.string.current)}${
-//                                        safeSP.getString("your_color", "#0d84ff")
-//                                    }"
-//                                )
-//                                setLButton(textId = R.string.cancel) {
-//                                    dismiss()
-//                                }
-//                                setRButton(textId = R.string.Done) {
-//                                    if (getEditText() != "") {
-//                                        safeSP.putAny(
-//                                            "your_color",
-//                                            getEditText()
-//                                        )
-//                                    }
-//                                    dismiss()
-//                                }
-//                            }.show()
-//                        })
-//                )
+                TextSummaryWithSwitch(
+                    TextSummaryV(
+                        textId = R.string.use_edit_color,
+                    ), SwitchV("use_edit_color")
+                )
+                TextSummaryWithArrow(
+                    TextSummaryV(
+                        textId = R.string.your_color,
+                        onClickListener = {
+                            MIUIDialog(activity) {
+                                setTitle(R.string.your_color)
+                                setEditText(
+                                    "",
+                                    "${activity.getString(R.string.current)}${
+                                        safeSP.getString("your_color", "#0d84ff")
+                                    }"
+                                )
+                                setLButton(textId = R.string.cancel) {
+                                    dismiss()
+                                }
+                                setRButton(textId = R.string.Done) {
+                                    if (getEditText() != "") {
+                                        safeSP.putAny(
+                                            "your_color",
+                                            getEditText()
+                                        )
+                                    }
+                                    dismiss()
+                                }
+                            }.show()
+                        })
+                )
             }
         }
         Line()
