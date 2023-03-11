@@ -152,23 +152,23 @@ class MiuiHomePage : BasePage() {
         )
         when (Build.VERSION.SDK_INT) {
             Build.VERSION_CODES.TIRAMISU -> {
-                val blurBinding = GetDataBinding({ safeSP.getBoolean("mono_chrome_icon", false) }) { view, flags, data ->
+                val monoBinding = GetDataBinding({ safeSP.getBoolean("mono_chrome_icon", false) }) { view, flags, data ->
                     if (flags == 1) view.visibility = if (data as Boolean) View.VISIBLE else View.GONE
                 }
                 TextSummaryWithSwitch(
                     TextSummaryV(
                         textId = R.string.mono_chrome_icon,
-                    ), SwitchV("mono_chrome_icon", false, dataBindingSend = blurBinding.bindingSend)
+                    ), SwitchV("mono_chrome_icon", false, dataBindingSend = monoBinding.bindingSend)
                 )
                 TextSummaryWithSwitch(
                     TextSummaryV(
                         textId = R.string.monoet_color,
-                    ), SwitchV("monoet_color", false), dataBindingRecv = blurBinding.binding.getRecv(1)
+                    ), SwitchV("monoet_color", false), dataBindingRecv = monoBinding.binding.getRecv(1)
                 )
                 TextSummaryWithSwitch(
                     TextSummaryV(
                         textId = R.string.use_edit_color,
-                    ), SwitchV("use_edit_color")
+                    ), SwitchV("use_edit_color",false), dataBindingRecv = monoBinding.binding.getRecv(1)
                 )
                 TextSummaryWithArrow(
                     TextSummaryV(
@@ -195,7 +195,7 @@ class MiuiHomePage : BasePage() {
                                     dismiss()
                                 }
                             }.show()
-                        })
+                        }), dataBindingRecv = monoBinding.binding.getRecv(1)
                 )
             }
         }
