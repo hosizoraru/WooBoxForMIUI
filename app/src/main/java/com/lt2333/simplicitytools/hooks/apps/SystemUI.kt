@@ -51,6 +51,7 @@ object SystemUI : AppRegister() {
                     NotificationSettingsNoWhiteListForAll,// 去除通知设置白名单
                     IconPositionForT, // 修改图标位置
                     UseNewHDForT, // 强制使用新 HD 图标
+                    RestoreCnNearby, // 恢复附近分享磁贴
                 )
             }
 
@@ -91,6 +92,7 @@ object SystemUI : AppRegister() {
                     NoPasswordHookForS, // 开机免密码
                     DisableBluetoothForT, // 控制中心直接关闭蓝牙
                     NotificationSettingsNoWhiteListForAll,// 去除通知设置白名单
+                    RestoreCnNearby, // 恢复附近分享磁贴
                 )
             }
         }

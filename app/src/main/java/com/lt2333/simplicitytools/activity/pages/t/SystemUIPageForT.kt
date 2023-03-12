@@ -682,6 +682,11 @@ class SystemUIPageForT : BasePage() {
             ),
             SwitchV("Disable_Bluetooth"),
         )
+        TextSummaryWithSwitch(
+            TextSummaryV(
+                textId = R.string.restore_nearby_sharing_tile,
+            ), SwitchV("restore_nearby_sharing_tile"),
+        )
         Line()
         TitleText(textId = R.string.lock_screen)
         TextSummaryWithSwitch(

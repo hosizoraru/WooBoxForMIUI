@@ -372,4 +372,5 @@
     <string name="intent_browser">User your default browser</string>
     <string name="scope_guardprovider">Miui Guard Provider</string>
     <string name="Anti_Defraud_App_Manager">Anti Defraud App Manager</string>
+    <string name="restore_nearby_sharing_tile">Restore nearby sharing tile</string>
 </resources>

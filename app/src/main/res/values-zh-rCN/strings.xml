@@ -370,4 +370,5 @@
     <string name="intent_browser">使用你的默认浏览器打开</string>
     <string name="scope_guardprovider">Miui安全组件</string>
     <string name="Anti_Defraud_App_Manager">阻止上传应用列表</string>
+    <string name="restore_nearby_sharing_tile">恢复附近分享磁贴</string>
 </resources>
