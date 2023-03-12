@@ -101,6 +101,11 @@ class MainPageForT : BasePage() {
             onClickListener = { showFragment("pkg_installer") }
         )
         Page(
+            activity.getDrawable(R.drawable.ic_taplus)!!,
+            pageNameId = R.string.scope_taplus, round = 8f,
+            onClickListener = { showFragment("scope_taplus") }
+        )
+        Page(
             activity.getDrawable(R.drawable.ic_maxmipad)!!,
             pageNameId = R.string.scope_mipad, round = 8f,
             onClickListener = { showFragment("scope_mipad") }
