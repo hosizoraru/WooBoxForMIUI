@@ -15,6 +15,7 @@ object SecurityHost : Hook() {
                     EnabledAllTextView,
                     AppDetails(dexKit, app),
                     IntlEnableBehaviorRecord(dexKit),
+                    LockOneHundredForAll(dexKit), //锁定 100分
                 )
             }
         }

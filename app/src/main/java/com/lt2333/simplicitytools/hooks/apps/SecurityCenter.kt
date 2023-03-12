@@ -15,7 +15,7 @@ object SecurityCenter : AppRegister() {
         when (lpparam.packageName) {
             "com.miui.securitycenter" -> hooks(
                 lpparam,
-                SecurityHost //miuiqol
+                SecurityHost, //miuiqol
             )
         }
         when (Build.VERSION.SDK_INT) {
@@ -24,7 +24,6 @@ object SecurityCenter : AppRegister() {
                 autoInitHooks(
                     lpparam,
                     SkipWaitingTimeForAll, //跳过 5/10秒等待时间
-                    LockOneHundredForAll, //锁定 100分
                     RemoveMacroBlacklistForAll1, //去除自动连招黑名单
                     ShowBatteryTemperatureForT, //显示电池温度
                     RemoveOpenAppConfirmationPopupForAll, //去除打开应用弹窗
@@ -37,7 +36,6 @@ object SecurityCenter : AppRegister() {
                 autoInitHooks(
                     lpparam,
                     SkipWaitingTimeForAll, //跳过 5/10秒等待时间
-                    LockOneHundredForAll, //锁定 100分
                     RemoveMacroBlacklistForAll1, //去除自动连招黑名单
                     ShowBatteryTemperatureForS, //显示电池温度
                     RemoveOpenAppConfirmationPopupForAll, //去除打开应用弹窗
