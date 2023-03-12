@@ -22,5 +22,6 @@
         <item>com.miui.personalassistant</item>
         <item>com.lbe.security.miui</item>
         <item>com.android.externalstorage</item>
+        <item>com.miui.voiceassist</item>
     </string-array>
 </resources>

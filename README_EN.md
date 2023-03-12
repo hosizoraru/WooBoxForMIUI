@@ -62,14 +62,19 @@ Xposed Repo：[Click here to download the latest release](https://github.com/Xpo
 
 ##### GNU Lesser General Public License v2.1
 
-[577fkj/blockmiui](https://github.com/577fkj/blockmiui)
+[577fkj/blockmiui](https://github.com/577fkj/blockmiui)  
 
 ##### Apache License 2.0
 
-[KyuubiRan/EzXHelper](https://github.com/KyuubiRan/EzXHelper)
+[KyuubiRan/EzXHelper](https://github.com/KyuubiRan/EzXHelper)  
+
+##### MIT License
+
+[Henry-ZHR/KillDomainVerification](https://github.com/Henry-ZHR/KillDomainVerification)  
+[Haocen2004/PortalHook](https://github.com/Haocen2004/PortalHook)  
 
 ---
 
 ## License
 
-[GNU General Public License v3.0](https://github.com/LittleTurtle2333/SimplicityTools/blob/main/LICENSE)
+[GNU General Public License v3.0](https://github.com/LittleTurtle2333/SimplicityTools/blob/main/LICENSE)  

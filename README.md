@@ -75,6 +75,7 @@ Xposed
 ##### MIT License
 
 [Henry-ZHR/KillDomainVerification](https://github.com/Henry-ZHR/KillDomainVerification)  
+[Haocen2004/PortalHook](https://github.com/Haocen2004/PortalHook)  
 
 ---
 

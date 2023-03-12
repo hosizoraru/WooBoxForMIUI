@@ -367,4 +367,7 @@
     <string name="No_Storage_Restrict">Removes the restriction when selecting folders</string>
     <string name="systemui_use_new_hd">Force to use new HD icon</string>
     <string name="systemui_use_new_summary">A recent system version is required, some models may not have been updated</string>
+    <string name="double_press">Gesture : 2 fingers</string>
+    <string name="super_image">Quality of save images : Super resolution</string>
+    <string name="intent_browser">User your default browser</string>
 </resources>
