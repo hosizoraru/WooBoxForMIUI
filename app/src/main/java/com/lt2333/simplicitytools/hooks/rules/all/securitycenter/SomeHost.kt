@@ -4,7 +4,7 @@ import de.robv.android.xposed.callbacks.XC_LoadPackage
 import com.lt2333.simplicitytools.utils.chsbuffer.*
 
 
-object SecurityHost : Hook() {
+object SomeHost : Hook() {
     override fun init(lpparam: XC_LoadPackage.LoadPackageParam) {
         inContext(lpparam) { app ->
             useDexKit(lpparam) { dexKit ->

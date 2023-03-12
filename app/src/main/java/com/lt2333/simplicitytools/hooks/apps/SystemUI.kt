@@ -4,6 +4,7 @@ import android.os.Build
 import com.lt2333.simplicitytools.hooks.rules.all.systemui.*
 import com.lt2333.simplicitytools.hooks.rules.s.systemui.*
 import com.lt2333.simplicitytools.hooks.rules.t.systemui.*
+import com.lt2333.simplicitytools.utils.chsbuffer.hooks
 import com.lt2333.simplicitytools.utils.xposed.base.AppRegister
 import de.robv.android.xposed.callbacks.XC_LoadPackage
 
@@ -11,6 +12,13 @@ object SystemUI : AppRegister() {
     override val packageName: String = "com.android.systemui"
 
     override fun handleLoadPackage(lpparam: XC_LoadPackage.LoadPackageParam) {
+        when (lpparam.packageName) {
+            "com.android.systemui" -> hooks(
+                lpparam,
+                NotificationSettingsNoWhiteListForAll, // 去除通知设置白名单
+                RestoreCnNearby, // 恢复附近分享磁贴
+            )
+        }
         when (Build.VERSION.SDK_INT) {
             Build.VERSION_CODES.TIRAMISU -> {
                 autoInitHooks(
@@ -48,10 +56,8 @@ object SystemUI : AppRegister() {
                     ShowWifiStandardForT, // 显示 WIFI 角标
                     NoPasswordHookForS, // 开机免密码
                     DisableBluetoothForT, // 控制中心直接关闭蓝牙
-                    NotificationSettingsNoWhiteListForAll,// 去除通知设置白名单
                     IconPositionForT, // 修改图标位置
                     UseNewHDForT, // 强制使用新 HD 图标
-                    RestoreCnNearby, // 恢复附近分享磁贴
                 )
             }
 
@@ -91,8 +97,6 @@ object SystemUI : AppRegister() {
                     ShowWifiStandardForS, // 显示 WIFI 角标
                     NoPasswordHookForS, // 开机免密码
                     DisableBluetoothForT, // 控制中心直接关闭蓝牙
-                    NotificationSettingsNoWhiteListForAll,// 去除通知设置白名单
-                    RestoreCnNearby, // 恢复附近分享磁贴
                 )
             }
         }

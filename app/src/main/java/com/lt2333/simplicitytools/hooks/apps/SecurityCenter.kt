@@ -15,7 +15,7 @@ object SecurityCenter : AppRegister() {
         when (lpparam.packageName) {
             "com.miui.securitycenter" -> hooks(
                 lpparam,
-                SecurityHost, //miuiqol
+                SomeHost, //miuiqol
             )
         }
         when (Build.VERSION.SDK_INT) {

@@ -348,6 +348,7 @@
     <string name="app_link_open_always">允许应用打开支持的链接</string>
     <string name="app_link_open_never">不允许应用打开链接</string>
     <string name="notification_settings_no_whitelist">去除通知设置白名单</string>
+    <string name="restore_nearby_sharing_tile">恢复附近分享磁贴</string>
     <!--miuiqol-->
     <string name="personalassistant_minus_one_blur">背景模糊</string>
     <string name="personalassistant_minus_one_blur_summary">联发科设备仅建议在 Android 13 上启用，非 Android 13 的联发科设备动态调整模糊半径时经常黑屏</string>
@@ -370,5 +371,4 @@
     <string name="intent_browser">使用你的默认浏览器打开</string>
     <string name="scope_guardprovider">Miui安全组件</string>
     <string name="Anti_Defraud_App_Manager">阻止上传应用列表</string>
-    <string name="restore_nearby_sharing_tile">恢复附近分享磁贴</string>
 </resources>

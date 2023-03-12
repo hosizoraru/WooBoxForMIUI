@@ -7,13 +7,13 @@ abstract class HookRegister {
     var isInit: Boolean = false
     abstract fun init()
 
-    open fun init(lpparam: XC_LoadPackage.LoadPackageParam) {
-        init(lpparam.classLoader)
-    }
-
-    open fun init(classLoader: ClassLoader) {
-
-    }
+//    open fun init(lpparam: XC_LoadPackage.LoadPackageParam) {
+//        init(lpparam.classLoader)
+//    }
+//
+//    open fun init(classLoader: ClassLoader) {
+//
+//    }
 
     fun setLoadPackageParam(loadPackageParam: XC_LoadPackage.LoadPackageParam) {
         lpparam = loadPackageParam

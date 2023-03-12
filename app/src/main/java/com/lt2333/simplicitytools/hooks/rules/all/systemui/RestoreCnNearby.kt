@@ -1,6 +1,5 @@
 package com.lt2333.simplicitytools.hooks.rules.all.systemui
 
-import com.lt2333.simplicitytools.utils.xposed.base.HookRegister
 import android.content.pm.ApplicationInfo
 import com.lt2333.simplicitytools.utils.chsbuffer.BooleanDuringMethod
 import de.robv.android.xposed.XC_MethodHook
@@ -8,11 +7,11 @@ import de.robv.android.xposed.XC_MethodReplacement
 import de.robv.android.xposed.XposedBridge
 import de.robv.android.xposed.XposedHelpers
 import com.lt2333.simplicitytools.utils.chsbuffer.Build
+import com.lt2333.simplicitytools.utils.chsbuffer.Hook
 import com.lt2333.simplicitytools.utils.hasEnable
 
-object RestoreCnNearby : HookRegister(){
+object RestoreCnNearby : Hook(){
     var isHooked = false
-    override fun init() { }
 
     override fun init(classLoader: ClassLoader) = hasEnable("restore_nearby_sharing_tile") {
         /* hook miui.systemui.plugin */
