@@ -13,6 +13,7 @@
     <string name="home_time">Always display Home screen clock</string>
     <string name="reboot_host">Restart all scope</string>
     <string name="reboot">Reboot System</string>
+    <string name="reboot_systemui">Reboot SystemUI</string>
     <!--Status bar icons-->
     <string name="status_bar_icon">Status bar icons</string>
     <string name="hide_no_sim_icon">Hide No SIM icon</string>
@@ -138,6 +139,7 @@
     <string name="are_you_sure_reboot">Are you sure to reboot?</string>
     <string name="cancel">Cancel</string>
     <string name="are_you_sure_reboot_scope">Are you sure to reboot all scope?</string>
+    <string name="are_you_sure_reboot_systemui">Are you sure to reboot SystemUI?</string>
     <string name="hide_battery_charging_icon">Hide charging icon</string>
     <string name="hide_wifi_standard_icon">Hide WIFI standard icon</string>
     <string name="status_bar_time_center">Status bar time center</string>

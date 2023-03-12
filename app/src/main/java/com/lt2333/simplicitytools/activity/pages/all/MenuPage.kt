@@ -65,6 +65,23 @@ class MenuPage : BasePage() {
                 }
             }.show()
         }))
+
+        TextSummaryWithArrow(TextSummaryV(textId = R.string.reboot_systemui, onClickListener = {
+            MIUIDialog(activity) {
+                setTitle(R.string.Tips)
+                setMessage(R.string.are_you_sure_reboot_systemui)
+                setLButton(R.string.cancel) {
+                    dismiss()
+                }
+                setRButton(R.string.Done) {
+                    val command = arrayOf(
+                        "killall com.android.systemui",
+                    )
+                    ShellUtils.execCommand(command, true)
+                    dismiss()
+                }
+            }.show()
+        }))
     }
 
 }
