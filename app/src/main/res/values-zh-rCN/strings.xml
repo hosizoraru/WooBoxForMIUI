@@ -280,7 +280,7 @@
     <string name="miuihome_shortcut_add_small_window_summary">桌面图标长按快捷菜单位置添加快速打开小窗</string>
     <string name="miuihome_shortcut_add_small_window_title">小窗</string>
     <string name="custom_refresh_rate">自定义高刷新率应用</string>
-    <string name="taplus">传送门</string>
+    <string name="scope_taplus">传送门</string>
     <string name="horizontal_contentextension">允许在横屏方向下使用传送门</string>
     <string name="pkg_installer">应用包管理组件</string>
     <string name="pkg_installer_summary">禁用频繁安装应用检查</string>
@@ -368,4 +368,6 @@
     <string name="double_press">开放双指长按</string>
     <string name="super_image">开放超分辨率图片</string>
     <string name="intent_browser">使用你的默认浏览器打开</string>
+    <string name="scope_guardprovider">Miui安全组件</string>
+    <string name="Anti_Defraud_App_Manager">阻止上传应用列表</string>
 </resources>

@@ -57,7 +57,8 @@ class MenuPage : BasePage() {
                         "killall com.miui.personalassistant",
                         "killall com.lbe.security.miui",
                         "killall com.android.externalstorage",
-                        "killall com.miui.voiceassist"
+                        "killall com.miui.voiceassist",
+                        "killall com.miui.guardprovider",
                     )
                     ShellUtils.execCommand(command, true)
                     dismiss()

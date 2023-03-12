@@ -270,7 +270,7 @@
     <string name="click_to_view_use_cases">クリックして使用例を表示</string>
     <string name="custom_refresh_rate">高リフレッシュレートを使用するアプリ</string>
     <string name="notification_settings_no_whitelist">通知設定 ホワイトリストなし</string>
-    <string name="taplus">Taplus</string>
+    <string name="scope_taplus">Taplus</string>
     <string name="horizontal_contentextension">Taplus を横向きで使用できるようにします</string>
     <string name="pkg_installer">パッケージインストーラー</string>
     <string name="pkg_installer_summary">アプリインストール時のカウントチェックを無効にします</string>

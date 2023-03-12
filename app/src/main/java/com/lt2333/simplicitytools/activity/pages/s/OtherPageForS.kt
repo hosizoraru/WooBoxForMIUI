@@ -86,7 +86,7 @@ class OtherPageForS : BasePage() {
             SwitchV("remove_thememanager_ads")
         )
         Line()
-        TitleText(textId = R.string.taplus)
+        TitleText(textId = R.string.scope_taplus)
         TextSummaryWithSwitch(
             TextSummaryV(textId = R.string.horizontal_contentextension),
             SwitchV("horizontal_contentextension")
@@ -108,6 +108,12 @@ class OtherPageForS : BasePage() {
         TextSummaryWithSwitch(
             TextSummaryV(textId = R.string.hide_miui_clipboard_dialog),
             SwitchV("hide_miui_clipboard_dialog")
+        )
+        Line()
+        TitleText(textId = R.string.scope_guardprovider)
+        TextSummaryWithSwitch(
+            TextSummaryV(textId = R.string.Anti_Defraud_App_Manager),
+            SwitchV("Anti_Defraud_App_Manager")
         )
         Line()
         TitleText(textId = R.string.scope_externalstorage)

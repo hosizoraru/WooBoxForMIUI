@@ -38,6 +38,7 @@ class MainHook : EasyXposedInit() {
         Lbe, // 权限管理服务
         Externalstorage, // 外部存储服务
         VoiceAssist, // 小爱同学
+        GuardProvider, // Miui安全组件
     )
 
     override fun handleLoadPackage(lpparam: XC_LoadPackage.LoadPackageParam?) {

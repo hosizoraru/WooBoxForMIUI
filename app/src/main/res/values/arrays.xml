@@ -23,5 +23,6 @@
         <item>com.lbe.security.miui</item>
         <item>com.android.externalstorage</item>
         <item>com.miui.voiceassist</item>
+        <item>com.miui.guardprovider</item>
     </string-array>
 </resources>

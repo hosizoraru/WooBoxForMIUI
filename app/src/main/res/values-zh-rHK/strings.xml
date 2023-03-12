@@ -213,7 +213,7 @@
     <string name="click_to_view_use_cases">點擊查看用例</string>
     <string name="custom_refresh_rate">自定義高刷新率應用</string>
     <string name="notification_settings_no_whitelist">去除通知設置白名單</string>
-    <string name="taplus">傳送門</string>
+    <string name="scope_taplus">傳送門</string>
     <string name="horizontal_contentextension">允許在橫屏方向下使用傳送門</string>
     <string name="packageinstaller_allow_update_system_app">允許更新系統應用</string>
     <string name="packageinstaller_remove_ads">去廣告/移除安全守護提示</string>

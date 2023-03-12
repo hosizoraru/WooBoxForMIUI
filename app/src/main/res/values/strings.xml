@@ -282,7 +282,7 @@
     <string name="miuihome_shortcut_add_small_window_summary">Press and hold the desktop icon to add a quick open window</string>
     <string name="miuihome_shortcut_add_small_window_title">Small window</string>
     <string name="custom_refresh_rate">Custom refresh rate</string>
-    <string name="taplus">Taplus</string>
+    <string name="scope_taplus">Taplus</string>
     <string name="horizontal_contentextension">Horizontal contentextension</string>
     <string name="pkg_installer">Package Installer</string>
     <string name="pkg_installer_summary">Disable the app installation\'s count checking</string>
@@ -370,4 +370,6 @@
     <string name="double_press">Gesture : 2 fingers</string>
     <string name="super_image">Quality of save images : Super resolution</string>
     <string name="intent_browser">User your default browser</string>
+    <string name="scope_guardprovider">Miui Guard Provider</string>
+    <string name="Anti_Defraud_App_Manager">Anti Defraud App Manager</string>
 </resources>
