@@ -375,7 +375,7 @@
     <string name="intent_browser">使用你的默认浏览器打开</string>
     <string name="scope_guardprovider">Miui安全组件</string>
     <string name="Anti_Defraud_App_Manager">阻止上传应用列表</string>
-    <string name="home_folder_anim">动画修改</string>
+    <string name="home_folder_anim">文件夹动画修改(可能无效，等修复)</string>
     <string name="home_folder_anim_1">文件夹打开回弹(越小越明显)</string>
     <string name="home_folder_anim_2">打开快慢(越大越慢)</string>
     <string name="home_folder_anim_3">文件夹关闭回弹(越小越明显)</string>
