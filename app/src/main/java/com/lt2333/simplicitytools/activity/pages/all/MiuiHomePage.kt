@@ -177,6 +177,23 @@ class MiuiHomePage : BasePage() {
             SeekBarWithTextV("home_folder_anim_4", 10, 60, 24),
             dataBindingRecv = HomeFoldAnimBinding.getRecv(1)
         )
+        val FoldDockBinding = GetDataBinding({ safeSP.getBoolean("home_fold_dock", false) }) { view, flags, data ->
+            if (flags == 1) view.visibility = if (data as Boolean) View.VISIBLE else View.GONE
+        }
+        TextSummaryWithSwitch(
+            TextSummaryV(textId = R.string.home_fold_dock),
+            SwitchV("home_fold_dock", dataBindingSend = FoldDockBinding.bindingSend)
+        )
+        TextWithSeekBar(
+            TextV(textId = R.string.fold_dock_hotseat),
+            SeekBarWithTextV("fold_dock_hotseat", 1, 10, 3),
+            dataBindingRecv = FoldDockBinding.getRecv(1)
+        )
+        TextWithSeekBar(
+            TextV(textId = R.string.fold_dock_run),
+            SeekBarWithTextV("fold_dock_run", 1, 10, 2),
+            dataBindingRecv = FoldDockBinding.getRecv(1)
+        )
         when (Build.VERSION.SDK_INT) {
             Build.VERSION_CODES.TIRAMISU -> {
                 val monoBinding = GetDataBinding({ safeSP.getBoolean("mono_chrome_icon", false) }) { view, flags, data ->

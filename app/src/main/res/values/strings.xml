@@ -382,4 +382,8 @@
     <string name="home_folder_anim_2">Open speed 2</string>
     <string name="home_folder_anim_3">Close speed 1</string>
     <string name="home_folder_anim_4">Close speed 2</string>
+    <string name="home_fold_dock">Dock for folded devices</string>
+    <string name="fold_dock_num">%d Num</string>
+    <string name="fold_dock_hotseat">Number of fixed Apps</string>
+    <string name="fold_dock_run">Number of running Apps</string>
 </resources>

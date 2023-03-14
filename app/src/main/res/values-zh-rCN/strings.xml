@@ -380,4 +380,8 @@
     <string name="home_folder_anim_2">打开快慢(越大越慢)</string>
     <string name="home_folder_anim_3">文件夹关闭回弹(越小越明显)</string>
     <string name="home_folder_anim_4">关闭快慢(越大越慢)</string>
+    <string name="home_fold_dock">折叠屏底栏样式</string>
+    <string name="fold_dock_num">%d 个</string>
+    <string name="fold_dock_hotseat">固定应用个数</string>
+    <string name="fold_dock_run">运行应用个数</string>
 </resources>
