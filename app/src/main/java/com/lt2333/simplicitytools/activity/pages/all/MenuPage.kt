@@ -82,6 +82,23 @@ class MenuPage : BasePage() {
                 }
             }.show()
         }))
+
+        TextSummaryWithArrow(TextSummaryV(textId = R.string.reboot_miuihome, onClickListener = {
+            MIUIDialog(activity) {
+                setTitle(R.string.Tips)
+                setMessage(R.string.are_you_sure_reboot_miuihome)
+                setLButton(R.string.cancel) {
+                    dismiss()
+                }
+                setRButton(R.string.Done) {
+                    val command = arrayOf(
+                        "killall com.miui.home",
+                    )
+                    ShellUtils.execCommand(command, true)
+                    dismiss()
+                }
+            }.show()
+        }))
     }
 
 }

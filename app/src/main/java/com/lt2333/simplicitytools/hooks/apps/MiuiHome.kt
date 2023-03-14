@@ -41,6 +41,7 @@ object MiuiHome : AppRegister() {
                     IconCellCount, // 解锁图标网格布局
                     BlurWhenOpenFolder, // 文件夹视图模糊
                     MonoChromeIconForT, // 莫奈取色图标
+                    FolderAnimForAll, // 文件夹动画修改
                 )
             }
 
@@ -72,6 +73,7 @@ object MiuiHome : AppRegister() {
                     //
                     IconCellCount, // 解锁图标网格布局
                     BlurWhenOpenFolder, // 文件夹视图模糊
+                    FolderAnimForAll, // 文件夹动画修改
                 )
             }
         }
