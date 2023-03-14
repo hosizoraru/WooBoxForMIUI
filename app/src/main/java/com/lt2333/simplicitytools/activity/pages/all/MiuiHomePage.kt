@@ -150,6 +150,33 @@ class MiuiHomePage : BasePage() {
             SeekBarWithTextV("miuihome_task_view_card_size_horizontal2", 80, 120, 100),
             dataBindingRecv = cardSizeBinding.getRecv(1)
         )
+        val HomeFoldAnimBinding = GetDataBinding({ safeSP.getBoolean("home_folder_anim", false) }) { view, flags, data ->
+            if (flags == 1) view.visibility = if (data as Boolean) View.VISIBLE else View.GONE
+        }
+        TextSummaryWithSwitch(
+            TextSummaryV(textId = R.string.home_folder_anim),
+            SwitchV("home_folder_anim", dataBindingSend = HomeFoldAnimBinding.bindingSend)
+        )
+        TextWithSeekBar(
+            TextV(textId = R.string.home_folder_anim_1),
+            SeekBarWithTextV("home_folder_anim_1", 50, 150, 90),
+            dataBindingRecv = HomeFoldAnimBinding.getRecv(1)
+        )
+        TextWithSeekBar(
+            TextV(textId = R.string.home_folder_anim_2),
+            SeekBarWithTextV("home_folder_anim_2", 10, 60, 30),
+            dataBindingRecv = HomeFoldAnimBinding.getRecv(1)
+        )
+        TextWithSeekBar(
+            TextV(textId = R.string.home_folder_anim_3),
+            SeekBarWithTextV("home_folder_anim_3", 50, 150, 99),
+            dataBindingRecv = HomeFoldAnimBinding.getRecv(1)
+        )
+        TextWithSeekBar(
+            TextV(textId = R.string.home_folder_anim_4),
+            SeekBarWithTextV("home_folder_anim_4", 10, 60, 24),
+            dataBindingRecv = HomeFoldAnimBinding.getRecv(1)
+        )
         when (Build.VERSION.SDK_INT) {
             Build.VERSION_CODES.TIRAMISU -> {
                 val monoBinding = GetDataBinding({ safeSP.getBoolean("mono_chrome_icon", false) }) { view, flags, data ->
