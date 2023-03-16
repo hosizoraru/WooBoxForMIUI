@@ -11,22 +11,6 @@ import com.lt2333.simplicitytools.R
 class OtherPageForT : BasePage() {
 
     override fun onCreate() {
-        TitleText(textId = R.string.scope_gallery)
-        TextSummaryWithSwitch(
-            TextSummaryV(
-                textId = R.string.Unlock_HDR_Enhance,
-                tipsId = R.string.Unlock_HDR_Enhance_summary
-            ), SwitchV("Unlock_HDR_Enhance")
-        )
-        Line()
-        TitleText(textId = R.string.scope_mediaeditor)
-        TextSummaryWithSwitch(
-            TextSummaryV(
-                textId = R.string.unlock_unlimited_cropping,
-                tipsId = R.string.unlock_unlimited_cropping_summary
-            ), SwitchV("unlock_unlimited_cropping")
-        )
-        Line()
         TitleText(textId = R.string.scope_mishare)
         TextSummaryWithSwitch(
             TextSummaryV(

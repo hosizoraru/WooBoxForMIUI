@@ -1,6 +1,7 @@
 package com.lt2333.simplicitytools.hooks.apps
 
 import android.os.Build
+import com.lt2333.simplicitytools.hooks.rules.all.mediaeditor.FilterManagerAll
 import com.lt2333.simplicitytools.hooks.rules.s.mediaeditor.UnlockUnlimitedCroppingForS
 import com.lt2333.simplicitytools.hooks.rules.t.mediaeditor.UnlockUnlimitedCroppingForT
 import com.lt2333.simplicitytools.utils.xposed.base.AppRegister
@@ -15,6 +16,7 @@ object MediaEditor : AppRegister() {
                 autoInitHooks(
                     lpparam,
                     UnlockUnlimitedCroppingForT, //解锁裁切最小值
+                    FilterManagerAll, // 解锁大师滤镜
                 )
             }
 
@@ -22,6 +24,7 @@ object MediaEditor : AppRegister() {
                 autoInitHooks(
                     lpparam,
                     UnlockUnlimitedCroppingForS, //解锁裁切最小值
+                    FilterManagerAll, // 解锁大师滤镜
                 )
             }
         }

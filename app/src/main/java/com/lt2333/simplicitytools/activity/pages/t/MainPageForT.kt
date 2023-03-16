@@ -106,6 +106,11 @@ class MainPageForT : BasePage() {
             onClickListener = { showFragment("scope_taplus") }
         )
         Page(
+            activity.getDrawable(R.drawable.ic_gallery)!!,
+            pageNameId = R.string.scope_gallery, round = 8f,
+            onClickListener = { showFragment("scope_gallery") }
+        )
+        Page(
             activity.getDrawable(R.drawable.ic_maxmipad)!!,
             pageNameId = R.string.scope_mipad, round = 8f,
             onClickListener = { showFragment("scope_mipad") }
