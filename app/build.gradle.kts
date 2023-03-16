@@ -77,7 +77,7 @@ dependencies {
     implementation("org.luckypray:DexKit:1.1.4")
     //UI
     implementation(project(":blockmiui"))
-    implementation("androidx.constraintlayout:constraintlayout:2.2.0-alpha07")
+    implementation("androidx.constraintlayout:constraintlayout:2.2.0-alpha08")
     //APP Center
     val appCenterSdkVersion = "5.0.0"
     implementation("com.microsoft.appcenter:appcenter-analytics:5.0.0")

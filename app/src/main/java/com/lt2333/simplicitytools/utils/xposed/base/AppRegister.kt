@@ -1,5 +1,6 @@
 package com.lt2333.simplicitytools.utils.xposed.base
 
+import com.github.kyuubiran.ezxhelper.utils.Log
 import com.github.kyuubiran.ezxhelper.utils.Log.logexIfThrow
 import de.robv.android.xposed.IXposedHookInitPackageResources
 import de.robv.android.xposed.IXposedHookLoadPackage
@@ -15,13 +16,13 @@ abstract class AppRegister: IXposedHookLoadPackage, IXposedHookInitPackageResour
 
     protected fun autoInitHooks(lpparam: XC_LoadPackage.LoadPackageParam, vararg hook: HookRegister) {
         hook.also {
-            XposedBridge.log("WooBox: Try to Hook [$packageName]")
         }.forEach {
             runCatching {
                 if (it.isInit) return@forEach
                 it.setLoadPackageParam(lpparam)
                 it.init()
                 it.isInit = true
+                Log.ix("Inited hook: ${it.javaClass.simpleName}")
             }.logexIfThrow("Failed to Hook [$packageName]")
         }
     }
