@@ -12,7 +12,7 @@ import cn.fkj233.ui.activity.view.TextV
 import cn.fkj233.ui.dialog.MIUIDialog
 import com.lt2333.simplicitytools.R
 
-@BMPage("scope_gallery", "Gallery", hideMenu = false)
+@BMPage("scope_gallery", "Gallery&MediaEditor", hideMenu = false)
 
 class GalleryMediaEditorPage : BasePage() {
     override fun onCreate() {
