@@ -42,17 +42,13 @@ class WiniPage : BasePage() {
             dataBindingRecv = BlurSysBinding.getRecv(1)
         )
         Line()
-        val ContorlDetailBinding = GetDataBinding({ safeSP.getBoolean("hideMiPlayEntry", false) }) { view, flags, data ->
-            if (flags == 1) view.visibility = if (data as Boolean) View.VISIBLE else View.GONE
-        }
         TextSummaryWithSwitch(
             TextSummaryV(textId = R.string.hideMiPlayEntry),
-            SwitchV("hideMiPlayEntry", dataBindingSend = ContorlDetailBinding.bindingSend)
+            SwitchV("hideMiPlayEntry")
         )
         TextSummaryWithSeekBar(
             TextSummaryV(textId = R.string.controlDetailBackgroundAlpha),
             SeekBarWithTextV("controlDetailBackgroundAlpha", 120, 255, 120),
-            dataBindingRecv = ContorlDetailBinding.getRecv(1)
         )
         Line()
         val BlurHomeBinding = GetDataBinding({ safeSP.getBoolean("blur_when_show_shortcut_menu", false) }) { view, flags, data ->
