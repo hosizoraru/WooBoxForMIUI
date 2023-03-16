@@ -4,7 +4,9 @@ import android.os.Build
 import com.lt2333.simplicitytools.BuildConfig
 import com.lt2333.simplicitytools.hooks.apps.*
 import com.lt2333.simplicitytools.hooks.rules.all.corepatch.CorePatchMainHook
+import com.lt2333.simplicitytools.hooks.rules.all.wini.FrameworkHooks
 import com.lt2333.simplicitytools.hooks.rules.t.miuihome.MonetColorForT
+import com.lt2333.simplicitytools.utils.hasEnable
 import com.lt2333.simplicitytools.utils.xposed.EasyXposedInit
 import com.lt2333.simplicitytools.utils.xposed.base.AppRegister
 import de.robv.android.xposed.IXposedHookZygoteInit
@@ -50,6 +52,11 @@ class MainHook : EasyXposedInit() {
     override fun initZygote(startupParam: IXposedHookZygoteInit.StartupParam?) {
         super.initZygote(startupParam)
         CorePatchMainHook().initZygote(startupParam)
+        hasEnable("blur_when_show_shortcut_menu") {
+            if (startupParam != null) {
+                FrameworkHooks().initZygote(startupParam)
+            }
+        }
     }
 
     override fun handleInitPackageResources(resparam: InitPackageResourcesParam?) {

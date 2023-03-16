@@ -398,4 +398,6 @@
     <string name="enable_remover_2">Enable remover2</string>
     <string name="enable_magic_matting">Enable magic matting</string>
     <string name="enable_magic_sky">Enable magic sky</string>
+    <string name="blur_when_show_shortcut_menu">Shortcut menu blur</string>
+    <string name="shortcutMenuBackgroundAlpha">Shortcut menu blur value</string>
 </resources>

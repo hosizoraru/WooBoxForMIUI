@@ -396,4 +396,6 @@
     <string name="enable_remover_2">解锁魔法消除</string>
     <string name="enable_magic_matting">解锁魔法抠图</string>
     <string name="enable_magic_sky">解锁魔法换天</string>
+    <string name="blur_when_show_shortcut_menu">快捷菜单模糊</string>
+    <string name="shortcutMenuBackgroundAlpha">快捷菜单模糊程度</string>
 </resources>
