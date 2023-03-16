@@ -76,6 +76,7 @@ Xposed
 
 [Henry-ZHR/KillDomainVerification](https://github.com/Henry-ZHR/KillDomainVerification)  
 [Haocen2004/PortalHook](https://github.com/Haocen2004/PortalHook)  
+[ouhoukyo/WINI](https://github.com/ouhoukyo/WINI)  
 
 ---
 

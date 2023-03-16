@@ -1,8 +1,6 @@
 //val shortcutMenuBackgroundAlpha = getInt("shortcutMenuBackgroundAlpha",255)
 package com.lt2333.simplicitytools.hooks.rules.all.wini
 
-import com.lt2333.simplicitytools.utils.hasEnable
-import com.lt2333.simplicitytools.utils.xposed.base.HookRegister
 import android.animation.Animator
 import android.animation.AnimatorListenerAdapter
 import android.animation.ValueAnimator
@@ -20,9 +18,6 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.core.view.ViewCompat.animate
 import cn.houkyo.wini.utils.HookUtils
-import com.lt2333.simplicitytools.R
-import com.lt2333.simplicitytools.utils.XSPUtils.getInt
-import com.lt2333.simplicitytools.utils.findClass
 import de.robv.android.xposed.XC_MethodHook
 import de.robv.android.xposed.XposedBridge
 import de.robv.android.xposed.XposedHelpers
@@ -40,8 +35,7 @@ class BlurWhenShowShortcutMenu (private val classLoader: ClassLoader, config: Co
     x与y在图层透明度这种情况下永远为正值
     将改公式转换为x=f(y)：x=1-√(1-y)
     */
-    val singleLayerAlpha =
-        ((1.0 - sqrt(1.0 - (shortcutMenuBackgroundAlpha / 255.0))) * 255.0).toInt()
+    val singleLayerAlpha = ((1.0 - sqrt(1.0 - (shortcutMenuBackgroundAlpha / 255.0))) * 255.0).toInt()
 
     val BLUR_ICON_APP_NAME = arrayOf("锁屏", "手电筒", "数据", "飞行模式", "蓝牙", "WLAN 热点")
     val allBluredDrawable: MutableList<Drawable> = ArrayList()

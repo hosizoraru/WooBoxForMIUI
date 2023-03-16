@@ -244,45 +244,6 @@ class MiuiHomePage : BasePage() {
                 )
             }
         }
-        val BlurBinding = GetDataBinding({ safeSP.getBoolean("blur_when_show_shortcut_menu", false) }) { view, flags, data ->
-            if (flags == 1) view.visibility = if (data as Boolean) View.VISIBLE else View.GONE
-        }
-        TextSummaryWithSwitch(
-            TextSummaryV(textId = R.string.blur_when_show_shortcut_menu),
-            SwitchV("blur_when_show_shortcut_menu", dataBindingSend = BlurBinding.bindingSend)
-        )
-//        TextSummaryWithArrow(
-//            TextSummaryV(
-//                textId = R.string.shortcutMenuBackgroundAlpha,
-//                onClickListener = {
-//                    MIUIDialog(activity) {
-//                        setTitle(R.string.shortcutMenuBackgroundAlpha)
-//                        setEditText(
-//                            "",
-//                            "${activity.getString(R.string.current)}${
-//                                safeSP.getInt("shortcutMenuBackgroundAlpha", 120)
-//                            }"
-//                        )
-//                        setLButton(textId = R.string.cancel) {
-//                            dismiss()
-//                        }
-//                        setRButton(textId = R.string.Done) {
-//                            if (getEditText() != "") {
-//                                safeSP.putAny(
-//                                    "shortcutMenuBackgroundAlpha",
-//                                    getEditText().toInt()
-//                                )
-//                            }
-//                            dismiss()
-//                        }
-//                    }.show()
-//                }), dataBindingRecv = BlurBinding.binding.getRecv(1)
-//        )
-        TextSummaryWithSeekBar(
-            TextSummaryV(textId = R.string.shortcutMenuBackgroundAlpha),
-            SeekBarWithTextV("shortcutMenuBackgroundAlpha", 120, 255, 255),
-            dataBindingRecv = BlurBinding.getRecv(1)
-        )
         Line()
         TitleText(textId = R.string.scope_personalassistant)
         TextSummaryWithSwitch(

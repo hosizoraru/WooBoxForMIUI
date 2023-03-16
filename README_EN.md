@@ -72,6 +72,7 @@ Xposed Repo：[Click here to download the latest release](https://github.com/Xpo
 
 [Henry-ZHR/KillDomainVerification](https://github.com/Henry-ZHR/KillDomainVerification)  
 [Haocen2004/PortalHook](https://github.com/Haocen2004/PortalHook)  
+[ouhoukyo/WINI](https://github.com/ouhoukyo/WINI)  
 
 ---
 
