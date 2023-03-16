@@ -25,6 +25,11 @@ class GalleryMediaEditorPage : BasePage() {
         )
         TextSummaryWithSwitch(
             TextSummaryV(
+                textId = R.string.enable_pdf,
+            ), SwitchV("enable_pdf")
+        )
+        TextSummaryWithSwitch(
+            TextSummaryV(
                 textId = R.string.enable_ocr,
             ), SwitchV("enable_ocr")
         )
@@ -35,8 +40,43 @@ class GalleryMediaEditorPage : BasePage() {
         )
         TextSummaryWithSwitch(
             TextSummaryV(
-                textId = R.string.enable_pdf,
-            ), SwitchV("enable_pdf")
+                textId = R.string.enable_id_photo,
+            ), SwitchV("enable_id_photo")
+        )
+        TextSummaryWithSwitch(
+            TextSummaryV(
+                textId = R.string.enable_photo_movie,
+            ), SwitchV("enable_photo_movie")
+        )
+        TextSummaryWithSwitch(
+            TextSummaryV(
+                textId = R.string.enable_video_post,
+            ), SwitchV("enable_video_post")
+        )
+        TextSummaryWithSwitch(
+            TextSummaryV(
+                textId = R.string.enable_video_editor,
+            ), SwitchV("enable_video_editor")
+        )
+        TextSummaryWithSwitch(
+            TextSummaryV(
+                textId = R.string.enable_text_yanhua,
+            ), SwitchV("enable_text_yanhua")
+        )
+        TextSummaryWithSwitch(
+            TextSummaryV(
+                textId = R.string.enable_remover_2,
+            ), SwitchV("enable_remover_2")
+        )
+        TextSummaryWithSwitch(
+            TextSummaryV(
+                textId = R.string.enable_magic_matting,
+            ), SwitchV("enable_magic_matting")
+        )
+        TextSummaryWithSwitch(
+            TextSummaryV(
+                textId = R.string.enable_magic_sky,
+            ), SwitchV("enable_magic_sky")
         )
         Line()
         TitleText(textId = R.string.scope_mediaeditor)

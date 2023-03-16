@@ -388,4 +388,12 @@
     <string name="enable_ocr">解锁提取文字</string>
     <string name="enable_ocr_form">解锁提取表格</string>
     <string name="enable_pdf">解锁生成PDF</string>
+    <string name="enable_id_photo">解锁证件照</string>
+    <string name="enable_photo_movie">解锁照片电影</string>
+    <string name="enable_video_post">解锁视频特效</string>
+    <string name="enable_video_editor">解锁 Mi 剪辑</string>
+    <string name="enable_text_yanhua">解锁文字烟花</string>
+    <string name="enable_remover_2">解锁魔法消除</string>
+    <string name="enable_magic_matting">解锁魔法抠图</string>
+    <string name="enable_magic_sky">解锁魔法换天</string>
 </resources>

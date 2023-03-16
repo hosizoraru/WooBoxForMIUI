@@ -5,15 +5,12 @@ import com.github.kyuubiran.ezxhelper.utils.hookAfter
 import com.lt2333.simplicitytools.utils.hasEnable
 import com.lt2333.simplicitytools.utils.xposed.base.HookRegister
 
-object UnlockHDREnhanceForAll : HookRegister() {
-
-    override fun init() = hasEnable("Unlock_HDR_Enhance") {
-        // 超动态显示
-        findMethod("com.miui.gallery.domain.DeviceFeature") {
-            name == "isSupportHDREnhance"
+object EnableVideoPostForAll : HookRegister() {
+    override fun init() = hasEnable("enable_video_post") {
+        findMethod("com.miui.mediaeditor.api.MediaEditorApiHelper") {
+            name == "isVideoPostAvailable"
         }.hookAfter {
             it.result = true
         }
     }
-
 }

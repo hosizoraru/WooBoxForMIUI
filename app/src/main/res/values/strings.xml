@@ -390,4 +390,12 @@
     <string name="enable_ocr">Enable ocr</string>
     <string name="enable_ocr_form">Enable ocr form</string>
     <string name="enable_pdf">Enable pdf</string>
+    <string name="enable_id_photo">Enable id photo</string>
+    <string name="enable_photo_movie">Enable photo movie</string>
+    <string name="enable_video_post">Enable video post</string>
+    <string name="enable_video_editor">Enable video editor</string>
+    <string name="enable_text_yanhua">Enable text yanhua</string>
+    <string name="enable_remover_2">Enable remover2</string>
+    <string name="enable_magic_matting">Enable magic matting</string>
+    <string name="enable_magic_sky">Enable magic sky</string>
 </resources>
