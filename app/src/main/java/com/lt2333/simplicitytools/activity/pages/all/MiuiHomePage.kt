@@ -11,7 +11,6 @@ import cn.fkj233.ui.activity.view.TextSummaryV
 import cn.fkj233.ui.activity.view.TextV
 import cn.fkj233.ui.dialog.MIUIDialog
 import com.lt2333.simplicitytools.R
-import de.robv.android.xposed.XposedBridge
 
 @BMPage("scope_miuihome", "Home", hideMenu = false)
 

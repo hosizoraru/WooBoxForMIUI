@@ -1,15 +1,9 @@
 package com.lt2333.simplicitytools.activity.pages.all
 
-import android.os.Build
-import android.view.View
-import cn.fkj233.ui.activity.MIUIActivity.Companion.safeSP
 import cn.fkj233.ui.activity.annotation.BMPage
 import cn.fkj233.ui.activity.data.BasePage
-import cn.fkj233.ui.activity.view.SeekBarWithTextV
 import cn.fkj233.ui.activity.view.SwitchV
 import cn.fkj233.ui.activity.view.TextSummaryV
-import cn.fkj233.ui.activity.view.TextV
-import cn.fkj233.ui.dialog.MIUIDialog
 import com.lt2333.simplicitytools.R
 
 @BMPage("scope_gallery", "Gallery&MediaEditor", hideMenu = false)
