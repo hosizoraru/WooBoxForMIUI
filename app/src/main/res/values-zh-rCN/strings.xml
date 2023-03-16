@@ -384,4 +384,7 @@
     <string name="fold_dock_num">%d 个</string>
     <string name="fold_dock_hotseat">固定应用个数</string>
     <string name="fold_dock_run">运行应用个数</string>
+    <string name="filter_manager">大师滤镜</string>
+    <string name="enable_ocr">解锁提取文字</string>
+    <string name="enable_ocr_form">解锁提取表格</string>
 </resources>

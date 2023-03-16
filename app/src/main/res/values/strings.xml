@@ -386,4 +386,7 @@
     <string name="fold_dock_num">%d Num</string>
     <string name="fold_dock_hotseat">Number of fixed Apps</string>
     <string name="fold_dock_run">Number of running Apps</string>
+    <string name="filter_manager">Filter manager</string>
+    <string name="enable_ocr">Enable ocr</string>
+    <string name="enable_ocr_form">Enable ocr form</string>
 </resources>
