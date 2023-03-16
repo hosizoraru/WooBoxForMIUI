@@ -2,6 +2,7 @@ package com.lt2333.simplicitytools.hooks.apps
 
 import android.os.Build
 import com.lt2333.simplicitytools.hooks.rules.all.systemui.*
+import com.lt2333.simplicitytools.hooks.rules.all.wini.WiniMainHook
 import com.lt2333.simplicitytools.hooks.rules.s.systemui.*
 import com.lt2333.simplicitytools.hooks.rules.t.systemui.*
 import com.lt2333.simplicitytools.utils.chsbuffer.hooks
@@ -12,6 +13,7 @@ object SystemUI : AppRegister() {
     override val packageName: String = "com.android.systemui"
 
     override fun handleLoadPackage(lpparam: XC_LoadPackage.LoadPackageParam) {
+        WiniMainHook().handleLoadPackage(lpparam)
         when (lpparam.packageName) {
             "com.android.systemui" -> hooks(
                 lpparam,

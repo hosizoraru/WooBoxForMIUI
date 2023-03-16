@@ -30,6 +30,22 @@ class WiniMainHook : IXposedHookLoadPackage {
                 miuiHomeHooks.addBlurEffectToAlphaIcon()
                 miuiHomeHooks.hideBlurIconWhenEnterRecents()
             }
+            // 系统界面
+            "com.android.systemui" -> {
+                val config = getConfig()
+                val systemUIHooks = BlurSystemUI(lpparam.classLoader, config)
+                if (config.BlurSystemUI.notification.enable) {
+                    systemUIHooks.addBlurEffectToNotificationView()
+                }
+                if (config.BlurSystemUI.quickSetting.hideMiPlayEntry) {
+                    systemUIHooks.hideControlsPlugin()
+                }
+                if (config.BlurSystemUI.quickSetting.controlDetailBackgroundAlpha != 255) {
+                    systemUIHooks.setQSControlDetailBackgroundAlpha()
+                }
+                systemUIHooks.enableBlurForMTK()
+                systemUIHooks.addBlurEffectToLockScreen()
+            }
             BuildConfig.APPLICATION_ID -> {
                 getConfig(true)
                 otherHooks.enableModule()

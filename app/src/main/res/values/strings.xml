@@ -398,7 +398,17 @@
     <string name="enable_remover_2">Enable remover2</string>
     <string name="enable_magic_matting">Enable magic matting</string>
     <string name="enable_magic_sky">Enable magic sky</string>
+    <!--wini-->
     <string name="scope_wini">Wini</string>
+    <string name="enable">enable</string>
     <string name="blur_when_show_shortcut_menu">Shortcut menu blur</string>
     <string name="shortcutMenuBackgroundAlpha">Shortcut menu blur value</string>
+    <string name="Quick_Setting_Model">Quick Setting Model</string>
+    <string name="hideMiPlayEntry">Hide MiPlay Entry</string>
+    <string name="controlDetailBackgroundAlpha">Control Detail Background blur value</string>
+    <string name="NotificationBlurModel">Notification Blur Model</string>
+    <string name="blurRadius">Blur Radius</string>
+    <string name="cornerRadius">Corner Radius</string>
+    <string name="blurBackgroundAlpha">Blur Background value</string>
+    <string name="defaultBackgroundAlpha">Default Background value</string>
 </resources>

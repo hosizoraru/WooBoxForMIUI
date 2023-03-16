@@ -396,7 +396,17 @@
     <string name="enable_remover_2">解锁魔法消除</string>
     <string name="enable_magic_matting">解锁魔法抠图</string>
     <string name="enable_magic_sky">解锁魔法换天</string>
+    <!--wini-->
     <string name="scope_wini">Wini</string>
+    <string name="enable">enable</string>
     <string name="blur_when_show_shortcut_menu">Shortcut 背景模糊</string>
     <string name="shortcutMenuBackgroundAlpha">Shortcut菜单背景透明度</string>
+    <string name="Quick_Setting_Model">快捷面板</string>
+    <string name="hideMiPlayEntry">隐藏妙播入口</string>
+    <string name="controlDetailBackgroundAlpha">面板详情背景透明度</string>
+    <string name="NotificationBlurModel">通知设置</string>
+    <string name="blurRadius">悬浮and锁屏通知模糊程度(不含下拉通知)</string>
+    <string name="cornerRadius">悬浮and锁屏通知模糊区域圆角(默认主题无需调节)</string>
+    <string name="blurBackgroundAlpha">悬浮and锁屏通知背景透明度</string>
+    <string name="defaultBackgroundAlpha">下拉通知背景透明度</string>
 </resources>
