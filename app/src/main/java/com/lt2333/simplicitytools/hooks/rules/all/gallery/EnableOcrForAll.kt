@@ -4,7 +4,7 @@ import com.lt2333.simplicitytools.utils.YuKongA.hookBeforeMethod
 import com.lt2333.simplicitytools.utils.hasEnable
 import com.lt2333.simplicitytools.utils.xposed.base.HookRegister
 
-object EnableOcrAll : HookRegister() {
+object EnableOcrForAll : HookRegister() {
     override fun init() = hasEnable("enable_ocr") {
         val cls = "com.miui.gallery.ui.photoPage.ocr.OCRHelper"
         cls.hookBeforeMethod(

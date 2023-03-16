@@ -33,6 +33,11 @@ class GalleryMediaEditorPage : BasePage() {
                 textId = R.string.enable_ocr_form,
             ), SwitchV("enable_ocr_form")
         )
+        TextSummaryWithSwitch(
+            TextSummaryV(
+                textId = R.string.enable_pdf,
+            ), SwitchV("enable_pdf")
+        )
         Line()
         TitleText(textId = R.string.scope_mediaeditor)
         TextSummaryWithSwitch(

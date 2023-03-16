@@ -389,4 +389,5 @@
     <string name="filter_manager">Filter manager</string>
     <string name="enable_ocr">Enable ocr</string>
     <string name="enable_ocr_form">Enable ocr form</string>
+    <string name="enable_pdf">Enable pdf</string>
 </resources>

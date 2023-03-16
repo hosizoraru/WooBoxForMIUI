@@ -1,8 +1,9 @@
 package com.lt2333.simplicitytools.hooks.apps
 
 import android.os.Build
-import com.lt2333.simplicitytools.hooks.rules.all.gallery.EnableOcrAll
+import com.lt2333.simplicitytools.hooks.rules.all.gallery.EnableOcrForAll
 import com.lt2333.simplicitytools.hooks.rules.all.gallery.EnableOcrFormForAll
+import com.lt2333.simplicitytools.hooks.rules.all.gallery.EnablePdfForAll
 import com.lt2333.simplicitytools.hooks.rules.all.gallery.UnlockHDREnhanceForAll
 import com.lt2333.simplicitytools.utils.xposed.base.AppRegister
 import de.robv.android.xposed.callbacks.XC_LoadPackage
@@ -16,8 +17,9 @@ object Gallery : AppRegister() {
                 autoInitHooks(
                     lpparam,
                     UnlockHDREnhanceForAll, // 超动态显示
-                    EnableOcrAll, // 解锁提取文字
+                    EnableOcrForAll, // 解锁提取文字
                     EnableOcrFormForAll, // 解锁提取表格
+                    EnablePdfForAll, // 解锁生成pdf
                 )
             }
 
@@ -25,8 +27,9 @@ object Gallery : AppRegister() {
                 autoInitHooks(
                     lpparam,
                     UnlockHDREnhanceForAll, // 超动态显示
-                    EnableOcrAll, // 解锁提取文字
+                    EnableOcrForAll, // 解锁提取文字
                     EnableOcrFormForAll, // 解锁提取表格
+                    EnablePdfForAll, // 解锁生成pdf
                 )
             }
         }

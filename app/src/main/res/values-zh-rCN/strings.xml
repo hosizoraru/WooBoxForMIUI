@@ -387,4 +387,5 @@
     <string name="filter_manager">大师滤镜</string>
     <string name="enable_ocr">解锁提取文字</string>
     <string name="enable_ocr_form">解锁提取表格</string>
+    <string name="enable_pdf">解锁生成PDF</string>
 </resources>
