@@ -4,10 +4,7 @@ import android.content.res.Resources
 import android.graphics.Color
 import com.lt2333.simplicitytools.utils.XSPUtils
 import com.lt2333.simplicitytools.utils.hasEnable
-import com.lt2333.simplicitytools.utils.hookBeforeMethod
-import com.lt2333.simplicitytools.utils.setObjectField
 import com.lt2333.simplicitytools.utils.xposed.base.ResourcesHookRegister
-import de.robv.android.xposed.XposedBridge
 
 object MonetColorForT : ResourcesHookRegister() {
     override fun init() = hasEnable("monoet_color") {

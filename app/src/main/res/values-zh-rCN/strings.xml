@@ -355,7 +355,7 @@
     <string name="restore_nearby_sharing_tile">恢复附近分享磁贴</string>
     <!--miuiqol-->
     <string name="personalassistant_minus_one_blur">背景模糊</string>
-    <string name="personalassistant_minus_one_blur_summary">联发科设备仅建议在 Android 13 上启用，非 Android 13 的联发科设备动态调整模糊半径时经常黑屏</string>
+    <string name="personalassistant_minus_one_blur_summary">请不要和wini里面的负一屏模糊一起开启\n联发科设备仅建议在 Android 13 上启用，非 Android 13 的联发科设备动态调整模糊半径时经常黑屏</string>
     <string name="miuihome_unlock_cell_count">解锁图标网格布局</string>
     <string name="miuihome_unlock_cell_count_summary">无字模式解锁仍有问题</string>
     <string name="miuihome_blur_when_open_folder">文件夹视图模糊</string>
@@ -400,13 +400,19 @@
     <string name="scope_wini">Wini</string>
     <string name="enable">enable</string>
     <string name="blur_when_show_shortcut_menu">Shortcut 背景模糊</string>
-    <string name="shortcutMenuBackgroundAlpha">Shortcut菜单背景透明度</string>
+    <string name="shortcutMenuBackgroundAlpha_summary">Shortcut菜单背景透明度</string>
     <string name="Quick_Setting_Model">快捷面板</string>
     <string name="hideMiPlayEntry">隐藏妙播入口</string>
-    <string name="controlDetailBackgroundAlpha">面板详情背景透明度</string>
+    <string name="controlDetailBackgroundAlpha_summary">面板详情背景透明度</string>
     <string name="NotificationBlurModel">通知设置</string>
-    <string name="blurRadius">悬浮and锁屏通知模糊程度(不含下拉通知)</string>
-    <string name="cornerRadius">悬浮and锁屏通知模糊区域圆角(默认主题无需调节)</string>
-    <string name="blurBackgroundAlpha">悬浮and锁屏通知背景透明度</string>
-    <string name="defaultBackgroundAlpha">下拉通知背景透明度</string>
+    <string name="blurRadius_summary">悬浮and锁屏通知模糊程度(不含下拉通知)</string>
+    <string name="cornerRadius_summary">悬浮and锁屏通知模糊区域圆角(默认主题无需调节)</string>
+    <string name="blurBackgroundAlpha_summary">悬浮and锁屏通知背景透明度</string>
+    <string name="defaultBackgroundAlpha_summary">下拉通知背景透明度</string>
+    <string name="personalAssistant_blur_model">负一屏背景设置</string>
+    <string name="personalAssistant_blurradius_summary">负一屏背景模糊程度</string>
+    <string name="personalAssistant_color_summary">负一屏背景叠加层颜色</string>
+    <string name="security_blur_model">全局侧边栏背景设置</string>
+    <string name="security_blurradius_summary">全局侧边栏背景模糊程度</string>
+    <string name="security_color_summary">全局侧边栏背景叠加层颜色</string>
 </resources>

@@ -2,7 +2,7 @@ package com.lt2333.simplicitytools.hooks.apps
 
 import android.os.Build
 import com.lt2333.simplicitytools.hooks.rules.all.systemui.*
-import com.lt2333.simplicitytools.hooks.rules.all.wini.WiniMainHook
+import com.lt2333.simplicitytools.hooks.rules.all.wini.hooks.WiniMainHook
 import com.lt2333.simplicitytools.hooks.rules.s.systemui.*
 import com.lt2333.simplicitytools.hooks.rules.t.systemui.*
 import com.lt2333.simplicitytools.utils.chsbuffer.hooks

@@ -357,7 +357,7 @@
     <string name="restore_nearby_sharing_tile">Restore nearby sharing tile</string>
     <!--miuiqol-->
     <string name="personalassistant_minus_one_blur">Minus One Screen Blur</string>
-    <string name="personalassistant_minus_one_blur_summary">MediaTek devices are only recommended to be enabled on Android 13, non-Android 13 MediaTek devices often have a black screen when dynamically adjusting the blur radius</string>
+    <string name="personalassistant_minus_one_blur_summary">Please do not open this with the Personal assistant blur in wini.\nMediaTek devices are only recommended to be enabled on Android 13, non-Android 13 MediaTek devices often have a black screen when dynamically adjusting the blur radius</string>
     <string name="miuihome_unlock_cell_count">Unlock launcher icon grids</string>
     <string name="miuihome_unlock_cell_count_summary">Unlock in no word mode still has issues</string>
     <string name="miuihome_blur_when_open_folder">Folder View Blur</string>
@@ -402,13 +402,19 @@
     <string name="scope_wini">Wini</string>
     <string name="enable">enable</string>
     <string name="blur_when_show_shortcut_menu">Shortcut menu blur</string>
-    <string name="shortcutMenuBackgroundAlpha">Shortcut menu blur value</string>
+    <string name="shortcutMenuBackgroundAlpha_summary">Shortcut menu blur value</string>
     <string name="Quick_Setting_Model">Quick Setting Model</string>
     <string name="hideMiPlayEntry">Hide MiPlay Entry</string>
-    <string name="controlDetailBackgroundAlpha">Control Detail Background blur value</string>
+    <string name="controlDetailBackgroundAlpha_summary">Control Detail Background blur value</string>
     <string name="NotificationBlurModel">Notification Blur Model</string>
-    <string name="blurRadius">Blur Radius</string>
-    <string name="cornerRadius">Corner Radius</string>
-    <string name="blurBackgroundAlpha">Blur Background value</string>
-    <string name="defaultBackgroundAlpha">Default Background value</string>
+    <string name="blurRadius_summary">Blur Radius</string>
+    <string name="cornerRadius_summary">Corner Radius</string>
+    <string name="blurBackgroundAlpha_summary">Blur Background value</string>
+    <string name="defaultBackgroundAlpha_summary">Default Background value</string>
+    <string name="personalAssistant_blur_model">Personal assistant blur model</string>
+    <string name="personalAssistant_blurradius_summary">Personal assistant blur value</string>
+    <string name="personalAssistant_color_summary">Personal assistant color</string>
+    <string name="security_blur_model">Sidebar blur model</string>
+    <string name="security_blurradius_summary">Sidebar blur value</string>
+    <string name="security_color_summary">Sidebar color</string>
 </resources>

@@ -1,4 +1,4 @@
-package com.lt2333.simplicitytools.hooks.rules.all.wini
+package com.lt2333.simplicitytools.hooks.rules.all.wini.model
 
 // 系统UI
 data class SystemUIModel(

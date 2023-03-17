@@ -2,6 +2,7 @@ package com.lt2333.simplicitytools.hooks.apps
 
 import android.os.Build
 import com.lt2333.simplicitytools.hooks.rules.all.securitycenter.*
+import com.lt2333.simplicitytools.hooks.rules.all.wini.hooks.WiniMainHook
 import com.lt2333.simplicitytools.hooks.rules.s.securitycenter.ShowBatteryTemperatureForS
 import com.lt2333.simplicitytools.hooks.rules.t.securitycenter.ShowBatteryTemperatureForT
 import com.lt2333.simplicitytools.utils.chsbuffer.hooks
@@ -12,6 +13,7 @@ object SecurityCenter : AppRegister() {
     override val packageName: String = "com.miui.securitycenter"
 
     override fun handleLoadPackage(lpparam: XC_LoadPackage.LoadPackageParam) {
+        WiniMainHook().handleLoadPackage(lpparam)
         when (lpparam.packageName) {
             "com.miui.securitycenter" -> hooks(
                 lpparam,

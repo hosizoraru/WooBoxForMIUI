@@ -1,4 +1,4 @@
-package com.lt2333.simplicitytools.hooks.rules.all.wini
+package com.lt2333.simplicitytools.hooks.rules.all.wini.model
 
 import com.lt2333.simplicitytools.utils.XSPUtils.getBoolean
 import com.lt2333.simplicitytools.utils.XSPUtils.getInt

@@ -1,5 +1,5 @@
 //val shortcutMenuBackgroundAlpha = getInt("shortcutMenuBackgroundAlpha",255)
-package com.lt2333.simplicitytools.hooks.rules.all.wini
+package com.lt2333.simplicitytools.hooks.rules.all.wini.blur
 
 import android.animation.Animator
 import android.animation.AnimatorListenerAdapter
@@ -18,6 +18,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.core.view.ViewCompat.animate
 import cn.houkyo.wini.utils.HookUtils
+import com.lt2333.simplicitytools.hooks.rules.all.wini.model.ConfigModel
 import de.robv.android.xposed.XC_MethodHook
 import de.robv.android.xposed.XposedBridge
 import de.robv.android.xposed.XposedHelpers

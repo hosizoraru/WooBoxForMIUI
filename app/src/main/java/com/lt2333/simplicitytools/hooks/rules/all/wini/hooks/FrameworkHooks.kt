@@ -1,4 +1,4 @@
-package com.lt2333.simplicitytools.hooks.rules.all.wini
+package com.lt2333.simplicitytools.hooks.rules.all.wini.hooks
 
 import android.graphics.Canvas
 import cn.houkyo.wini.utils.HookUtils

@@ -1,8 +1,6 @@
-package com.lt2333.simplicitytools.hooks.rules.all.wini
+package com.lt2333.simplicitytools.hooks.rules.all.wini.blur
 
 import android.animation.ValueAnimator
-import android.content.Context
-import android.content.res.Resources
 import android.graphics.Color
 import android.graphics.drawable.Drawable
 import android.graphics.drawable.GradientDrawable
@@ -10,7 +8,7 @@ import android.graphics.drawable.LayerDrawable
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
-import com.lt2333.simplicitytools.hooks.rules.all.wini.ConfigModel
+import com.lt2333.simplicitytools.hooks.rules.all.wini.model.ConfigModel
 import cn.houkyo.wini.utils.HookUtils
 import de.robv.android.xposed.XC_MethodHook
 import de.robv.android.xposed.XC_MethodReplacement

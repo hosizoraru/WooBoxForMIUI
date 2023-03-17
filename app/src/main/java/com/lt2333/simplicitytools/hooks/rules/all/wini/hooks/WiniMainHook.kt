@@ -1,16 +1,15 @@
-package com.lt2333.simplicitytools.hooks.rules.all.wini
+package com.lt2333.simplicitytools.hooks.rules.all.wini.hooks
 
-import android.content.Context
 import cn.houkyo.wini.utils.HookUtils
-import com.google.gson.Gson
 import de.robv.android.xposed.IXposedHookLoadPackage
 import de.robv.android.xposed.*
 import de.robv.android.xposed.callbacks.XC_LoadPackage
 import com.lt2333.simplicitytools.BuildConfig
-import com.lt2333.simplicitytools.R
-import com.lt2333.simplicitytools.hooks.rules.all.wini.BlurWhenShowShortcutMenu
-import com.lt2333.simplicitytools.utils.hasEnable
-import com.lt2333.simplicitytools.utils.setBooleanField
+import com.lt2333.simplicitytools.hooks.rules.all.wini.blur.BlurPersonalAssistant
+import com.lt2333.simplicitytools.hooks.rules.all.wini.blur.BlurSecurity
+import com.lt2333.simplicitytools.hooks.rules.all.wini.blur.BlurSystemUI
+import com.lt2333.simplicitytools.hooks.rules.all.wini.blur.BlurWhenShowShortcutMenu
+import com.lt2333.simplicitytools.hooks.rules.all.wini.model.ConfigModel
 import com.lt2333.simplicitytools.utils.wini.*
 
 class WiniMainHook : IXposedHookLoadPackage {
@@ -46,6 +45,22 @@ class WiniMainHook : IXposedHookLoadPackage {
                 systemUIHooks.enableBlurForMTK()
                 systemUIHooks.addBlurEffectToLockScreen()
             }
+            // 个人助理 负一屏
+            "com.miui.personalassistant" -> {
+                val config = getConfig()
+                if (config.BlurPersonalAssistant.background.enable) {
+                    val personalAssistantHooks = BlurPersonalAssistant(lpparam.classLoader, config)
+                    personalAssistantHooks.addBlurEffectToPersonalAssistant()
+                }
+            }
+            // 安全中心
+            "com.miui.securitycenter" -> {
+                val config = getConfig()
+                if (config.BlurSecurity.dockBackground.enable) {
+                    val securityCenterHooks = BlurSecurity(lpparam.classLoader, config)
+                    securityCenterHooks.addBlurEffectToDock()
+                }
+            }
             BuildConfig.APPLICATION_ID -> {
                 getConfig(true)
                 otherHooks.enableModule()
@@ -54,7 +69,6 @@ class WiniMainHook : IXposedHookLoadPackage {
                 return
             }
         }
-        XposedBridge.log("Voyager-Test-MainHook:快捷菜单当前的模糊值为${R.string.shortcutMenuBackgroundAlpha}")
     }
     private fun getConfig(showLog: Boolean = false): ConfigModel {
         val xSharedPreferences =

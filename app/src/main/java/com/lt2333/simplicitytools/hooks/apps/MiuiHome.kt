@@ -1,13 +1,11 @@
 package com.lt2333.simplicitytools.hooks.apps
 
 import android.os.Build
-import com.lt2333.simplicitytools.R
 import com.lt2333.simplicitytools.hooks.rules.all.maxmipad.GestureOperationHelper
 import com.lt2333.simplicitytools.hooks.rules.all.miuihome.*
-import com.lt2333.simplicitytools.hooks.rules.all.wini.WiniMainHook
+import com.lt2333.simplicitytools.hooks.rules.all.wini.hooks.WiniMainHook
 import com.lt2333.simplicitytools.hooks.rules.t.miuihome.*
 import com.lt2333.simplicitytools.utils.xposed.base.AppRegister
-import de.robv.android.xposed.XposedBridge
 import de.robv.android.xposed.callbacks.XC_InitPackageResources.InitPackageResourcesParam
 import de.robv.android.xposed.callbacks.XC_LoadPackage
 
@@ -15,7 +13,6 @@ object MiuiHome : AppRegister() {
     override val packageName: String = "com.miui.home"
     override fun handleLoadPackage(lpparam: XC_LoadPackage.LoadPackageParam) {
         WiniMainHook().handleLoadPackage(lpparam)
-        XposedBridge.log("Voyager-Test-MiuiHome:快捷菜单当前的模糊值为${R.string.shortcutMenuBackgroundAlpha}")
         when (Build.VERSION.SDK_INT) {
             Build.VERSION_CODES.TIRAMISU -> {
                 autoInitHooks(

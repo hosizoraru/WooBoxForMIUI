@@ -3,7 +3,7 @@ package com.lt2333.simplicitytools.utils.wini
 import android.annotation.SuppressLint
 import android.content.Context
 import com.google.gson.Gson
-import com.lt2333.simplicitytools.hooks.rules.all.wini.ConfigModel
+import com.lt2333.simplicitytools.hooks.rules.all.wini.model.ConfigModel
 
 object Storage {
     const val DATA_FILENAME = "WINIConfig"

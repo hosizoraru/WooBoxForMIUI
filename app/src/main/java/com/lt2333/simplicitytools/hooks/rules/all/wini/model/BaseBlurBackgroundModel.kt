@@ -1,4 +1,4 @@
-package com.lt2333.simplicitytools.hooks.rules.all.wini
+package com.lt2333.simplicitytools.hooks.rules.all.wini.model
 
 // 基础模糊配置
 data class BaseBlurBackgroundModel(
