@@ -6,6 +6,7 @@ import com.lt2333.simplicitytools.utils.hasEnable
 import com.lt2333.simplicitytools.utils.YuKongA.hookBeforeMethod
 import com.lt2333.simplicitytools.utils.xposed.base.HookRegister
 
+
 object FilterManagerAll : HookRegister() {
     override fun init() = hasEnable("filter_manager"){
         // old version
