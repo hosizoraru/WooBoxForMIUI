@@ -13,14 +13,14 @@ object MiShare : AppRegister() {
             Build.VERSION_CODES.TIRAMISU -> {
                 autoInitHooks(
                     lpparam,
-                    NoAutoTurnOffForAll, // 禁止自动关闭小米互传
+                    NoAutoTurnOffForAll, // 小米妙享不会自动关闭
                 )
             }
 
             Build.VERSION_CODES.S -> {
                 autoInitHooks(
                     lpparam,
-                    NoAutoTurnOffForAll, // 禁止自动关闭小米互传
+                    NoAutoTurnOffForAll, // 小米妙享不会自动关闭
                 )
             }
         }

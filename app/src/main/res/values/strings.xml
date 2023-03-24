@@ -256,8 +256,8 @@
     <string name="Unlock_HDR_Enhance">Display high dynamic range</string>
     <string name="Unlock_HDR_Enhance_summary">Use HDR to show more detail in highlights and shadows</string>
     <string name="scope_mishare">Mishare</string>
-    <string name="No_Auto_Trun_Off">Prohibition of MiShare is automatically closed</string>
-    <string name="No_Auto_Trun_Off_summary">MiShare will not be automatically closed (Version 2.15.0 only)</string>
+    <string name="No_Auto_Turn_Off">Prohibition of MiShare is automatically closed</string>
+    <string name="No_Auto_Turn_Off_summary">MiShare will not be automatically closed (Version 2.15.0 and 2.16.0 only)</string>
     <string name="scope_deskclock">DeskClock</string>
     <string name="Hour_Glass_Enable">Enable Hour Glass Animation</string>
     <string name="Hour_Glass_Enable_summary">You only need to turn it on when you find that your clock does not have this animation</string>
@@ -417,4 +417,5 @@
     <string name="security_blur_model">Sidebar blur model</string>
     <string name="security_blurradius_summary">Sidebar blur value</string>
     <string name="security_color_summary">Sidebar color</string>
+    <string name="Settings_Dont_Through_The_List">Settings Do not Through The List</string>
 </resources>

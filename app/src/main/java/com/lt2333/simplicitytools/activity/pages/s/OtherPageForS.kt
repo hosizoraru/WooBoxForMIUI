@@ -21,9 +21,9 @@ class OtherPageForS : BasePage() {
         TitleText(textId = R.string.scope_mishare)
         TextSummaryWithSwitch(
             TextSummaryV(
-                textId = R.string.No_Auto_Trun_Off,
-                tipsId = R.string.No_Auto_Trun_Off_summary
-            ), SwitchV("No_Auto_Trun_Off")
+                textId = R.string.No_Auto_Turn_Off,
+                tipsId = R.string.No_Auto_Turn_Off_summary
+            ), SwitchV("No_Auto_Turn_Off")
         )
         Line()
         TitleText(textId = R.string.scope_deskclock)
@@ -48,6 +48,11 @@ class OtherPageForS : BasePage() {
                 textId = R.string.show_notification_importance,
                 tipsId = R.string.show_notification_importance_summary
             ), SwitchV("show_notification_importance")
+        )
+        TextSummaryWithSwitch(
+            TextSummaryV(
+                textId = R.string.Settings_Dont_Through_The_List,
+            ), SwitchV("Settings_Dont_Through_The_List")
         )
         Line()
         TitleText(textId = R.string.cast)

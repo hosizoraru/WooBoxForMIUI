@@ -14,9 +14,9 @@ class OtherPageForT : BasePage() {
         TitleText(textId = R.string.scope_mishare)
         TextSummaryWithSwitch(
             TextSummaryV(
-                textId = R.string.No_Auto_Trun_Off,
-                tipsId = R.string.No_Auto_Trun_Off_summary
-            ), SwitchV("No_Auto_Trun_Off")
+                textId = R.string.No_Auto_Turn_Off,
+                tipsId = R.string.No_Auto_Turn_Off_summary
+            ), SwitchV("No_Auto_Turn_Off")
         )
         Line()
         TitleText(textId = R.string.scope_deskclock)
@@ -47,6 +47,11 @@ class OtherPageForT : BasePage() {
                 textId = R.string.speed_mode,
                 tipsId = R.string.speed_mode_summary
             ), SwitchV("speed_mode")
+        )
+        TextSummaryWithSwitch(
+            TextSummaryV(
+                textId = R.string.Settings_Dont_Through_The_List,
+            ), SwitchV("Settings_Dont_Through_The_List")
         )
         Line()
         TitleText(textId = R.string.cast)

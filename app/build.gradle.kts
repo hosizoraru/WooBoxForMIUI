@@ -42,11 +42,11 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_18
-        targetCompatibility = JavaVersion.VERSION_18
+        sourceCompatibility = JavaVersion.VERSION_19
+        targetCompatibility = JavaVersion.VERSION_19
     }
     kotlinOptions {
-        jvmTarget = JavaVersion.VERSION_18.majorVersion
+        jvmTarget = JavaVersion.VERSION_19.majorVersion
     }
     packagingOptions {
         resources {
@@ -77,7 +77,7 @@ dependencies {
     implementation("org.luckypray:DexKit:1.1.4")
     //UI
     implementation(project(":blockmiui"))
-    implementation("androidx.constraintlayout:constraintlayout:2.2.0-alpha08")
+    implementation("androidx.constraintlayout:constraintlayout:2.2.0-alpha09")
     implementation("com.google.code.gson:gson:2.10.1")
     //APP Center
     val appCenterSdkVersion = "5.0.0"

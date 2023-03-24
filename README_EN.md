@@ -40,6 +40,7 @@ Xposed Repo：[Click here to download the latest release](https://github.com/Xpo
 
 [chsbuffer/MIUIQOL](https://github.com/chsbuffer/MIUIQOL)  
 [DanGLES3/NoStorageRestrict](https://github.com/DanGLES3/NoStorageRestrict)  
+[weixiansen574/settingsdontthroughthelist](https://github.com/weixiansen574/settingsdontthroughthelist)  
 
 ##### GNU General Public License v3.0
 
@@ -55,6 +56,7 @@ Xposed Repo：[Click here to download the latest release](https://github.com/Xpo
 [zerorooot/HorizontalContentextension](https://github.com/zerorooot/HorizontalContentextension)  
 [zerorooot/HideMiuiClipboardDialog](https://github.com/zerorooot/HideMiuiClipboardDialog)  
 [LSPosed/DisableFlagSecure](https://github.com/LSPosed/DisableFlagSecure)  
+[LuckyPray/DexKit](https://github.com/LuckyPray/DexKit)  
 
 ##### GNU General Public License v2.0
 
