@@ -19,6 +19,11 @@ class AndroidPageForT : BasePage() {
         TitleText(textId = R.string.corepacth)
         TextSummaryWithSwitch(
             TextSummaryV(
+                textId = R.string.scope_corepatch,
+            ), SwitchV("scope_corepatch",true)
+        )
+        TextSummaryWithSwitch(
+            TextSummaryV(
                 textId = R.string.downgr,
                 tipsId = R.string.downgr_summary
             ), SwitchV("downgrade")

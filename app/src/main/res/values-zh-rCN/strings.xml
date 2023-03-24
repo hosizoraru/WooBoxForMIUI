@@ -416,4 +416,5 @@
     <string name="security_blurradius_summary">全局侧边栏背景模糊程度</string>
     <string name="security_color_summary">全局侧边栏背景叠加层颜色</string>
     <string name="Settings_Dont_Through_The_List">设置授权免翻应用列表</string>
+    <string name="scope_corepatch">核心破解开关</string>
 </resources>

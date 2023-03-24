@@ -7,6 +7,7 @@ import com.lt2333.simplicitytools.hooks.rules.all.android.*
 import com.lt2333.simplicitytools.hooks.rules.all.maxmipad.*
 import com.lt2333.simplicitytools.hooks.rules.s.android.*
 import com.lt2333.simplicitytools.hooks.rules.t.android.*
+import com.lt2333.simplicitytools.utils.hasEnable
 import com.lt2333.simplicitytools.utils.xposed.base.AppRegister
 import de.robv.android.xposed.callbacks.XC_LoadPackage
 
@@ -14,8 +15,10 @@ object Android : AppRegister() {
     override val packageName: String = "android"
 
     override fun handleLoadPackage(lpparam: XC_LoadPackage.LoadPackageParam) {
-        //核心破解
-        CorePatchMainHook().handleLoadPackage(lpparam)
+        hasEnable("scope_corepatch") {
+            //核心破解
+            CorePatchMainHook().handleLoadPackage(lpparam)
+        }
         //BypassSignCheck
         BypassSignCheckMainHook().handleLoadPackage(lpparam)
         when (Build.VERSION.SDK_INT) {
