@@ -439,4 +439,6 @@
     <string name="Market_MiPad5Pro124">Disguise your model as MiPad5 Pro in the GetApps</string>
     <string name="Market_MiPad6Pro">Disguise your model as MiPad6 Pro in the GetApps</string>
     <string name="Market_MixFold2">Disguise your model as MixFold 2 in the GetApps</string>
+    <string name="Enable_Debug_Mode">Enable Debug Mode on Browser</string>
+    <string name="scope_browser">Browser</string>
 </resources>

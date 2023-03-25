@@ -437,4 +437,6 @@
     <string name="Market_MiPad5Pro124">伪装机型为小米平板5 Pro 12.4寸</string>
     <string name="Market_MiPad6Pro">伪装机型为小米平板6 Pro</string>
     <string name="Market_MixFold2">伪装机型为Xiaomi Mix Fold 2</string>
+    <string name="Enable_Debug_Mode">开启浏览器的开发者选项</string>
+    <string name="scope_browser">浏览器</string>
 </resources>

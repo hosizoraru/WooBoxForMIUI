@@ -34,6 +34,12 @@ class OtherPageForS : BasePage() {
             ), SwitchV("Hour_Glass_Enable")
         )
         Line()
+        TitleText(textId = R.string.scope_browser)
+        TextSummaryWithSwitch(
+            TextSummaryV(textId = R.string.Enable_Debug_Mode),
+            SwitchV("Enable_Debug_Mode")
+        )
+        Line()
         TitleText(textId = R.string.updater)
         TextSummaryWithSwitch(
             TextSummaryV(

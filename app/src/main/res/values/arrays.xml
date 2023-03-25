@@ -27,5 +27,6 @@
         <item>com.xiaomi.scanner</item>
         <item>com.xiaomi.aireco</item>
         <item>com.xiaomi.market</item>
+        <item>com.android.browser</item>
     </string-array>
 </resources>

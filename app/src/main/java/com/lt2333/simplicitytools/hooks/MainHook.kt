@@ -42,6 +42,7 @@ class MainHook : EasyXposedInit() {
         Scanner, // 小爱视觉
         Aireco, // 小爱建议
         Market, // 应用商店
+        Browser, // 浏览器
     )
 
     override fun handleLoadPackage(lpparam: XC_LoadPackage.LoadPackageParam?) {
