@@ -6,8 +6,8 @@ import cn.fkj233.ui.activity.view.SwitchV
 import cn.fkj233.ui.activity.view.TextSummaryV
 import com.lt2333.simplicitytools.R
 
-@BMPage("pkg_installer", "PackageInstaller", hideMenu = false)
-class PackageInstallerPage: BasePage() {
+@BMPage("pkg_installer", "Application Management", hideMenu = false)
+class ApplicationManagementPage: BasePage() {
     override fun onCreate() {
         TitleText(textId = R.string.pkg_installer)
         TextSummaryWithSwitch(

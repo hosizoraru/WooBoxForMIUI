@@ -249,7 +249,7 @@ class MiuiHomePage : BasePage() {
             TextSummaryV(
                 textId = R.string.personalassistant_minus_one_blur,
                 tipsId = R.string.personalassistant_minus_one_blur_summary
-            ), SwitchV("personalassistant_minus_one_blur")
+            ), SwitchV("personalassistant_minus_one_blur",false)
         )
     }
 }

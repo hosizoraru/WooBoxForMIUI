@@ -423,6 +423,7 @@
     <string name="scope_miai">Mi Ai</string>
     <string name="scope_scanner">Scanner</string>
     <string name="scope_aireco">Aireco</string>
+    <string name="scope_Application_management">Application management</string>
     <string name="enable_card">Unlock card</string>
     <string name="enable_doc_ppt">Unlock doc ppt</string>
     <string name="enable_document">Unlock document</string>

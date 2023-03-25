@@ -417,10 +417,11 @@
     <string name="security_color_summary">全局侧边栏背景叠加层颜色</string>
     <!--wini-->
     <string name="Settings_Dont_Through_The_List">设置授权免翻应用列表</string>
-    <string name="scope_corepatch">核心破解开关</string>
+    <string name="scope_corepatch">核心破解总开关</string>
     <string name="scope_miai">小爱同学</string>
     <string name="scope_scanner">小爱视觉</string>
     <string name="scope_aireco">小爱建议</string>
+    <string name="scope_Application_management">应用管理</string>
     <string name="enable_card">解锁扫名片</string>
     <string name="enable_doc_ppt">解锁扫文件</string>
     <string name="enable_document">解锁转文档</string>

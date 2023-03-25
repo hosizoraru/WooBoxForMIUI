@@ -17,40 +17,43 @@ class AndroidPageForS : BasePage() {
     override fun onCreate() {
         TitleText(textId = R.string.scope_android_summary)
         TitleText(textId = R.string.corepacth)
+        val corepatchBinding = GetDataBinding({ MIUIActivity.safeSP.getBoolean("scope_corepatch", false) }) { view, flags, data ->
+            if (flags == 1) view.visibility = if (data as Boolean) View.VISIBLE else View.GONE
+        }
         TextSummaryWithSwitch(
             TextSummaryV(
                 textId = R.string.scope_corepatch,
-            ), SwitchV("scope_corepatch",true)
+            ), SwitchV("scope_corepatch",true, dataBindingSend = corepatchBinding.bindingSend)
         )
         TextSummaryWithSwitch(
             TextSummaryV(
                 textId = R.string.downgr,
                 tipsId = R.string.downgr_summary
-            ), SwitchV("downgrade")
+            ), SwitchV("downgrade"), dataBindingRecv = corepatchBinding.binding.getRecv(1)
         )
         TextSummaryWithSwitch(
             TextSummaryV(
                 textId = R.string.authcreak,
                 tipsId = R.string.authcreak_summary
-            ), SwitchV("authcreak")
+            ), SwitchV("authcreak"), dataBindingRecv = corepatchBinding.binding.getRecv(1)
         )
         TextSummaryWithSwitch(
             TextSummaryV(
                 textId = R.string.digestCreak,
                 tipsId = R.string.digestCreak_summary
-            ), SwitchV("digestCreak")
+            ), SwitchV("digestCreak"), dataBindingRecv = corepatchBinding.binding.getRecv(1)
         )
         TextSummaryWithSwitch(
             TextSummaryV(
                 textId = R.string.UsePreSig,
                 tipsId = R.string.UsePreSig_summary
-            ), SwitchV("UsePreSig")
+            ), SwitchV("UsePreSig"), dataBindingRecv = corepatchBinding.binding.getRecv(1)
         )
         TextSummaryWithSwitch(
             TextSummaryV(
                 textId = R.string.enhancedMode,
                 tipsId = R.string.enhancedMode_summary
-            ), SwitchV("enhancedMode")
+            ), SwitchV("enhancedMode"), dataBindingRecv = corepatchBinding.binding.getRecv(1)
         )
         Line()
         TextSummaryWithSwitch(

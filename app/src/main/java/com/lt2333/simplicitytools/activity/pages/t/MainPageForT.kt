@@ -97,7 +97,7 @@ class MainPageForT : BasePage() {
         )
         Page(
             activity.getDrawable(R.drawable.ic_packageinstaller)!!,
-            pageNameId = R.string.pkg_installer, round = 8f,
+            pageNameId = R.string.scope_Application_management, round = 8f,
             onClickListener = { showFragment("pkg_installer") }
         )
         Page(
