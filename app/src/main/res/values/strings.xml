@@ -424,6 +424,7 @@
     <string name="scope_scanner">Scanner</string>
     <string name="scope_aireco">Aireco</string>
     <string name="scope_Application_management">Application management</string>
+    <string name="scope_Market">GetApps</string>
     <string name="enable_card">Unlock card</string>
     <string name="enable_doc_ppt">Unlock doc ppt</string>
     <string name="enable_document">Unlock document</string>
@@ -433,4 +434,9 @@
     <string name="enable_translation">Unlock translation</string>
     <string name="device_modify">Remove the restriction</string>
     <string name="device_modify_summary">For Aireco, it is recommended to disguise your model as Xiaomi 13 Pro to remove its restrictions on the model and account.</string>
+    <string name="Market_Mi13Pro">Disguise your model as Mi13 Pro in the GetApps</string>
+    <string name="Market_Mi13Ultra">Disguise your model as Mi13 Ultra in the GetApps</string>
+    <string name="Market_MiPad5Pro124">Disguise your model as MiPad5 Pro in the GetApps</string>
+    <string name="Market_MiPad6Pro">Disguise your model as MiPad6 Pro in the GetApps</string>
+    <string name="Market_MixFold2">Disguise your model as MixFold 2 in the GetApps</string>
 </resources>

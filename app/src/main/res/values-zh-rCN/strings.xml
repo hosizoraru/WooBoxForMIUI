@@ -422,6 +422,7 @@
     <string name="scope_scanner">小爱视觉</string>
     <string name="scope_aireco">小爱建议</string>
     <string name="scope_Application_management">应用管理</string>
+    <string name="scope_Market">应用商店</string>
     <string name="enable_card">解锁扫名片</string>
     <string name="enable_doc_ppt">解锁扫文件</string>
     <string name="enable_document">解锁转文档</string>
@@ -430,5 +431,10 @@
     <string name="enable_ppt">解锁提取 PPT</string>
     <string name="enable_translation">解锁翻译</string>
     <string name="device_modify">移除限制</string>
-    <string name="device_modify_summary">对小爱建议伪装你的机型为小米13Pro,以移除它对机型和账号的限制</string>
+    <string name="device_modify_summary">对小爱建议伪装你的机型为小米13 Pro,以移除它对机型和账号的限制</string>
+    <string name="Market_Mi13Pro">伪装机型为小米13 Pro</string>
+    <string name="Market_Mi13Ultra">伪装机型为小米13 Ultra</string>
+    <string name="Market_MiPad5Pro124">伪装机型为小米平板5 Pro 12.4寸</string>
+    <string name="Market_MiPad6Pro">伪装机型为小米平板6 Pro</string>
+    <string name="Market_MixFold2">伪装机型为Xiaomi Mix Fold 2</string>
 </resources>

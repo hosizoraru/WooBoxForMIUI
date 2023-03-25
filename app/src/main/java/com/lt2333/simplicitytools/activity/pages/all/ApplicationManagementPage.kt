@@ -6,7 +6,7 @@ import cn.fkj233.ui.activity.view.SwitchV
 import cn.fkj233.ui.activity.view.TextSummaryV
 import com.lt2333.simplicitytools.R
 
-@BMPage("pkg_installer", "Application Management", hideMenu = false)
+@BMPage("pkg_installer", "App Manager", hideMenu = false)
 class ApplicationManagementPage: BasePage() {
     override fun onCreate() {
         TitleText(textId = R.string.pkg_installer)
@@ -29,6 +29,28 @@ class ApplicationManagementPage: BasePage() {
         TextSummaryWithSwitch(
             TextSummaryV(textId = R.string.Disable_Safe_Model_Tip),
             SwitchV("Disable_Safe_Model_Tip")
+        )
+        Line()
+        TitleText(textId = R.string.scope_Market)
+        TextSummaryWithSwitch(
+            TextSummaryV(textId = R.string.Market_Mi13Pro),
+            SwitchV("Market_Mi13Pro")
+        )
+        TextSummaryWithSwitch(
+            TextSummaryV(textId = R.string.Market_Mi13Ultra),
+            SwitchV("Market_Mi13Ultra")
+        )
+        TextSummaryWithSwitch(
+            TextSummaryV(textId = R.string.Market_MiPad5Pro124),
+            SwitchV("Market_MiPad5Pro124")
+        )
+        TextSummaryWithSwitch(
+            TextSummaryV(textId = R.string.Market_MiPad6Pro),
+            SwitchV("Market_MiPad6Pro")
+        )
+        TextSummaryWithSwitch(
+            TextSummaryV(textId = R.string.Market_MixFold2),
+            SwitchV("Market_MixFold2")
         )
     }
 }

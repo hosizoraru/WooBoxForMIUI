@@ -26,5 +26,6 @@
         <item>com.miui.guardprovider</item>
         <item>com.xiaomi.scanner</item>
         <item>com.xiaomi.aireco</item>
+        <item>com.xiaomi.market</item>
     </string-array>
 </resources>

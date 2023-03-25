@@ -60,7 +60,8 @@ class MenuPage : BasePage() {
                         "killall com.miui.voiceassist",
                         "killall com.miui.guardprovider",
                         "killall com.xiaomi.scanner",
-                        "killall com.xiaomi.aireco"
+                        "killall com.xiaomi.aireco",
+                        "killall com.xiaomi.market",
                     )
                     ShellUtils.execCommand(command, true)
                     dismiss()
