@@ -2,7 +2,7 @@ package com.lt2333.simplicitytools.hooks.rules.all.wini.blur
 
 import android.graphics.drawable.ColorDrawable
 import android.view.Window
-import cn.houkyo.wini.utils.HookUtils
+import com.lt2333.simplicitytools.utils.wini.HookUtils
 import com.lt2333.simplicitytools.hooks.rules.all.wini.model.ConfigModel
 import com.lt2333.simplicitytools.utils.wini.ColorUtils
 import de.robv.android.xposed.XC_MethodHook

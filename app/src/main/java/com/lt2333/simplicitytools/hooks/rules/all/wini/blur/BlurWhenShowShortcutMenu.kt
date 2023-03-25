@@ -17,7 +17,7 @@ import android.widget.FrameLayout
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.core.view.ViewCompat.animate
-import cn.houkyo.wini.utils.HookUtils
+import com.lt2333.simplicitytools.utils.wini.HookUtils
 import com.lt2333.simplicitytools.hooks.rules.all.wini.model.ConfigModel
 import de.robv.android.xposed.XC_MethodHook
 import de.robv.android.xposed.XposedBridge

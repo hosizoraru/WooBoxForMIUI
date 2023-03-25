@@ -14,7 +14,7 @@ import com.lt2333.simplicitytools.R
 
 class WiniPage : BasePage() {
     override fun onCreate() {
-        TitleText(textId = R.string.scope_wini)
+        TitleText(textId = R.string.scope_systemui)
         val BlurSysBinding = GetDataBinding({ safeSP.getBoolean("n_enable", false) }) { view, flags, data ->
             if (flags == 1) view.visibility = if (data as Boolean) View.VISIBLE else View.GONE
         }
@@ -43,6 +43,7 @@ class WiniPage : BasePage() {
             dataBindingRecv = BlurSysBinding.getRecv(1)
         )
         Line()
+        TitleText(textId = R.string.scope_systemui)
         TextSummaryWithSwitch(
             TextSummaryV(textId = R.string.hideMiPlayEntry),
             SwitchV("hideMiPlayEntry")
@@ -52,6 +53,7 @@ class WiniPage : BasePage() {
             SeekBarWithTextV("controlDetailBackgroundAlpha", 120, 255, 120),
         )
         Line()
+        TitleText(textId = R.string.scope_miuihome)
         val BlurHomeBinding = GetDataBinding({ safeSP.getBoolean("blur_when_show_shortcut_menu", false) }) { view, flags, data ->
             if (flags == 1) view.visibility = if (data as Boolean) View.VISIBLE else View.GONE
         }

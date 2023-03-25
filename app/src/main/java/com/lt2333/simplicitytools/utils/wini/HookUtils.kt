@@ -1,4 +1,4 @@
-package cn.houkyo.wini.utils
+package com.lt2333.simplicitytools.utils.wini
 
 import android.content.Context
 import android.graphics.drawable.Drawable

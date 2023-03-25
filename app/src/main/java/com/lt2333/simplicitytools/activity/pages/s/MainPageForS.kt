@@ -101,14 +101,14 @@ class MainPageForS : BasePage() {
             onClickListener = { showFragment("pkg_installer") }
         )
         Page(
-            activity.getDrawable(R.drawable.ic_taplus)!!,
-            pageNameId = R.string.scope_taplus, round = 8f,
-            onClickListener = { showFragment("scope_taplus") }
-        )
-        Page(
             activity.getDrawable(R.drawable.ic_gallery)!!,
             pageNameId = R.string.scope_gallery, round = 8f,
             onClickListener = { showFragment("scope_gallery") }
+        )
+        Page(
+            activity.getDrawable(R.drawable.ic_miai)!!,
+            pageNameId = R.string.scope_miai, round = 8f,
+            onClickListener = { showFragment("scope_miai") }
         )
         Page(
             activity.getDrawable(R.drawable.ic_wini)!!,

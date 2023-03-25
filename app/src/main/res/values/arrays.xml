@@ -24,5 +24,7 @@
         <item>com.android.externalstorage</item>
         <item>com.miui.voiceassist</item>
         <item>com.miui.guardprovider</item>
+        <item>com.xiaomi.scanner</item>
+        <item>com.xiaomi.aireco</item>
     </string-array>
 </resources>

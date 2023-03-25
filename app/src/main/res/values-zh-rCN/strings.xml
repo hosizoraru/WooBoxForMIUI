@@ -415,6 +415,19 @@
     <string name="security_blur_model">全局侧边栏背景设置</string>
     <string name="security_blurradius_summary">全局侧边栏背景模糊程度</string>
     <string name="security_color_summary">全局侧边栏背景叠加层颜色</string>
+    <!--wini-->
     <string name="Settings_Dont_Through_The_List">设置授权免翻应用列表</string>
     <string name="scope_corepatch">核心破解开关</string>
+    <string name="scope_miai">小爱同学</string>
+    <string name="scope_scanner">小爱视觉</string>
+    <string name="scope_aireco">小爱建议</string>
+    <string name="enable_card">解锁扫名片</string>
+    <string name="enable_doc_ppt">解锁扫文件</string>
+    <string name="enable_document">解锁转文档</string>
+    <string name="enable_excel">解锁提取表格</string>
+    <string name="enable_ocr2">解锁识文字</string>
+    <string name="enable_ppt">解锁提取 PPT</string>
+    <string name="enable_translation">解锁翻译</string>
+    <string name="device_modify">移除限制</string>
+    <string name="device_modify_summary">对小爱建议伪装你的机型为小米13Pro,以移除它对机型和账号的限制</string>
 </resources>

@@ -1,6 +1,6 @@
 package com.lt2333.simplicitytools.hooks.rules.all.wini.hooks
 
-import cn.houkyo.wini.utils.HookUtils
+import com.lt2333.simplicitytools.utils.wini.HookUtils
 import de.robv.android.xposed.IXposedHookLoadPackage
 import de.robv.android.xposed.*
 import de.robv.android.xposed.callbacks.XC_LoadPackage

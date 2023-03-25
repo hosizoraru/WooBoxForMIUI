@@ -9,7 +9,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import com.lt2333.simplicitytools.hooks.rules.all.wini.model.ConfigModel
-import cn.houkyo.wini.utils.HookUtils
+import com.lt2333.simplicitytools.utils.wini.HookUtils
 import de.robv.android.xposed.XC_MethodHook
 import de.robv.android.xposed.XC_MethodReplacement
 import de.robv.android.xposed.XposedBridge

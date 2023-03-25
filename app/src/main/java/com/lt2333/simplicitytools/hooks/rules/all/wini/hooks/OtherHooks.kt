@@ -1,6 +1,6 @@
 package com.lt2333.simplicitytools.hooks.rules.all.wini.hooks
 
-import cn.houkyo.wini.utils.HookUtils
+import com.lt2333.simplicitytools.utils.wini.HookUtils
 
 class OtherHooks(private val classLoader: ClassLoader) {
     fun enableModule() {

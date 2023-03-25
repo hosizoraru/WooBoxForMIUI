@@ -69,9 +69,9 @@ class MainActivity : MIUIActivity() {
                 registerPage(MaxMiPadPage::class.java)
                 registerPage(DisableFixedOrientationPage::class.java)
                 registerPage(PackageInstallerPage::class.java)
-                registerPage(TaplusPage::class.java)
                 registerPage(GalleryMediaEditorPage::class.java)
                 registerPage(WiniPage::class.java)
+                registerPage(MiAiPage::class.java)
             }
             Build.VERSION_CODES.S -> {
                 registerPage(MainPageForS::class.java)
@@ -87,9 +87,9 @@ class MainActivity : MIUIActivity() {
                 registerPage(MaxMiPadPage::class.java)
                 registerPage(DisableFixedOrientationPage::class.java)
                 registerPage(PackageInstallerPage::class.java)
-                registerPage(TaplusPage::class.java)
                 registerPage(GalleryMediaEditorPage::class.java)
                 registerPage(WiniPage::class.java)
+                registerPage(MiAiPage::class.java)
             }
         }
     }

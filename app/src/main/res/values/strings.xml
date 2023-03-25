@@ -417,6 +417,19 @@
     <string name="security_blur_model">Sidebar blur model</string>
     <string name="security_blurradius_summary">Sidebar blur value</string>
     <string name="security_color_summary">Sidebar color</string>
+    <!--wini-->
     <string name="Settings_Dont_Through_The_List">Settings Do not Through The List</string>
     <string name="scope_corepatch">Scope CorePatch</string>
+    <string name="scope_miai">Mi Ai</string>
+    <string name="scope_scanner">Scanner</string>
+    <string name="scope_aireco">Aireco</string>
+    <string name="enable_card">Unlock card</string>
+    <string name="enable_doc_ppt">Unlock doc ppt</string>
+    <string name="enable_document">Unlock document</string>
+    <string name="enable_excel">Unlock excel</string>
+    <string name="enable_ocr2">Unlock ocr</string>
+    <string name="enable_ppt">Unlock ppt</string>
+    <string name="enable_translation">Unlock translation</string>
+    <string name="device_modify">Remove the restriction</string>
+    <string name="device_modify_summary">For Aireco, it is recommended to disguise your model as Xiaomi 13 Pro to remove its restrictions on the model and account.</string>
 </resources>
