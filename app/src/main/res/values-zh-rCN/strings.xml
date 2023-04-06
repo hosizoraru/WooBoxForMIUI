@@ -439,4 +439,8 @@
     <string name="Market_MixFold2">伪装机型为Xiaomi Mix Fold 2</string>
     <string name="Enable_Debug_Mode">开启浏览器的开发者选项</string>
     <string name="scope_browser">浏览器</string>
+    <string name="scope_touchnotes">享做笔记</string>
+    <string name="touchnotes_is_login">享做笔记已登陆</string>
+    <string name="touchnotes_is_login_summary">若你已登陆享做笔记账号则无需打开,登陆账号可以使用云同步</string>
+    <string name="touchnotes_is_pro">解锁享做笔记会员</string>
 </resources>

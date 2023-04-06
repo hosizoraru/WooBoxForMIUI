@@ -78,5 +78,20 @@ class MaxMiPadPage: BasePage() {
             },
             dataBindingRecv = bindingDisableFixedOrientation.getRecv(1)
         )
+        Line()
+        TitleText(textId = R.string.scope_touchnotes)
+        TextSummaryWithSwitch(
+            TextSummaryV(
+                textId = R.string.touchnotes_is_login,
+                tipsId = R.string.touchnotes_is_login_summary
+            ),
+            SwitchV("touch_notes_is_login", false)
+        )
+        TextSummaryWithSwitch(
+            TextSummaryV(
+                textId = R.string.touchnotes_is_pro,
+            ),
+            SwitchV("touch_notes_is_pro", false)
+        )
     }
 }

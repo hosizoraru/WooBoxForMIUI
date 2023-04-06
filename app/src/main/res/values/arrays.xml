@@ -28,5 +28,6 @@
         <item>com.xiaomi.aireco</item>
         <item>com.xiaomi.market</item>
         <item>com.android.browser</item>
+        <item>com.newskyer.draw</item>
     </string-array>
 </resources>

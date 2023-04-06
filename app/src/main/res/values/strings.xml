@@ -441,4 +441,8 @@
     <string name="Market_MixFold2">Disguise your model as MixFold 2 in the GetApps</string>
     <string name="Enable_Debug_Mode">Enable Debug Mode on Browser</string>
     <string name="scope_browser">Browser</string>
+    <string name="scope_touchnotes">TouchNotes</string>
+    <string name="touchnotes_is_login">TouchNotes is logged in</string>
+    <string name="touchnotes_is_login_summary">If you have logged in to the TouchNotes account, you do not need to open it.\nYou can use cloud synchronization to log in to the account.</string>
+    <string name="touchnotes_is_pro">Unlock TouchNotes Vip</string>
 </resources>

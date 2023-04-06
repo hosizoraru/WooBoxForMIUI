@@ -63,6 +63,7 @@ class MenuPage : BasePage() {
                         "killall com.xiaomi.aireco",
                         "killall com.xiaomi.market",
                         "killall com.android.browser",
+                        "killall com.newskyer.draw",
                     )
                     ShellUtils.execCommand(command, true)
                     dismiss()
