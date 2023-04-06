@@ -11,7 +11,7 @@ plugins {
 android {
 //     compileSdkPreview = "UpsideDownCake"
     compileSdk = 33
-    buildToolsVersion = "30.0.3"
+    buildToolsVersion = "33.0.2"
     defaultConfig {
         applicationId = "com.lt2333.simplicitytools"
         minSdk = 31
@@ -42,11 +42,11 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_19
-        targetCompatibility = JavaVersion.VERSION_19
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
     }
     kotlinOptions {
-        jvmTarget = JavaVersion.VERSION_19.majorVersion
+        jvmTarget = JavaVersion.VERSION_17.majorVersion
     }
     packagingOptions {
         resources {
@@ -68,7 +68,8 @@ android {
 }
 
 dependencies {
-    implementation("androidx.core:core-ktx:1.10.0-beta01")
+    implementation("androidx.core:core-ktx:1.10.0-rc01")
+    implementation("androidx.core:core-splashscreen:1.0.0")
     //API
     compileOnly("de.robv.android.xposed:api:82")
     implementation("com.github.kyuubiran:EzXHelper:1.0.3")
@@ -82,6 +83,5 @@ dependencies {
     //APP Center
     val appCenterSdkVersion = "5.0.0"
     implementation("com.microsoft.appcenter:appcenter-analytics:5.0.1")
-    implementation("com.microsoft.appcenter:appcenter-crashes:5.0.0")
-    implementation("androidx.core:core-splashscreen:1.0.0")
+    implementation("com.microsoft.appcenter:appcenter-crashes:5.0.1")
 }
