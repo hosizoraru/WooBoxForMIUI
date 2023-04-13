@@ -55,6 +55,7 @@ Xposed
 [YifePlayte/MaxFreeForm](https://github.com/YifePlayte/MaxFreeForm)  
 [YifePlayte/MaxMiPad](https://github.com/YifePlayte/MaxMiPad)  
 [YuKongA/Miui_XXL](https://github.com/YuKongA/Miui_XXL)  
+[Wine-Network/Miui_XXL](https://github.com/Wine-Network/Miui_XXL)  
 [MonwF/customiuizer](https://github.com/MonwF/customiuizer)  
 [GSWXXN/UnlockMiLink](https://github.com/GSWXXN/UnlockMiLink)  
 [zerorooot/HorizontalContentextension](https://github.com/zerorooot/HorizontalContentextension)  
