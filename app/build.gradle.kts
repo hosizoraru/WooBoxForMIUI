@@ -25,6 +25,10 @@ android {
         buildConfigField("String", "BUILD_TIME", "\"${System.currentTimeMillis()}\"")
     }
 
+    androidResources {
+        noCompress("libdexkit.so")
+    }
+
     splits {
         abi {
             isEnable = true
@@ -46,7 +50,7 @@ android {
         targetCompatibility = JavaVersion.VERSION_17
     }
     kotlinOptions {
-        jvmTarget = JavaVersion.VERSION_17.majorVersion
+        jvmTarget = "17"
     }
     packagingOptions {
         resources {
@@ -66,6 +70,15 @@ android {
         }
     }
 }
+
+kotlin {
+    sourceSets.all {
+        languageSettings {
+            languageVersion = "2.0"
+        }
+    }
+}
+
 
 dependencies {
     implementation("androidx.core:core-ktx:1.10.0-rc01")
