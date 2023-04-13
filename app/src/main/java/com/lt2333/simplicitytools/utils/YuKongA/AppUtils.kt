@@ -1,7 +1,13 @@
 package com.lt2333.simplicitytools.utils.YuKongA
 
 import android.annotation.SuppressLint
+import android.app.Activity
 import android.os.Build
+import android.os.Handler
+import android.os.Looper
+import android.util.Log
+import android.widget.Toast
+import com.lt2333.simplicitytools.BuildConfig
 import java.io.BufferedReader
 import java.io.DataOutputStream
 import java.io.IOException
@@ -75,4 +81,13 @@ fun exec(commands: Array<String>): String {
         stringBuilder.append("\n")
     }
     return stringBuilder.toString()
+}
+
+private val handler by lazy { Handler(Looper.getMainLooper()) }
+
+fun showToastOnLooper(activity: Activity, message: Any?) {
+    handler.post {
+        Toast.makeText(activity, message.toString(), Toast.LENGTH_SHORT).show()
+    }
+    Log.i(BuildConfig.APPLICATION_ID, message.toString())
 }
