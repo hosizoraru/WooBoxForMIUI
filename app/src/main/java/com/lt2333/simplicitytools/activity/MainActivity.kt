@@ -3,6 +3,7 @@ package com.lt2333.simplicitytools.activity
 import android.annotation.SuppressLint
 import android.os.Build
 import android.os.Bundle
+import android.content.Intent
 import cn.fkj233.ui.activity.MIUIActivity
 import cn.fkj233.ui.dialog.MIUIDialog
 import com.lt2333.simplicitytools.BuildConfig
@@ -16,6 +17,7 @@ import com.microsoft.appcenter.analytics.Analytics
 import com.microsoft.appcenter.crashes.Crashes
 import java.util.*
 import kotlin.system.exitProcess
+import com.lt2333.simplicitytools.utils.YuKongA.BackupUtils
 
 class MainActivity : MIUIActivity() {
     private val activity = this
@@ -90,6 +92,21 @@ class MainActivity : MIUIActivity() {
                 registerPage(GalleryMediaEditorPage::class.java)
                 registerPage(WiniPage::class.java)
                 registerPage(MiAiPage::class.java)
+            }
+        }
+    }
+
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        if (data != null && resultCode == RESULT_OK) {
+            when (requestCode) {
+                BackupUtils.CREATE_DOCUMENT_CODE -> {
+                    BackupUtils.handleCreateDocument(activity, data.data)
+                }
+
+                BackupUtils.OPEN_DOCUMENT_CODE -> {
+                    BackupUtils.handleReadDocument(activity, data.data)
+                }
+
             }
         }
     }

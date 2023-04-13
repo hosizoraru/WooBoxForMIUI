@@ -60,6 +60,7 @@ object SystemUI : AppRegister() {
                     DisableBluetoothForT, // 控制中心直接关闭蓝牙
                     IconPositionForT, // 修改图标位置
                     UseNewHDForT, // 强制使用新 HD 图标
+                    StatusBarBatteryForAll, // 状态栏显示关于电池
                 )
             }
 
@@ -99,6 +100,7 @@ object SystemUI : AppRegister() {
                     ShowWifiStandardForS, // 显示 WIFI 角标
                     NoPasswordHookForS, // 开机免密码
                     DisableBluetoothForT, // 控制中心直接关闭蓝牙
+                    StatusBarBatteryForAll, // 状态栏显示关于电池
                 )
             }
         }

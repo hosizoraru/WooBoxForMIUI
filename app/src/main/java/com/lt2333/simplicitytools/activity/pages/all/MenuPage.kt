@@ -1,17 +1,23 @@
 package com.lt2333.simplicitytools.activity.pages.all
 
+import android.annotation.SuppressLint
+import android.app.Activity
+import android.content.Context
+import android.widget.Toast
 import cn.fkj233.ui.activity.annotation.BMMenuPage
 import cn.fkj233.ui.activity.data.BasePage
 import cn.fkj233.ui.activity.view.TextSummaryV
+import cn.fkj233.ui.activity.view.TextV
 import cn.fkj233.ui.dialog.MIUIDialog
 import com.lt2333.simplicitytools.R
 import com.lt2333.simplicitytools.utils.ShellUtils
+import com.lt2333.simplicitytools.utils.YuKongA.BackupUtils
 import java.util.*
 
 
 @BMMenuPage("Menu")
 class MenuPage : BasePage() {
-
+    @SuppressLint("WorldReadableFiles")
     override fun onCreate() {
         TextSummaryWithArrow(TextSummaryV(textId = R.string.reboot, onClickListener = {
             MIUIDialog(activity) {
@@ -102,6 +108,28 @@ class MenuPage : BasePage() {
                     ShellUtils.execCommand(command, true)
                     dismiss()
                 }
+            }.show()
+        }))
+
+        TextSummaryWithArrow(TextSummaryV(
+            textId = R.string.backup, onClickListener = {
+            BackupUtils.backup(activity, activity.createDeviceProtectedStorageContext().getSharedPreferences("config", Context.MODE_WORLD_READABLE))
+        }))
+
+        TextSummaryWithArrow(TextSummaryV(textId = R.string.recovery, onClickListener = {
+            BackupUtils.recovery(activity, activity.createDeviceProtectedStorageContext().getSharedPreferences("config", Context.MODE_WORLD_READABLE))
+        }))
+
+        TextWithArrow(TextV(textId = R.string.ResetModule, onClickListener = {
+            MIUIDialog(activity) {
+                setTitle(R.string.ResetModuleDialog)
+                setMessage(R.string.ResetModuleDialogTips)
+                setLButton(R.string.Done) {
+                    activity.getSharedPreferences("config", Activity.MODE_WORLD_READABLE).edit().clear().apply()
+                    Toast.makeText(activity, activity.getString(R.string.ResetSuccess), Toast.LENGTH_LONG).show()
+                }
+                setRButton(R.string.cancel)
+                finally { dismiss() }
             }.show()
         }))
     }

@@ -95,6 +95,10 @@ class MiuiHomePage : BasePage() {
                 tipsId = R.string.miuihome_blur_when_open_folder_summary
             ), SwitchV("miuihome_blur_when_open_folder")
         )
+        TextSummaryWithSwitch(
+            TextSummaryV(textId = R.string.miuihome_real_memory, tipsId = R.string.miuihome_real_memory_summary),
+            SwitchV("miuihome_real_memory", false)
+        )
         val blurBinding = GetDataBinding({ safeSP.getBoolean("miuihome_use_complete_blur", false) }) { view, flags, data ->
             if (flags == 1) view.visibility = if (data as Boolean) View.VISIBLE else View.GONE
         }

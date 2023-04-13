@@ -1,5 +1,6 @@
 package com.lt2333.simplicitytools.activity.pages.t
 
+import android.annotation.SuppressLint
 import android.content.ComponentName
 import android.content.pm.PackageManager
 import cn.fkj233.ui.activity.annotation.BMMainPage
@@ -14,7 +15,7 @@ import com.lt2333.simplicitytools.utils.YuKongA.atLeastAndroidT
 
 @BMMainPage("WooBox[MIUI14]")
 class MainPageForT : BasePage() {
-
+    @SuppressLint("WorldReadableFiles")
     override fun onCreate() {
         TextSummaryWithSwitch(
             TextSummaryV(

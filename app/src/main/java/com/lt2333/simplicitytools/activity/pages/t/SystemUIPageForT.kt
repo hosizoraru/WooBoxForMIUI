@@ -24,6 +24,10 @@ class SystemUIPageForT : BasePage() {
             TextSummaryV(textId = R.string.double_tap_to_sleep),
             SwitchV("status_bar_double_tap_to_sleep")
         )
+        TextSummaryWithSwitch(
+            TextSummaryV(textId = R.string.systemui_show_statusbar_battery, tipsId = R.string.systemui_show_statusbar_battery_summary),
+            SwitchV("systemui_show_statusbar_battery", false)
+        )
         Line()
         TitleText(textId = R.string.status_bar_layout)
         val statusBarLayoutMode: HashMap<Int, String> = hashMapOf<Int, String>().also {

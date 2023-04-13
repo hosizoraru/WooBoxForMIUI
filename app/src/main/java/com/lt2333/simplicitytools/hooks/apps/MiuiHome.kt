@@ -45,6 +45,7 @@ object MiuiHome : AppRegister() {
                     MonoChromeIconForT, // 莫奈取色图标
                     FolderAnimForAll, // 文件夹动画修改
                     FoldDeviceDockForAll, // 折叠屏底栏样式
+                    RealMemoryForAll, // 后台显示实际使用和总内存
                 )
             }
 
@@ -78,6 +79,7 @@ object MiuiHome : AppRegister() {
                     BlurWhenOpenFolder, // 文件夹视图模糊
                     FolderAnimForAll, // 文件夹动画修改
                     FoldDeviceDockForAll, // 折叠屏底栏样式
+                    RealMemoryForAll, // 后台显示实际使用和总内存
                 )
             }
         }
