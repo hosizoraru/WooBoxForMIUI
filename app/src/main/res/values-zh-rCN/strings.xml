@@ -257,7 +257,7 @@
     <string name="No_Auto_Turn_Off">禁止小米互传自动关闭</string>
     <string name="No_Auto_Turn_Off_summary">小米互传将不会自动关闭 (仅限 2.15.0 和 2.16.0 版本)</string>
     <string name="scope_deskclock">时钟</string>
-    <string name="Hour_Glass_Enable">强制开启计时沙漏动画</string>
+    <string name="Hour_Glass_Enable">强制开启计时沙漏动画\n(仅限低于 13.65.0 的版本)</string>
     <string name="Hour_Glass_Enable_summary">当你发现你的时钟没有这个动画的时候才需要开启</string>
     <string name="Disable_Bluetooth" comment="This function is used to completely close Bluetooth">禁用蓝牙临时关闭</string>
     <string name="Disable_Bluetooth_summary">在控制中心关闭蓝牙会直接彻底关闭</string>
@@ -358,6 +358,7 @@
     <string name="personalassistant_minus_one_blur_summary">请不要和wini里面的负一屏模糊一起开启\n联发科设备仅建议在 Android 13 上启用，非 Android 13 的联发科设备动态调整模糊半径时经常黑屏</string>
     <string name="miuihome_unlock_cell_count">解锁图标网格布局</string>
     <string name="miuihome_unlock_cell_count_summary">无字模式解锁仍有问题</string>
+    <string name="miuihome_unlock_cell_count_no_word">解锁图标网格布局(无字模式)</string>
     <string name="miuihome_blur_when_open_folder">文件夹视图模糊</string>
     <string name="miuihome_blur_when_open_folder_summary">打开文件夹时启用模糊</string>
     <string name="hide_miui_clipboard_dialog">隐藏miui剪贴板对话框</string>
@@ -453,4 +454,6 @@
     <string name="ResetSuccess">重置成功</string>
     <string name="backup">备份模块设置</string>
     <string name="recovery">恢复模块设置</string>
+    <string name="system_settings_permission_unknown_origin_app">安装未知应用权限免翻应用列表</string>
+    <string name="system_settings_permission_unknown_origin_app_desc">使用国际版行为，直接跳转对应应用 \"安装未知应用\" 的权限开关</string>
 </resources>

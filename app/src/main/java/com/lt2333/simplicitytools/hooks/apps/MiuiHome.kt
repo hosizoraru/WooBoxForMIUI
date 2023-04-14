@@ -46,6 +46,7 @@ object MiuiHome : AppRegister() {
                     FolderAnimForAll, // 文件夹动画修改
                     FoldDeviceDockForAll, // 折叠屏底栏样式
                     RealMemoryForAll, // 后台显示实际使用和总内存
+                    UnlockGridsNoWord, // 解锁图标网格布局(无字模式)
                 )
             }
 
@@ -80,6 +81,7 @@ object MiuiHome : AppRegister() {
                     FolderAnimForAll, // 文件夹动画修改
                     FoldDeviceDockForAll, // 折叠屏底栏样式
                     RealMemoryForAll, // 后台显示实际使用和总内存
+                    UnlockGridsNoWord, // 解锁图标网格布局(无字模式)
                 )
             }
         }

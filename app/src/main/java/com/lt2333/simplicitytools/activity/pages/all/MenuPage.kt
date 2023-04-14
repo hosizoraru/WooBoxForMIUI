@@ -111,6 +111,8 @@ class MenuPage : BasePage() {
             }.show()
         }))
 
+        Line()
+
         TextSummaryWithArrow(TextSummaryV(
             textId = R.string.backup, onClickListener = {
             BackupUtils.backup(activity, activity.createDeviceProtectedStorageContext().getSharedPreferences("config", Context.MODE_WORLD_READABLE))

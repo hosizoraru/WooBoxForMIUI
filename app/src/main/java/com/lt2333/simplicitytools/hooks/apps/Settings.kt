@@ -2,6 +2,7 @@ package com.lt2333.simplicitytools.hooks.apps
 
 import android.os.Build
 import com.lt2333.simplicitytools.hooks.rules.all.settings.EnableSpeedModeForAll
+import com.lt2333.simplicitytools.hooks.rules.all.settings.QuickInstallPermission
 import com.lt2333.simplicitytools.hooks.rules.all.settings.SettingsDontThroughTheList
 import com.lt2333.simplicitytools.hooks.rules.all.settings.ShowNotificationImportanceForAll
 import com.lt2333.simplicitytools.utils.hasEnable
@@ -21,6 +22,7 @@ object Settings : AppRegister() {
                     lpparam,
                     ShowNotificationImportanceForAll, //显示通知重要程度
                     EnableSpeedModeForAll, // 开启极致模式选项
+                    QuickInstallPermission, // 安装未知应用权限免翻应用列表
                 )
             }
 
@@ -29,6 +31,7 @@ object Settings : AppRegister() {
                     lpparam,
                     ShowNotificationImportanceForAll, //显示通知重要程度
                     EnableSpeedModeForAll, // 开启极致模式选项
+                    QuickInstallPermission, // 安装未知应用权限免翻应用列表
                 )
             }
         }

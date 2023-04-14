@@ -260,7 +260,7 @@
     <string name="No_Auto_Turn_Off_summary">MiShare will not be automatically closed (Version 2.15.0 and 2.16.0 only)</string>
     <string name="scope_deskclock">DeskClock</string>
     <string name="Hour_Glass_Enable">Enable Hour Glass Animation</string>
-    <string name="Hour_Glass_Enable_summary">You only need to turn it on when you find that your clock does not have this animation</string>
+    <string name="Hour_Glass_Enable_summary">You only need to turn it on when you find that your clock does not have this animation\n(Versions below 13.65.0 only)</string>
     <string name="Disable_Bluetooth">Disable bluetooth temporarily off</string>
     <string name="Disable_Bluetooth_summary">Turn off bluetooth completely in control center</string>
     <string name="kill_domain_verification">Kill domain verification</string>
@@ -360,6 +360,7 @@
     <string name="personalassistant_minus_one_blur_summary">Please do not open this with the Personal assistant blur in wini.\nMediaTek devices are only recommended to be enabled on Android 13, non-Android 13 MediaTek devices often have a black screen when dynamically adjusting the blur radius</string>
     <string name="miuihome_unlock_cell_count">Unlock launcher icon grids</string>
     <string name="miuihome_unlock_cell_count_summary">Unlock in no word mode still has issues</string>
+    <string name="miuihome_unlock_cell_count_no_word">Unlock launcher icon grids(No Words)</string>
     <string name="miuihome_blur_when_open_folder">Folder View Blur</string>
     <string name="miuihome_blur_when_open_folder_summary">Enable Blur When Open Folder</string>
     <string name="hide_miui_clipboard_dialog">Hide Miui Clipboard Dialog</string>
@@ -455,4 +456,6 @@
     <string name="ResetSuccess">The reset was successful</string>
     <string name="backup">Backup Module Settings</string>
     <string name="recovery">Recovery Module Settings</string>
+    <string name="system_settings_permission_unknown_origin_app">Install unknown app permissions without searching the application list</string>
+    <string name="system_settings_permission_unknown_origin_app_desc">Use the international build, jump directly to the permission switch of the corresponding application “displayed on top of other applications”</string>
 </resources>
