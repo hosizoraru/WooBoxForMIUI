@@ -12,11 +12,15 @@ import android.widget.ListView
 import android.widget.TextView
 import com.lt2333.simplicitytools.utils.wini.ColorUtils
 import com.lt2333.simplicitytools.hooks.rules.all.wini.model.ConfigModel
+import com.lt2333.simplicitytools.utils.XSPUtils
+import com.lt2333.simplicitytools.utils.hasEnable
 import com.lt2333.simplicitytools.utils.wini.HookUtils
 import de.robv.android.xposed.XC_MethodHook
 import de.robv.android.xposed.XC_MethodReplacement
 import de.robv.android.xposed.XposedBridge
 import de.robv.android.xposed.XposedHelpers
+import de.robv.android.xposed.callbacks.XC_LoadPackage
+import java.io.File
 
 class BlurSecurity(private val classLoader: ClassLoader, config: ConfigModel) {
     val blurRadius = config.BlurSecurity.dockBackground.blurRadius
@@ -64,11 +68,17 @@ class BlurSecurity(private val classLoader: ClassLoader, config: ConfigModel) {
         var VideoBoxViewClass =
             HookUtils.getClass("com.miui.gamebooster.videobox.adapter.i", classLoader)
         var VideoBoxViewMethodName = "a"
-        if (VideoBoxViewClass == null) {
-            // v7.4.9
-            appVersionCode = 40000749
-            VideoBoxViewClass = HookUtils.getClass("t7.i", classLoader) ?: return
-            VideoBoxViewMethodName = "i"
+        if (XSPUtils.getBoolean("a_fix",false)) {
+            // 7.7.1/7.7.2
+            VideoBoxViewClass = HookUtils.getClass("r7.m", classLoader) ?: return
+            VideoBoxViewMethodName = "j"
+        } else {
+            if (VideoBoxViewClass == null) {
+                // v7.4.9
+                appVersionCode = 40000749
+                VideoBoxViewClass = HookUtils.getClass("t7.i", classLoader) ?: return
+                VideoBoxViewMethodName = "i"
+            }
         }
 
         var NewboxClass: Class<*>? = null
@@ -499,5 +509,18 @@ class BlurSecurity(private val classLoader: ClassLoader, config: ConfigModel) {
     private fun getId(view: View): String {
         return if (view.id == View.NO_ID) "no-id" else view.resources.getResourceName(view.id)
             .replace("com.miui.securitycenter:id/", "")
+    }
+
+    private fun getPackageVersionCode(lpparam: XC_LoadPackage.LoadPackageParam): Int {
+        return try {
+            val parserCls = XposedHelpers.findClass("android.content.pm.PackageParser", lpparam.classLoader)
+            val parser = parserCls.newInstance()
+            val apkPath = File(lpparam.appInfo.sourceDir)
+            val pkg = XposedHelpers.callMethod(parser, "parsePackage", apkPath, 0)
+            val versionCode = XposedHelpers.getIntField(pkg, "mVersionCode")
+            versionCode
+        } catch (e: Throwable) {
+            -1
+        }
     }
 }

@@ -115,6 +115,10 @@ class WiniPage : BasePage() {
             TextSummaryV(textId = R.string.security_blur_model),
             SwitchV("se_enable", dataBindingSend = BlurSecurityBinding.bindingSend)
         )
+        TextSummaryWithSwitch(
+            TextSummaryV(textId = R.string.a_fix_summary),
+            SwitchV("a_fix", dataBindingRecv = BlurSecurityBinding.getRecv(1))
+        )
         TextSummaryWithSeekBar(
             TextSummaryV(textId = R.string.security_blurradius_summary),
             SeekBarWithTextV("security_blurRadius", 30, 99, 60),
