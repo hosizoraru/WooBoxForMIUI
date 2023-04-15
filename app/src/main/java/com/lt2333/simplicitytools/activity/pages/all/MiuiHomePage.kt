@@ -94,6 +94,10 @@ class MiuiHomePage : BasePage() {
             SwitchV("miuihome_unlock_cell_count_no_word")
         )
         TextSummaryWithSwitch(
+            TextSummaryV(textId = R.string.Fuck_PDD),
+            SwitchV("Fuck_PDD")
+        )
+        TextSummaryWithSwitch(
             TextSummaryV(
                 textId = R.string.miuihome_blur_when_open_folder,
                 tipsId = R.string.miuihome_blur_when_open_folder_summary

@@ -29,19 +29,23 @@ object RemoveMacroBlacklistForAll1 : HookRegister() {
                 letter++
             }
 
-            findMethod("q7.m0") {
-                name == "n" && parameterTypes[0] == ArrayList::class.java
-            }.hookBefore { param ->
-                param.args[0] = "[]"
+            try {
+                findMethod("q7.m0") {
+                    name == "n" && parameterTypes[0] == ArrayList::class.java
+                }.hookBefore { param ->
+                    param.args[0] = "[]"
+                }
+
+                findMethod("q7.m0"){
+                    name == "g" && parameterTypes[0] == String::class.java
+                }.hookReturnConstant(false)
+
+                findMethod("w6.b"){
+                    name == "e" && parameterTypes[0] == Context::class.java && parameterTypes[1] == String::class.java
+                }.hookReturnConstant(true)
+            } catch(e: Throwable){
+                Log.ex("Remove Macro Black List Old Hook Fail!")
             }
-
-            findMethod("q7.m0"){
-                name == "g" && parameterTypes[0] == String::class.java
-            }.hookReturnConstant(false)
-
-            findMethod("w6.b"){
-                name == "e" && parameterTypes[0] == Context::class.java && parameterTypes[1] == String::class.java
-            }.hookReturnConstant(true)
         }
     }
 
