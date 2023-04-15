@@ -12,6 +12,11 @@ android {
 //     compileSdkPreview = "UpsideDownCake"
     compileSdk = 33
     buildToolsVersion = "33.0.2"
+
+    buildFeatures {
+        buildConfig = true
+    }
+
     defaultConfig {
         applicationId = "com.lt2333.simplicitytools"
         minSdk = 31

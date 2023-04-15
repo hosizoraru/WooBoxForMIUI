@@ -257,7 +257,7 @@
     <string name="Unlock_HDR_Enhance_summary">Use HDR to show more detail in highlights and shadows</string>
     <string name="scope_mishare">Mishare</string>
     <string name="No_Auto_Turn_Off">Prohibition of MiShare is automatically closed</string>
-    <string name="No_Auto_Turn_Off_summary">MiShare will not be automatically closed (Version 2.15.0 and 2.16.0 only)</string>
+    <string name="No_Auto_Turn_Off_summary">MiShare will not be automatically closed\n(Version 2.15.0 and 2.16.0 only)</string>
     <string name="scope_deskclock">DeskClock</string>
     <string name="Hour_Glass_Enable">Enable Hour Glass Animation</string>
     <string name="Hour_Glass_Enable_summary">You only need to turn it on when you find that your clock does not have this animation\n(Versions below 13.65.0 only)</string>
@@ -458,4 +458,5 @@
     <string name="recovery">Recovery Module Settings</string>
     <string name="system_settings_permission_unknown_origin_app">Install unknown app permissions without searching the application list</string>
     <string name="system_settings_permission_unknown_origin_app_desc">Use the international build, jump directly to the permission switch of the corresponding application “displayed on top of other applications”</string>
+    <string name="Fuck_PDD">Remove icon psoriasis</string>
 </resources>

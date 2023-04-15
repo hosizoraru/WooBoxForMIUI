@@ -59,6 +59,12 @@ class OtherPageForT : BasePage() {
                 textId = R.string.Settings_Dont_Through_The_List,
             ), SwitchV("Settings_Dont_Through_The_List")
         )
+        TextSummaryWithSwitch(
+            TextSummaryV(
+                textId = R.string.system_settings_permission_unknown_origin_app,
+                tipsId = R.string.system_settings_permission_unknown_origin_app_desc
+            ), SwitchV("system_settings_permission_unknown_origin_app")
+        )
         Line()
         TitleText(textId = R.string.cast)
         TextSummaryWithSwitch(

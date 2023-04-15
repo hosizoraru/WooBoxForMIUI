@@ -255,10 +255,10 @@
     <string name="Unlock_HDR_Enhance_summary">以 HDR 高动态范围，呈现更多明暗细节，使画面更加真实</string>
     <string name="scope_mishare">小米互传</string>
     <string name="No_Auto_Turn_Off">禁止小米互传自动关闭</string>
-    <string name="No_Auto_Turn_Off_summary">小米互传将不会自动关闭 (仅限 2.15.0 和 2.16.0 版本)</string>
+    <string name="No_Auto_Turn_Off_summary">小米互传将不会自动关闭\n(仅限 2.15.0 和 2.16.0 版本)</string>
     <string name="scope_deskclock">时钟</string>
-    <string name="Hour_Glass_Enable">强制开启计时沙漏动画\n(仅限低于 13.65.0 的版本)</string>
-    <string name="Hour_Glass_Enable_summary">当你发现你的时钟没有这个动画的时候才需要开启</string>
+    <string name="Hour_Glass_Enable">强制开启计时沙漏动画</string>
+    <string name="Hour_Glass_Enable_summary">当你发现你的时钟没有这个动画的时候才需要开启\n(仅限低于 13.65.0 的版本)</string>
     <string name="Disable_Bluetooth" comment="This function is used to completely close Bluetooth">禁用蓝牙临时关闭</string>
     <string name="Disable_Bluetooth_summary">在控制中心关闭蓝牙会直接彻底关闭</string>
     <string name="kill_domain_verification">禁用域验证</string>
@@ -456,4 +456,5 @@
     <string name="recovery">恢复模块设置</string>
     <string name="system_settings_permission_unknown_origin_app">安装未知应用权限免翻应用列表</string>
     <string name="system_settings_permission_unknown_origin_app_desc">使用国际版行为，直接跳转对应应用 \"安装未知应用\" 的权限开关</string>
+    <string name="Fuck_PDD">去除图标牛皮癣</string>
 </resources>
