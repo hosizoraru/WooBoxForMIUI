@@ -10,10 +10,12 @@ plugins {
 
 android {
 //     compileSdkPreview = "UpsideDownCake"
+    namespace = "com.lt2333.simplicitytools"
     compileSdk = 33
     buildToolsVersion = "33.0.2"
 
     buildFeatures {
+        prefab = true
         buildConfig = true
     }
 
@@ -28,10 +30,6 @@ android {
 //            abiFilters += "arm64-v8a"
 //        }
         buildConfigField("String", "BUILD_TIME", "\"${System.currentTimeMillis()}\"")
-    }
-
-    androidResources {
-        noCompress("libdexkit.so")
     }
 
     splits {
@@ -68,7 +66,12 @@ android {
             useLegacyPackaging = true
         }
     }
-    namespace = "com.lt2333.simplicitytools"
+
+    dependenciesInfo {
+        includeInApk = false
+        includeInBundle = false
+    }
+
     applicationVariants.all {
         outputs.all {
             (this as BaseVariantOutputImpl).outputFileName = "WooBoxForMIUI-$versionName-$name.apk"
@@ -99,7 +102,7 @@ dependencies {
     implementation("androidx.constraintlayout:constraintlayout:2.2.0-alpha09")
     implementation("com.google.code.gson:gson:2.10.1")
     //APP Center
-    val appCenterSdkVersion = "5.0.0"
+    val appCenterSdkVersion = "5.0.1"
     implementation("com.microsoft.appcenter:appcenter-analytics:5.0.1")
     implementation("com.microsoft.appcenter:appcenter-crashes:5.0.1")
 }

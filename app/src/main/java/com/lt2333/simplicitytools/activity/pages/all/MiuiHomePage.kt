@@ -104,8 +104,22 @@ class MiuiHomePage : BasePage() {
             ), SwitchV("miuihome_blur_when_open_folder")
         )
         TextSummaryWithSwitch(
-            TextSummaryV(textId = R.string.miuihome_real_memory, tipsId = R.string.miuihome_real_memory_summary),
+            TextSummaryV(
+                textId = R.string.miuihome_real_memory,
+                tipsId = R.string.miuihome_real_memory_summary),
             SwitchV("miuihome_real_memory", false)
+        )
+        TextSummaryWithSwitch(
+            TextSummaryV(textId = R.string.Always_blur_launcher_wallpaper),
+            SwitchV("home_blur_wallpaper")
+        )
+        TextSummaryWithSwitch(
+            TextSummaryV(textId = R.string.using_full_width_of_folder_view),
+            SwitchV("home_folder_width")
+        )
+        TextWithSeekBar(
+            TextV(textId = R.string.number_of_icons_in_folder_iew),
+            SeekBarWithTextV("home_folder_columns", 2, 7, 3)
         )
         val blurBinding = GetDataBinding({ safeSP.getBoolean("miuihome_use_complete_blur", false) }) { view, flags, data ->
             if (flags == 1) view.visibility = if (data as Boolean) View.VISIBLE else View.GONE

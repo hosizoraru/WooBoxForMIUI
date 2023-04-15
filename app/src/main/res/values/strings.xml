@@ -459,4 +459,8 @@
     <string name="system_settings_permission_unknown_origin_app">Install unknown app permissions without searching the application list</string>
     <string name="system_settings_permission_unknown_origin_app_desc">Use the international build, jump directly to the permission switch of the corresponding application “displayed on top of other applications”</string>
     <string name="Fuck_PDD">Remove icon psoriasis</string>
+    <string name="using_full_width_of_folder_view">Using the full width of the folder view</string>
+    <string name="number_of_icons_in_folder_iew">Number of rows of icons in the folder view</string>
+    <string name="Always_blur_launcher_wallpaper">Always blur launcher wallpaper</string>
+
 </resources>

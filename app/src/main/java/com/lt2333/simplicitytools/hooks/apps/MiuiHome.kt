@@ -48,6 +48,8 @@ object MiuiHome : AppRegister() {
                     RealMemoryForAll, // 后台显示实际使用和总内存
                     UnlockGridsNoWord, // 解锁图标网格布局(无字模式)
                     FuckPDD, // 去除图标牛皮癣
+                    AlwaysBlurWallpaper, // 始终模糊壁纸
+                    FolderColumnsCount, // 利用整个文件夹视图的宽度+文件夹视图内图标的排数
                 )
             }
 
@@ -84,6 +86,8 @@ object MiuiHome : AppRegister() {
                     RealMemoryForAll, // 后台显示实际使用和总内存
                     UnlockGridsNoWord, // 解锁图标网格布局(无字模式)
                     FuckPDD, // 去除图标牛皮癣
+                    AlwaysBlurWallpaper, // 始终模糊壁纸
+                    FolderColumnsCount, // 利用整个文件夹视图的宽度+文件夹视图内图标的排数
                 )
             }
         }
