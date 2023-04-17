@@ -5,6 +5,7 @@ import android.content.ComponentName
 import android.content.Intent
 import android.content.res.Configuration
 import android.os.Bundle
+import android.util.TypedValue
 import android.view.View
 import com.github.kyuubiran.ezxhelper.init.InitFields.moduleRes
 import com.github.kyuubiran.ezxhelper.utils.args
@@ -67,16 +68,18 @@ object ShortcutAddSmallWindowForAll : HookRegister() {
         mSystemShortcutMenuItem.hookAfterAllMethods("createAllSystemShortcutMenuItems") {
             val isDarkMode =
                 AndroidAppHelper.currentApplication().applicationContext.resources.configuration.uiMode and Configuration.UI_MODE_NIGHT_MASK == Configuration.UI_MODE_NIGHT_YES
-            val mAllSystemShortcutMenuItems = mSystemShortcutMenuItem.getStaticObjectField("sAllSystemShortcutMenuItems") as Collection<Any>
+            val mAllSystemShortcutMenuItems = mSystemShortcutMenuItem.getStaticObjectField("sAllSystemShortcutMenuItems") as Collection<*>
             val mSmallWindowInstance = XposedHelpers.newInstance(mAppDetailsShortcutMenuItem)
+            val drawableResId = if (isDarkMode) R.drawable.ic_small_window_dark else R.drawable.ic_small_window_light
+            val typedValue = TypedValue()
             mSmallWindowInstance.callMethod("setShortTitle", moduleRes.getString(R.string.miuihome_shortcut_add_small_window_title))
             mSmallWindowInstance.callMethod(
                 "setIconDrawable",
-                if (isDarkMode) moduleRes.getDrawable(R.drawable.ic_small_window_dark) else moduleRes.getDrawable(R.drawable.ic_small_window_light)
+                moduleRes.getValue(drawableResId,typedValue,true)
             )
             val sAllSystemShortcutMenuItems = ArrayList<Any>()
             sAllSystemShortcutMenuItems.add(mSmallWindowInstance)
-            sAllSystemShortcutMenuItems.addAll(mAllSystemShortcutMenuItems)
+            sAllSystemShortcutMenuItems.addAll(listOf(mAllSystemShortcutMenuItems))
             mSystemShortcutMenuItem.setStaticObjectField("sAllSystemShortcutMenuItems", sAllSystemShortcutMenuItems)
         }
     }

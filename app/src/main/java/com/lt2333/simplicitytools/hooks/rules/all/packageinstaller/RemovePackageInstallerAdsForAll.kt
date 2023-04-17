@@ -33,6 +33,9 @@ object RemovePackageInstallerAdsForAll : HookRegister() {
         findMethod("m2.b") {
             name == "t"
         }.hookReturnConstant(false)
+        findMethod("m2.b") {
+            name == "r"
+        }.hookReturnConstant(false)
         var letter = 'a'
         for (i in 0..25) {
             try {

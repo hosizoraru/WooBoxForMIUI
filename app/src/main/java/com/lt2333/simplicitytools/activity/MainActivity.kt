@@ -35,6 +35,7 @@ class MainActivity : MIUIActivity() {
     }
 
     //检测LSPosed是否激活
+//    @Suppress("DEPRECATION")
     @SuppressLint("WorldReadableFiles")
     private fun checkLSPosed(): Boolean {
         try {

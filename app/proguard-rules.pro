@@ -36,3 +36,6 @@
 
 -allowaccessmodification
 -overloadaggressively
+
+-keep class com.lt2333.simplicitytools.hooks.MainHook
+-keepattributes RuntimeVisibleAnnotations

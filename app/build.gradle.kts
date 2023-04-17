@@ -48,14 +48,17 @@ android {
             setProguardFiles(listOf("proguard-rules.pro"))
         }
     }
+
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_17
         targetCompatibility = JavaVersion.VERSION_17
     }
+
     kotlinOptions {
         jvmTarget = "17"
     }
-    packagingOptions {
+
+    packaging {
         resources {
             excludes += "/META-INF/**"
             excludes += "/kotlin/**"
@@ -79,13 +82,7 @@ android {
     }
 }
 
-kotlin {
-    sourceSets.all {
-        languageSettings {
-            languageVersion = "2.0"
-        }
-    }
-}
+//
 
 
 dependencies {
