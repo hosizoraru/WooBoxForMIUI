@@ -10,8 +10,7 @@ import cn.fkj233.ui.activity.fragment.MIUIFragment
 import cn.fkj233.ui.activity.view.SwitchV
 import cn.fkj233.ui.activity.view.TextSummaryV
 import cn.fkj233.ui.activity.view.TextSummaryWithSwitchV
-import com.lt2333.simplicitytools.R
-import com.lt2333.simplicitytools.utils.SharedPreferences.putStringSet
+import com.lt2333.simplicitytools.utils.Yife.SharedPreferences.putStringSet
 import java.util.*
 
 @BMPage("DisableFixedOrientationPage", "禁用固定屏幕方向作用域", hideMenu = false)

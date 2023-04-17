@@ -1,4 +1,4 @@
-package com.lt2333.simplicitytools.utils
+package com.lt2333.simplicitytools.utils.Yife
 
 object SharedPreferences {
     fun android.content.SharedPreferences.putStringSet(
