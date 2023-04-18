@@ -1,5 +1,6 @@
 package com.lt2333.simplicitytools.activity.pages.all
 
+import android.os.Build
 import cn.fkj233.ui.activity.annotation.BMPage
 import cn.fkj233.ui.activity.data.BasePage
 import com.lt2333.simplicitytools.R
@@ -32,8 +33,23 @@ class MaxMiPadPage: BasePage() {
                 textId = R.string.remove_stylus_bluetooth_restriction,
                 tipsId = R.string.remove_stylus_bluetooth_restriction_tips
             ),
-            SwitchV("remove_stylus_bluetooth_restriction", false)
+            SwitchV(
+                "remove_stylus_bluetooth_restriction",
+                false
+            )
         )
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+            TextSummaryWithSwitch(
+                TextSummaryV(
+                    textId = R.string.second_generation_pen_driver,
+                    tipsId = R.string.second_generation_pen_driver_summary
+                ),
+                SwitchV(
+                    "second_generation_pen_driver",
+                    false
+                )
+            )
+        }
         TextSummaryWithSwitch(
             TextSummaryV(
                 textId = R.string.ignore_stylus_key_gesture,

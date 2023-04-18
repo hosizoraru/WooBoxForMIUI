@@ -7,6 +7,10 @@ import com.lt2333.simplicitytools.utils.xposed.base.HookRegister
 
 object MiuiStylusDeviceListener : HookRegister() {
     override fun init() = hasEnable("remove_stylus_bluetooth_restriction") {
+        var qwq = 1
+        hasEnable("second_generation_pen_driver") {
+            qwq = 0x12
+        }
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
             findAllConstructors("com.miui.server.input.stylus.MiuiStylusDeviceListener") { true }.hookAfter {
                 val ITouchFeature = loadClass("miui.util.ITouchFeature")
@@ -15,7 +19,7 @@ object MiuiStylusDeviceListener : HookRegister() {
                 }.invoke(null)
                 mTouchFeature?.invokeMethod(
                     "setTouchMode",
-                    args(0, 20, 1),
+                    args(0, 20, qwq),
                     argTypes(Int::class.java, Int::class.java, Int::class.java)
                 )
             }
@@ -26,7 +30,7 @@ object MiuiStylusDeviceListener : HookRegister() {
                 }.invoke(null)
                 mTouchFeature?.invokeMethod(
                     "setTouchMode",
-                    args(0, 20, 1),
+                    args(0, 20, qwq),
                     argTypes(Int::class.java, Int::class.java, Int::class.java)
                 )
             }
