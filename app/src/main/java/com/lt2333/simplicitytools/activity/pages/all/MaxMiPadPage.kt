@@ -1,6 +1,5 @@
 package com.lt2333.simplicitytools.activity.pages.all
 
-import android.os.Build
 import cn.fkj233.ui.activity.annotation.BMPage
 import cn.fkj233.ui.activity.data.BasePage
 import com.lt2333.simplicitytools.R
@@ -8,6 +7,7 @@ import android.view.View
 import cn.fkj233.ui.activity.MIUIActivity
 import cn.fkj233.ui.activity.view.SwitchV
 import cn.fkj233.ui.activity.view.TextSummaryV
+import cn.fkj233.ui.activity.view.SpinnerV
 
 @BMPage("scope_mipad", "MiPad", hideMenu = false)
 class MaxMiPadPage: BasePage() {
@@ -28,28 +28,40 @@ class MaxMiPadPage: BasePage() {
             ),
             SwitchV("restore_esc", false)
         )
+        val bindingRemoveStylusBluetoothRestriction =
+            GetDataBinding({
+                MIUIActivity.safeSP.getBoolean("remove_stylus_bluetooth_restriction", true)
+            }) { view, flags, data ->
+                when (flags) {
+                    1 -> view.visibility = if (data as Boolean) View.VISIBLE else View.GONE
+                }
+            }
         TextSummaryWithSwitch(
             TextSummaryV(
                 textId = R.string.remove_stylus_bluetooth_restriction,
                 tipsId = R.string.remove_stylus_bluetooth_restriction_tips
             ),
             SwitchV(
-                "remove_stylus_bluetooth_restriction",
-                false
+                key = "remove_stylus_bluetooth_restriction",
+                defValue = true,
+                dataBindingSend = bindingRemoveStylusBluetoothRestriction.bindingSend
             )
         )
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
-            TextSummaryWithSwitch(
-                TextSummaryV(
-                    textId = R.string.second_generation_pen_driver,
-                    tipsId = R.string.second_generation_pen_driver_summary
-                ),
-                SwitchV(
-                    "second_generation_pen_driver",
-                    false
-                )
-            )
-        }
+        TextSummaryWithSpinner(
+            TextSummaryV(
+                textId = R.string.remove_stylus_bluetooth_restriction_driver_version,
+                tipsId = R.string.remove_stylus_bluetooth_restriction_driver_version_tips
+            ),
+            SpinnerV(MIUIActivity.safeSP.getString("remove_stylus_bluetooth_restriction_driver_version", "2")) {
+                add("1") {
+                    MIUIActivity.safeSP.putAny("remove_stylus_bluetooth_restriction_driver_version", "1")
+                }
+                add("2") {
+                    MIUIActivity.safeSP.putAny("remove_stylus_bluetooth_restriction_driver_version", "2")
+                }
+            },
+            dataBindingRecv = bindingRemoveStylusBluetoothRestriction.getRecv(1)
+        )
         TextSummaryWithSwitch(
             TextSummaryV(
                 textId = R.string.ignore_stylus_key_gesture,

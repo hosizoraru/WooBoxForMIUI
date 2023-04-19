@@ -463,6 +463,6 @@
     <string name="number_of_icons_in_folder_iew">Number of rows of icons in the folder view</string>
     <string name="Always_blur_launcher_wallpaper">Always blur launcher wallpaper</string>
     <string name="a_fix_summary">fix for 7.7.1/7.7.2</string>
-    <string name="second_generation_pen_driver">Use the driver of the second-generation pen \nwith the Remove Bluetooth restriction of the stylus function on A13</string>
-    <string name="second_generation_pen_driver_summary">Only A13 devices can turned on.\nMaybe cause the function of the old system to fail.</string>
+    <string name="remove_stylus_bluetooth_restriction_driver_version">Driver version</string>
+    <string name="remove_stylus_bluetooth_restriction_driver_version_tips">Driver version for removing stylus bluetooth restriction</string>
 </resources>
