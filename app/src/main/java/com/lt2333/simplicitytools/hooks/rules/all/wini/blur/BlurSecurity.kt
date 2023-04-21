@@ -13,7 +13,6 @@ import android.widget.TextView
 import com.lt2333.simplicitytools.utils.wini.ColorUtils
 import com.lt2333.simplicitytools.hooks.rules.all.wini.model.ConfigModel
 import com.lt2333.simplicitytools.utils.XSPUtils
-import com.lt2333.simplicitytools.utils.hasEnable
 import com.lt2333.simplicitytools.utils.wini.HookUtils
 import de.robv.android.xposed.XC_MethodHook
 import de.robv.android.xposed.XC_MethodReplacement
@@ -21,6 +20,7 @@ import de.robv.android.xposed.XposedBridge
 import de.robv.android.xposed.XposedHelpers
 import de.robv.android.xposed.callbacks.XC_LoadPackage
 import java.io.File
+import com.lt2333.simplicitytools.utils.Voyager.VoyagerQAQ.getAppVersionCode
 
 class BlurSecurity(private val classLoader: ClassLoader, config: ConfigModel) {
     val blurRadius = config.BlurSecurity.dockBackground.blurRadius

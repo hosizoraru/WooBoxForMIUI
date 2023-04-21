@@ -190,7 +190,7 @@
     <string name="Unlock_HDR_Enhance_summary">以 HDR 高動態範圍，呈現更多明暗細節，使畫面更加真實</string>
     <string name="scope_mishare">小米互傳</string>
     <string name="No_Auto_Turn_Off">禁止小米互傳自動關閉</string>
-    <string name="No_Auto_Turn_Off_summary">小米互傳將不會自動關閉 (僅限 2.15.0 和 2.16.0 版本)</string>
+    <string name="No_Auto_Turn_Off_summary">小米互傳將不會自動關閉 (僅限 2.15.0+ 版本)</string>
     <string name="scope_deskclock">時鐘</string>
     <string name="Hour_Glass_Enable">強制開啟計時沙漏動畫</string>
     <string name="Hour_Glass_Enable_summary">當你發現你的時鐘沒有這個動畫的時候才需要開啟</string>
