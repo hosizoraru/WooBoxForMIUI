@@ -35,5 +35,16 @@ object FilterManagerAll : HookRegister() {
             Log.ex("Voyager-Test: Hook version 1.0.3.2.1 MediaEditor Fail!")
         }
 
+        try {
+            // 1.2.1.11.2
+            "com.miui.gallery.editor.photo.core.imports.filter.FilterManager".hookBeforeMethod(
+                getDefaultClassLoader(), "g"
+            ) {
+                val field = findField("android.os.Build") { type == String::class.java && name == "DEVICE" }
+                it.thisObject.putObject(field, "wayne")
+            }
+        } catch (e: Throwable) {
+            Log.ex("Voyager-Test: Hook version 1.2.1.11.2 MediaEditor Fail!")
+        }
     }
 }
