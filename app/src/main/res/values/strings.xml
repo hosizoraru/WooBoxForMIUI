@@ -465,4 +465,8 @@
     <string name="a_fix_summary">fix for 7.7.1/7.7.2</string>
     <string name="remove_stylus_bluetooth_restriction_driver_version">Driver version</string>
     <string name="remove_stylus_bluetooth_restriction_driver_version_tips">Driver version for removing stylus bluetooth restriction</string>
+    <string name="scope_ScreenRecorder">Screen Recorder</string>
+    <string name="frame_level">Frame level add 120 and 144</string>
+    <string name="bitrate_level">Bitrate level add some Mbps</string>
+    <string name="sound_where">Add both sound play background</string>
 </resources>

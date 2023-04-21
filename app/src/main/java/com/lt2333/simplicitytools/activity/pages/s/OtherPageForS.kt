@@ -26,6 +26,20 @@ class OtherPageForS : BasePage() {
             ), SwitchV("No_Auto_Turn_Off")
         )
         Line()
+        TitleText(textId = R.string.scope_ScreenRecorder)
+        TextSummaryWithSwitch(
+            TextSummaryV(textId = R.string.frame_level),
+            SwitchV("frame_level")
+        )
+        TextSummaryWithSwitch(
+            TextSummaryV(textId = R.string.bitrate_level),
+            SwitchV("bitrate_level")
+        )
+        TextSummaryWithSwitch(
+            TextSummaryV(textId = R.string.sound_where),
+            SwitchV("sound_where")
+        )
+        Line()
         TitleText(textId = R.string.scope_deskclock)
         TextSummaryWithSwitch(
             TextSummaryV(

@@ -44,6 +44,7 @@ class MainHook : EasyXposedInit() {
         Market, // 应用商店
         Browser, // 浏览器
         TouchNotes, // 享做笔记
+        ScreenRecorder, // 屏幕录制
     )
 
     override fun handleLoadPackage(lpparam: XC_LoadPackage.LoadPackageParam?) {

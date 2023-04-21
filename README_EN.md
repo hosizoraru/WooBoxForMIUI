@@ -50,6 +50,7 @@ Xposed Repo：[Click here to download the latest release](https://github.com/Xpo
 [Weverses/BypassSignCheck](https://github.com/Weverses/BypassSignCheck)  
 [YifePlayte/MaxFreeForm](https://github.com/YifePlayte/MaxFreeForm)  
 [YifePlayte/MaxMiPad](https://github.com/YifePlayte/MaxMiPad)  
+[YifePlayte/WOMMO](https://github.com/YifePlayte/WOMMO)  
 [YuKongA/Miui_XXL](https://github.com/YuKongA/Miui_XXL)  
 [Wine-Network/Miui_XXL](https://github.com/Wine-Network/Miui_XXL)  
 [MonwF/customiuizer](https://github.com/MonwF/customiuizer)  

@@ -70,6 +70,7 @@ class MenuPage : BasePage() {
                         "killall com.xiaomi.market",
                         "killall com.android.browser",
                         "killall com.newskyer.draw",
+                        "killall com.miui.screenrecorder",
                     )
                     ShellUtils.execCommand(command, true)
                     dismiss()

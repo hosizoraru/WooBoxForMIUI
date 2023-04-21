@@ -29,5 +29,6 @@
         <item>com.xiaomi.market</item>
         <item>com.android.browser</item>
         <item>com.newskyer.draw</item>
+        <item>com.miui.screenrecorder</item>
     </string-array>
 </resources>

@@ -463,4 +463,8 @@
     <string name="a_fix_summary">为7.7.1/7.7.2修复</string>
     <string name="remove_stylus_bluetooth_restriction_driver_version">驱动版本</string>
     <string name="remove_stylus_bluetooth_restriction_driver_version_tips">移除触控笔蓝牙限制所使用的驱动版本</string>
+    <string name="scope_ScreenRecorder">屏幕录制</string>
+    <string name="frame_level">帧率新增120和144hz</string>
+    <string name="bitrate_level">新增一些码率</string>
+    <string name="sound_where">同时录制麦克风和内部音频</string>
 </resources>
