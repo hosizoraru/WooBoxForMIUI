@@ -2,7 +2,6 @@ package com.lt2333.simplicitytools.hooks.apps
 
 import android.os.Build
 import com.lt2333.simplicitytools.hooks.rules.all.corepatch.CorePatchMainHook
-import com.lt2333.simplicitytools.hooks.rules.all.bypasssigncheck.BypassSignCheckMainHook
 import com.lt2333.simplicitytools.hooks.rules.all.android.*
 import com.lt2333.simplicitytools.hooks.rules.all.maxmipad.*
 import com.lt2333.simplicitytools.hooks.rules.s.android.*
@@ -19,8 +18,6 @@ object Android : AppRegister() {
             //核心破解
             CorePatchMainHook().handleLoadPackage(lpparam)
         }
-        //BypassSignCheck
-        BypassSignCheckMainHook().handleLoadPackage(lpparam)
         when (Build.VERSION.SDK_INT) {
             Build.VERSION_CODES.TIRAMISU -> {
                 autoInitHooks(
@@ -31,7 +28,6 @@ object Android : AppRegister() {
                     MaxWallpaperScaleForT, //壁纸缩放比例
                     SystemPropertiesHookForT, //SystemPropertiesHook
                     AllowUntrustedTouchesForAll, //允许不受信任的触摸
-                    GetMinimumSignatureSchemeVersionForTargetSdkForT, //BypassSignCheck
                     KillDomainVerificationForT, //KillDomainVerification
                     SideHideFreeformForAll,//解锁贴边小窗
                     MaxFreeFormaForAll, //多小窗
@@ -57,7 +53,6 @@ object Android : AppRegister() {
                     MaxWallpaperScaleForS, //壁纸缩放比例
                     SystemPropertiesHookForS, //SystemPropertiesHook
                     AllowUntrustedTouchesForAll, //允许不受信任的触摸
-                    GetMinimumSignatureSchemeVersionForTargetSdkForT, //BypassSignCheck
                     KillDomainVerificationForS, //KillDomainVerification
                     SideHideFreeformForAll,//解锁贴边小窗
                     MaxFreeFormaForAll, //多小窗

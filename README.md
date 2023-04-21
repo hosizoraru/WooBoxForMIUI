@@ -50,8 +50,7 @@ Xposed
 
 [qqlittleice/MiuiHome](https://github.com/qqlittleice/MiuiHome)  
 [yujincheng08/BiliRoaming](https://github.com/yujincheng08/BiliRoaming)  
-[Mikanoshi/CustoMIUIzer](https://code.highspec.ru/Mikanoshi/CustoMIUIzer)  
-[Weverses/BypassSignCheck](https://github.com/Weverses/BypassSignCheck)  
+[Mikanoshi/CustoMIUIzer](https://code.highspec.ru/Mikanoshi/CustoMIUIzer)
 [YifePlayte/MaxFreeForm](https://github.com/YifePlayte/MaxFreeForm)  
 [YifePlayte/MaxMiPad](https://github.com/YifePlayte/MaxMiPad)  
 [YifePlayte/WOMMO](https://github.com/YifePlayte/WOMMO)  
