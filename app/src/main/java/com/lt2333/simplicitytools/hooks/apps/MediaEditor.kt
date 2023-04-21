@@ -1,6 +1,5 @@
 package com.lt2333.simplicitytools.hooks.apps
 
-import android.app.AndroidAppHelper
 import android.os.Build
 import com.lt2333.simplicitytools.hooks.rules.all.mediaeditor.FilterManagerAll
 import com.lt2333.simplicitytools.hooks.rules.s.mediaeditor.UnlockUnlimitedCroppingForS
