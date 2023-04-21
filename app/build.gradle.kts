@@ -87,7 +87,7 @@ android {
 
 dependencies {
     implementation("androidx.core:core-ktx:1.10.0-rc01")
-    implementation("androidx.core:core-splashscreen:1.0.0")
+    implementation("androidx.core:core-splashscreen:1.0.1")
     //API
     compileOnly("de.robv.android.xposed:api:82")
     implementation("com.github.kyuubiran:EzXHelper:1.0.3")
