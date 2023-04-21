@@ -2,6 +2,8 @@ package com.lt2333.simplicitytools.utils.xposed
 
 import com.github.kyuubiran.ezxhelper.init.EzXHelperInit
 import com.github.kyuubiran.ezxhelper.utils.Log.logexIfThrow
+import com.lt2333.simplicitytools.utils.Yife.YifeDexKit.closeDexKit
+import com.lt2333.simplicitytools.utils.Yife.YifeDexKit.initDexKit
 import com.lt2333.simplicitytools.utils.xposed.base.AppRegister
 import de.robv.android.xposed.IXposedHookInitPackageResources
 import de.robv.android.xposed.IXposedHookLoadPackage
@@ -26,11 +28,13 @@ abstract class EasyXposedInit : IXposedHookLoadPackage, IXposedHookZygoteInit, I
                     setLogXp(true)
                     setLogTag(TAG)
                     setToastTag(TAG)
+                    initDexKit(lpparam)
                     initHandleLoadPackage(lpparam)
                 }
                 runCatching { app.handleLoadPackage(lpparam) }.logexIfThrow("Failed call handleLoadPackage, package: ${app.packageName}")
             }
         }
+        closeDexKit()
     }
 
     override fun initZygote(startupParam: IXposedHookZygoteInit.StartupParam?) {

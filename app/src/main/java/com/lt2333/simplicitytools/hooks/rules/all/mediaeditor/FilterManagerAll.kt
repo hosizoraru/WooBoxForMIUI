@@ -1,41 +1,56 @@
 package com.lt2333.simplicitytools.hooks.rules.all.mediaeditor
 
+import com.github.kyuubiran.ezxhelper.init.InitFields
+import com.github.kyuubiran.ezxhelper.utils.field
 import com.github.kyuubiran.ezxhelper.utils.findField
+import com.github.kyuubiran.ezxhelper.utils.hookBefore
+import com.github.kyuubiran.ezxhelper.utils.loadClass
 import com.github.kyuubiran.ezxhelper.utils.putObject
 import com.lt2333.simplicitytools.hooks.apps.MediaEditor
 import com.lt2333.simplicitytools.utils.hasEnable
 import com.lt2333.simplicitytools.utils.YuKongA.hookBeforeMethod
 import com.lt2333.simplicitytools.utils.xposed.base.HookRegister
+import com.lt2333.simplicitytools.utils.Yife.YifeDexKit.dexKitBridge
+import com.lt2333.simplicitytools.utils.Yife.YifeDexKit.loadDexKit
+import io.luckypray.dexkit.enums.MatchType
 
 
 object FilterManagerAll : HookRegister() {
     override fun init() = hasEnable("filter_manager"){
-        when {
-            MediaEditor.versionCode < 4197441 -> {
-                "com.miui.gallery.editor.photo.core.imports.filter.FilterManager".hookBeforeMethod(
-                    getDefaultClassLoader(), "getFilterCategory"
-                ) {
-                    val field = findField("android.os.Build") { type == String::class.java && name == "DEVICE" }
-                    it.thisObject.putObject(field, "wayne")
-                }
-            }
-            MediaEditor.versionCode in 4197441 until 4326754 -> {
-                "b6.b".hookBeforeMethod(
-                    getDefaultClassLoader(), "g"
-                ) {
-                    val field = findField("android.os.Build") { type == String::class.java && name == "DEVICE" }
-                    it.thisObject.putObject(field, "wayne")
-                }
-            }
-            // MediaEditor.versionCode >= 4326754L
-            MediaEditor.versionCode >= 4326754 -> {
-                "com.miui.gallery.editor.photo.core.imports.filter.FilterManager".hookBeforeMethod(
-                    getDefaultClassLoader(), "g"
-                ) {
-                    val field = findField("android.os.Build") { type == String::class.java && name == "DEVICE" }
-                    it.thisObject.putObject(field, "wayne")
-                }
-            }
+//        var qwq = ""
+//        var qaq = ""
+//        when {
+//            MediaEditor.versionCode < 4197441 -> {
+//                qwq = "com.miui.gallery.editor.photo.core.imports.filter.FilterManager"
+//                qaq = "getFilterCategory"
+//            }
+//            MediaEditor.versionCode in 4197441 until 4326754 -> {
+//                qwq = "b6.b"
+//                qaq = "g"
+//            }
+//            // MediaEditor.versionCode >= 4326754L
+//            MediaEditor.versionCode >= 4326754 -> {
+//                qwq = "com.miui.gallery.editor.photo.core.imports.filter.FilterManager"
+//                qaq = "g"
+//            }
+//        }
+//        qwq.hookBeforeMethod(
+//            getDefaultClassLoader(), qaq
+//        ) {
+//            val field = findField("android.os.Build") { type == String::class.java && name == "DEVICE" }
+//            it.thisObject.putObject(field, "wayne")
+//        }
+
+        loadDexKit()
+        dexKitBridge.findMethodUsingString {
+            usingString = "const-string v2, \"wayne\""
+        }.map {
+            it.getMethodInstance(InitFields.ezXClassLoader)
+        }.hookBefore {
+            loadClass("android.os.Build").field("DEVICE", true, String::class.java)
+                .set(null,"wayne")
+//            val field = findField("android.os.Build") { type == String::class.java && name == "DEVICE" }
+//            it.thisObject.putObject(field,"wayne")
         }
 
 //        when (MediaEditor.versionName) {
