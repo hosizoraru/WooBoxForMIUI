@@ -109,6 +109,12 @@ class AndroidPageForT : BasePage() {
         )
         TextSummaryWithSwitch(
             TextSummaryV(
+                textId = R.string.bypass_sign_check,
+                tipsId = R.string.take_effect_after_reboot
+            ), SwitchV("getMinimumSignatureSchemeVersionForTargetSdk")
+        )
+        TextSummaryWithSwitch(
+            TextSummaryV(
                 textId = R.string.kill_domain_verification,
                 tipsId = R.string.kill_domain_verification_summary
             ), SwitchV("kill_domain_verification")

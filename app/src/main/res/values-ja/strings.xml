@@ -234,6 +234,7 @@
     <string name="make_millet_more_aggressive_summary">バックグラウンドアプリに通知、実行中のサービスやプロセスがあっても停止させることを許可します。\n停止させたくないアプリはバッテリーセーバーを制限なしに設定してください。\n有効にする前に Tombstone と NoANR 関連モジュールをアンインストールしてください。</string>
     <string name="make_millet_ignore_active">アクティブなアプリの停止を許可</string>
     <string name="make_millet_ignore_active_summary">非常にアグレッシブで、アプリの実行に影響する可能性があります</string>
+    <string name="bypass_sign_check">バイパスサインチェック(android13のみ対応)</string>
     <string name="scope_gallery">フォトアルバム</string>
     <string name="Unlock_HDR_Enhance">ハイダイナミックレンジを表示</string>
     <string name="Unlock_HDR_Enhance_summary">HDR を使用して、ハイライトとシャドウの詳細を表示します</string>

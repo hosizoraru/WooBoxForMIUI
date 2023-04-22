@@ -240,6 +240,7 @@
     <string name="make_millet_ignore_active">允許 Millet 凍結使用中的應用程式</string>
     <string name="make_millet_ignore_active_summary">非常積極，可能會影響應用程式執行</string>
     <string name="preset">預設</string>
+    <string name="bypass_sign_check">繞過簽名校驗(僅支持A13)</string>
     <string name="scope_gallery">相冊</string>
     <string name="Unlock_HDR_Enhance">超動態顯示</string>
     <string name="Unlock_HDR_Enhance_summary">以 HDR 高動態範圍，呈現更多明暗細節，使畫面更加真實</string>
