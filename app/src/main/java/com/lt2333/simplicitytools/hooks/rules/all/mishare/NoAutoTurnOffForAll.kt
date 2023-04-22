@@ -6,6 +6,7 @@ import com.lt2333.simplicitytools.utils.hasEnable
 import com.lt2333.simplicitytools.utils.xposed.base.HookRegister
 import com.lt2333.simplicitytools.utils.Yife.YifeDexKit.dexKitBridge
 import com.lt2333.simplicitytools.utils.Yife.YifeDexKit.loadDexKit
+import com.lt2333.simplicitytools.utils.Yife.YifeDexKit.closeDexKit
 
 object NoAutoTurnOffForAll : HookRegister() {
 
@@ -29,6 +30,7 @@ object NoAutoTurnOffForAll : HookRegister() {
                 it.result = null
             }
         }
+        closeDexKit()
 
 //        try {
 //            // 2.15.0
