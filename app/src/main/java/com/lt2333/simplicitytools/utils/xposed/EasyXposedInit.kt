@@ -28,13 +28,17 @@ abstract class EasyXposedInit : IXposedHookLoadPackage, IXposedHookZygoteInit, I
                     setLogXp(true)
                     setLogTag(TAG)
                     setToastTag(TAG)
-                    initDexKit(lpparam)
+                    if (lpparam.packageName != "android") {
+                        initDexKit(lpparam)
+                    }
                     initHandleLoadPackage(lpparam)
                 }
                 runCatching { app.handleLoadPackage(lpparam) }.logexIfThrow("Failed call handleLoadPackage, package: ${app.packageName}")
             }
         }
-        closeDexKit()
+        if (lpparam.packageName != "android") {
+            closeDexKit()
+        }
     }
 
     override fun initZygote(startupParam: IXposedHookZygoteInit.StartupParam?) {

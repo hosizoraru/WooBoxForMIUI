@@ -11,13 +11,23 @@ object NoAutoTurnOffForAll : HookRegister() {
 
     override fun init() = hasEnable("No_Auto_Turn_Off") {
         loadDexKit()
-        dexKitBridge.findMethodUsingString {
-            usingString = "EnabledState"
-            usingString = "mishare_enabled"
-        }.map {
-            it.getMethodInstance(InitFields.ezXClassLoader)
-        }.hookBefore {
-            it.result = null
+//        dexKitBridge.findMethodUsingString {
+//            usingString = "EnabledState"
+//            usingString = "mishare_enabled"
+//        }.map {
+//            it.getMethodInstance(InitFields.ezXClassLoader)
+//        }.hookBefore {
+//            it.result = null
+//        }
+
+        dexKitBridge.batchFindMethodsUsingStrings {
+            addQuery("qwq", listOf("EnabledState","mishare_enabled"))
+        }.forEach { ( _, classes) ->
+            classes.map {
+                it.getMethodInstance(InitFields.ezXClassLoader)
+            }.hookBefore {
+                it.result = null
+            }
         }
 
 //        try {
