@@ -184,7 +184,6 @@
     <string name="status_bar_network_speed_dual_row_icon">雙排圖標</string>
     <string name="no_need_to_enter_password_when_power_on">開機免輸密碼</string>
     <string name="no_need_to_enter_password_when_power_on_summary">手機沒啟用加密才會生效</string>
-    <string name="bypass_sign_check">繞過簽名校驗(僅支持A13)</string>
     <string name="scope_gallery">相冊</string>
     <string name="Unlock_HDR_Enhance">超動態顯示</string>
     <string name="Unlock_HDR_Enhance_summary">以 HDR 高動態範圍，呈現更多明暗細節，使畫面更加真實</string>
