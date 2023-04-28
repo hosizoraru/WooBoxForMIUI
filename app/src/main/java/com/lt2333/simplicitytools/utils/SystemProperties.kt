@@ -6,7 +6,7 @@ import android.content.Context
 object SystemProperties {
     @SuppressLint("PrivateApi")
     operator fun get(context: Context, key: String?): String {
-        var ret = ""
+        var ret: String
         try {
             val cl = context.classLoader
             val systemProperties = cl.loadClass("android.os.SystemProperties")
