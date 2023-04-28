@@ -17,7 +17,7 @@ object PowerKeeper : AppRegister() {
                     lpparam,
                     LockMaxFpsForAll, //锁定最高刷新率
                     PreventRecoveryOfBatteryOptimizationWhitelistForS, //防止恢复电池优化白名单
-                    DoNotClearAppForS,//阻止杀后台
+                    DoNotClearAppForT,//阻止杀后台
                     MakeMilletMoreAggressiveForS,//使 Millet 更激进
                     CustomRefreshRatepForT,//自定义高刷
                 )
