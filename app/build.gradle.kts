@@ -12,7 +12,7 @@ android {
 //     compileSdkPreview = "UpsideDownCake"
     namespace = "com.lt2333.simplicitytools"
     compileSdk = 33
-    buildToolsVersion = "33.0.2"
+    buildToolsVersion = "34.0.0 rc3"
 
     buildFeatures {
         prefab = true

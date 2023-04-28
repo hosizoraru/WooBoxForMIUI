@@ -21,7 +21,7 @@ class LockMaxFpsTile : TileService() {
             }
             prefEditor.commit()
             qsTile.updateTile()
-        } catch (e: SecurityException) {
+        } catch (_: SecurityException) {
         }
     }
 
@@ -35,7 +35,7 @@ class LockMaxFpsTile : TileService() {
                 qsTile.state = Tile.STATE_INACTIVE
             }
             qsTile.updateTile()
-        } catch (e: SecurityException) {
+        } catch (_: SecurityException) {
         }
     }
 }

@@ -30,6 +30,7 @@ abstract class AppRegister: IXposedHookLoadPackage, IXposedHookInitPackageResour
 
     protected fun autoInitResourcesHooks(resparam: XC_InitPackageResources.InitPackageResourcesParam, vararg hook: ResourcesHookRegister) {
         hook.also {
+            Log.ix("WooBox: Try to Hook [$packageName]")
         }.forEach {
             runCatching {
                 if (it.isInit) return@forEach

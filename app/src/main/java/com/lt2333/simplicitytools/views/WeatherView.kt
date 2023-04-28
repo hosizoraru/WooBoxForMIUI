@@ -55,7 +55,7 @@ class WeatherView(context: Context?, private val showCity: Boolean) : TextView(c
                     }
                     query.close()
                 }
-            } catch (e: Exception) {
+            } catch (_: Exception) {
 
             }
             val obtainMessage2 = mHandler.obtainMessage()

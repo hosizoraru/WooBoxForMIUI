@@ -18,22 +18,22 @@ object ColorUtils {
         val green = (originalColor.green() * 255).toInt()
         val blue = (originalColor.blue() * 255).toInt()
         val alphaHex = if (alpha <= 15) {
-            '0' + alpha.toString()
+            "0$alpha"
         } else {
             alpha.toString(16)
         }
         val redHex = if (red <= 15) {
-            '0' + red.toString()
+            "0$red"
         } else {
             red.toString(16)
         }
         val greenHex = if (green <= 15) {
-            '0' + green.toString()
+            "0$green"
         } else {
             green.toString(16)
         }
         val blueHex = if (blue <= 15) {
-            '0' + blue.toString()
+            "0$blue"
         } else {
             blue.toString(16)
         }
@@ -41,10 +41,10 @@ object ColorUtils {
     }
 
     fun hexToColor(hexString: String): Int {
-        try {
-            return Color.parseColor(hexString)
+        return try {
+            Color.parseColor(hexString)
         } catch (e: Throwable) {
-            return defaultReturnColor
+            defaultReturnColor
         }
     }
 

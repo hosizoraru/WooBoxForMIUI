@@ -1,6 +1,8 @@
 package com.lt2333.simplicitytools.hooks.rules.all.mishare
 
 import com.github.kyuubiran.ezxhelper.init.InitFields
+import com.github.kyuubiran.ezxhelper.utils.Log
+import com.github.kyuubiran.ezxhelper.utils.findMethod
 import com.github.kyuubiran.ezxhelper.utils.hookBefore
 import com.lt2333.simplicitytools.utils.hasEnable
 import com.lt2333.simplicitytools.utils.xposed.base.HookRegister
@@ -30,7 +32,6 @@ object NoAutoTurnOffForAll : HookRegister() {
                 it.result = null
             }
         }
-        closeDexKit()
 
 //        try {
 //            // 2.15.0

@@ -61,7 +61,7 @@ class WeatherData(val context: Context?, private val showCity: Boolean) {
                     }
                     query.close()
                 }
-            } catch (e: Exception) {
+            } catch (_: Exception) {
 
             }
             val obtainMessage2 = mHandler.obtainMessage()

@@ -20,7 +20,7 @@ class AllowScreenshots : TileService() {
             }
             prefEditor.commit()
             qsTile.updateTile()
-        } catch (e: SecurityException) {
+        } catch (_: SecurityException) {
         }
     }
 
@@ -34,7 +34,7 @@ class AllowScreenshots : TileService() {
                 qsTile.state = Tile.STATE_INACTIVE
             }
             qsTile.updateTile()
-        } catch (e: SecurityException) {
+        } catch (_: SecurityException) {
         }
     }
 }
