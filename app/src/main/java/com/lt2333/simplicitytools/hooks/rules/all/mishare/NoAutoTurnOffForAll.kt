@@ -4,6 +4,7 @@ import com.github.kyuubiran.ezxhelper.init.InitFields
 import com.github.kyuubiran.ezxhelper.utils.Log
 import com.github.kyuubiran.ezxhelper.utils.findMethod
 import com.github.kyuubiran.ezxhelper.utils.hookBefore
+import com.lt2333.simplicitytools.hooks.apps.MiShare
 import com.lt2333.simplicitytools.utils.hasEnable
 import com.lt2333.simplicitytools.utils.xposed.base.HookRegister
 import com.lt2333.simplicitytools.utils.Yife.YifeDexKit.dexKitBridge
@@ -13,7 +14,25 @@ import com.lt2333.simplicitytools.utils.Yife.YifeDexKit.closeDexKit
 object NoAutoTurnOffForAll : HookRegister() {
 
     override fun init() = hasEnable("No_Auto_Turn_Off") {
-        loadDexKit()
+
+        when (MiShare.versionCode) {
+            21500 -> {
+                findMethod("com.miui.mishare.connectivity.MiShareService\$d\$g") {
+                    name == "b"
+                }.hookBefore {
+                    it.result = null
+                }
+            }
+            21600 -> {
+                findMethod("com.miui.mishare.connectivity.MiShareService\$j\$g") {
+                    name == "a"
+                }.hookBefore {
+                    it.result = null
+                }
+            }
+        }
+
+//        loadDexKit()
 //        dexKitBridge.findMethodUsingString {
 //            usingString = "EnabledState"
 //            usingString = "mishare_enabled"
@@ -23,15 +42,15 @@ object NoAutoTurnOffForAll : HookRegister() {
 //            it.result = null
 //        }
 
-        dexKitBridge.batchFindMethodsUsingStrings {
-            addQuery("qwq", listOf("EnabledState","mishare_enabled"))
-        }.forEach { ( _, classes) ->
-            classes.map {
-                it.getMethodInstance(InitFields.ezXClassLoader)
-            }.hookBefore {
-                it.result = null
-            }
-        }
+//        dexKitBridge.batchFindMethodsUsingStrings {
+//            addQuery("qwq", listOf("EnabledState","mishare_enabled"))
+//        }.forEach { ( _, classes) ->
+//            classes.map {
+//                it.getMethodInstance(InitFields.ezXClassLoader)
+//            }.hookBefore {
+//                it.result = null
+//            }
+//        }
 
 //        try {
 //            // 2.15.0
