@@ -41,7 +41,7 @@ object NoAutoTurnOffForAll : HookRegister() {
 //        }.hookBefore {
 //            it.result = null
 //        }
-
+//
 //        dexKitBridge.batchFindMethodsUsingStrings {
 //            addQuery("qwq", listOf("EnabledState","mishare_enabled"))
 //        }.forEach { ( _, classes) ->
@@ -51,6 +51,7 @@ object NoAutoTurnOffForAll : HookRegister() {
 //                it.result = null
 //            }
 //        }
+//        closeDexKit()
 
 //        try {
 //            // 2.15.0

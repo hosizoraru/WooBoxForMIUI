@@ -38,7 +38,7 @@ object ForceSupportSendAppForAll : HookRegister() {
                 it.args[0] = null
                 it.args[1] = null
             }
-        } catch (e: Throwable) {
+        } catch (_: Throwable) {
             Log.ex("Voyager-Test: Hook new version Cast Fail!")
         }
     }
