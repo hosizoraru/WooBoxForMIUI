@@ -88,6 +88,10 @@ class OtherPageForS : BasePage() {
             ), SwitchV("force_support_send_app")
         )
         Line()
+        TitleText(textId = R.string.scope_file_explorer)
+        TextSSw(getString(R.string.file_explorer_can_selectable), key = "file_explorer_can_selectable")
+        TextSSw(getString(R.string.file_explorer_is_single_line), key = "file_explorer_is_single_line")
+        Line()
         TitleText(textId = R.string.rear_display)
         TextSummaryWithSwitch(
             TextSummaryV(

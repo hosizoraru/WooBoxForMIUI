@@ -71,6 +71,7 @@ class MenuPage : BasePage() {
                         "killall com.android.browser",
                         "killall com.newskyer.draw",
                         "killall com.miui.screenrecorder",
+                        "killall com.android.fileexplorer",
                     )
                     ShellUtils.execCommand(command, true)
                     dismiss()

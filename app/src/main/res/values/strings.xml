@@ -468,4 +468,8 @@
     <string name="frame_level">Frame level add 120 and 144</string>
     <string name="bitrate_level">Bitrate level add some Mbps</string>
     <string name="sound_where">Add both sound play background</string>
+    <string name="scope_file_explorer">File Explorer</string>
+    <string name="file_explorer_can_selectable">File Explorer Can Selectable</string>
+    <string name="file_explorer_is_single_line">File Explorer Is Single Line</string>
+    <string name="share_center">Mi Smart Hub</string>
 </resources>

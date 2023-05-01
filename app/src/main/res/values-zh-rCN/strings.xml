@@ -466,4 +466,8 @@
     <string name="frame_level">帧率新增120和144hz</string>
     <string name="bitrate_level">新增一些码率</string>
     <string name="sound_where">同时录制麦克风和内部音频</string>
+    <string name="scope_file_explorer">文件管理</string>
+    <string name="file_explorer_can_selectable">文件夹名字可以选择操作</string>
+    <string name="file_explorer_is_single_line">文件夹名字以单行显示</string>
+    <string name="share_center">小米妙享中心</string>
 </resources>

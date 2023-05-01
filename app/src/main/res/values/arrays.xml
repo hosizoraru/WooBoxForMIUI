@@ -30,5 +30,6 @@
         <item>com.android.browser</item>
         <item>com.newskyer.draw</item>
         <item>com.miui.screenrecorder</item>
+        <item>com.android.fileexplorer</item>
     </string-array>
 </resources>
