@@ -14,6 +14,7 @@ object AsWhat : HookRegister() {
             when(a) {
                 "Default"-> {
                     Log.i("Use Your Default Device.")
+                    return@hookAllConstructorBefore
                 }
                 "Mi13Pro"-> {
                     XposedHelpers.setStaticObjectField(Build::class.java, "DEVICE", "nuwa")
