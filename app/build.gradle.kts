@@ -25,8 +25,8 @@ android {
         applicationId = "com.lt2333.simplicitytools"
         minSdk = 31
         targetSdk = 33
-        versionCode = 76
-        versionName = "1.7.5-Voyager"
+        versionCode = 77
+        versionName = "1.7.6-Voyager"
 //        ndk.abiFilters += "arm64-v8a"
 //        ndk {
 //            abiFilters += "arm64-v8a"
