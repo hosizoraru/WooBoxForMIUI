@@ -39,7 +39,10 @@ class ApplicationManagementPage: BasePage() {
             TextSummaryV(
                 textId = R.string.Market_As,
             ),
-            SpinnerV(MIUIActivity.safeSP.getString("Market_As", "Mi13Ultra"),dropDownWidth = 300F) {
+            SpinnerV(MIUIActivity.safeSP.getString("Market_As", "Mi13Ultra"),dropDownWidth = 200F) {
+                add("Default") {
+                    MIUIActivity.safeSP.putAny("Market_As", "Default")
+                }
                 add("Mi13Pro") {
                     MIUIActivity.safeSP.putAny("Market_As", "Mi13Pro")
                 }
