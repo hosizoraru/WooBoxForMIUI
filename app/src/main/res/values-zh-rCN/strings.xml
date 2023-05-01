@@ -432,11 +432,7 @@
     <string name="enable_translation">解锁翻译</string>
     <string name="device_modify">移除限制</string>
     <string name="device_modify_summary">对小爱建议伪装你的机型为小米13 Pro,以移除它对机型和账号的限制</string>
-    <string name="Market_Mi13Pro">伪装机型为小米13 Pro</string>
-    <string name="Market_Mi13Ultra">伪装机型为小米13 Ultra</string>
-    <string name="Market_MiPad5Pro124">伪装机型为小米平板5 Pro 12.4寸</string>
-    <string name="Market_MiPad6Pro">伪装机型为小米平板6 Pro</string>
-    <string name="Market_MixFold2">伪装机型为Xiaomi Mix Fold 2</string>
+    <string name="Market_As">伪装机型为:</string>
     <string name="Enable_Debug_Mode">开启浏览器的开发者选项</string>
     <string name="scope_browser">浏览器</string>
     <string name="scope_touchnotes">享做笔记</string>

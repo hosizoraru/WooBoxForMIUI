@@ -1,6 +1,8 @@
 @file:Suppress("UnstableApiUsage")
 
 import com.android.build.gradle.internal.api.BaseVariantOutputImpl
+import java.time.LocalDateTime
+import java.time.format.DateTimeFormatter
 
 plugins {
     id("com.android.application")
@@ -46,6 +48,9 @@ android {
             isMinifyEnabled = true
             isShrinkResources = true
             setProguardFiles(listOf("proguard-rules.pro"))
+        }
+        debug {
+            versionNameSuffix = "-debug-" + DateTimeFormatter.ofPattern("yyyyMMddHHmmss").format(LocalDateTime.now())
         }
     }
 

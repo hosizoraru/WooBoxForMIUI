@@ -22,9 +22,13 @@ object FilterManagerAll : HookRegister() {
                 qaq = "g"
             }
             // MediaEditor.versionCode >= 4326754L
-            MediaEditor.versionCode >= 4326754 -> {
+            MediaEditor.versionCode == 4326754 -> {
                 qwq = "com.miui.gallery.editor.photo.core.imports.filter.FilterManager"
                 qaq = "g"
+            }
+            MediaEditor.versionCode >= 4327491 -> {
+                qwq = "com.miui.gallery.editor.photo.core.imports.filter.FilterManager"
+                qaq = "getFilterCategory"
             }
         }
         qwq.hookBeforeMethod(

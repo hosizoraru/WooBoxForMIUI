@@ -1,10 +1,13 @@
 package com.lt2333.simplicitytools.activity.pages.all
 
+import cn.fkj233.ui.activity.MIUIActivity
 import cn.fkj233.ui.activity.annotation.BMPage
 import cn.fkj233.ui.activity.data.BasePage
+import cn.fkj233.ui.activity.view.SpinnerV
 import cn.fkj233.ui.activity.view.SwitchV
 import cn.fkj233.ui.activity.view.TextSummaryV
 import com.lt2333.simplicitytools.R
+import com.lt2333.simplicitytools.hooks.apps.Market
 
 @BMPage("pkg_installer", "App Manager", hideMenu = false)
 class ApplicationManagementPage: BasePage() {
@@ -32,25 +35,27 @@ class ApplicationManagementPage: BasePage() {
         )
         Line()
         TitleText(textId = R.string.scope_Market)
-        TextSummaryWithSwitch(
-            TextSummaryV(textId = R.string.Market_Mi13Pro),
-            SwitchV("Market_Mi13Pro")
-        )
-        TextSummaryWithSwitch(
-            TextSummaryV(textId = R.string.Market_Mi13Ultra),
-            SwitchV("Market_Mi13Ultra")
-        )
-        TextSummaryWithSwitch(
-            TextSummaryV(textId = R.string.Market_MiPad5Pro124),
-            SwitchV("Market_MiPad5Pro124")
-        )
-        TextSummaryWithSwitch(
-            TextSummaryV(textId = R.string.Market_MiPad6Pro),
-            SwitchV("Market_MiPad6Pro")
-        )
-        TextSummaryWithSwitch(
-            TextSummaryV(textId = R.string.Market_MixFold2),
-            SwitchV("Market_MixFold2")
+        TextSummaryWithSpinner(
+            TextSummaryV(
+                textId = R.string.Market_As,
+            ),
+            SpinnerV(MIUIActivity.safeSP.getString("Market_As", "Mi13Ultra"),dropDownWidth = 300F) {
+                add("Mi13Pro") {
+                    MIUIActivity.safeSP.putAny("Market_As", "Mi13Pro")
+                }
+                add("Mi13Ultra") {
+                    MIUIActivity.safeSP.putAny("Market_As", "Mi13Ultra")
+                }
+                add("MiPad5Pro12.4") {
+                    MIUIActivity.safeSP.putAny("Market_As", "MiPad5Pro12.4")
+                }
+                add("MiPad6Pro") {
+                    MIUIActivity.safeSP.putAny("Market_As", "MiPad6Pro")
+                }
+                add("MixFold2") {
+                    MIUIActivity.safeSP.putAny("Market_As", "MixFold2")
+                }
+            },
         )
     }
 }

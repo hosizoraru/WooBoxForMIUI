@@ -434,11 +434,7 @@
     <string name="enable_translation">Unlock translation</string>
     <string name="device_modify">Remove the restriction</string>
     <string name="device_modify_summary">For Aireco, it is recommended to disguise your model as Xiaomi 13 Pro to remove its restrictions on the model and account.</string>
-    <string name="Market_Mi13Pro">Disguise your model as Mi13 Pro in the GetApps</string>
-    <string name="Market_Mi13Ultra">Disguise your model as Mi13 Ultra in the GetApps</string>
-    <string name="Market_MiPad5Pro124">Disguise your model as MiPad5 Pro in the GetApps</string>
-    <string name="Market_MiPad6Pro">Disguise your model as MiPad6 Pro in the GetApps</string>
-    <string name="Market_MixFold2">Disguise your model as MixFold 2 in the GetApps</string>
+    <string name="Market_As">Disguise your model as what in the GetApps</string>
     <string name="Enable_Debug_Mode">Enable Debug Mode on Browser</string>
     <string name="scope_browser">Browser</string>
     <string name="scope_touchnotes">TouchNotes</string>
