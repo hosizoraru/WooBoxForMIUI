@@ -14,7 +14,7 @@ android {
 //     compileSdkPreview = "UpsideDownCake"
     namespace = "com.lt2333.simplicitytools"
     compileSdk = 33
-    buildToolsVersion = "34.0.0 rc3"
+    buildToolsVersion = "33.0.2"
 
     buildFeatures {
         prefab = true
@@ -91,14 +91,14 @@ android {
 
 
 dependencies {
-    implementation("androidx.core:core-ktx:1.10.0-rc01")
+    implementation("androidx.core:core-ktx:1.10.1")
     implementation("androidx.core:core-splashscreen:1.0.1")
     //API
     compileOnly("de.robv.android.xposed:api:82")
     implementation("com.github.kyuubiran:EzXHelper:1.0.3")
     implementation("org.lsposed.hiddenapibypass:hiddenapibypass:4.3")
     implementation("io.github.ranlee1:jpinyin:1.0.1")
-    implementation("org.luckypray:DexKit:1.1.4")
+    implementation("org.luckypray:DexKit:1.1.7")
     //UI
     implementation(project(":blockmiui"))
     implementation("androidx.constraintlayout:constraintlayout:2.2.0-alpha09")

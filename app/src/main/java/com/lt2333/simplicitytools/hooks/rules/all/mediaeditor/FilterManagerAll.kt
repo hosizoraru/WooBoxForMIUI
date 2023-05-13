@@ -1,6 +1,11 @@
 package com.lt2333.simplicitytools.hooks.rules.all.mediaeditor
 
+import com.github.kyuubiran.ezxhelper.utils.Log
+import com.github.kyuubiran.ezxhelper.utils.field
 import com.github.kyuubiran.ezxhelper.utils.findField
+import com.github.kyuubiran.ezxhelper.utils.findMethod
+import com.github.kyuubiran.ezxhelper.utils.hookBefore
+import com.github.kyuubiran.ezxhelper.utils.loadClass
 import com.github.kyuubiran.ezxhelper.utils.putObject
 import com.lt2333.simplicitytools.hooks.apps.MediaEditor
 import com.lt2333.simplicitytools.utils.hasEnable
@@ -22,13 +27,13 @@ object FilterManagerAll : HookRegister() {
                 qaq = "g"
             }
             // MediaEditor.versionCode >= 4326754L
-            MediaEditor.versionCode == 4326754 -> {
+            MediaEditor.versionCode in 4326754 until 4327491 -> {
                 qwq = "com.miui.gallery.editor.photo.core.imports.filter.FilterManager"
                 qaq = "g"
             }
-            MediaEditor.versionCode >= 4327491 -> {
+            MediaEditor.versionCode > 4327491 -> {
                 qwq = "com.miui.gallery.editor.photo.core.imports.filter.FilterManager"
-                qaq = "getFilterCategory"
+                qaq = "onCreate"
             }
         }
         qwq.hookBeforeMethod(
@@ -39,6 +44,16 @@ object FilterManagerAll : HookRegister() {
 //            loadClass("android.os.Build").field("DEVICE", true, String::class.java)
 //                .set(null, "wayne")
         }
+
+
+//        findMethod(qwq) {
+//            name == qaq
+//        }.hookBefore {
+////            param.thisObject.javaClass.field("DEVICE",true).setBoolean(param.thisObject, true)
+//            loadClass("android.os.Build").field("DEVICE", true, String::class.java)
+//                .set(null, "wayne")
+//            Log.ix("Cemiuiler: HookBeforeMethod Hook success!")
+//        }
 
 //        when (MediaEditor.versionName) {
 //            "1.0.3.2.1" -> {
