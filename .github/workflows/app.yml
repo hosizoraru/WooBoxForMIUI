@@ -20,7 +20,7 @@ jobs:
           java-version: "19"
           distribution: "temurin"
           cache: gradle
-      - name: Build with Gradle Canary
+      - name: Build with Gradle Release
         shell: bash
         run: ./gradlew assembleRelease
       - uses: actions/upload-artifact@v3
