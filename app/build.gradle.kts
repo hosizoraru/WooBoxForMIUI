@@ -89,7 +89,7 @@ dependencies {
     implementation("androidx.core:core-splashscreen:1.0.1")
     //API
     compileOnly("de.robv.android.xposed:api:82")
-    implementation("com.github.kyuubiran:EzXHelper:1.0.3")
+    implementation("com.github.kyuubiran:EzXHelper:2.0.5")
     implementation("org.lsposed.hiddenapibypass:hiddenapibypass:4.3")
     implementation("io.github.ranlee1:jpinyin:1.0.1")
     implementation("org.luckypray:DexKit:1.1.8")
