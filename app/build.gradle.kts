@@ -14,7 +14,6 @@ android {
 //     compileSdkPreview = "UpsideDownCake"
     namespace = "com.lt2333.simplicitytools"
     compileSdk = 33
-    buildToolsVersion = "33.0.2"
 
     buildFeatures {
         prefab = true
@@ -75,11 +74,6 @@ android {
         }
     }
 
-    dependenciesInfo {
-        includeInApk = false
-        includeInBundle = false
-    }
-
     applicationVariants.all {
         outputs.all {
             (this as BaseVariantOutputImpl).outputFileName = "WooBoxForMIUI-$versionName-$name.apk"
@@ -98,10 +92,10 @@ dependencies {
     implementation("com.github.kyuubiran:EzXHelper:1.0.3")
     implementation("org.lsposed.hiddenapibypass:hiddenapibypass:4.3")
     implementation("io.github.ranlee1:jpinyin:1.0.1")
-    implementation("org.luckypray:DexKit:1.1.7")
+    implementation("org.luckypray:DexKit:1.1.8")
     //UI
     implementation(project(":blockmiui"))
-    implementation("androidx.constraintlayout:constraintlayout:2.2.0-alpha09")
+    implementation("androidx.constraintlayout:constraintlayout:2.2.0-alpha10")
     implementation("com.google.code.gson:gson:2.10.1")
     //APP Center
     val appCenterSdkVersion = "5.0.1"
