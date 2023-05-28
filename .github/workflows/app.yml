@@ -20,6 +20,11 @@ jobs:
           java-version: "19"
           distribution: "temurin"
           cache: gradle
+      - name: Set up environment variables
+        run: |
+          echo "ANDROID_HOME=$ANDROID_HOME" >> $GITHUB_ENV
+          echo "$ANDROID_HOME/tools/bin" >> $GITHUB_PATH
+          echo "$ANDROID_HOME/cmdline-tools/latest/bin" >> $GITHUB_PATH
       - name: Accept licenses
         run: yes | sdkmanager --licenses
       - name: Build with Gradle Release
