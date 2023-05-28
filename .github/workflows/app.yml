@@ -19,9 +19,10 @@ jobs:
         with:
           java-version: "19"
           distribution: "temurin"
-      - uses: gradle/gradle-build-action@v2
-      - run: 
-          ./gradlew :app:packageRelease
+          cache: gradle
+      - name: Build with Gradle Canary
+        shell: bash
+        run: ./gradlew assembleRelease
       - uses: actions/upload-artifact@v3
         with:
           name: WooBoxForMIUI_Release
