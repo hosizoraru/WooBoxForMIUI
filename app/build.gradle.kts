@@ -99,6 +99,6 @@ dependencies {
     implementation("com.google.code.gson:gson:2.10.1")
     //APP Center
     val appCenterSdkVersion = "5.0.1"
-    implementation("com.microsoft.appcenter:appcenter-analytics:5.0.1")
+    implementation("com.microsoft.appcenter:appcenter-analytics:5.0.2")
     implementation("com.microsoft.appcenter:appcenter-crashes:5.0.1")
 }
